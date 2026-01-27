@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir:*)",
+      "Bash(tree:*)",
+      "Bash(findstr:*)",
+      "Bash(wc:*)",
+      "Bash(ls:*)",
+      "Bash(find:*)",
+      "WebFetch(domain:www.cikguaime.com)",
+      "Bash(git init:*)",
+      "Bash(git remote add:*)",
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nInitial commit: analisis dokumen dan portfolio HTML bahagian 01\n\n- 7 fail analisis \\(Lampiran 1-5, projek digital, website, portfolio\\)\n- Portfolio HTML A4 print-ready \\(kulit hadapan, isi kandungan, profil & biodata\\)\n- Draf markdown bahagian 01\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git branch:*)",
+      "Bash(git push:*)"
+    ]
+  }
+}

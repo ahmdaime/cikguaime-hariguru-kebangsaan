@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Pencipta Kandungan Digital — Cikgu Aime</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #1a1a2e;
+            background: #f0f0f0;
+            line-height: 1.6;
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+        }
+
+        /* === COLOR THEME === */
+        :root {
+            --primary: #0a1628;
+            --primary-light: #162d50;
+            --accent: #c8a84e;
+            --accent-light: #e8d48b;
+            --accent-dark: #a08230;
+            --text-dark: #1a1a2e;
+            --text-light: #ffffff;
+            --bg-light: #f8f6f0;
+            --bg-card: #ffffff;
+            --border: #e0dcd3;
+            --blue-gradient: linear-gradient(135deg, #0a1628 0%, #1a3a5c 100%);
+            --gold-gradient: linear-gradient(135deg, #c8a84e 0%, #e8d48b 50%, #c8a84e 100%);
+        }
+
+        /* === PAGE SYSTEM === */
+        .page {
+            width: 210mm;
+            min-height: 297mm;
+            margin: 20px auto;
+            background: white;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+        }
+
+        @media print {
+            body { background: white; }
+            .page {
+                margin: 0;
+                box-shadow: none;
+                page-break-after: always;
+            }
+            .page:last-child {
+                page-break-after: avoid;
+            }
+            .no-print { display: none !important; }
+        }
+
+        /* === COVER PAGE === */
+        .cover {
+            display: flex;
+            flex-direction: column;
+            height: 297mm;
+            background: var(--primary);
+            color: var(--text-light);
+        }
+
+        .cover-top-bar {
+            background: var(--gold-gradient);
+            height: 6px;
+        }
+
+        .cover-header {
+            text-align: center;
+            padding: 25mm 20mm 10mm;
+        }
+
+        .cover-kpm-label {
+            font-size: 11pt;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin-bottom: 5mm;
+        }
+
+        .cover-title {
+            font-size: 28pt;
+            font-weight: 800;
+            letter-spacing: 2px;
+            line-height: 1.2;
+            margin-bottom: 3mm;
+        }
+
+        .cover-subtitle {
+            font-size: 14pt;
+            font-weight: 300;
+            color: var(--accent-light);
+            letter-spacing: 1px;
+        }
+
+        .cover-divider {
+            width: 60mm;
+            height: 2px;
+            background: var(--gold-gradient);
+            margin: 8mm auto;
+        }
+
+        .cover-photo-section {
+            display: flex;
+            justify-content: center;
+            padding: 5mm 0;
+        }
+
+        .cover-photo {
+            width: 55mm;
+            height: 55mm;
+            border-radius: 50%;
+            border: 3px solid var(--accent);
+            object-fit: cover;
+            background: var(--primary-light);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--accent);
+            font-size: 10pt;
+        }
+
+        .cover-name {
+            text-align: center;
+            padding: 5mm 20mm 3mm;
+        }
+
+        .cover-name h2 {
+            font-size: 22pt;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        .cover-name p {
+            font-size: 11pt;
+            color: var(--accent-light);
+            margin-top: 2mm;
+        }
+
+        .cover-stats {
+            display: flex;
+            justify-content: center;
+            gap: 12mm;
+            padding: 8mm 20mm;
+        }
+
+        .cover-stat {
+            text-align: center;
+        }
+
+        .cover-stat-number {
+            font-size: 22pt;
+            font-weight: 800;
+            color: var(--accent);
+            display: block;
+        }
+
+        .cover-stat-label {
+            font-size: 8pt;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: #8899aa;
+            display: block;
+            margin-top: 1mm;
+        }
+
+        .cover-footer {
+            margin-top: auto;
+            background: var(--primary-light);
+            padding: 8mm 20mm;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 9pt;
+            color: #8899aa;
+        }
+
+        .cover-footer-right {
+            text-align: right;
+        }
+
+        .cover-bottom-bar {
+            background: var(--gold-gradient);
+            height: 6px;
+        }
+
+        /* === TABLE OF CONTENTS === */
+        .toc {
+            padding: 20mm 25mm;
+            height: 297mm;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .toc-header {
+            text-align: center;
+            margin-bottom: 15mm;
+        }
+
+        .toc-header h1 {
+            font-size: 24pt;
+            color: var(--primary);
+            font-weight: 800;
+            letter-spacing: 2px;
+        }
+
+        .toc-header-line {
+            width: 40mm;
+            height: 3px;
+            background: var(--gold-gradient);
+            margin: 4mm auto 0;
+        }
+
+        .toc-list {
+            list-style: none;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 6mm;
+        }
+
+        .toc-item {
+            display: flex;
+            align-items: center;
+            gap: 5mm;
+            padding: 4mm 5mm;
+            border-radius: 3mm;
+            transition: background 0.2s;
+        }
+
+        .toc-item:hover {
+            background: var(--bg-light);
+        }
+
+        .toc-number {
+            width: 14mm;
+            height: 14mm;
+            background: var(--blue-gradient);
+            color: var(--accent);
+            border-radius: 3mm;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14pt;
+            font-weight: 800;
+            flex-shrink: 0;
+        }
+
+        .toc-content {
+            flex: 1;
+        }
+
+        .toc-title {
+            font-size: 13pt;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .toc-desc {
+            font-size: 9pt;
+            color: #666;
+            margin-top: 1mm;
+        }
+
+        .toc-dots {
+            flex: 1;
+            border-bottom: 1px dotted #ccc;
+            margin: 0 3mm;
+            min-width: 10mm;
+        }
+
+        /* === SECTION PAGES === */
+        .section-page {
+            padding: 0;
+            min-height: 297mm;
+        }
+
+        .section-header {
+            background: var(--blue-gradient);
+            color: var(--text-light);
+            padding: 12mm 25mm 10mm;
+            position: relative;
+        }
+
+        .section-header::after {
+            content: '';
+            display: block;
+            height: 3px;
+            background: var(--gold-gradient);
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+
+        .section-number {
+            font-size: 10pt;
+            color: var(--accent);
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        .section-title {
+            font-size: 22pt;
+            font-weight: 800;
+            margin-top: 2mm;
+            letter-spacing: 1px;
+        }
+
+        .section-body {
+            padding: 10mm 25mm 15mm;
+        }
+
+        /* === CONTENT ELEMENTS === */
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4mm;
+            margin-bottom: 8mm;
+        }
+
+        .info-card {
+            background: var(--bg-light);
+            border-radius: 3mm;
+            padding: 5mm 6mm;
+            border-left: 3px solid var(--accent);
+        }
+
+        .info-card.full-width {
+            grid-column: 1 / -1;
+        }
+
+        .info-label {
+            font-size: 7.5pt;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: #888;
+            font-weight: 600;
+        }
+
+        .info-value {
+            font-size: 11pt;
+            font-weight: 600;
+            color: var(--primary);
+            margin-top: 1mm;
+        }
+
+        .subsection-title {
+            font-size: 13pt;
+            font-weight: 700;
+            color: var(--primary);
+            margin: 8mm 0 4mm;
+            padding-bottom: 2mm;
+            border-bottom: 2px solid var(--accent);
+            display: inline-block;
+        }
+
+        /* Tables */
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 4mm 0 6mm;
+            font-size: 9.5pt;
+        }
+
+        .data-table thead th {
+            background: var(--primary);
+            color: var(--text-light);
+            padding: 3mm 4mm;
+            text-align: left;
+            font-weight: 600;
+            font-size: 8.5pt;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .data-table tbody td {
+            padding: 3mm 4mm;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .data-table tbody tr:nth-child(even) {
+            background: var(--bg-light);
+        }
+
+        .data-table tbody tr:hover {
+            background: #eef3f8;
+        }
+
+        /* Stats row */
+        .stats-row {
+            display: flex;
+            gap: 4mm;
+            margin: 6mm 0;
+        }
+
+        .stat-box {
+            flex: 1;
+            text-align: center;
+            background: var(--bg-light);
+            border-radius: 3mm;
+            padding: 5mm 3mm;
+            border-top: 3px solid var(--accent);
+        }
+
+        .stat-box-number {
+            font-size: 20pt;
+            font-weight: 800;
+            color: var(--primary);
+            display: block;
+        }
+
+        .stat-box-label {
+            font-size: 7.5pt;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #666;
+            margin-top: 1mm;
+            display: block;
+        }
+
+        /* Badges */
+        .badge-row {
+            display: flex;
+            gap: 3mm;
+            flex-wrap: wrap;
+            margin: 3mm 0;
+        }
+
+        .badge {
+            background: var(--primary);
+            color: var(--accent);
+            font-size: 8pt;
+            font-weight: 600;
+            padding: 1.5mm 4mm;
+            border-radius: 2mm;
+            letter-spacing: 0.3px;
+        }
+
+        .badge.gold {
+            background: var(--accent);
+            color: var(--primary);
+        }
+
+        /* Narrative */
+        .narrative {
+            font-size: 10.5pt;
+            line-height: 1.8;
+            color: #333;
+            margin: 4mm 0;
+            text-align: justify;
+        }
+
+        .narrative strong {
+            color: var(--primary);
+        }
+
+        /* Highlight box */
+        .highlight-box {
+            background: linear-gradient(135deg, #0a1628 0%, #1a3a5c 100%);
+            color: var(--text-light);
+            border-radius: 4mm;
+            padding: 6mm 8mm;
+            margin: 6mm 0;
+        }
+
+        .highlight-box h3 {
+            color: var(--accent);
+            font-size: 11pt;
+            margin-bottom: 3mm;
+        }
+
+        .highlight-box .stat-inline {
+            display: flex;
+            justify-content: space-around;
+            gap: 4mm;
+            text-align: center;
+        }
+
+        .highlight-box .stat-inline div span:first-child {
+            font-size: 18pt;
+            font-weight: 800;
+            color: var(--accent);
+            display: block;
+        }
+
+        .highlight-box .stat-inline div span:last-child {
+            font-size: 7.5pt;
+            color: #aabbcc;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Certifications */
+        .cert-grid {
+            display: flex;
+            gap: 4mm;
+            margin: 4mm 0;
+        }
+
+        .cert-card {
+            flex: 1;
+            background: var(--bg-light);
+            border-radius: 3mm;
+            padding: 5mm;
+            text-align: center;
+            border: 1px solid var(--border);
+        }
+
+        .cert-card .cert-icon {
+            font-size: 24pt;
+            margin-bottom: 2mm;
+        }
+
+        .cert-card .cert-name {
+            font-size: 9.5pt;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .cert-card .cert-issuer {
+            font-size: 8pt;
+            color: #888;
+            margin-top: 1mm;
+        }
+
+        /* Skills grid */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4mm;
+            margin: 4mm 0;
+        }
+
+        .skill-group {
+            background: var(--bg-light);
+            border-radius: 3mm;
+            padding: 5mm;
+        }
+
+        .skill-group-title {
+            font-size: 9pt;
+            font-weight: 700;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 2mm;
+        }
+
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2mm;
+        }
+
+        .skill-tag {
+            background: white;
+            border: 1px solid var(--border);
+            font-size: 8pt;
+            padding: 1mm 3mm;
+            border-radius: 1.5mm;
+            color: var(--primary);
+            font-weight: 500;
+        }
+
+        /* Page number */
+        .page-number {
+            position: absolute;
+            bottom: 8mm;
+            right: 12mm;
+            font-size: 8pt;
+            color: #999;
+        }
+
+        .page-number span {
+            color: var(--accent-dark);
+            font-weight: 700;
+        }
+
+        /* Page footer bar */
+        .page-footer-bar {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: var(--gold-gradient);
+        }
+
+        /* Role cards */
+        .role-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4mm;
+            margin: 4mm 0;
+        }
+
+        .role-card {
+            background: var(--bg-light);
+            border-radius: 3mm;
+            padding: 5mm;
+            border-left: 3px solid var(--accent);
+        }
+
+        .role-card h4 {
+            font-size: 10pt;
+            color: var(--primary);
+            margin-bottom: 2mm;
+        }
+
+        .role-card p {
+            font-size: 8.5pt;
+            color: #555;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+
+<!-- ============================================ -->
+<!-- MUKA SURAT 1: KULIT HADAPAN                  -->
+<!-- ============================================ -->
+<div class="page cover">
+    <div class="cover-top-bar"></div>
+
+    <div class="cover-header">
+        <div class="cover-kpm-label">Kementerian Pendidikan Malaysia</div>
+        <h1 class="cover-title">PORTFOLIO<br>PENCIPTA KANDUNGAN DIGITAL</h1>
+        <p class="cover-subtitle">Anugerah Khas Pendidikan — Hari Guru Peringkat Kebangsaan 2026</p>
+        <div class="cover-divider"></div>
+    </div>
+
+    <div class="cover-photo-section">
+        <!-- GANTI: Tukar src kepada URL gambar profil sebenar -->
+        <div class="cover-photo" id="profile-photo">
+            <span style="font-size:9pt; text-align:center; padding:5mm;">Masukkan<br>Gambar<br>Profil</span>
+        </div>
+    </div>
+
+    <div class="cover-name">
+        <h2>AHMAD AIMAN BIN MOHAMED</h2>
+        <p>SK Putrajaya Presint 5(1) &nbsp;|&nbsp; Wilayah Persekutuan Putrajaya</p>
+    </div>
+
+    <div class="cover-stats">
+        <div class="cover-stat">
+            <span class="cover-stat-number">254+</span>
+            <span class="cover-stat-label">Kandungan Digital</span>
+        </div>
+        <div class="cover-stat">
+            <span class="cover-stat-number">10,700+</span>
+            <span class="cover-stat-label">Guru Pengguna</span>
+        </div>
+        <div class="cover-stat">
+            <span class="cover-stat-number">1.2M</span>
+            <span class="cover-stat-label">Pelawat Web</span>
+        </div>
+        <div class="cover-stat">
+            <span class="cover-stat-number">11</span>
+            <span class="cover-stat-label">Projek Digital</span>
+        </div>
+    </div>
+
+    <div class="cover-footer">
+        <div>
+            <strong style="color: var(--accent);">Cikgu Aime</strong><br>
+            Guru Sejarah & PSV
+        </div>
+        <div class="cover-footer-right">
+            <strong style="color: var(--accent);">cikguaime.com</strong><br>
+            Pelbagai Perkongsian, Manfaat Untuk Semua
+        </div>
+    </div>
+
+    <div class="cover-bottom-bar"></div>
+</div>
+
+<!-- ============================================ -->
+<!-- MUKA SURAT 2: ISI KANDUNGAN                  -->
+<!-- ============================================ -->
+<div class="page toc">
+    <div class="toc-header">
+        <h1>ISI KANDUNGAN</h1>
+        <div class="toc-header-line"></div>
+    </div>
+
+    <ul class="toc-list">
+        <li class="toc-item">
+            <div class="toc-number">01</div>
+            <div class="toc-content">
+                <div class="toc-title">Profil & Biodata</div>
+                <div class="toc-desc">Maklumat peribadi, pensijilan digital, kemahiran teknikal & peranan di sekolah</div>
+            </div>
+        </li>
+        <li class="toc-item">
+            <div class="toc-number">02</div>
+            <div class="toc-content">
+                <div class="toc-title">Katalog Kandungan Digital</div>
+                <div class="toc-desc">11 projek digital, 176 video, 60+ artikel & 7+ kuiz interaktif</div>
+            </div>
+        </li>
+        <li class="toc-item">
+            <div class="toc-number">03</div>
+            <div class="toc-content">
+                <div class="toc-title">Demo & Bukti Kualiti</div>
+                <div class="toc-desc">Tangkap layar, rating, testimoni pengguna & contoh interaktiviti</div>
+            </div>
+        </li>
+        <li class="toc-item">
+            <div class="toc-number">04</div>
+            <div class="toc-content">
+                <div class="toc-title">Sumbangan & Impak</div>
+                <div class="toc-desc">Statistik pengguna, jangkauan, penjimatan masa & impak kepada pendidikan</div>
+            </div>
+        </li>
+        <li class="toc-item">
+            <div class="toc-number">05</div>
+            <div class="toc-content">
+                <div class="toc-title">Sijil & Pencapaian</div>
+                <div class="toc-desc">76 pencapaian, anugerah & pengiktirafan di pelbagai peringkat</div>
+            </div>
+        </li>
+        <li class="toc-item">
+            <div class="toc-number">06</div>
+            <div class="toc-content">
+                <div class="toc-title">Etika & Privasi Digital</div>
+                <div class="toc-desc">Polisi privasi, pemprosesan data tempatan & hak cipta</div>
+            </div>
+        </li>
+    </ul>
+
+    <div class="page-number">Muka Surat <span>ii</span></div>
+    <div class="page-footer-bar"></div>
+</div>
+
+<!-- ============================================ -->
+<!-- MUKA SURAT 3: BAHAGIAN 01 — PROFIL & BIODATA -->
+<!-- ============================================ -->
+<div class="page section-page">
+    <div class="section-header">
+        <div class="section-number">Bahagian 01</div>
+        <h1 class="section-title">Profil & Biodata</h1>
+    </div>
+
+    <div class="section-body">
+        <!-- Maklumat Peribadi -->
+        <div class="info-grid">
+            <div class="info-card">
+                <div class="info-label">Nama Penuh</div>
+                <div class="info-value">Ahmad Aiman Bin Mohamed</div>
+            </div>
+            <div class="info-card">
+                <div class="info-label">Umur</div>
+                <div class="info-value">29 tahun (24 Julai 1997)</div>
+            </div>
+            <div class="info-card">
+                <div class="info-label">Jawatan & Gred</div>
+                <div class="info-value">Pegawai Perkhidmatan Pendidikan, DG9</div>
+            </div>
+            <div class="info-card">
+                <div class="info-label">Tahun Mula Berkhidmat</div>
+                <div class="info-value">2021 (5 tahun pengalaman)</div>
+            </div>
+            <div class="info-card">
+                <div class="info-label">Sekolah</div>
+                <div class="info-value">SK Putrajaya Presint 5(1)</div>
+            </div>
+            <div class="info-card">
+                <div class="info-label">Negeri</div>
+                <div class="info-value">WP Putrajaya</div>
+            </div>
+            <div class="info-card full-width">
+                <div class="info-label">Kelayakan Akademik</div>
+                <div class="info-value">Ijazah Sarjana Muda Pendidikan Sejarah Sekolah Rendah — IPG Kampus Kota Bharu</div>
+            </div>
+        </div>
+
+        <!-- Profil Ringkas -->
+        <div class="narrative">
+            <strong>Ahmad Aiman Bin Mohamed</strong>, atau lebih dikenali sebagai <strong>Cikgu Aime</strong>, merupakan seorang Pegawai Perkhidmatan Pendidikan di SK Putrajaya Presint 5(1) yang aktif membangunkan kandungan digital pendidikan sejak tahun <strong>2018</strong> — tiga tahun sebelum beliau mula berkhidmat sebagai guru sepenuh masa. Berbekalkan Ijazah Sarjana Muda Pendidikan Sejarah dari IPG Kampus Kota Bharu dan pensijilan <strong>Google Certified Educator (Level 1 & 2)</strong>, beliau telah menghasilkan lebih <strong>254 kandungan digital</strong> dalam pelbagai format yang memberi manfaat kepada lebih <strong>10,700 guru</strong> di seluruh Malaysia.
+        </div>
+
+        <!-- Statistik ringkas -->
+        <div class="highlight-box">
+            <h3>Ringkasan Sumbangan Kandungan Digital</h3>
+            <div class="stat-inline">
+                <div>
+                    <span>11</span>
+                    <span>Projek Digital</span>
+                </div>
+                <div>
+                    <span>176</span>
+                    <span>Video Pendidikan</span>
+                </div>
+                <div>
+                    <span>60+</span>
+                    <span>Artikel Blog</span>
+                </div>
+                <div>
+                    <span>7+</span>
+                    <span>Kuiz Interaktif</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pensijilan -->
+        <div class="subsection-title">Pensijilan & Pengiktirafan Digital</div>
+
+        <div class="cert-grid">
+            <div class="cert-card">
+                <div class="cert-icon">🎓</div>
+                <div class="cert-name">Google Certified Educator Level 1</div>
+                <div class="cert-issuer">Google for Education</div>
+            </div>
+            <div class="cert-card">
+                <div class="cert-icon">🎓</div>
+                <div class="cert-name">Google Certified Educator Level 2</div>
+                <div class="cert-issuer">Google for Education</div>
+            </div>
+            <div class="cert-card">
+                <div class="cert-icon">🏆</div>
+                <div class="cert-name">TOP 150 Cikgu Juara Digital</div>
+                <div class="cert-issuer">Kebangsaan 2023</div>
+            </div>
+            <div class="cert-card">
+                <div class="cert-icon">⭐</div>
+                <div class="cert-name">Edufluencer Putrajaya</div>
+                <div class="cert-issuer">2024</div>
+            </div>
+        </div>
+
+        <!-- Peranan di Sekolah -->
+        <div class="subsection-title">Peranan di Sekolah</div>
+
+        <div class="role-grid">
+            <div class="role-card">
+                <h4>📚 Guru Mata Pelajaran</h4>
+                <p>Mengajar Sejarah dan Pendidikan Seni Visual (PSV) di sekolah rendah</p>
+            </div>
+            <div class="role-card">
+                <h4>🎬 Penyelaras TVPSS</h4>
+                <p>Pengurus TVPSS FiveOne Studio — 61 episod, 5 siaran langsung, ~99 aktiviti merentasi 4 peringkat</p>
+            </div>
+            <div class="role-card">
+                <h4>💻 Pembangun Digital</h4>
+                <p>Membangun dan menyelenggara alat digital untuk automasi tugas guru (PBD, kehadiran, RPH)</p>
+            </div>
+            <div class="role-card">
+                <h4>📸 Jurufoto Sekolah</h4>
+                <p>Menyedia perkhidmatan fotografi rasmi — photoshoot graduasi, studio green screen</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-number">Muka Surat <span>1</span></div>
+    <div class="page-footer-bar"></div>
+</div>
+
+<!-- ============================================ -->
+<!-- MUKA SURAT 4: SAMBUNGAN PROFIL — KEMAHIRAN   -->
+<!-- ============================================ -->
+<div class="page section-page">
+    <div class="section-header">
+        <div class="section-number">Bahagian 01 — Sambungan</div>
+        <h1 class="section-title">Kemahiran Teknikal</h1>
+    </div>
+
+    <div class="section-body">
+        <div class="narrative">
+            Selain kemahiran pedagogi, Cikgu Aime menguasai pelbagai teknologi pembangunan perisian moden yang membolehkan beliau membina sendiri alat-alat digital untuk kegunaan guru dan murid di seluruh Malaysia.
+        </div>
+
+        <!-- Kemahiran Pembangunan -->
+        <div class="subsection-title">Pembangunan Perisian & Web</div>
+
+        <div class="skills-grid">
+            <div class="skill-group">
+                <div class="skill-group-title">Frontend</div>
+                <div class="skill-tags">
+                    <span class="skill-tag">React 19</span>
+                    <span class="skill-tag">Next.js 14</span>
+                    <span class="skill-tag">TypeScript</span>
+                    <span class="skill-tag">Tailwind CSS</span>
+                    <span class="skill-tag">HTML5 Canvas</span>
+                    <span class="skill-tag">Framer Motion</span>
+                </div>
+            </div>
+            <div class="skill-group">
+                <div class="skill-group-title">Backend</div>
+                <div class="skill-tags">
+                    <span class="skill-tag">Google Apps Script</span>
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">Supabase</span>
+                    <span class="skill-tag">Vercel Serverless</span>
+                    <span class="skill-tag">PostgreSQL</span>
+                </div>
+            </div>
+            <div class="skill-group">
+                <div class="skill-group-title">Chrome Extension</div>
+                <div class="skill-tags">
+                    <span class="skill-tag">Manifest V3</span>
+                    <span class="skill-tag">Chrome Storage API</span>
+                    <span class="skill-tag">Content Scripts</span>
+                    <span class="skill-tag">Background Workers</span>
+                </div>
+            </div>
+            <div class="skill-group">
+                <div class="skill-group-title">AI & Automasi</div>
+                <div class="skill-tags">
+                    <span class="skill-tag">Google Gemini API</span>
+                    <span class="skill-tag">Fuzzy Matching</span>
+                    <span class="skill-tag">Data Processing</span>
+                    <span class="skill-tag">NLP Parsing</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Kemahiran Penghasilan Kandungan -->
+        <div class="subsection-title">Penghasilan Kandungan Digital</div>
+
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>Kemahiran</th>
+                    <th>Aplikasi</th>
+                    <th>Output</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Penulisan Blog & Tutorial</strong></td>
+                    <td>Blogger (cikguaime.com)</td>
+                    <td>60+ artikel pendidikan</td>
+                </tr>
+                <tr>
+                    <td><strong>Penghasilan Video</strong></td>
+                    <td>YouTube (TVPSS), TikTok</td>
+                    <td>176+ video pendidikan</td>
+                </tr>
+                <tr>
+                    <td><strong>Pembangunan Perisian</strong></td>
+                    <td>Chrome Web Store, Web</td>
+                    <td>11 projek digital</td>
+                </tr>
+                <tr>
+                    <td><strong>Kuiz Interaktif</strong></td>
+                    <td>Web-based (drag-and-drop, MCQ)</td>
+                    <td>7+ kuiz interaktif</td>
+                </tr>
+                <tr>
+                    <td><strong>Reka Bentuk Grafik</strong></td>
+                    <td>Canva, UI/UX Design</td>
+                    <td>Reka bentuk untuk semua projek</td>
+                </tr>
+                <tr>
+                    <td><strong>Fotografi</strong></td>
+                    <td>Studio green screen, outdoor</td>
+                    <td>Perkhidmatan fotografi sekolah</td>
+                </tr>
+                <tr>
+                    <td><strong>Siaran Langsung</strong></td>
+                    <td>YouTube Live</td>
+                    <td>5 siaran langsung (sehingga 5 jam)</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Jangkauan Keseluruhan -->
+        <div class="subsection-title">Jangkauan & Impak Keseluruhan</div>
+
+        <div class="stats-row">
+            <div class="stat-box">
+                <span class="stat-box-number">10,700+</span>
+                <span class="stat-box-label">Guru Pengguna Extensions</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-box-number">1.2M</span>
+                <span class="stat-box-label">Pelawat Laman Web</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-box-number">50K</span>
+                <span class="stat-box-label">Kunjungan / Bulan</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-box-number">5.0★</span>
+                <span class="stat-box-label">Rating Chrome Store</span>
+            </div>
+        </div>
+
+        <div class="highlight-box">
+            <h3>Platform Digital</h3>
+            <div class="stat-inline">
+                <div>
+                    <span>🌐</span>
+                    <span>cikguaime.com</span>
+                </div>
+                <div>
+                    <span>📱</span>
+                    <span>TikTok @ahmdaime</span>
+                </div>
+                <div>
+                    <span>📘</span>
+                    <span>FB cikguaimedotcom</span>
+                </div>
+                <div>
+                    <span>🎬</span>
+                    <span>YouTube TVPSS FiveOne</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-number">Muka Surat <span>2</span></div>
+    <div class="page-footer-bar"></div>
+</div>
+
+</body>
+</html>
