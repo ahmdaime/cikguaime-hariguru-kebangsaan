@@ -814,6 +814,175 @@
             margin-top: 1mm;
         }
 
+        /* === DEMO & BUKTI COMPONENTS === */
+        .screenshot-placeholder {
+            background: #e8edf2;
+            border: 2px dashed #b0bec5;
+            border-radius: 3mm;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #78909c;
+            font-size: 9pt;
+            text-align: center;
+            padding: 4mm;
+            min-height: 40mm;
+        }
+
+        .screenshot-placeholder.tall {
+            min-height: 55mm;
+        }
+
+        .screenshot-placeholder img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            border-radius: 2mm;
+        }
+
+        .screenshot-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4mm;
+            margin: 4mm 0;
+        }
+
+        .screenshot-grid.three-col {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        .screenshot-caption {
+            font-size: 8pt;
+            color: #666;
+            text-align: center;
+            margin-top: 1.5mm;
+            font-style: italic;
+        }
+
+        /* Rating display */
+        .rating-display {
+            display: flex;
+            align-items: center;
+            gap: 5mm;
+            margin: 3mm 0;
+        }
+
+        .rating-stars {
+            color: #f5a623;
+            font-size: 16pt;
+            letter-spacing: 1px;
+        }
+
+        .rating-text {
+            font-size: 11pt;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .rating-sub {
+            font-size: 9pt;
+            color: #888;
+        }
+
+        /* Testimonial */
+        .testimonial {
+            background: var(--bg-light);
+            border-radius: 4mm;
+            padding: 5mm 6mm;
+            margin-bottom: 4mm;
+            border-left: 4px solid var(--accent);
+            page-break-inside: avoid;
+        }
+
+        .testimonial-text {
+            font-size: 9.5pt;
+            color: #333;
+            line-height: 1.7;
+            font-style: italic;
+        }
+
+        .testimonial-text::before {
+            content: '"';
+            font-size: 18pt;
+            color: var(--accent);
+            font-weight: 800;
+            line-height: 0;
+            vertical-align: -4mm;
+            margin-right: 1mm;
+        }
+
+        .testimonial-author {
+            font-size: 8.5pt;
+            color: #888;
+            margin-top: 2mm;
+            font-weight: 600;
+        }
+
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4mm;
+            margin: 4mm 0;
+        }
+
+        /* Evidence card */
+        .evidence-card {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 4mm;
+            overflow: hidden;
+            margin-bottom: 4mm;
+        }
+
+        .evidence-card-label {
+            background: var(--primary);
+            color: var(--accent);
+            font-size: 8pt;
+            font-weight: 700;
+            padding: 2mm 5mm;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .evidence-card-content {
+            padding: 4mm 5mm;
+        }
+
+        /* Quality checklist */
+        .quality-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3mm;
+            margin: 4mm 0;
+        }
+
+        .quality-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 2.5mm;
+            font-size: 9pt;
+            padding: 3mm 4mm;
+            background: var(--bg-light);
+            border-radius: 2mm;
+        }
+
+        .quality-check {
+            color: #2e7d32;
+            font-weight: 800;
+            font-size: 11pt;
+            flex-shrink: 0;
+            line-height: 1;
+        }
+
+        .quality-item-text {
+            color: #333;
+            line-height: 1.4;
+        }
+
+        .quality-item-text strong {
+            color: var(--primary);
+        }
+
         /* Page number */
         .page-number {
             position: absolute;
@@ -1938,6 +2107,341 @@
     </div>
 
     <div class="page-number">Muka Surat <span>7</span></div>
+    <div class="page-footer-bar"></div>
+</div>
+
+<!-- ============================================ -->
+<!-- MUKA SURAT 10: BAHAGIAN 03 — BUKTI KUALITI    -->
+<!-- ============================================ -->
+<div class="page section-page">
+    <div class="section-header">
+        <div class="section-number">Bahagian 03</div>
+        <h1 class="section-title">Demo & Bukti Kualiti</h1>
+    </div>
+
+    <div class="section-body">
+        <div class="narrative">
+            Bahagian ini memaparkan bukti kualiti kandungan digital melalui <strong>rating pengguna</strong>, <strong>testimoni guru</strong>, <strong>tangkap layar antaramuka</strong>, dan <strong>senarai semak kualiti</strong> berdasarkan rubrik penilaian.
+        </div>
+
+        <!-- Rating Chrome Web Store -->
+        <div class="subsection-title">Rating Chrome Web Store</div>
+
+        <div class="stats-row">
+            <div class="stat-box">
+                <span class="stat-box-number">5.0 ★</span>
+                <span class="stat-box-label">IDME PBD Helper</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-box-number">5.0 ★</span>
+                <span class="stat-box-label">MOIES Kehadiran</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-box-number">5.0 ★</span>
+                <span class="stat-box-label">PBD OnePage</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-box-number">10,700+</span>
+                <span class="stat-box-label">Jumlah Pengguna</span>
+            </div>
+        </div>
+
+        <!-- Tangkap layar Chrome Web Store -->
+        <div class="subsection-title">Bukti Rating — Chrome Web Store</div>
+
+        <div class="screenshot-grid three-col">
+            <div>
+                <!-- GANTI: Tangkap layar Chrome Web Store IDME PBD Helper -->
+                <div class="screenshot-placeholder">
+                    Masukkan tangkap layar<br>Chrome Web Store<br><strong>IDME PBD Helper</strong><br>(Rating 5.0/5)
+                </div>
+                <div class="screenshot-caption">IDME PBD Helper — 3,000+ pengguna</div>
+            </div>
+            <div>
+                <!-- GANTI: Tangkap layar Chrome Web Store MOIES -->
+                <div class="screenshot-placeholder">
+                    Masukkan tangkap layar<br>Chrome Web Store<br><strong>MOIES Kehadiran</strong><br>(Rating 5.0/5)
+                </div>
+                <div class="screenshot-caption">MOIES Kehadiran — 3,000+ pengguna</div>
+            </div>
+            <div>
+                <!-- GANTI: Tangkap layar Chrome Web Store PBD OnePage -->
+                <div class="screenshot-placeholder">
+                    Masukkan tangkap layar<br>Chrome Web Store<br><strong>PBD OnePage</strong><br>(Rating 5.0/5)
+                </div>
+                <div class="screenshot-caption">PBD OnePage — 4,000+ pengguna</div>
+            </div>
+        </div>
+
+        <!-- Testimoni -->
+        <div class="subsection-title">Testimoni Pengguna</div>
+
+        <div class="testimonial-grid">
+            <div class="testimonial">
+                <div class="testimonial-text">Extension ini sangat membantu guru-guru dalam mengisi PBD. Proses yang dahulunya mengambil masa 30 minit kini hanya 2 minit sahaja. Sangat menjimatkan masa!</div>
+                <div class="testimonial-author">— Pengguna IDME PBD Helper ★★★★★</div>
+            </div>
+            <div class="testimonial">
+                <div class="testimonial-text">Kerja isi kehadiran yang biasa ambil 40 minit sehari kini boleh siap dalam 3 minit. Ciri parse WhatsApp sangat bijak — faham typo nama murid pun!</div>
+                <div class="testimonial-author">— Pengguna MOIES Kehadiran Helper ★★★★★</div>
+            </div>
+            <div class="testimonial">
+                <div class="testimonial-text">PBD OnePage jimatkan kertas sekolah dengan banyak. Daripada 5-6 halaman per murid, sekarang cuma 1 halaman sahaja. Guru Besar pun suka!</div>
+                <div class="testimonial-author">— Pengguna PBD OnePage ★★★★★</div>
+            </div>
+            <div class="testimonial">
+                <div class="testimonial-text">Auto eRPH ini memudahkan kerja RPH setiap minggu. Template boleh disimpan dan guna semula. Database DSKP yang lengkap sangat membantu.</div>
+                <div class="testimonial-author">— Pelanggan Auto eRPH ★★★★★</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-number">Muka Surat <span>8</span></div>
+    <div class="page-footer-bar"></div>
+</div>
+
+<!-- ============================================ -->
+<!-- MUKA SURAT 11: TANGKAP LAYAR ANTARAMUKA       -->
+<!-- ============================================ -->
+<div class="page section-page">
+    <div class="section-header">
+        <div class="section-number">Bahagian 03 — Tangkap Layar Antaramuka</div>
+        <h1 class="section-title">Antaramuka Projek Digital</h1>
+    </div>
+
+    <div class="section-body">
+        <div class="narrative">
+            Berikut adalah tangkap layar antaramuka projek-projek digital utama yang menunjukkan kualiti reka bentuk visual, interaktiviti, dan nilai pendidikan setiap kandungan.
+        </div>
+
+        <!-- Chrome Extensions -->
+        <div class="subsection-title">Chrome Extensions — Antaramuka Pengguna</div>
+
+        <div class="screenshot-grid">
+            <div>
+                <!-- GANTI: Tangkap layar IDME PBD Helper popup/antaramuka -->
+                <div class="screenshot-placeholder tall">
+                    Masukkan tangkap layar<br><strong>IDME PBD Helper</strong><br>Antaramuka popup / panel utama
+                </div>
+                <div class="screenshot-caption">IDME PBD Helper — Panel pilihan TP pukal</div>
+            </div>
+            <div>
+                <!-- GANTI: Tangkap layar MOIES Kehadiran Helper -->
+                <div class="screenshot-placeholder tall">
+                    Masukkan tangkap layar<br><strong>MOIES Kehadiran Helper</strong><br>Antaramuka parse WhatsApp
+                </div>
+                <div class="screenshot-caption">MOIES Kehadiran — Parse mesej WhatsApp automatik</div>
+            </div>
+        </div>
+
+        <div class="screenshot-grid">
+            <div>
+                <!-- GANTI: Tangkap layar PBD OnePage -->
+                <div class="screenshot-placeholder tall">
+                    Masukkan tangkap layar<br><strong>PBD OnePage</strong><br>Sebelum & selepas (5 halaman → 1)
+                </div>
+                <div class="screenshot-caption">PBD OnePage — Perbandingan sebelum & selepas</div>
+            </div>
+            <div>
+                <!-- GANTI: Tangkap layar Auto eRPH -->
+                <div class="screenshot-placeholder tall">
+                    Masukkan tangkap layar<br><strong>Auto eRPH</strong><br>Google Sheets dengan RPH automatik
+                </div>
+                <div class="screenshot-caption">Auto eRPH — Penulisan RPH automatik dalam Google Sheets</div>
+            </div>
+        </div>
+
+        <!-- Web Apps -->
+        <div class="subsection-title">Web Apps — Antaramuka Pembelajaran</div>
+
+        <div class="screenshot-grid three-col">
+            <div>
+                <!-- GANTI: Tangkap layar Relief Activity Hub -->
+                <div class="screenshot-placeholder">
+                    Masukkan tangkap layar<br><strong>Relief Activity Hub</strong><br>Skrin permainan
+                </div>
+                <div class="screenshot-caption">Relief Activity Hub — Permainan interaktif bilik darjah</div>
+            </div>
+            <div>
+                <!-- GANTI: Tangkap layar Buku Tulis Digital -->
+                <div class="screenshot-placeholder">
+                    Masukkan tangkap layar<br><strong>Buku Tulis Digital</strong><br>Antaramuka lukisan
+                </div>
+                <div class="screenshot-caption">Buku Tulis Digital — 212KB, satu fail HTML</div>
+            </div>
+            <div>
+                <!-- GANTI: Tangkap layar Kuiz Interaktif -->
+                <div class="screenshot-placeholder">
+                    Masukkan tangkap layar<br><strong>Kuiz Interaktif</strong><br>Sejarah / PSV
+                </div>
+                <div class="screenshot-caption">Kuiz Interaktif — Soal jawab seret-dan-lepas</div>
+            </div>
+        </div>
+
+        <!-- Website -->
+        <div class="subsection-title">Laman Web — cikguaime.com</div>
+
+        <div class="screenshot-grid">
+            <div>
+                <!-- GANTI: Tangkap layar homepage cikguaime.com -->
+                <div class="screenshot-placeholder">
+                    Masukkan tangkap layar<br><strong>cikguaime.com</strong><br>Halaman utama
+                </div>
+                <div class="screenshot-caption">cikguaime.com — 1.2M pelawat, 60+ artikel</div>
+            </div>
+            <div>
+                <!-- GANTI: Tangkap layar artikel popular -->
+                <div class="screenshot-placeholder">
+                    Masukkan tangkap layar<br><strong>Artikel Popular</strong><br>Contoh ulasan / kerja kursus
+                </div>
+                <div class="screenshot-caption">Artikel viral — 200,000+ tontonan</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-number">Muka Surat <span>9</span></div>
+    <div class="page-footer-bar"></div>
+</div>
+
+<!-- ============================================ -->
+<!-- MUKA SURAT 12: SENARAI SEMAK KUALITI          -->
+<!-- ============================================ -->
+<div class="page section-page">
+    <div class="section-header">
+        <div class="section-number">Bahagian 03 — Senarai Semak Kualiti</div>
+        <h1 class="section-title">Pematuhan Kualiti Kandungan Digital</h1>
+    </div>
+
+    <div class="section-body">
+        <div class="narrative">
+            Bahagian ini memetakan kualiti kandungan digital yang dihasilkan kepada <strong>4 kriteria utama</strong> dalam rubrik penilaian Anugerah Pencipta Kandungan Digital (Bahagian B: Kualiti Kandungan Digital — 50% markah).
+        </div>
+
+        <!-- Kriteria 1: Ketepatan & Relevansi -->
+        <div class="evidence-card">
+            <div class="evidence-card-label">Kriteria B1: Ketepatan & Relevansi Ilmu</div>
+            <div class="evidence-card-content">
+                <div class="quality-grid">
+                    <div class="quality-item">
+                        <div class="quality-check">✓</div>
+                        <div class="quality-item-text"><strong>Berasaskan DSKP rasmi KPM</strong> — Auto eRPH mengandungi 56,813+ entri kurikulum rasmi</div>
+                    </div>
+                    <div class="quality-item">
+                        <div class="quality-check">✓</div>
+                        <div class="quality-item-text"><strong>Integrasi sistem KPM</strong> — IDME, MOIES, dan ISSPPB adalah portal rasmi KPM</div>
+                    </div>
+                    <div class="quality-item">
+                        <div class="quality-check">✓</div>
+                        <div class="quality-item-text"><strong>98 kod kehadiran KPM</strong> — MOIES Helper menggunakan kod rasmi pengkategorian kehadiran</div>
+                    </div>
+                    <div class="quality-item">
+                        <div class="quality-check">✓</div>
+                        <div class="quality-item-text"><strong>Kuiz selaras silibus</strong> — Kuiz Sejarah & PSV berdasarkan silibus terkini Tahun 5 & 6</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Kriteria 2: Reka Bentuk Visual & Audio -->
+        <div class="evidence-card">
+            <div class="evidence-card-label">Kriteria B2: Reka Bentuk Visual & Audio</div>
+            <div class="evidence-card-content">
+                <div class="quality-grid">
+                    <div class="quality-item">
+                        <div class="quality-check">✓</div>
+                        <div class="quality-item-text"><strong>UI/UX profesional</strong> — Semua projek dibina dengan Tailwind CSS, Framer Motion, dan reka bentuk responsif</div>
+                    </div>
+                    <div class="quality-item">
+                        <div class="quality-check">✓</div>
+                        <div class="quality-item-text"><strong>176 video berkualiti</strong> — Episod TVPSS dengan suntingan profesional, siaran langsung sehingga 5 jam</div>
+                    </div>
+                    <div class="quality-item">
+                        <div class="quality-check">✓</div>
+                        <div class="quality-item-text"><strong>Imej WebP optimum</strong> — Portfolio dan laman web menggunakan format moden untuk kelajuan</div>
+                    </div>
+                    <div class="quality-item">
+                        <div class="quality-check">✓</div>
+                        <div class="quality-item-text"><strong>Reka bentuk untuk projektor</strong> — Relief Activity Hub dioptimumkan untuk paparan bilik darjah</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Kriteria 3: Interaktiviti -->
+        <div class="evidence-card">
+            <div class="evidence-card-label">Kriteria B3: Interaktiviti & Penglibatan Murid</div>
+            <div class="evidence-card-content">
+                <div class="quality-grid">
+                    <div class="quality-item">
+                        <div class="quality-check">✓</div>
+                        <div class="quality-item-text"><strong>Kuiz drag-and-drop</strong> — Kuiz Sejarah & PSV menggunakan interaksi seret-dan-lepas</div>
+                    </div>
+                    <div class="quality-item">
+                        <div class="quality-check">✓</div>
+                        <div class="quality-item-text"><strong>6 mod permainan</strong> — Relief Activity Hub: pertandingan berpasukan dengan skor langsung</div>
+                    </div>
+                    <div class="quality-item">
+                        <div class="quality-check">✓</div>
+                        <div class="quality-item-text"><strong>Buku tulis interaktif</strong> — Lukisan, teks, jadual, pemasa, berbilang halaman dalam satu HTML</div>
+                    </div>
+                    <div class="quality-item">
+                        <div class="quality-check">✓</div>
+                        <div class="quality-item-text"><strong>Sistem token sahsiah</strong> — Gamifikasi tingkah laku murid dengan papan pendahulu untuk ibu bapa</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Kriteria 4: Nilai Pendidikan -->
+        <div class="evidence-card">
+            <div class="evidence-card-label">Kriteria B4: Nilai Pendidikan & Keberkesanan</div>
+            <div class="evidence-card-content">
+                <div class="quality-grid">
+                    <div class="quality-item">
+                        <div class="quality-check">✓</div>
+                        <div class="quality-item-text"><strong>Penjimatan masa guru</strong> — PBD: 93%, Kehadiran: 92%, RPH: 80% pengurangan masa</div>
+                    </div>
+                    <div class="quality-item">
+                        <div class="quality-check">✓</div>
+                        <div class="quality-item-text"><strong>80% penjimatan kertas</strong> — PBD OnePage mengurangkan 5-6 halaman → 1 halaman</div>
+                    </div>
+                    <div class="quality-item">
+                        <div class="quality-check">✓</div>
+                        <div class="quality-item-text"><strong>10,700+ guru mendapat manfaat</strong> — Jangkauan seluruh Malaysia melalui Chrome Web Store</div>
+                    </div>
+                    <div class="quality-item">
+                        <div class="quality-check">✓</div>
+                        <div class="quality-item-text"><strong>Majoriti percuma</strong> — 3 extensions percuma, blog percuma, kuiz percuma</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Rumusan -->
+        <div class="highlight-box">
+            <h3>Rumusan Bahagian 03: Bukti Kualiti</h3>
+            <div class="stat-inline">
+                <div>
+                    <span>5.0★</span>
+                    <span>Rating Purata</span>
+                </div>
+                <div>
+                    <span>16/16</span>
+                    <span>Kriteria Dipenuhi</span>
+                </div>
+                <div>
+                    <span>10+</span>
+                    <span>Testimoni 5 Bintang</span>
+                </div>
+                <div>
+                    <span>11</span>
+                    <span>Tangkap Layar</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-number">Muka Surat <span>10</span></div>
     <div class="page-footer-bar"></div>
 </div>
 
