@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="ms">
-<head>
+<html lang="ms"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Pencipta Kandungan Digital — Cikgu Aime</title>
@@ -44,11 +43,10 @@
         /* === PAGE SYSTEM === */
         .page {
             width: 210mm;
-            height: 297mm;
+            min-height: 297mm;
             margin: 20px auto;
             background: white;
             position: relative;
-            overflow: hidden;
             box-shadow: 0 4px 20px rgba(0,0,0,0.15);
         }
 
@@ -56,14 +54,23 @@
             body { background: white; margin: 0; padding: 0; }
             .page {
                 margin: 0;
-                padding: 0;
                 box-shadow: none;
                 page-break-after: always;
-                page-break-inside: avoid;
-                height: 297mm;
-                overflow: hidden;
+                min-height: 0;
+                width: 100%;
             }
             .page:last-child {
+                page-break-after: avoid;
+            }
+            /* Prevent breaking inside content blocks */
+            .stats-row, .highlight-box, .evidence-card,
+            .quality-grid, .testimonial, .testimonial-grid,
+            .info-grid, .screenshot-grid, .badge-row,
+            .info-card, .product-card, .cert-grid,
+            .mini-product, .stat-box {
+                page-break-inside: avoid;
+            }
+            .subsection-title {
                 page-break-after: avoid;
             }
             .no-print { display: none !important; }
@@ -291,14 +298,12 @@
         /* === SECTION PAGES === */
         .section-page {
             padding: 0;
-            height: 297mm;
-            overflow: hidden;
         }
 
         .section-header {
             background: var(--blue-gradient);
             color: var(--text-light);
-            padding: 12mm 25mm 10mm;
+            padding: 5mm 18mm 4mm;
             position: relative;
         }
 
@@ -322,29 +327,30 @@
         }
 
         .section-title {
-            font-size: 22pt;
+            font-size: 18pt;
             font-weight: 800;
-            margin-top: 2mm;
+            margin-top: 1mm;
             letter-spacing: 1px;
         }
 
         .section-body {
-            padding: 10mm 25mm 15mm;
+            padding: 5mm 18mm 5mm;
         }
 
         /* === CONTENT ELEMENTS === */
         .info-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 4mm;
-            margin-bottom: 8mm;
+            gap: 3mm;
+            margin-bottom: 4mm;
         }
 
         .info-card {
             background: var(--bg-light);
-            border-radius: 3mm;
-            padding: 5mm 6mm;
+            border-radius: 2mm;
+            padding: 3mm 4mm;
             border-left: 3px solid var(--accent);
+            font-size: 8.5pt;
         }
 
         .info-card.full-width {
@@ -367,11 +373,11 @@
         }
 
         .subsection-title {
-            font-size: 13pt;
+            font-size: 10pt;
             font-weight: 700;
             color: var(--primary);
-            margin: 8mm 0 4mm;
-            padding-bottom: 2mm;
+            margin: 3mm 0 1.5mm;
+            padding-bottom: 1mm;
             border-bottom: 2px solid var(--accent);
             display: inline-block;
         }
@@ -380,23 +386,23 @@
         .data-table {
             width: 100%;
             border-collapse: collapse;
-            margin: 4mm 0 6mm;
-            font-size: 9.5pt;
+            margin: 2mm 0 4mm;
+            font-size: 8.5pt;
         }
 
         .data-table thead th {
             background: var(--primary);
             color: var(--text-light);
-            padding: 3mm 4mm;
+            padding: 2mm 3mm;
             text-align: left;
             font-weight: 600;
-            font-size: 8.5pt;
+            font-size: 7.5pt;
             text-transform: uppercase;
             letter-spacing: 0.5px;
         }
 
         .data-table tbody td {
-            padding: 3mm 4mm;
+            padding: 2mm 3mm;
             border-bottom: 1px solid var(--border);
         }
 
@@ -411,32 +417,32 @@
         /* Stats row */
         .stats-row {
             display: flex;
-            gap: 4mm;
-            margin: 6mm 0;
+            gap: 3mm;
+            margin: 3mm 0;
         }
 
         .stat-box {
             flex: 1;
             text-align: center;
             background: var(--bg-light);
-            border-radius: 3mm;
-            padding: 5mm 3mm;
-            border-top: 3px solid var(--accent);
+            border-radius: 2mm;
+            padding: 3mm 2mm;
+            border-top: 2px solid var(--accent);
         }
 
         .stat-box-number {
-            font-size: 20pt;
+            font-size: 16pt;
             font-weight: 800;
             color: var(--primary);
             display: block;
         }
 
         .stat-box-label {
-            font-size: 7.5pt;
+            font-size: 6.5pt;
             text-transform: uppercase;
-            letter-spacing: 1px;
+            letter-spacing: 0.8px;
             color: #666;
-            margin-top: 1mm;
+            margin-top: 0.5mm;
             display: block;
         }
 
@@ -465,10 +471,10 @@
 
         /* Narrative */
         .narrative {
-            font-size: 10.5pt;
-            line-height: 1.8;
+            font-size: 8.5pt;
+            line-height: 1.5;
             color: #333;
-            margin: 4mm 0;
+            margin: 1.5mm 0;
             text-align: justify;
         }
 
@@ -480,15 +486,15 @@
         .highlight-box {
             background: linear-gradient(135deg, #0a1628 0%, #1a3a5c 100%);
             color: var(--text-light);
-            border-radius: 4mm;
-            padding: 6mm 8mm;
-            margin: 6mm 0;
+            border-radius: 3mm;
+            padding: 4mm 6mm;
+            margin: 3mm 0;
         }
 
         .highlight-box h3 {
             color: var(--accent);
-            font-size: 11pt;
-            margin-bottom: 3mm;
+            font-size: 10pt;
+            margin-bottom: 2mm;
         }
 
         .highlight-box .stat-inline {
@@ -499,17 +505,17 @@
         }
 
         .highlight-box .stat-inline div span:first-child {
-            font-size: 18pt;
+            font-size: 14pt;
             font-weight: 800;
             color: var(--accent);
             display: block;
         }
 
         .highlight-box .stat-inline div span:last-child {
-            font-size: 7.5pt;
+            font-size: 6.5pt;
             color: #aabbcc;
             text-transform: uppercase;
-            letter-spacing: 1px;
+            letter-spacing: 0.8px;
         }
 
         /* Certifications */
@@ -522,8 +528,8 @@
         .cert-card {
             flex: 1;
             background: var(--bg-light);
-            border-radius: 3mm;
-            padding: 5mm;
+            border-radius: 2mm;
+            padding: 3mm;
             text-align: center;
             border: 1px solid var(--border);
         }
@@ -555,8 +561,8 @@
 
         .skill-group {
             background: var(--bg-light);
-            border-radius: 3mm;
-            padding: 5mm;
+            border-radius: 2mm;
+            padding: 3mm;
         }
 
         .skill-group-title {
@@ -587,23 +593,23 @@
         /* === KATALOG COMPONENTS === */
         .product-card {
             border: 1px solid var(--border);
-            border-radius: 4mm;
+            border-radius: 3mm;
             overflow: hidden;
-            margin-bottom: 5mm;
+            margin-bottom: 3mm;
             page-break-inside: avoid;
         }
 
         .product-card-header {
             background: var(--blue-gradient);
             color: var(--text-light);
-            padding: 4mm 6mm;
+            padding: 2.5mm 5mm;
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
 
         .product-card-header h3 {
-            font-size: 12pt;
+            font-size: 10pt;
             font-weight: 700;
         }
 
@@ -619,10 +625,10 @@
         }
 
         .product-card-body {
-            padding: 5mm 6mm;
+            padding: 3mm 5mm;
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 3mm;
+            gap: 2mm;
         }
 
         .product-card-body.single-col {
@@ -675,9 +681,9 @@
 
         .product-card-stats {
             background: var(--bg-light);
-            padding: 3mm 6mm;
+            padding: 2mm 5mm;
             display: flex;
-            gap: 6mm;
+            gap: 4mm;
             border-top: 1px solid var(--border);
         }
 
@@ -696,49 +702,49 @@
         /* Category summary card */
         .category-summary {
             background: var(--bg-light);
-            border-radius: 4mm;
-            padding: 5mm 6mm;
-            margin-bottom: 5mm;
+            border-radius: 3mm;
+            padding: 3mm 5mm;
+            margin-bottom: 3mm;
             border-left: 4px solid var(--accent);
         }
 
         .category-summary h3 {
-            font-size: 13pt;
+            font-size: 11pt;
             color: var(--primary);
-            margin-bottom: 2mm;
+            margin-bottom: 1mm;
         }
 
         .category-summary p {
-            font-size: 9.5pt;
+            font-size: 8.5pt;
             color: #555;
-            line-height: 1.6;
+            line-height: 1.5;
         }
 
         /* Mini product row */
         .mini-product-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 4mm;
-            margin: 4mm 0;
+            gap: 3mm;
+            margin: 2mm 0;
         }
 
         .mini-product {
             background: var(--bg-light);
-            border-radius: 3mm;
-            padding: 4mm 5mm;
+            border-radius: 2mm;
+            padding: 3mm 4mm;
             border-left: 3px solid var(--accent);
         }
 
         .mini-product h4 {
-            font-size: 10pt;
+            font-size: 9pt;
             color: var(--primary);
-            margin-bottom: 1.5mm;
+            margin-bottom: 1mm;
         }
 
         .mini-product p {
-            font-size: 8.5pt;
+            font-size: 7.5pt;
             color: #555;
-            line-height: 1.5;
+            line-height: 1.4;
         }
 
         .mini-product .mini-stats {
@@ -766,23 +772,23 @@
 
         .video-year-card {
             background: var(--bg-light);
-            border-radius: 3mm;
-            padding: 5mm;
+            border-radius: 2mm;
+            padding: 3mm;
             text-align: center;
             border-top: 3px solid var(--accent);
         }
 
         .video-year-card .vyc-year {
-            font-size: 10pt;
+            font-size: 9pt;
             font-weight: 700;
             color: var(--primary);
         }
 
         .video-year-card .vyc-count {
-            font-size: 22pt;
+            font-size: 18pt;
             font-weight: 800;
             color: var(--primary);
-            margin: 2mm 0;
+            margin: 1mm 0;
         }
 
         .video-year-card .vyc-label {
@@ -823,19 +829,19 @@
         .screenshot-placeholder {
             background: #e8edf2;
             border: 2px dashed #b0bec5;
-            border-radius: 3mm;
+            border-radius: 2mm;
             display: flex;
             align-items: center;
             justify-content: center;
             color: #78909c;
-            font-size: 9pt;
+            font-size: 8pt;
             text-align: center;
-            padding: 4mm;
-            min-height: 40mm;
+            padding: 3mm;
+            min-height: 30mm;
         }
 
         .screenshot-placeholder.tall {
-            min-height: 55mm;
+            min-height: 40mm;
         }
 
         .screenshot-placeholder img {
@@ -848,8 +854,8 @@
         .screenshot-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 4mm;
-            margin: 4mm 0;
+            gap: 3mm;
+            margin: 2mm 0;
         }
 
         .screenshot-grid.three-col {
@@ -892,17 +898,17 @@
         /* Testimonial */
         .testimonial {
             background: var(--bg-light);
-            border-radius: 4mm;
-            padding: 5mm 6mm;
-            margin-bottom: 4mm;
+            border-radius: 3mm;
+            padding: 3mm 5mm;
+            margin-bottom: 3mm;
             border-left: 4px solid var(--accent);
             page-break-inside: avoid;
         }
 
         .testimonial-text {
-            font-size: 9.5pt;
+            font-size: 8.5pt;
             color: #333;
-            line-height: 1.7;
+            line-height: 1.5;
             font-style: italic;
         }
 
@@ -926,47 +932,47 @@
         .testimonial-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 4mm;
-            margin: 4mm 0;
+            gap: 3mm;
+            margin: 2mm 0;
         }
 
         /* Evidence card */
         .evidence-card {
             background: white;
             border: 1px solid var(--border);
-            border-radius: 4mm;
+            border-radius: 3mm;
             overflow: hidden;
-            margin-bottom: 4mm;
+            margin-bottom: 3mm;
         }
 
         .evidence-card-label {
             background: var(--primary);
             color: var(--accent);
-            font-size: 8pt;
+            font-size: 7pt;
             font-weight: 700;
-            padding: 2mm 5mm;
+            padding: 1.5mm 4mm;
             text-transform: uppercase;
             letter-spacing: 1px;
         }
 
         .evidence-card-content {
-            padding: 4mm 5mm;
+            padding: 3mm 4mm;
         }
 
         /* Quality checklist */
         .quality-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 3mm;
-            margin: 4mm 0;
+            gap: 2mm;
+            margin: 2mm 0;
         }
 
         .quality-item {
             display: flex;
             align-items: flex-start;
-            gap: 2.5mm;
-            font-size: 9pt;
-            padding: 3mm 4mm;
+            gap: 2mm;
+            font-size: 8pt;
+            padding: 2mm 3mm;
             background: var(--bg-light);
             border-radius: 2mm;
         }
@@ -974,7 +980,7 @@
         .quality-check {
             color: #2e7d32;
             font-weight: 800;
-            font-size: 11pt;
+            font-size: 10pt;
             flex-shrink: 0;
             line-height: 1;
         }
@@ -1016,27 +1022,27 @@
         .role-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 4mm;
-            margin: 4mm 0;
+            gap: 3mm;
+            margin: 2mm 0;
         }
 
         .role-card {
             background: var(--bg-light);
-            border-radius: 3mm;
-            padding: 5mm;
+            border-radius: 2mm;
+            padding: 3mm 4mm;
             border-left: 3px solid var(--accent);
         }
 
         .role-card h4 {
-            font-size: 10pt;
+            font-size: 9pt;
             color: var(--primary);
-            margin-bottom: 2mm;
+            margin-bottom: 1mm;
         }
 
         .role-card p {
-            font-size: 8.5pt;
+            font-size: 7.5pt;
             color: #555;
-            line-height: 1.5;
+            line-height: 1.4;
         }
     </style>
 </head>
@@ -1089,7 +1095,7 @@
     <div class="cover-footer">
         <div>
             <strong style="color: var(--accent);">Cikgu Aime</strong><br>
-            Guru Sejarah & PSV
+            Guru Sejarah &amp; PSV
         </div>
         <div class="cover-footer-right">
             <strong style="color: var(--accent);">cikguaime.com</strong><br>
@@ -1113,49 +1119,49 @@
         <li class="toc-item">
             <div class="toc-number">01</div>
             <div class="toc-content">
-                <div class="toc-title">Profil & Biodata <span style="float:right; font-weight:400; color:#888;">ms 1–2</span></div>
-                <div class="toc-desc">Maklumat peribadi, pensijilan digital, kemahiran teknikal & peranan di sekolah</div>
+                <div class="toc-title">Profil &amp; Biodata <span style="float:right; font-weight:400; color:#888;">ms 1–2</span></div>
+                <div class="toc-desc">Maklumat peribadi, pensijilan digital, kemahiran teknikal &amp; peranan di sekolah</div>
             </div>
         </li>
         <li class="toc-item">
             <div class="toc-number">02</div>
             <div class="toc-content">
-                <div class="toc-title">Katalog Kandungan Digital <span style="float:right; font-weight:400; color:#888;">ms 3–15</span></div>
-                <div class="toc-desc">254+ kandungan: 11 projek digital, 176 video, 60+ artikel, 7+ kuiz interaktif, blog & ekosistem digital</div>
+                <div class="toc-title">Katalog Kandungan Digital <span style="float:right; font-weight:400; color:#888;">ms 3–18</span></div>
+                <div class="toc-desc">254+ kandungan: 11 projek digital, 176 video, 60+ artikel, 7+ kuiz interaktif, blog &amp; ekosistem digital</div>
                 <div class="toc-desc" style="font-size: 7.5pt; color: #999; margin-top: 1mm; line-height: 1.6;">
-                    Kajian kes: IDME PBD Helper (ms 8) · MOIES Kehadiran (ms 9) · PBD OnePage & Auto eRPH (ms 10) · Aplikasi Web (ms 11) · TVPSS FiveOne Studio (ms 12–13) · Blog cikguaime.com (ms 14) · Ekosistem Digital (ms 15)
+                    Kajian kes: IDME PBD Helper (ms 9–10) · MOIES Kehadiran (ms 11) · PBD OnePage &amp; Auto eRPH (ms 12) · Aplikasi Web (ms 13) · TVPSS FiveOne Studio (ms 14–15) · Blog cikguaime.com (ms 16) · Ekosistem Digital (ms 17–18)
                 </div>
             </div>
         </li>
         <li class="toc-item">
             <div class="toc-number">03</div>
             <div class="toc-content">
-                <div class="toc-title">Demo & Bukti Kualiti <span style="float:right; font-weight:400; color:#888;">ms 16–18</span></div>
-                <div class="toc-desc">Tangkap layar, rating 5.0/5, testimoni pengguna & senarai semak kualiti</div>
+                <div class="toc-title">Demo &amp; Bukti Kualiti <span style="float:right; font-weight:400; color:#888;">ms 19–21</span></div>
+                <div class="toc-desc">Tangkap layar, rating 5.0/5, testimoni pengguna &amp; senarai semak kualiti</div>
             </div>
         </li>
         <li class="toc-item">
             <div class="toc-number">04</div>
             <div class="toc-content">
-                <div class="toc-title">Sumbangan & Impak <span style="float:right; font-weight:400; color:#888;">ms 19–24</span></div>
-                <div class="toc-desc">10,700+ guru, 1.2M pelawat, perkongsian ilmu, impak komuniti & perjalanan digital 2018–2026</div>
+                <div class="toc-title">Sumbangan &amp; Impak <span style="float:right; font-weight:400; color:#888;">ms 22–31</span></div>
+                <div class="toc-desc">10,700+ guru, 1.2M pelawat, perkongsian ilmu, impak komuniti &amp; perjalanan digital 2018–2026</div>
                 <div class="toc-desc" style="font-size: 7.5pt; color: #999; margin-top: 1mm; line-height: 1.6;">
-                    TVPSS Impak Terperinci (ms 21) · Perkongsian Ilmu & Kepakaran (ms 22) · Impak Komuniti (ms 23) · Timeline 2018–2026 (ms 24)
+                    TVPSS Impak Terperinci (ms 24–25) · Perkongsian Ilmu &amp; Kepakaran (ms 26–27) · Impak Komuniti (ms 28–29) · Timeline 2018–2026 (ms 30–31)
                 </div>
             </div>
         </li>
         <li class="toc-item">
             <div class="toc-number">05</div>
             <div class="toc-content">
-                <div class="toc-title">Sijil & Pencapaian <span style="float:right; font-weight:400; color:#888;">ms 25–26</span></div>
-                <div class="toc-desc">76 pencapaian (22 Johan), anugerah & pengiktirafan di pelbagai peringkat</div>
+                <div class="toc-title">Sijil &amp; Pencapaian <span style="float:right; font-weight:400; color:#888;">ms 32–33</span></div>
+                <div class="toc-desc">76 pencapaian (22 Johan), anugerah &amp; pengiktirafan di pelbagai peringkat</div>
             </div>
         </li>
         <li class="toc-item">
             <div class="toc-number">06</div>
             <div class="toc-content">
-                <div class="toc-title">Etika & Privasi Digital <span style="float:right; font-weight:400; color:#888;">ms 27</span></div>
-                <div class="toc-desc">Privasi data murid, pemprosesan tempatan, hak cipta & keselamatan web</div>
+                <div class="toc-title">Etika &amp; Privasi Digital <span style="float:right; font-weight:400; color:#888;">ms 34</span></div>
+                <div class="toc-desc">Privasi data murid, pemprosesan tempatan, hak cipta &amp; keselamatan web</div>
             </div>
         </li>
     </ul>
@@ -1170,7 +1176,7 @@
 <div class="page section-page">
     <div class="section-header">
         <div class="section-number">Bahagian 01</div>
-        <h1 class="section-title">Profil & Biodata</h1>
+        <h1 class="section-title">Profil &amp; Biodata</h1>
     </div>
 
     <div class="section-body">
@@ -1185,7 +1191,7 @@
                 <div class="info-value">29 tahun (24 Julai 1997)</div>
             </div>
             <div class="info-card">
-                <div class="info-label">Jawatan & Gred</div>
+                <div class="info-label">Jawatan &amp; Gred</div>
                 <div class="info-value">Pegawai Perkhidmatan Pendidikan, DG9</div>
             </div>
             <div class="info-card">
@@ -1208,7 +1214,7 @@
 
         <!-- Profil Ringkas -->
         <div class="narrative">
-            <strong>Ahmad Aiman Bin Mohamed</strong>, atau lebih dikenali sebagai <strong>Cikgu Aime</strong>, merupakan seorang Pegawai Perkhidmatan Pendidikan di SK Putrajaya Presint 5(1) yang aktif membangunkan kandungan digital pendidikan sejak tahun <strong>2018</strong> — tiga tahun sebelum beliau mula berkhidmat sebagai guru sepenuh masa. Berbekalkan Ijazah Sarjana Muda Pendidikan Sejarah dari IPG Kampus Kota Bharu dan pensijilan <strong>Google Certified Educator (Level 1 & 2)</strong>, beliau telah menghasilkan lebih <strong>254 kandungan digital</strong> dalam pelbagai format yang memberi manfaat kepada lebih <strong>10,700 guru</strong> di seluruh Malaysia.
+            <strong>Ahmad Aiman Bin Mohamed</strong>, atau lebih dikenali sebagai <strong>Cikgu Aime</strong>, merupakan seorang Pegawai Perkhidmatan Pendidikan di SK Putrajaya Presint 5(1) yang aktif membangunkan kandungan digital pendidikan sejak tahun <strong>2018</strong> — tiga tahun sebelum beliau mula berkhidmat sebagai guru sepenuh masa. Berbekalkan Ijazah Sarjana Muda Pendidikan Sejarah dari IPG Kampus Kota Bharu dan pensijilan <strong>Google Certified Educator (Level 1 &amp; 2)</strong>, beliau telah menghasilkan lebih <strong>254 kandungan digital</strong> dalam pelbagai format yang memberi manfaat kepada lebih <strong>10,700 guru</strong> di seluruh Malaysia.
         </div>
 
         <!-- Statistik ringkas -->
@@ -1235,7 +1241,7 @@
         </div>
 
         <!-- Pensijilan -->
-        <div class="subsection-title">Pensijilan & Pengiktirafan Digital</div>
+        <div class="subsection-title">Pensijilan &amp; Pengiktirafan Digital</div>
 
         <div class="cert-grid">
             <div class="cert-card">
@@ -1283,7 +1289,7 @@
         </div>
     </div>
 
-    <div class="page-number">Muka Surat <span>2</span></div>
+    <div class="page-number">Muka Surat <span>1</span></div>
     <div class="page-footer-bar"></div>
 </div>
 
@@ -1302,7 +1308,7 @@
         </div>
 
         <!-- Kemahiran Pembangunan -->
-        <div class="subsection-title">Pembangunan Perisian & Web</div>
+        <div class="subsection-title">Pembangunan Perisian &amp; Web</div>
 
         <div class="skills-grid">
             <div class="skill-group">
@@ -1336,7 +1342,7 @@
                 </div>
             </div>
             <div class="skill-group">
-                <div class="skill-group-title">AI & Automasi</div>
+                <div class="skill-group-title">AI &amp; Automasi</div>
                 <div class="skill-tags">
                     <span class="skill-tag">Google Gemini API</span>
                     <span class="skill-tag">Fuzzy Matching</span>
@@ -1359,7 +1365,7 @@
             </thead>
             <tbody>
                 <tr>
-                    <td><strong>Penulisan Blog & Tutorial</strong></td>
+                    <td><strong>Penulisan Blog &amp; Tutorial</strong></td>
                     <td>Blogger (cikguaime.com)</td>
                     <td>60+ artikel pendidikan</td>
                 </tr>
@@ -1397,7 +1403,7 @@
         </table>
 
         <!-- Jangkauan Keseluruhan -->
-        <div class="subsection-title">Jangkauan & Impak Keseluruhan</div>
+        <div class="subsection-title">Jangkauan &amp; Impak Keseluruhan</div>
 
         <div class="stats-row">
             <div class="stat-box">
@@ -1441,7 +1447,7 @@
         </div>
     </div>
 
-    <div class="page-number">Muka Surat <span>3</span></div>
+    <div class="page-number">Muka Surat <span>2</span></div>
     <div class="page-footer-bar"></div>
 </div>
 
@@ -1456,7 +1462,7 @@
 
     <div class="section-body">
         <div class="narrative">
-            Bahagian ini mendokumentasikan keseluruhan kandungan digital yang telah dibangunkan dan diterbitkan oleh Cikgu Aime merangkumi <strong>4 kategori utama</strong>: projek perisian digital, video pendidikan, artikel & tutorial, serta kuiz interaktif. Semua kandungan ini telah diterbitkan di platform yang boleh diakses secara umum.
+            Bahagian ini mendokumentasikan keseluruhan kandungan digital yang telah dibangunkan dan diterbitkan oleh Cikgu Aime merangkumi <strong>4 kategori utama</strong>: projek perisian digital, video pendidikan, artikel &amp; tutorial, serta kuiz interaktif. Semua kandungan ini telah diterbitkan di platform yang boleh diakses secara umum.
         </div>
 
         <!-- Overview Stats -->
@@ -1471,7 +1477,7 @@
             </div>
             <div class="stat-box">
                 <span class="stat-box-number">60+</span>
-                <span class="stat-box-label">Artikel & Tutorial</span>
+                <span class="stat-box-label">Artikel &amp; Tutorial</span>
             </div>
             <div class="stat-box">
                 <span class="stat-box-number">7+</span>
@@ -1525,35 +1531,35 @@
                     <td>5</td>
                     <td><strong>Sistem PBD Sahsiah</strong></td>
                     <td>Web App (Next.js)</td>
-                    <td>Guru & Ibu Bapa</td>
+                    <td>Guru &amp; Ibu Bapa</td>
                     <td>—</td>
                 </tr>
                 <tr>
                     <td>6</td>
                     <td><strong>Web App Headcount</strong></td>
                     <td>Web App (Next.js + Python)</td>
-                    <td>Guru & Pentadbir</td>
+                    <td>Guru &amp; Pentadbir</td>
                     <td>—</td>
                 </tr>
                 <tr>
                     <td>7</td>
                     <td><strong>Relief Activity Hub</strong></td>
                     <td>Web App (React)</td>
-                    <td>Guru & Murid</td>
+                    <td>Guru &amp; Murid</td>
                     <td>—</td>
                 </tr>
                 <tr>
                     <td>8</td>
                     <td><strong>Buku Tulis Digital</strong></td>
                     <td>Standalone HTML</td>
-                    <td>Guru & Murid</td>
+                    <td>Guru &amp; Murid</td>
                     <td>—</td>
                 </tr>
                 <tr>
                     <td>9</td>
                     <td><strong>CikguAime Platform</strong></td>
                     <td>Web + Apps Script</td>
-                    <td>Guru & Murid</td>
+                    <td>Guru &amp; Murid</td>
                     <td>—</td>
                 </tr>
                 <tr>
@@ -1595,9 +1601,19 @@
         </div>
 
         <!-- Artikel Overview -->
-        <div class="subsection-title">C. Artikel & Tutorial (60+ Artikel)</div>
+        <div class="subsection-title">C. Artikel &amp; Tutorial (60+ Artikel)</div>
 
-        <div class="article-cat-grid">
+        
+    </div>
+
+    <div class="page-number">Muka Surat <span>3</span></div>
+    <div class="page-footer-bar"></div>
+</div><div class="page section-page">
+      <div class="section-header">
+        <div class="section-number">Bahagian 02</div>
+        <h1 class="section-title">Katalog Kandungan Digital (sambungan)</h1>
+    </div>
+      <div class="section-body"><div class="article-cat-grid">
             <div class="article-cat">
                 <div class="ac-count">14+</div>
                 <div class="ac-name">Sekolah</div>
@@ -1634,12 +1650,10 @@
                 <div class="ac-count">7+</div>
                 <div class="ac-name">Kuiz Interaktif</div>
             </div>
-        </div>
+        </div></div>
+      <div class="page-number">Muka Surat <span>4</span></div>
+      <div class="page-footer-bar"></div>
     </div>
-
-    <div class="page-number">Muka Surat <span>4</span></div>
-    <div class="page-footer-bar"></div>
-</div>
 
 <!-- ============================================ -->
 <!-- MUKA SURAT 6: PROJEK UTAMA 1 — CHROME EXT    -->
@@ -1742,7 +1756,7 @@
                 </div>
                 <div class="product-features">
                     <ul>
-                        <li>Slip PBD & Kemahiran</li>
+                        <li>Slip PBD &amp; Kemahiran</li>
                         <li>Landscape / Portrait</li>
                         <li>3 pratetap (Ultra Compact, Standard, Professional)</li>
                         <li>Tandatangan digital</li>
@@ -1767,7 +1781,7 @@
 <div class="page section-page">
     <div class="section-header">
         <div class="section-number">Bahagian 02 — Projek Perisian Digital</div>
-        <h1 class="section-title">Apps Script & Web Apps</h1>
+        <h1 class="section-title">Apps Script &amp; Web Apps</h1>
     </div>
 
     <div class="section-body">
@@ -1792,7 +1806,7 @@
                 </div>
                 <div class="product-features">
                     <ul>
-                        <li>Parsing pintar objektif & aktiviti</li>
+                        <li>Parsing pintar objektif &amp; aktiviti</li>
                         <li>Template tanpa had per subjek</li>
                         <li>56,813+ entri DSKP</li>
                         <li>Navigasi multi-sheet (Isnin-Jumaat)</li>
@@ -1844,7 +1858,7 @@
                     <ul>
                         <li>Wizard 5 langkah</li>
                         <li>Fuzzy matching nama</li>
-                        <li>Sokongan UASA & PBD</li>
+                        <li>Sokongan UASA &amp; PBD</li>
                         <li>Pratonton perubahan</li>
                         <li>Pemprosesan di pelayar</li>
                     </ul>
@@ -1885,8 +1899,8 @@
 <!-- ============================================ -->
 <div class="page section-page">
     <div class="section-header">
-        <div class="section-number">Bahagian 02 — Projek Digital & Video</div>
-        <h1 class="section-title">Projek Sokongan & Video Pendidikan</h1>
+        <div class="section-number">Bahagian 02 — Projek Digital &amp; Video</div>
+        <h1 class="section-title">Projek Sokongan &amp; Video Pendidikan</h1>
     </div>
 
     <div class="section-body">
@@ -2001,8 +2015,8 @@
 <!-- ============================================ -->
 <div class="page section-page">
     <div class="section-header">
-        <div class="section-number">Bahagian 02 — Artikel & Kuiz Interaktif</div>
-        <h1 class="section-title">Blog, Tutorial & Kuiz Interaktif</h1>
+        <div class="section-number">Bahagian 02 — Artikel &amp; Kuiz Interaktif</div>
+        <h1 class="section-title">Blog, Tutorial &amp; Kuiz Interaktif</h1>
     </div>
 
     <div class="section-body">
@@ -2069,14 +2083,14 @@
         <div class="mini-product-grid">
             <div class="mini-product">
                 <h4>Kuiz Interaktif</h4>
-                <p>Sejarah Tahun 5 & 6, PSV Tahun 6, BM Tahun 4 — soal jawab seret-dan-lepas, pelbagai pilihan, interaktif web-based</p>
+                <p>Sejarah Tahun 5 &amp; 6, PSV Tahun 6, BM Tahun 4 — soal jawab seret-dan-lepas, pelbagai pilihan, interaktif web-based</p>
             </div>
             <div class="mini-product">
                 <h4>Bank Soalan</h4>
-                <p>Soalan UASA Sejarah Tahun 5 & 6 (3 set), Soalan UASA PSV — 2,000+ percubaan pengguna</p>
+                <p>Soalan UASA Sejarah Tahun 5 &amp; 6 (3 set), Soalan UASA PSV — 2,000+ percubaan pengguna</p>
             </div>
             <div class="mini-product">
-                <h4>Panduan & Tutorial</h4>
+                <h4>Panduan &amp; Tutorial</h4>
                 <p>Kerja kursus Sejarah, Google Classroom, Canva, SSDM, PBD, IDME, Google Meet, Google Form</p>
             </div>
             <div class="mini-product">
@@ -2088,7 +2102,7 @@
                 <p>Temu duga SPP, panduan guru baru posting, refleksi tahunan (2021–2024), checklist sebelum kahwin</p>
             </div>
             <div class="mini-product">
-                <h4>Setup & Peralatan</h4>
+                <h4>Setup &amp; Peralatan</h4>
                 <p>Setup studio TVPSS sekolah, setup photoshoot, peralatan fotografi — panduan lengkap visual</p>
             </div>
         </div>
@@ -2219,19 +2233,27 @@
             </div>
             <div>
                 <div class="screenshot-placeholder">Masukkan tangkap layar IDME PBD Helper — perbandingan sebelum dan selepas auto-isi dalam sistem IDME</div>
-                <div class="screenshot-caption">Sebelum & Selepas: PBD auto-diisi dalam IDME</div>
+                <div class="screenshot-caption">Sebelum &amp; Selepas: PBD auto-diisi dalam IDME</div>
             </div>
         </div>
 
-        <div class="testimonial">
-            <div class="testimonial-text">Extension ini menyelamatkan hidup saya sebagai guru kelas. Dulu saya habiskan waktu malam untuk isi PBD satu per satu. Sekarang 2 minit sahaja selesai. Terima kasih Cikgu Aime!</div>
-            <div class="testimonial-author">— Guru Sekolah Rendah, Selangor (Ulasan Chrome Web Store)</div>
-        </div>
+        
     </div>
 
     <div class="page-number">Muka Surat <span>9</span></div>
     <div class="page-footer-bar"></div>
-</div>
+</div><div class="page section-page">
+      <div class="section-header">
+        <div class="section-number">Bahagian 02 — Kajian Kes Mendalam</div>
+        <h1 class="section-title">IDME PBD Helper (sambungan)</h1>
+    </div>
+      <div class="section-body"><div class="testimonial">
+            <div class="testimonial-text">Extension ini menyelamatkan hidup saya sebagai guru kelas. Dulu saya habiskan waktu malam untuk isi PBD satu per satu. Sekarang 2 minit sahaja selesai. Terima kasih Cikgu Aime!</div>
+            <div class="testimonial-author">— Guru Sekolah Rendah, Selangor (Ulasan Chrome Web Store)</div>
+        </div></div>
+      <div class="page-number">Muka Surat <span>10</span></div>
+      <div class="page-footer-bar"></div>
+    </div>
 
 <!-- ============================================ -->
 <!-- MUKA SURAT 9: MOIES KEHADIRAN HELPER         -->
@@ -2338,7 +2360,7 @@
         </div>
     </div>
 
-    <div class="page-number">Muka Surat <span>10</span></div>
+    <div class="page-number">Muka Surat <span>11</span></div>
     <div class="page-footer-bar"></div>
 </div>
 
@@ -2348,7 +2370,7 @@
 <div class="page section-page">
     <div class="section-header">
         <div class="section-number">Bahagian 02 — Kajian Kes Mendalam</div>
-        <h1 class="section-title">PBD OnePage & Auto eRPH</h1>
+        <h1 class="section-title">PBD OnePage &amp; Auto eRPH</h1>
     </div>
 
     <div class="section-body">
@@ -2442,7 +2464,7 @@
         </div>
     </div>
 
-    <div class="page-number">Muka Surat <span>11</span></div>
+    <div class="page-number">Muka Surat <span>12</span></div>
     <div class="page-footer-bar"></div>
 </div>
 
@@ -2514,7 +2536,7 @@
         </div>
     </div>
 
-    <div class="page-number">Muka Surat <span>12</span></div>
+    <div class="page-number">Muka Surat <span>13</span></div>
     <div class="page-footer-bar"></div>
 </div>
 
@@ -2633,7 +2655,7 @@
         </div>
     </div>
 
-    <div class="page-number">Muka Surat <span>13</span></div>
+    <div class="page-number">Muka Surat <span>14</span></div>
     <div class="page-footer-bar"></div>
 </div>
 
@@ -2643,7 +2665,7 @@
 <div class="page section-page">
     <div class="section-header">
         <div class="section-number">Bahagian 02 — Kandungan Video</div>
-        <h1 class="section-title">TVPSS — Episod & Pencapaian</h1>
+        <h1 class="section-title">TVPSS — Episod &amp; Pencapaian</h1>
     </div>
 
     <div class="section-body">
@@ -2727,12 +2749,12 @@
             </div>
             <div>
                 <div class="screenshot-placeholder">Masukkan tangkap layar TVPSS FiveOne — pencapaian Johan Negeri dan Johan Kebangsaan 2024</div>
-                <div class="screenshot-caption">Pencapaian TVPSS 2024: Johan Negeri & Kebangsaan</div>
+                <div class="screenshot-caption">Pencapaian TVPSS 2024: Johan Negeri &amp; Kebangsaan</div>
             </div>
         </div>
     </div>
 
-    <div class="page-number">Muka Surat <span>14</span></div>
+    <div class="page-number">Muka Surat <span>15</span></div>
     <div class="page-footer-bar"></div>
 </div>
 
@@ -2837,7 +2859,7 @@
         </div>
     </div>
 
-    <div class="page-number">Muka Surat <span>15</span></div>
+    <div class="page-number">Muka Surat <span>16</span></div>
     <div class="page-footer-bar"></div>
 </div>
 
@@ -2873,7 +2895,7 @@ Extensions    Videos
      Web Apps
    (alat bilik darjah)
           |
-  MURID & GURU SELURUH MALAYSIA</div>
+  MURID &amp; GURU SELURUH MALAYSIA</div>
         </div>
 
         <div class="subsection-title">Ringkasan Impak Keseluruhan</div>
@@ -2910,27 +2932,36 @@ Extensions    Videos
                     <tr style="background:#f8f6f0;"><td style="padding:2.5mm 4mm;border-bottom:1px solid #e0dcd3;font-weight:700;">2021</td><td style="padding:2.5mm 4mm;border-bottom:1px solid #e0dcd3;">Mula berkhidmat sebagai guru — memahami masalah sebenar di lapangan</td></tr>
                     <tr><td style="padding:2.5mm 4mm;border-bottom:1px solid #e0dcd3;font-weight:700;">2022</td><td style="padding:2.5mm 4mm;border-bottom:1px solid #e0dcd3;">Tubuhkan Studio TVPSS FiveOne, lancarkan Chrome Extensions pertama</td></tr>
                     <tr style="background:#f8f6f0;"><td style="padding:2.5mm 4mm;border-bottom:1px solid #e0dcd3;font-weight:700;">2023</td><td style="padding:2.5mm 4mm;border-bottom:1px solid #e0dcd3;">CJD Top 150 Kebangsaan — pengiktirafan di peringkat nasional</td></tr>
-                    <tr><td style="padding:2.5mm 4mm;border-bottom:1px solid #e0dcd3;font-weight:700;">2024</td><td style="padding:2.5mm 4mm;border-bottom:1px solid #e0dcd3;">Edufluencer, Johan Negeri & Kebangsaan TVPSS, 10,700+ guru pengguna</td></tr>
+                    <tr><td style="padding:2.5mm 4mm;border-bottom:1px solid #e0dcd3;font-weight:700;">2024</td><td style="padding:2.5mm 4mm;border-bottom:1px solid #e0dcd3;">Edufluencer, Johan Negeri &amp; Kebangsaan TVPSS, 10,700+ guru pengguna</td></tr>
                     <tr style="background:#f8f6f0;"><td style="padding:2.5mm 4mm;border-bottom:1px solid #e0dcd3;font-weight:700;">2025-2026</td><td style="padding:2.5mm 4mm;border-bottom:1px solid #e0dcd3;">Terus berkembang — AI-powered tools, ekosistem semakin kukuh</td></tr>
                 </tbody>
             </table>
         </div>
 
-        <div class="highlight-box">
+        
+
+        
+    </div>
+
+    <div class="page-number">Muka Surat <span>17</span></div>
+    <div class="page-footer-bar"></div>
+</div><div class="page section-page">
+      <div class="section-header">
+        <div class="section-number">Bahagian 02 — Gambaran Keseluruhan</div>
+        <h1 class="section-title">Ekosistem Digital CikguAime (sambungan)</h1>
+    </div>
+      <div class="section-body"><div class="highlight-box">
             <h3>Mengapa Juri Perlu Tahu</h3>
             <div class="narrative" style="color: #ccd6e0; margin: 0;">
                 Ini bukan cerita seorang guru yang sekadar "menggunakan teknologi". Ini ialah cerita seorang guru yang <strong style="color:var(--accent);">mencipta teknologi dari kosong</strong>, mengedarkannya secara percuma dan mampu milik, dan memberi impak kepada <strong style="color:var(--accent);">lebih 10,700 guru</strong> seluruh Malaysia. Dari seorang guru biasa di sekolah rendah — kepada pencipta kandungan digital yang mengubah cara guru Malaysia bekerja.
             </div>
         </div>
-
-        <div class="narrative">
+<div class="narrative">
             <strong>Dari seorang guru biasa... kepada pencipta kandungan digital yang memberi impak kepada 10,700+ guru seluruh Malaysia.</strong> Bukan kerana jawatan atau kuasa — tetapi kerana kemahiran, konsistensi, dan semangat menyelesaikan masalah guru dengan teknologi.
-        </div>
+        </div></div>
+      <div class="page-number">Muka Surat <span>18</span></div>
+      <div class="page-footer-bar"></div>
     </div>
-
-    <div class="page-number">Muka Surat <span>16</span></div>
-    <div class="page-footer-bar"></div>
-</div>
 
 <!-- ============================================ -->
 <!-- MUKA SURAT 10: BAHAGIAN 03 — BUKTI KUALITI    -->
@@ -2938,7 +2969,7 @@ Extensions    Videos
 <div class="page section-page">
     <div class="section-header">
         <div class="section-number">Bahagian 03</div>
-        <h1 class="section-title">Demo & Bukti Kualiti</h1>
+        <h1 class="section-title">Demo &amp; Bukti Kualiti</h1>
     </div>
 
     <div class="section-body">
@@ -3018,7 +3049,7 @@ Extensions    Videos
         </div>
     </div>
 
-    <div class="page-number">Muka Surat <span>17</span></div>
+    <div class="page-number">Muka Surat <span>19</span></div>
     <div class="page-footer-bar"></div>
 </div>
 
@@ -3060,9 +3091,9 @@ Extensions    Videos
             <div>
                 <!-- GANTI: Tangkap layar PBD OnePage -->
                 <div class="screenshot-placeholder tall">
-                    Masukkan tangkap layar<br><strong>PBD OnePage</strong><br>Sebelum & selepas (5 halaman → 1)
+                    Masukkan tangkap layar<br><strong>PBD OnePage</strong><br>Sebelum &amp; selepas (5 halaman → 1)
                 </div>
-                <div class="screenshot-caption">PBD OnePage — Perbandingan sebelum & selepas</div>
+                <div class="screenshot-caption">PBD OnePage — Perbandingan sebelum &amp; selepas</div>
             </div>
             <div>
                 <!-- GANTI: Tangkap layar Auto eRPH -->
@@ -3121,7 +3152,7 @@ Extensions    Videos
         </div>
     </div>
 
-    <div class="page-number">Muka Surat <span>18</span></div>
+    <div class="page-number">Muka Surat <span>20</span></div>
     <div class="page-footer-bar"></div>
 </div>
 
@@ -3141,7 +3172,7 @@ Extensions    Videos
 
         <!-- Kriteria 1: Ketepatan & Relevansi -->
         <div class="evidence-card">
-            <div class="evidence-card-label">Kriteria B1: Ketepatan & Relevansi Ilmu</div>
+            <div class="evidence-card-label">Kriteria B1: Ketepatan &amp; Relevansi Ilmu</div>
             <div class="evidence-card-content">
                 <div class="quality-grid">
                     <div class="quality-item">
@@ -3158,7 +3189,7 @@ Extensions    Videos
                     </div>
                     <div class="quality-item">
                         <div class="quality-check">✓</div>
-                        <div class="quality-item-text"><strong>Kuiz selaras silibus</strong> — Kuiz Sejarah & PSV berdasarkan silibus terkini Tahun 5 & 6</div>
+                        <div class="quality-item-text"><strong>Kuiz selaras silibus</strong> — Kuiz Sejarah &amp; PSV berdasarkan silibus terkini Tahun 5 &amp; 6</div>
                     </div>
                 </div>
             </div>
@@ -3166,7 +3197,7 @@ Extensions    Videos
 
         <!-- Kriteria 2: Reka Bentuk Visual & Audio -->
         <div class="evidence-card">
-            <div class="evidence-card-label">Kriteria B2: Reka Bentuk Visual & Audio</div>
+            <div class="evidence-card-label">Kriteria B2: Reka Bentuk Visual &amp; Audio</div>
             <div class="evidence-card-content">
                 <div class="quality-grid">
                     <div class="quality-item">
@@ -3191,12 +3222,12 @@ Extensions    Videos
 
         <!-- Kriteria 3: Interaktiviti -->
         <div class="evidence-card">
-            <div class="evidence-card-label">Kriteria B3: Interaktiviti & Penglibatan Murid</div>
+            <div class="evidence-card-label">Kriteria B3: Interaktiviti &amp; Penglibatan Murid</div>
             <div class="evidence-card-content">
                 <div class="quality-grid">
                     <div class="quality-item">
                         <div class="quality-check">✓</div>
-                        <div class="quality-item-text"><strong>Kuiz drag-and-drop</strong> — Kuiz Sejarah & PSV menggunakan interaksi seret-dan-lepas</div>
+                        <div class="quality-item-text"><strong>Kuiz drag-and-drop</strong> — Kuiz Sejarah &amp; PSV menggunakan interaksi seret-dan-lepas</div>
                     </div>
                     <div class="quality-item">
                         <div class="quality-check">✓</div>
@@ -3216,7 +3247,7 @@ Extensions    Videos
 
         <!-- Kriteria 4: Nilai Pendidikan -->
         <div class="evidence-card">
-            <div class="evidence-card-label">Kriteria B4: Nilai Pendidikan & Keberkesanan</div>
+            <div class="evidence-card-label">Kriteria B4: Nilai Pendidikan &amp; Keberkesanan</div>
             <div class="evidence-card-content">
                 <div class="quality-grid">
                     <div class="quality-item">
@@ -3263,7 +3294,7 @@ Extensions    Videos
         </div>
     </div>
 
-    <div class="page-number">Muka Surat <span>19</span></div>
+    <div class="page-number">Muka Surat <span>21</span></div>
     <div class="page-footer-bar"></div>
 </div>
 
@@ -3273,7 +3304,7 @@ Extensions    Videos
 <div class="page section-page">
     <div class="section-header">
         <div class="section-number">Bahagian 04</div>
-        <h1 class="section-title">Sumbangan & Impak</h1>
+        <h1 class="section-title">Sumbangan &amp; Impak</h1>
     </div>
 
     <div class="section-body">
@@ -3330,7 +3361,7 @@ Extensions    Videos
                             <td>RM80</td>
                         </tr>
                         <tr>
-                            <td><strong>60+ artikel</strong> tutorial & panduan pendidikan</td>
+                            <td><strong>60+ artikel</strong> tutorial &amp; panduan pendidikan</td>
                             <td>1,219,265 pengunjung</td>
                             <td>Percuma</td>
                         </tr>
@@ -3383,7 +3414,7 @@ Extensions    Videos
         </div>
     </div>
 
-    <div class="page-number">Muka Surat <span>20</span></div>
+    <div class="page-number">Muka Surat <span>22</span></div>
     <div class="page-footer-bar"></div>
 </div>
 
@@ -3392,8 +3423,8 @@ Extensions    Videos
 <!-- ============================================ -->
 <div class="page section-page">
     <div class="section-header">
-        <div class="section-number">Bahagian 04 — Impak & Keberlanjutan</div>
-        <h1 class="section-title">Impak Kepada Guru, Murid & Keberlanjutan</h1>
+        <div class="section-number">Bahagian 04 — Impak &amp; Keberlanjutan</div>
+        <h1 class="section-title">Impak Kepada Guru, Murid &amp; Keberlanjutan</h1>
     </div>
 
     <div class="section-body">
@@ -3477,7 +3508,7 @@ Extensions    Videos
             </div>
             <div class="quality-item">
                 <div class="quality-check">✓</div>
-                <div class="quality-item-text"><strong>Bank soalan UASA</strong> — 2,000+ percubaan, Sejarah Tahun 5 & 6, PSV Tahun 6</div>
+                <div class="quality-item-text"><strong>Bank soalan UASA</strong> — 2,000+ percubaan, Sejarah Tahun 5 &amp; 6, PSV Tahun 6</div>
             </div>
             <div class="quality-item">
                 <div class="quality-check">✓</div>
@@ -3503,7 +3534,7 @@ Extensions    Videos
             </div>
             <div class="quality-item">
                 <div class="quality-check">✓</div>
-                <div class="quality-item-text"><strong>Model pendapatan</strong> — Auto eRPH & IDME PRO memastikan penyelenggaraan jangka panjang</div>
+                <div class="quality-item-text"><strong>Model pendapatan</strong> — Auto eRPH &amp; IDME PRO memastikan penyelenggaraan jangka panjang</div>
             </div>
             <div class="quality-item">
                 <div class="quality-check">✓</div>
@@ -3517,7 +3548,7 @@ Extensions    Videos
 
         <!-- Rumusan -->
         <div class="highlight-box">
-            <h3>Rumusan Bahagian 04: Sumbangan & Impak</h3>
+            <h3>Rumusan Bahagian 04: Sumbangan &amp; Impak</h3>
             <div class="stat-inline">
                 <div>
                     <span>10,700+</span>
@@ -3539,7 +3570,7 @@ Extensions    Videos
         </div>
     </div>
 
-    <div class="page-number">Muka Surat <span>21</span></div>
+    <div class="page-number">Muka Surat <span>23</span></div>
     <div class="page-footer-bar"></div>
 </div>
 
@@ -3565,27 +3596,27 @@ Extensions    Videos
 
         <div class="quality-grid">
             <div class="quality-item">
-                <span class="quality-check">&#10003;</span>
-                <span class="quality-item-text">Pengendalian kamera & pencahayaan</span>
+                <span class="quality-check">✓</span>
+                <span class="quality-item-text">Pengendalian kamera &amp; pencahayaan</span>
             </div>
             <div class="quality-item">
-                <span class="quality-check">&#10003;</span>
+                <span class="quality-check">✓</span>
                 <span class="quality-item-text">Penyuntingan video (Adobe Premiere Pro, Filmora)</span>
             </div>
             <div class="quality-item">
-                <span class="quality-check">&#10003;</span>
-                <span class="quality-item-text">Penulisan skrip & kewartawanan</span>
+                <span class="quality-check">✓</span>
+                <span class="quality-item-text">Penulisan skrip &amp; kewartawanan</span>
             </div>
             <div class="quality-item">
-                <span class="quality-check">&#10003;</span>
-                <span class="quality-item-text">Pengacaraan & pembacaan berita</span>
+                <span class="quality-check">✓</span>
+                <span class="quality-item-text">Pengacaraan &amp; pembacaan berita</span>
             </div>
             <div class="quality-item">
-                <span class="quality-check">&#10003;</span>
-                <span class="quality-item-text">Reka bentuk thumbnail & poster (Canva)</span>
+                <span class="quality-check">✓</span>
+                <span class="quality-item-text">Reka bentuk thumbnail &amp; poster (Canva)</span>
             </div>
             <div class="quality-item">
-                <span class="quality-check">&#10003;</span>
+                <span class="quality-check">✓</span>
                 <span class="quality-item-text">Pengurusan media sosial sekolah</span>
             </div>
         </div>
@@ -3642,10 +3673,22 @@ Extensions    Videos
 
         <h3 class="subsection-title">Inovasi Pengurusan Digital</h3>
 
-        <div class="info-grid">
+        
+
+        
+
+    </div>
+    <div class="page-number">Muka Surat <span>24</span></div>
+    <div class="page-footer-bar"></div>
+</div><div class="page section-page">
+      <div class="section-header">
+        <div class="section-number">Bahagian 04 — TVPSS FiveOne</div>
+        <h1 class="section-title">Impak Terperinci TVPSS FiveOne (sambungan)</h1>
+    </div>
+      <div class="section-body"><div class="info-grid">
             <div class="info-card">
                 <strong>Aplikasi Kelulusan Ibu Bapa Digital</strong><br>
-                Sistem iDelima & eSlip menggantikan borang kertas — memudahkan komunikasi sekolah-rumah secara digital.
+                Sistem iDelima &amp; eSlip menggantikan borang kertas — memudahkan komunikasi sekolah-rumah secara digital.
             </div>
             <div class="info-card">
                 <strong>29+ Poster Kejayaan</strong><br>
@@ -3656,20 +3699,17 @@ Extensions    Videos
                 Portal rasmi di Google Sites sebagai pusat rujukan dan arkib semua kandungan TVPSS sekolah.
             </div>
         </div>
-
-        <div class="screenshot-grid">
+<div class="screenshot-grid">
             <div class="screenshot-placeholder">
                 <div class="screenshot-caption">Studio TVPSS FiveOne — peralatan lengkap termasuk green screen, kamera, dan komputer penyuntingan</div>
             </div>
             <div class="screenshot-placeholder">
                 <div class="screenshot-caption">Analitik YouTube TVPSS FiveOne — 126,000+ tontonan, 1,556 subscriber</div>
             </div>
-        </div>
-
+        </div></div>
+      <div class="page-number">Muka Surat <span>25</span></div>
+      <div class="page-footer-bar"></div>
     </div>
-    <div class="page-number">Muka Surat <span>22</span></div>
-    <div class="page-footer-bar"></div>
-</div>
 
 
 <!-- ============================================================
@@ -3678,7 +3718,7 @@ Extensions    Videos
 <div class="page section-page">
     <div class="section-header">
         <div class="section-number">Bahagian 04 — Perkongsian Ilmu</div>
-        <h1 class="section-title">Perkongsian Ilmu & Kepakaran</h1>
+        <h1 class="section-title">Perkongsian Ilmu &amp; Kepakaran</h1>
     </div>
     <div class="section-body">
 
@@ -3734,7 +3774,7 @@ Extensions    Videos
                 <tr>
                     <td>1</td>
                     <td>Penggunaan Google Workspace</td>
-                    <td>Guru KL & Selangor</td>
+                    <td>Guru KL &amp; Selangor</td>
                     <td>Serantau</td>
                 </tr>
                 <tr>
@@ -3770,28 +3810,37 @@ Extensions    Videos
             <div class="evidence-card-content">Pembantu program UKM Permata Pintar pada tahun 2023 dan 2024 — membimbing murid pintar cerdas di peringkat kebangsaan dalam kemahiran digital dan penciptaan kandungan.</div>
         </div>
 
-        <h3 class="subsection-title">Pensijilan & Pengiktirafan Profesional</h3>
+        <h3 class="subsection-title">Pensijilan &amp; Pengiktirafan Profesional</h3>
 
         <div class="badge-row">
             <span class="badge gold">Edufluencers 2.0 (180 guru terpilih, 2022)</span>
             <span class="badge gold">CJD Top 150 Kebangsaan (MDEC, 2023)</span>
             <span class="badge">ClassPoint Certified</span>
-            <span class="badge">GCE Level 1 & 2</span>
+            <span class="badge">GCE Level 1 &amp; 2</span>
             <span class="badge">Quizziz Certified</span>
         </div>
 
-        <div class="highlight-box">
-            <span class="stat-inline">5 sesi perkongsian rasmi + 2 pelantikan juri + pensijilan digital bertaraf antarabangsa</span> — membuktikan bahawa Cikgu Aime bukan sekadar pencipta kandungan, tetapi seorang <strong>pemimpin dan pembimbing</strong> dalam ekosistem pendidikan digital Malaysia.
-        </div>
+        
 
-        <div class="screenshot-placeholder">
-            <div class="screenshot-caption">Sesi perkongsian ilmu bersama guru-guru — Smart Sharing & Knowledge Sharing</div>
-        </div>
+        
 
     </div>
-    <div class="page-number">Muka Surat <span>23</span></div>
+    <div class="page-number">Muka Surat <span>26</span></div>
     <div class="page-footer-bar"></div>
-</div>
+</div><div class="page section-page">
+      <div class="section-header">
+        <div class="section-number">Bahagian 04 — Perkongsian Ilmu</div>
+        <h1 class="section-title">Perkongsian Ilmu &amp; Kepakaran (sambungan)</h1>
+    </div>
+      <div class="section-body"><div class="highlight-box">
+            <span class="stat-inline">5 sesi perkongsian rasmi + 2 pelantikan juri + pensijilan digital bertaraf antarabangsa</span> — membuktikan bahawa Cikgu Aime bukan sekadar pencipta kandungan, tetapi seorang <strong>pemimpin dan pembimbing</strong> dalam ekosistem pendidikan digital Malaysia.
+        </div>
+<div class="screenshot-placeholder">
+            <div class="screenshot-caption">Sesi perkongsian ilmu bersama guru-guru — Smart Sharing &amp; Knowledge Sharing</div>
+        </div></div>
+      <div class="page-number">Muka Surat <span>27</span></div>
+      <div class="page-footer-bar"></div>
+    </div>
 
 
 <!-- ============================================================
@@ -3800,7 +3849,7 @@ Extensions    Videos
 <div class="page section-page">
     <div class="section-header">
         <div class="section-number">Bahagian 04 — Impak Komuniti</div>
-        <h1 class="section-title">Impak Kepada Komuniti & Inspirasi</h1>
+        <h1 class="section-title">Impak Kepada Komuniti &amp; Inspirasi</h1>
     </div>
     <div class="section-body">
 
@@ -3849,7 +3898,7 @@ Extensions    Videos
 
         <div class="info-grid">
             <div class="info-card">
-                <strong>Aplikasi iDelima & eSlip</strong><br>
+                <strong>Aplikasi iDelima &amp; eSlip</strong><br>
                 Sistem kelulusan digital menggantikan borang kertas — ibu bapa boleh memberi kelulusan secara dalam talian dengan mudah dan pantas.
             </div>
             <div class="info-card">
@@ -3865,17 +3914,25 @@ Extensions    Videos
             <div class="evidence-card-content">Dipilih sebagai salah seorang daripada <strong>180 guru di seluruh Malaysia</strong> dalam program Edufluencers 2.0 (2022) — pengiktirafan rasmi oleh Kementerian Pendidikan Malaysia bahawa Cikgu Aime merupakan seorang <strong>influencer pendidikan digital</strong> yang memberi impak kepada profesion keguruan.</div>
         </div>
 
-        <div class="testimonial">
+        
+
+    </div>
+    <div class="page-number">Muka Surat <span>28</span></div>
+    <div class="page-footer-bar"></div>
+</div><div class="page section-page">
+      <div class="section-header">
+        <div class="section-number">Bahagian 04 — Impak Komuniti</div>
+        <h1 class="section-title">Impak Kepada Komuniti &amp; Inspirasi (sambungan)</h1>
+    </div>
+      <div class="section-body"><div class="testimonial">
             <div class="testimonial-text">
                 "Seorang guru yang bermula dari bilik tidur pada tahun 2018, menulis artikel untuk membantu guru lain, kini telah memberi impak kepada lebih <strong>10,700 guru</strong> dan <strong>1.2 juta pelawat</strong> di seluruh Malaysia. Daripada sebuah blog peribadi kepada sebuah platform rujukan nasional — inilah kuasa kandungan digital apabila digerakkan oleh hati seorang pendidik."
             </div>
             <div class="testimonial-author">— Refleksi perjalanan Cikgu Aime, 2018–2026</div>
-        </div>
-
+        </div></div>
+      <div class="page-number">Muka Surat <span>29</span></div>
+      <div class="page-footer-bar"></div>
     </div>
-    <div class="page-number">Muka Surat <span>24</span></div>
-    <div class="page-footer-bar"></div>
-</div>
 
 
 <!-- ============================================================
@@ -3952,19 +4009,19 @@ Extensions    Videos
 
         <div class="stats-row">
             <div class="stat-box">
-                <div class="stat-box-number">0 &rarr; 1.2J</div>
+                <div class="stat-box-number">0 → 1.2J</div>
                 <div class="stat-box-label">Pelawat Blog</div>
             </div>
             <div class="stat-box">
-                <div class="stat-box-number">0 &rarr; 10,700+</div>
+                <div class="stat-box-number">0 → 10,700+</div>
                 <div class="stat-box-label">Pengguna Extensions</div>
             </div>
             <div class="stat-box">
-                <div class="stat-box-number">0 &rarr; 254+</div>
+                <div class="stat-box-number">0 → 254+</div>
                 <div class="stat-box-label">Kandungan Digital</div>
             </div>
             <div class="stat-box">
-                <div class="stat-box-number">0 &rarr; 99</div>
+                <div class="stat-box-number">0 → 99</div>
                 <div class="stat-box-label">Aktiviti TVPSS</div>
             </div>
         </div>
@@ -3973,14 +4030,22 @@ Extensions    Videos
             Perjalanan ini membuktikan bahawa Cikgu Aime bukan seorang yang mencapai kejayaan secara kebetulan. Setiap tahun menunjukkan <strong>pertumbuhan yang dirancang, konsisten, dan bersistematik</strong>. Bermula sebagai seorang pelajar yang menulis blog untuk membantu orang lain, beliau kini merupakan seorang pendidik yang telah <strong>mengubah landskap pendidikan digital</strong> di sekolahnya, di daerahnya, dan di seluruh Malaysia.
         </p>
 
-        <div class="highlight-box">
-            Daripada <span class="stat-inline">sebuah blog di bilik tidur</span> pada tahun 2018 kepada <span class="stat-inline">ekosistem digital berskala nasional</span> pada tahun 2026 — inilah perjalanan seorang guru yang percaya bahawa teknologi, apabila digunakan dengan hati, mampu mengubah pendidikan negara.
-        </div>
+        
 
     </div>
-    <div class="page-number">Muka Surat <span>25</span></div>
+    <div class="page-number">Muka Surat <span>30</span></div>
     <div class="page-footer-bar"></div>
-</div>
+</div><div class="page section-page">
+      <div class="section-header">
+        <div class="section-number">Bahagian 04 — Garis Masa</div>
+        <h1 class="section-title">Perjalanan Digital 2018–2026 (sambungan)</h1>
+    </div>
+      <div class="section-body"><div class="highlight-box">
+            Daripada <span class="stat-inline">sebuah blog di bilik tidur</span> pada tahun 2018 kepada <span class="stat-inline">ekosistem digital berskala nasional</span> pada tahun 2026 — inilah perjalanan seorang guru yang percaya bahawa teknologi, apabila digunakan dengan hati, mampu mengubah pendidikan negara.
+        </div></div>
+      <div class="page-number">Muka Surat <span>31</span></div>
+      <div class="page-footer-bar"></div>
+    </div>
 
 <!-- ============================================================ -->
 <!-- BAHAGIAN 05: SIJIL & PENCAPAIAN (Muka Surat 13-14)          -->
@@ -3990,7 +4055,7 @@ Extensions    Videos
     <div class="section-header">
         <div class="section-number">05</div>
         <div>
-            <h2>Sijil & Pencapaian</h2>
+            <h2>Sijil &amp; Pencapaian</h2>
             <p>Pengiktirafan profesional dan kejayaan pertandingan</p>
         </div>
     </div>
@@ -4075,19 +4140,19 @@ Extensions    Videos
 
         <div class="info-grid" style="grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 14px;">
             <div class="info-card" style="padding: 10px;">
-                <h4 style="font-size: 11px; color: var(--primary); margin-bottom: 6px;">Peringkat Kebangsaan & Antarabangsa</h4>
+                <h4 style="font-size: 11px; color: var(--primary); margin-bottom: 6px;">Peringkat Kebangsaan &amp; Antarabangsa</h4>
                 <ul style="font-size: 10px; padding-left: 16px; line-height: 1.7;">
                     <li>TOP 150 Cikgu Juara Digital Kebangsaan</li>
-                    <li>Google Certified Educator (Level 1 & 2)</li>
+                    <li>Google Certified Educator (Level 1 &amp; 2)</li>
                     <li>Penyertaan pertandingan inovasi kebangsaan</li>
                 </ul>
             </div>
             <div class="info-card" style="padding: 10px;">
-                <h4 style="font-size: 11px; color: var(--primary); margin-bottom: 6px;">Peringkat Negeri & Daerah</h4>
+                <h4 style="font-size: 11px; color: var(--primary); margin-bottom: 6px;">Peringkat Negeri &amp; Daerah</h4>
                 <ul style="font-size: 10px; padding-left: 16px; line-height: 1.7;">
                     <li>Edufluencer Putrajaya 2024</li>
                     <li>Pelbagai pertandingan inovasi peringkat negeri</li>
-                    <li>Pertandingan TVPSS peringkat daerah & negeri</li>
+                    <li>Pertandingan TVPSS peringkat daerah &amp; negeri</li>
                 </ul>
             </div>
         </div>
@@ -4100,8 +4165,8 @@ Extensions    Videos
             <span style="background: var(--primary); color: white; padding: 4px 12px; border-radius: 20px; font-size: 10px;">TVPSS</span>
             <span style="background: var(--primary-light); color: white; padding: 4px 12px; border-radius: 20px; font-size: 10px;">Teknologi Pendidikan</span>
             <span style="background: var(--primary-light); color: white; padding: 4px 12px; border-radius: 20px; font-size: 10px;">Kokurikulum</span>
-            <span style="background: var(--accent-dark); color: white; padding: 4px 12px; border-radius: 20px; font-size: 10px;">Sukan & Permainan</span>
-            <span style="background: var(--accent-dark); color: white; padding: 4px 12px; border-radius: 20px; font-size: 10px;">Seni & Kebudayaan</span>
+            <span style="background: var(--accent-dark); color: white; padding: 4px 12px; border-radius: 20px; font-size: 10px;">Sukan &amp; Permainan</span>
+            <span style="background: var(--accent-dark); color: white; padding: 4px 12px; border-radius: 20px; font-size: 10px;">Seni &amp; Kebudayaan</span>
             <span style="background: #666; color: white; padding: 4px 12px; border-radius: 20px; font-size: 10px;">Akademik</span>
         </div>
 
@@ -4143,7 +4208,7 @@ Extensions    Videos
         </table>
     </div>
 
-    <div class="page-number">Muka Surat <span>26</span></div>
+    <div class="page-number">Muka Surat <span>32</span></div>
     <div class="page-footer-bar"></div>
 </div>
 
@@ -4152,7 +4217,7 @@ Extensions    Videos
     <div class="section-header">
         <div class="section-number">05</div>
         <div>
-            <h2>Sijil & Pencapaian</h2>
+            <h2>Sijil &amp; Pencapaian</h2>
             <p>Salinan sijil dan bukti pengiktirafan</p>
         </div>
     </div>
@@ -4197,7 +4262,7 @@ Extensions    Videos
         </div>
     </div>
 
-    <div class="page-number">Muka Surat <span>27</span></div>
+    <div class="page-number">Muka Surat <span>33</span></div>
     <div class="page-footer-bar"></div>
 </div>
 
@@ -4209,14 +4274,14 @@ Extensions    Videos
     <div class="section-header">
         <div class="section-number">06</div>
         <div>
-            <h2>Etika & Privasi Digital</h2>
+            <h2>Etika &amp; Privasi Digital</h2>
             <p>Amalan perlindungan data, hak cipta, dan keselamatan</p>
         </div>
     </div>
 
     <div class="section-body">
         <!-- Privasi & Perlindungan Data -->
-        <h3 style="color: var(--primary); margin-bottom: 10px; font-size: 14px;">A. PRIVASI & PERLINDUNGAN DATA MURID</h3>
+        <h3 style="color: var(--primary); margin-bottom: 10px; font-size: 14px;">A. PRIVASI &amp; PERLINDUNGAN DATA MURID</h3>
 
         <div class="info-grid" style="grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 18px;">
             <div class="info-card" style="padding: 10px;">
@@ -4238,7 +4303,7 @@ Extensions    Videos
         </div>
 
         <!-- Hak Cipta & Keaslian -->
-        <h3 style="color: var(--primary); margin-bottom: 10px; font-size: 14px;">B. HAK CIPTA & KEASLIAN KANDUNGAN</h3>
+        <h3 style="color: var(--primary); margin-bottom: 10px; font-size: 14px;">B. HAK CIPTA &amp; KEASLIAN KANDUNGAN</h3>
 
         <div class="info-grid" style="grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 18px;">
             <div class="info-card" style="padding: 10px;">
@@ -4260,7 +4325,7 @@ Extensions    Videos
         </div>
 
         <!-- Keselamatan Web -->
-        <h3 style="color: var(--primary); margin-bottom: 10px; font-size: 14px;">C. KESELAMATAN WEB & APLIKASI</h3>
+        <h3 style="color: var(--primary); margin-bottom: 10px; font-size: 14px;">C. KESELAMATAN WEB &amp; APLIKASI</h3>
 
         <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-bottom: 18px;">
             <div style="background: var(--bg-light); border-radius: 8px; padding: 8px; text-align: center;">
@@ -4304,9 +4369,10 @@ Extensions    Videos
         </div>
     </div>
 
-    <div class="page-number">Muka Surat <span>28</span></div>
+    <div class="page-number">Muka Surat <span>34</span></div>
     <div class="page-footer-bar"></div>
 </div>
 
-</body>
-</html>
+
+
+</body></html>
