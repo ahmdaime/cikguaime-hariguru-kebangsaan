@@ -579,6 +579,241 @@
             font-weight: 500;
         }
 
+        /* === KATALOG COMPONENTS === */
+        .product-card {
+            border: 1px solid var(--border);
+            border-radius: 4mm;
+            overflow: hidden;
+            margin-bottom: 5mm;
+            page-break-inside: avoid;
+        }
+
+        .product-card-header {
+            background: var(--blue-gradient);
+            color: var(--text-light);
+            padding: 4mm 6mm;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .product-card-header h3 {
+            font-size: 12pt;
+            font-weight: 700;
+        }
+
+        .product-card-header .product-type {
+            background: var(--accent);
+            color: var(--primary);
+            font-size: 7pt;
+            font-weight: 700;
+            padding: 1mm 3mm;
+            border-radius: 1.5mm;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .product-card-body {
+            padding: 5mm 6mm;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3mm;
+        }
+
+        .product-card-body.single-col {
+            grid-template-columns: 1fr;
+        }
+
+        .product-detail {
+            font-size: 9pt;
+        }
+
+        .product-detail .detail-label {
+            font-size: 7.5pt;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #888;
+            font-weight: 600;
+        }
+
+        .product-detail .detail-value {
+            color: var(--primary);
+            font-weight: 500;
+            margin-top: 0.5mm;
+        }
+
+        .product-features {
+            grid-column: 1 / -1;
+            margin-top: 2mm;
+        }
+
+        .product-features ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2mm;
+        }
+
+        .product-features ul li {
+            background: var(--bg-light);
+            font-size: 8pt;
+            padding: 1.5mm 3mm;
+            border-radius: 1.5mm;
+            color: #444;
+        }
+
+        .product-features ul li::before {
+            content: '✓ ';
+            color: var(--accent-dark);
+            font-weight: 700;
+        }
+
+        .product-card-stats {
+            background: var(--bg-light);
+            padding: 3mm 6mm;
+            display: flex;
+            gap: 6mm;
+            border-top: 1px solid var(--border);
+        }
+
+        .product-card-stats .pcs-item {
+            font-size: 8.5pt;
+        }
+
+        .product-card-stats .pcs-item strong {
+            color: var(--primary);
+        }
+
+        .product-card-stats .pcs-item span {
+            color: #888;
+        }
+
+        /* Category summary card */
+        .category-summary {
+            background: var(--bg-light);
+            border-radius: 4mm;
+            padding: 5mm 6mm;
+            margin-bottom: 5mm;
+            border-left: 4px solid var(--accent);
+        }
+
+        .category-summary h3 {
+            font-size: 13pt;
+            color: var(--primary);
+            margin-bottom: 2mm;
+        }
+
+        .category-summary p {
+            font-size: 9.5pt;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        /* Mini product row */
+        .mini-product-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4mm;
+            margin: 4mm 0;
+        }
+
+        .mini-product {
+            background: var(--bg-light);
+            border-radius: 3mm;
+            padding: 4mm 5mm;
+            border-left: 3px solid var(--accent);
+        }
+
+        .mini-product h4 {
+            font-size: 10pt;
+            color: var(--primary);
+            margin-bottom: 1.5mm;
+        }
+
+        .mini-product p {
+            font-size: 8.5pt;
+            color: #555;
+            line-height: 1.5;
+        }
+
+        .mini-product .mini-stats {
+            margin-top: 2mm;
+            display: flex;
+            gap: 3mm;
+        }
+
+        .mini-product .mini-stat-badge {
+            font-size: 7.5pt;
+            background: var(--primary);
+            color: var(--accent);
+            padding: 1mm 2.5mm;
+            border-radius: 1.5mm;
+            font-weight: 600;
+        }
+
+        /* Video overview */
+        .video-overview {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 4mm;
+            margin: 4mm 0;
+        }
+
+        .video-year-card {
+            background: var(--bg-light);
+            border-radius: 3mm;
+            padding: 5mm;
+            text-align: center;
+            border-top: 3px solid var(--accent);
+        }
+
+        .video-year-card .vyc-year {
+            font-size: 10pt;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .video-year-card .vyc-count {
+            font-size: 22pt;
+            font-weight: 800;
+            color: var(--primary);
+            margin: 2mm 0;
+        }
+
+        .video-year-card .vyc-label {
+            font-size: 7.5pt;
+            color: #888;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Article category list */
+        .article-cat-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 3mm;
+            margin: 4mm 0;
+        }
+
+        .article-cat {
+            background: var(--bg-light);
+            border-radius: 3mm;
+            padding: 4mm;
+            text-align: center;
+        }
+
+        .article-cat .ac-count {
+            font-size: 16pt;
+            font-weight: 800;
+            color: var(--primary);
+        }
+
+        .article-cat .ac-name {
+            font-size: 8pt;
+            color: #666;
+            margin-top: 1mm;
+        }
+
         /* Page number */
         .page-number {
             position: absolute;
@@ -1027,6 +1262,682 @@
     </div>
 
     <div class="page-number">Muka Surat <span>2</span></div>
+    <div class="page-footer-bar"></div>
+</div>
+
+<!-- ============================================ -->
+<!-- MUKA SURAT 5: BAHAGIAN 02 — KATALOG OVERVIEW -->
+<!-- ============================================ -->
+<div class="page section-page">
+    <div class="section-header">
+        <div class="section-number">Bahagian 02</div>
+        <h1 class="section-title">Katalog Kandungan Digital</h1>
+    </div>
+
+    <div class="section-body">
+        <div class="narrative">
+            Bahagian ini mendokumentasikan keseluruhan kandungan digital yang telah dibangunkan dan diterbitkan oleh Cikgu Aime merangkumi <strong>4 kategori utama</strong>: projek perisian digital, video pendidikan, artikel & tutorial, serta kuiz interaktif. Semua kandungan ini telah diterbitkan di platform yang boleh diakses secara umum.
+        </div>
+
+        <!-- Overview Stats -->
+        <div class="stats-row">
+            <div class="stat-box">
+                <span class="stat-box-number">11</span>
+                <span class="stat-box-label">Projek Perisian</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-box-number">176</span>
+                <span class="stat-box-label">Video Pendidikan</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-box-number">60+</span>
+                <span class="stat-box-label">Artikel & Tutorial</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-box-number">7+</span>
+                <span class="stat-box-label">Kuiz Interaktif</span>
+            </div>
+        </div>
+
+        <!-- Senarai Ringkas 11 Projek -->
+        <div class="subsection-title">A. Projek Perisian Digital (11 Projek)</div>
+
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Nama Projek</th>
+                    <th>Jenis</th>
+                    <th>Sasaran</th>
+                    <th>Pengguna</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td><strong>IDME PBD Helper</strong></td>
+                    <td>Chrome Extension</td>
+                    <td>Guru</td>
+                    <td><strong>3,000+</strong></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><strong>MOIES Kehadiran Helper</strong></td>
+                    <td>Chrome Extension</td>
+                    <td>Guru</td>
+                    <td><strong>3,000+</strong></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><strong>PBD OnePage</strong></td>
+                    <td>Chrome Extension</td>
+                    <td>Guru</td>
+                    <td><strong>4,000+</strong></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td><strong>Auto eRPH</strong></td>
+                    <td>Google Apps Script</td>
+                    <td>Guru</td>
+                    <td><strong>50+</strong></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td><strong>Sistem PBD Sahsiah</strong></td>
+                    <td>Web App (Next.js)</td>
+                    <td>Guru & Ibu Bapa</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td><strong>Web App Headcount</strong></td>
+                    <td>Web App (Next.js + Python)</td>
+                    <td>Guru & Pentadbir</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td><strong>Relief Activity Hub</strong></td>
+                    <td>Web App (React)</td>
+                    <td>Guru & Murid</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td><strong>Buku Tulis Digital</strong></td>
+                    <td>Standalone HTML</td>
+                    <td>Guru & Murid</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td><strong>CikguAime Platform</strong></td>
+                    <td>Web + Apps Script</td>
+                    <td>Guru & Murid</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td><strong>Nexus Admin Dashboard</strong></td>
+                    <td>Web App (Vite)</td>
+                    <td>Dalaman</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td><strong>Landing Page MOIES</strong></td>
+                    <td>Web App (React)</td>
+                    <td>Guru</td>
+                    <td>—</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Video Overview -->
+        <div class="subsection-title">B. Video Pendidikan (176 Video)</div>
+
+        <div class="video-overview">
+            <div class="video-year-card">
+                <div class="vyc-year">YouTube TVPSS</div>
+                <div class="vyc-count">66</div>
+                <div class="vyc-label">61 Episod + 5 Siaran Langsung</div>
+            </div>
+            <div class="video-year-card">
+                <div class="vyc-year">TikTok</div>
+                <div class="vyc-count">~110</div>
+                <div class="vyc-label">Video Pendidikan Peribadi</div>
+            </div>
+            <div class="video-year-card">
+                <div class="vyc-year">Jumlah</div>
+                <div class="vyc-count">176</div>
+                <div class="vyc-label">Video Kandungan Digital</div>
+            </div>
+        </div>
+
+        <!-- Artikel Overview -->
+        <div class="subsection-title">C. Artikel & Tutorial (60+ Artikel)</div>
+
+        <div class="article-cat-grid">
+            <div class="article-cat">
+                <div class="ac-count">14+</div>
+                <div class="ac-name">Sekolah</div>
+            </div>
+            <div class="article-cat">
+                <div class="ac-count">12</div>
+                <div class="ac-name">Sejarah</div>
+            </div>
+            <div class="article-cat">
+                <div class="ac-count">8</div>
+                <div class="ac-name">PSV</div>
+            </div>
+            <div class="article-cat">
+                <div class="ac-count">8</div>
+                <div class="ac-name">Tutorial Pendidikan</div>
+            </div>
+            <div class="article-cat">
+                <div class="ac-count">8</div>
+                <div class="ac-name">Tutorial Teknologi</div>
+            </div>
+            <div class="article-cat">
+                <div class="ac-count">6</div>
+                <div class="ac-name">Blog</div>
+            </div>
+            <div class="article-cat">
+                <div class="ac-count">5</div>
+                <div class="ac-name">SPP / Guru Baru</div>
+            </div>
+            <div class="article-cat">
+                <div class="ac-count">2</div>
+                <div class="ac-name">Refleksi Tahunan</div>
+            </div>
+            <div class="article-cat">
+                <div class="ac-count">7+</div>
+                <div class="ac-name">Kuiz Interaktif</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-number">Muka Surat <span>3</span></div>
+    <div class="page-footer-bar"></div>
+</div>
+
+<!-- ============================================ -->
+<!-- MUKA SURAT 6: PROJEK UTAMA 1 — CHROME EXT    -->
+<!-- ============================================ -->
+<div class="page section-page">
+    <div class="section-header">
+        <div class="section-number">Bahagian 02 — Projek Perisian Digital</div>
+        <h1 class="section-title">Chrome Extensions (10,700+ Pengguna)</h1>
+    </div>
+
+    <div class="section-body">
+        <!-- IDME PBD Helper -->
+        <div class="product-card">
+            <div class="product-card-header">
+                <h3>1. IDME PBD Helper</h3>
+                <span class="product-type">Chrome Extension</span>
+            </div>
+            <div class="product-card-body">
+                <div class="product-detail">
+                    <div class="detail-label">Versi</div>
+                    <div class="detail-value">v3.9.0</div>
+                </div>
+                <div class="product-detail">
+                    <div class="detail-label">Pengguna</div>
+                    <div class="detail-value">3,000+ guru &nbsp;|&nbsp; Rating 5.0/5</div>
+                </div>
+                <div class="product-detail" style="grid-column: 1 / -1;">
+                    <div class="detail-label">Fungsi</div>
+                    <div class="detail-value">Automasi pengisian data Pentaksiran Bilik Darjah (PBD) dalam sistem IDME KPM. Proses yang mengambil 30 minit secara manual dikurangkan kepada 2–5 minit sahaja.</div>
+                </div>
+                <div class="product-features">
+                    <ul>
+                        <li>Pilihan TP pukal (1-6)</li>
+                        <li>Auto Usaha Murid</li>
+                        <li>Auto Ulasan Guru</li>
+                        <li>Kemahiran Bahasa (BM/BI)</li>
+                        <li>PRO: Cadangan TP pintar berdasarkan markah</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="product-card-stats">
+                <div class="pcs-item"><strong>Masalah:</strong> <span>Guru isi borang PBD 30+ murid satu per satu</span></div>
+                <div class="pcs-item"><strong>Impak:</strong> <span>30 min → 2 min (93% penjimatan)</span></div>
+            </div>
+        </div>
+
+        <!-- MOIES Kehadiran Helper -->
+        <div class="product-card">
+            <div class="product-card-header">
+                <h3>2. MOIES Kehadiran Helper</h3>
+                <span class="product-type">Chrome Extension</span>
+            </div>
+            <div class="product-card-body">
+                <div class="product-detail">
+                    <div class="detail-label">Versi</div>
+                    <div class="detail-value">v1.4.0</div>
+                </div>
+                <div class="product-detail">
+                    <div class="detail-label">Pengguna</div>
+                    <div class="detail-value">3,000+ guru &nbsp;|&nbsp; Rating 5.0/5</div>
+                </div>
+                <div class="product-detail" style="grid-column: 1 / -1;">
+                    <div class="detail-label">Fungsi</div>
+                    <div class="detail-value">Automasi rekod kehadiran murid dalam sistem MOIES KPM. Parse mesej WhatsApp ibu bapa secara automatik dengan padanan nama pintar (fuzzy matching) dan pengkategorian 98 kod KPM.</div>
+                </div>
+                <div class="product-features">
+                    <ul>
+                        <li>Parse WhatsApp automatik</li>
+                        <li>Fuzzy matching untuk typo</li>
+                        <li>98 kod kehadiran KPM</li>
+                        <li>Pemprosesan 100% tempatan</li>
+                        <li>PRO: AI Gemini ~100% ketepatan</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="product-card-stats">
+                <div class="pcs-item"><strong>Masalah:</strong> <span>Isi kehadiran 30-40 murid manual setiap hari</span></div>
+                <div class="pcs-item"><strong>Impak:</strong> <span>40 min → 3 min (92% penjimatan)</span></div>
+            </div>
+        </div>
+
+        <!-- PBD OnePage -->
+        <div class="product-card">
+            <div class="product-card-header">
+                <h3>3. PBD OnePage</h3>
+                <span class="product-type">Chrome Extension</span>
+            </div>
+            <div class="product-card-body">
+                <div class="product-detail">
+                    <div class="detail-label">Versi</div>
+                    <div class="detail-value">v2.0</div>
+                </div>
+                <div class="product-detail">
+                    <div class="detail-label">Pengguna</div>
+                    <div class="detail-value">4,000+ guru &nbsp;|&nbsp; Rating 5.0/5</div>
+                </div>
+                <div class="product-detail" style="grid-column: 1 / -1;">
+                    <div class="detail-label">Fungsi</div>
+                    <div class="detail-value">Tukar laporan PBD berbilang halaman kepada satu halaman untuk cetakan. Menyokong Slip PBD dan Slip Kemahiran dengan pilihan orientasi dan pratetap konfigurasi.</div>
+                </div>
+                <div class="product-features">
+                    <ul>
+                        <li>Slip PBD & Kemahiran</li>
+                        <li>Landscape / Portrait</li>
+                        <li>3 pratetap (Ultra Compact, Standard, Professional)</li>
+                        <li>Tandatangan digital</li>
+                        <li>Pengesanan jenis halaman automatik</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="product-card-stats">
+                <div class="pcs-item"><strong>Masalah:</strong> <span>Slip PBD 5-6 halaman per murid — membazir kertas</span></div>
+                <div class="pcs-item"><strong>Impak:</strong> <span>80% penjimatan kertas (5-6 halaman → 1 halaman)</span></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-number">Muka Surat <span>4</span></div>
+    <div class="page-footer-bar"></div>
+</div>
+
+<!-- ============================================ -->
+<!-- MUKA SURAT 7: PROJEK UTAMA 2 — WEB APPS      -->
+<!-- ============================================ -->
+<div class="page section-page">
+    <div class="section-header">
+        <div class="section-number">Bahagian 02 — Projek Perisian Digital</div>
+        <h1 class="section-title">Apps Script & Web Apps</h1>
+    </div>
+
+    <div class="section-body">
+        <!-- Auto eRPH -->
+        <div class="product-card">
+            <div class="product-card-header">
+                <h3>4. Auto eRPH (Apps Script RPH Helper)</h3>
+                <span class="product-type">Google Apps Script</span>
+            </div>
+            <div class="product-card-body">
+                <div class="product-detail">
+                    <div class="detail-label">Versi</div>
+                    <div class="detail-value">v2.6.1-stable</div>
+                </div>
+                <div class="product-detail">
+                    <div class="detail-label">Pelanggan</div>
+                    <div class="detail-value">50+ guru</div>
+                </div>
+                <div class="product-detail" style="grid-column: 1 / -1;">
+                    <div class="detail-label">Fungsi</div>
+                    <div class="detail-value">Automasi penulisan RPH (Rancangan Pelajaran Harian) dalam Google Sheets. Pangkalan data DSKP mengandungi 56,813+ entri kurikulum. Pengekstrakan dokumen Word melalui AI Gemini.</div>
+                </div>
+                <div class="product-features">
+                    <ul>
+                        <li>Parsing pintar objektif & aktiviti</li>
+                        <li>Template tanpa had per subjek</li>
+                        <li>56,813+ entri DSKP</li>
+                        <li>Navigasi multi-sheet (Isnin-Jumaat)</li>
+                        <li>AI Gemini untuk pengekstrakan dokumen</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="product-card-stats">
+                <div class="pcs-item"><strong>Masalah:</strong> <span>10+ minit per RPH untuk copy-paste dan format</span></div>
+                <div class="pcs-item"><strong>Impak:</strong> <span>10 min → 2 min; 70+ jam dijimatkan setahun per guru</span></div>
+            </div>
+        </div>
+
+        <!-- Sistem PBD Sahsiah -->
+        <div class="product-card">
+            <div class="product-card-header">
+                <h3>5. Sistem Perekodan PBD Sahsiah</h3>
+                <span class="product-type">Web App — Next.js</span>
+            </div>
+            <div class="product-card-body">
+                <div class="product-detail" style="grid-column: 1 / -1;">
+                    <div class="detail-label">Fungsi</div>
+                    <div class="detail-value">Sistem pengurusan rekod PBD dan sahsiah murid. Merangkumi modul PBD (TP 1-6), sistem token tingkah laku, pengurusan bukti PSV, dan portal ibu bapa dengan papan pendahulu token.</div>
+                </div>
+                <div class="product-features">
+                    <ul>
+                        <li>Modul PBD (BM, Sejarah, PSV)</li>
+                        <li>Token sahsiah (+1/+3/+5)</li>
+                        <li>Portal ibu bapa</li>
+                        <li>Panel admin</li>
+                        <li>Eksport ke Excel</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Web App Headcount -->
+        <div class="product-card">
+            <div class="product-card-header">
+                <h3>6. Web App Headcount</h3>
+                <span class="product-type">Web App — Next.js + Python</span>
+            </div>
+            <div class="product-card-body">
+                <div class="product-detail" style="grid-column: 1 / -1;">
+                    <div class="detail-label">Fungsi</div>
+                    <div class="detail-value">Alat pemindahan markah murid dari CSV/Excel ke fail Headcount sedia ada. Aliran kerja 5 langkah dengan padanan nama pintar, pratonton perubahan, dan format Excel 100% dikekalkan. Pemprosesan di pelayar (privasi terjamin).</div>
+                </div>
+                <div class="product-features">
+                    <ul>
+                        <li>Wizard 5 langkah</li>
+                        <li>Fuzzy matching nama</li>
+                        <li>Sokongan UASA & PBD</li>
+                        <li>Pratonton perubahan</li>
+                        <li>Pemprosesan di pelayar</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Relief Activity Hub -->
+        <div class="product-card">
+            <div class="product-card-header">
+                <h3>7. Relief Activity Hub</h3>
+                <span class="product-type">Web App — React</span>
+            </div>
+            <div class="product-card-body">
+                <div class="product-detail" style="grid-column: 1 / -1;">
+                    <div class="detail-label">Fungsi</div>
+                    <div class="detail-value">Platform permainan interaktif untuk kelas ganti (relief). 6 mod permainan merangkumi Simpulan Bahasa, Peribahasa, Math Quick Fire, Sains Benar/Palsu, Susun Huruf dan Teka Negara. Pertandingan berpasukan dengan skor langsung.</div>
+                </div>
+                <div class="product-features">
+                    <ul>
+                        <li>6 mod permainan</li>
+                        <li>Pertandingan berpasukan</li>
+                        <li>3 tahap kesukaran</li>
+                        <li>5 subjek (BM, Math, Sains, BI, Geografi)</li>
+                        <li>Optimum untuk projektor</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-number">Muka Surat <span>5</span></div>
+    <div class="page-footer-bar"></div>
+</div>
+
+<!-- ============================================ -->
+<!-- MUKA SURAT 8: PROJEK LAIN + VIDEO             -->
+<!-- ============================================ -->
+<div class="page section-page">
+    <div class="section-header">
+        <div class="section-number">Bahagian 02 — Projek Digital & Video</div>
+        <h1 class="section-title">Projek Sokongan & Video Pendidikan</h1>
+    </div>
+
+    <div class="section-body">
+        <!-- Remaining projects as mini cards -->
+        <div class="subsection-title">Projek Digital Lain (4 Projek)</div>
+
+        <div class="mini-product-grid">
+            <div class="mini-product">
+                <h4>8. Buku Tulis Digital</h4>
+                <p>Aplikasi buku tulis dan lukisan digital — 212KB sahaja, satu fail HTML tanpa pergantungan. Alat lukisan, teks kaya, jadual, berbilang halaman, 4 templat, pemasa, mod persembahan.</p>
+                <div class="mini-stats">
+                    <span class="mini-stat-badge">HTML5 Canvas</span>
+                    <span class="mini-stat-badge">212KB</span>
+                </div>
+            </div>
+            <div class="mini-product">
+                <h4>9. CikguAime Platform</h4>
+                <p>Platform pendidikan menyeluruh — kuiz interaktif murid (Sejarah, PSV), sistem lesen IDME PRO, automasi pembelian, dan penjanaan kunci lesen automatik.</p>
+                <div class="mini-stats">
+                    <span class="mini-stat-badge">Web + Apps Script</span>
+                </div>
+            </div>
+            <div class="mini-product">
+                <h4>10. Nexus Admin Dashboard</h4>
+                <p>Dashboard dalaman untuk pengurusan lesen semua produk digital. Penjanaan kunci lesen, penjejak status, senarai putih peranti, eksport CSV.</p>
+                <div class="mini-stats">
+                    <span class="mini-stat-badge">Vite + Alpine.js</span>
+                </div>
+            </div>
+            <div class="mini-product">
+                <h4>11. Landing Page MOIES</h4>
+                <p>Laman pemasaran untuk MOIES Kehadiran Helper. Penerangan masalah/penyelesaian, demo ciri, testimoni, harga dan FAQ.</p>
+                <div class="mini-stats">
+                    <span class="mini-stat-badge">React 19</span>
+                    <span class="mini-stat-badge">Framer Motion</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Video Section -->
+        <div class="subsection-title">Video Pendidikan — YouTube TVPSS FiveOne</div>
+
+        <div class="narrative">
+            Sebagai Penyelaras TVPSS FiveOne Studio di SK Putrajaya Presint 5(1), Cikgu Aime telah menghasilkan <strong>61 episod</strong> dan <strong>5 siaran langsung</strong> sepanjang 3 tahun (2022–2024). Video merangkumi buletin, dokumentari, temu bual, pertandingan, acara sekolah, dan kandungan pendidikan.
+        </div>
+
+        <div class="video-overview">
+            <div class="video-year-card">
+                <div class="vyc-year">2022</div>
+                <div class="vyc-count">22</div>
+                <div class="vyc-label">Episod</div>
+            </div>
+            <div class="video-year-card">
+                <div class="vyc-year">2023</div>
+                <div class="vyc-count">24</div>
+                <div class="vyc-label">Episod</div>
+            </div>
+            <div class="video-year-card">
+                <div class="vyc-year">2024</div>
+                <div class="vyc-count">15</div>
+                <div class="vyc-label">Episod</div>
+            </div>
+        </div>
+
+        <div class="highlight-box">
+            <h3>Pencapaian Video TVPSS</h3>
+            <div class="stat-inline">
+                <div>
+                    <span>90K+</span>
+                    <span>Jumlah Tontonan</span>
+                </div>
+                <div>
+                    <span>7K</span>
+                    <span>Video Tertinggi</span>
+                </div>
+                <div>
+                    <span>12.2K</span>
+                    <span>Tontonan Langsung</span>
+                </div>
+                <div>
+                    <span>5 jam</span>
+                    <span>Siaran Terpanjang</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- TikTok -->
+        <div class="subsection-title">Video Pendidikan — TikTok (@ahmdaime)</div>
+
+        <div class="narrative">
+            Selain YouTube, Cikgu Aime turut aktif di TikTok dengan <strong>~110 video</strong> berkait pendidikan. Platform ini digunakan untuk perkongsian tips pengajaran, tutorial teknologi, dan kandungan pendidikan ringkas yang mudah diakses oleh guru-guru di seluruh Malaysia.
+        </div>
+
+        <div class="stats-row">
+            <div class="stat-box">
+                <span class="stat-box-number">~110</span>
+                <span class="stat-box-label">Video TikTok</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-box-number">176</span>
+                <span class="stat-box-label">Jumlah Semua Video</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-number">Muka Surat <span>6</span></div>
+    <div class="page-footer-bar"></div>
+</div>
+
+<!-- ============================================ -->
+<!-- MUKA SURAT 9: ARTIKEL & KUIZ                  -->
+<!-- ============================================ -->
+<div class="page section-page">
+    <div class="section-header">
+        <div class="section-number">Bahagian 02 — Artikel & Kuiz Interaktif</div>
+        <h1 class="section-title">Blog, Tutorial & Kuiz Interaktif</h1>
+    </div>
+
+    <div class="section-body">
+        <div class="narrative">
+            Laman web <strong>cikguaime.com</strong> telah aktif sejak 2018 dan mencapai <strong>1,219,265 pengunjung</strong> dengan purata <strong>50,000 kunjungan sebulan</strong>. Ia memuatkan 60+ artikel merangkumi 9 kategori, menjadikannya sumber rujukan utama guru-guru Malaysia.
+        </div>
+
+        <div class="stats-row">
+            <div class="stat-box">
+                <span class="stat-box-number">1.2M</span>
+                <span class="stat-box-label">Jumlah Pelawat</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-box-number">50K</span>
+                <span class="stat-box-label">Kunjungan / Bulan</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-box-number">60+</span>
+                <span class="stat-box-label">Artikel Diterbitkan</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-box-number">9</span>
+                <span class="stat-box-label">Kategori</span>
+            </div>
+        </div>
+
+        <!-- Top articles -->
+        <div class="subsection-title">Artikel Paling Popular</div>
+
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Tajuk Artikel</th>
+                    <th>Kategori</th>
+                    <th>Maklum Balas</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td><strong>Contoh Ulasan Guru Untuk Pelaporan Murid</strong></td>
+                    <td>Sekolah</td>
+                    <td>7 komen</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><strong>Panduan Menyiapkan Kerja Kursus Sejarah</strong></td>
+                    <td>Sejarah</td>
+                    <td>6 komen, 200K+ tontonan</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><strong>Templat RPH Versi Ringkas</strong></td>
+                    <td>Tutorial</td>
+                    <td>4 komen</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Jenis Kandungan -->
+        <div class="subsection-title">Jenis Kandungan di cikguaime.com</div>
+
+        <div class="mini-product-grid">
+            <div class="mini-product">
+                <h4>Kuiz Interaktif</h4>
+                <p>Sejarah Tahun 5 & 6, PSV Tahun 6, BM Tahun 4 — soal jawab seret-dan-lepas, pelbagai pilihan, interaktif web-based</p>
+            </div>
+            <div class="mini-product">
+                <h4>Bank Soalan</h4>
+                <p>Soalan UASA Sejarah Tahun 5 & 6 (3 set), Soalan UASA PSV — 2,000+ percubaan pengguna</p>
+            </div>
+            <div class="mini-product">
+                <h4>Panduan & Tutorial</h4>
+                <p>Kerja kursus Sejarah, Google Classroom, Canva, SSDM, PBD, IDME, Google Meet, Google Form</p>
+            </div>
+            <div class="mini-product">
+                <h4>Templat Digital</h4>
+                <p>RPH versi ringkas, pengurusan jawatan, gambar graduasi — siap guna untuk guru</p>
+            </div>
+            <div class="mini-product">
+                <h4>Perkongsian Pengalaman</h4>
+                <p>Temu duga SPP, panduan guru baru posting, refleksi tahunan (2021–2024), checklist sebelum kahwin</p>
+            </div>
+            <div class="mini-product">
+                <h4>Setup & Peralatan</h4>
+                <p>Setup studio TVPSS sekolah, setup photoshoot, peralatan fotografi — panduan lengkap visual</p>
+            </div>
+        </div>
+
+        <!-- Rumusan bahagian -->
+        <div class="highlight-box">
+            <h3>Rumusan Bahagian 02: Katalog Kandungan Digital</h3>
+            <div class="stat-inline">
+                <div>
+                    <span>254+</span>
+                    <span>Jumlah Kandungan</span>
+                </div>
+                <div>
+                    <span>6</span>
+                    <span>Format Berbeza</span>
+                </div>
+                <div>
+                    <span>10,700+</span>
+                    <span>Guru Pengguna</span>
+                </div>
+                <div>
+                    <span>2018</span>
+                    <span>Aktif Sejak</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-number">Muka Surat <span>7</span></div>
     <div class="page-footer-bar"></div>
 </div>
 
