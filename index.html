@@ -44,7 +44,7 @@
         /* === PAGE SYSTEM === */
         .page {
             width: 210mm;
-            min-height: 297mm;
+            height: 297mm;
             margin: 20px auto;
             background: white;
             position: relative;
@@ -53,11 +53,15 @@
         }
 
         @media print {
-            body { background: white; }
+            body { background: white; margin: 0; padding: 0; }
             .page {
                 margin: 0;
+                padding: 0;
                 box-shadow: none;
                 page-break-after: always;
+                page-break-inside: avoid;
+                height: 297mm;
+                overflow: hidden;
             }
             .page:last-child {
                 page-break-after: avoid;
@@ -287,7 +291,8 @@
         /* === SECTION PAGES === */
         .section-page {
             padding: 0;
-            min-height: 297mm;
+            height: 297mm;
+            overflow: hidden;
         }
 
         .section-header {
