@@ -43,11 +43,13 @@
         /* === PAGE SYSTEM === */
         .page {
             width: 210mm;
+            height: 297mm;
             min-height: 297mm;
             margin: 20px auto;
             background: white;
             position: relative;
             box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+            overflow: hidden;
         }
 
         @media print {
@@ -74,6 +76,77 @@
                 page-break-after: avoid;
             }
             .no-print { display: none !important; }
+        }
+
+        /* === SECTION DIVIDER PAGE === */
+        .divider {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 297mm;
+            background: var(--primary);
+            color: var(--text-light);
+            text-align: center;
+            position: relative;
+        }
+
+        .divider::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--gold-gradient);
+        }
+
+        .divider::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--gold-gradient);
+        }
+
+        .divider-number {
+            font-size: 14pt;
+            letter-spacing: 6px;
+            text-transform: uppercase;
+            color: var(--accent);
+            font-weight: 600;
+            margin-bottom: 6mm;
+        }
+
+        .divider-line {
+            width: 60mm;
+            height: 2px;
+            background: var(--gold-gradient);
+            margin: 0 auto 8mm;
+        }
+
+        .divider-title {
+            font-size: 28pt;
+            font-weight: 800;
+            letter-spacing: 1.5px;
+            line-height: 1.3;
+            margin-bottom: 6mm;
+        }
+
+        .divider-subtitle {
+            font-size: 11pt;
+            color: var(--accent-light);
+            font-weight: 300;
+            max-width: 140mm;
+            line-height: 1.6;
+        }
+
+        .divider-icon {
+            font-size: 36pt;
+            margin-bottom: 8mm;
+            opacity: 0.3;
         }
 
         /* === COVER PAGE === */
@@ -303,7 +376,7 @@
         .section-header {
             background: var(--blue-gradient);
             color: var(--text-light);
-            padding: 5mm 18mm 4mm;
+            padding: 4mm 18mm 3mm;
             position: relative;
         }
 
@@ -334,7 +407,7 @@
         }
 
         .section-body {
-            padding: 6mm 18mm 6mm;
+            padding: 5mm 18mm 3mm;
         }
 
         /* === CONTENT ELEMENTS === */
@@ -376,8 +449,8 @@
             font-size: 11pt;
             font-weight: 700;
             color: var(--primary);
-            margin: 3mm 0 1.5mm;
-            padding-bottom: 1mm;
+            margin: 2.5mm 0 1mm;
+            padding-bottom: 0.5mm;
             border-bottom: 2px solid var(--accent);
             display: inline-block;
         }
@@ -386,7 +459,7 @@
         .data-table {
             width: 100%;
             border-collapse: collapse;
-            margin: 2mm 0 4mm;
+            margin: 2mm 0 3mm;
             font-size: 9.5pt;
         }
 
@@ -418,7 +491,7 @@
         .stats-row {
             display: flex;
             gap: 3mm;
-            margin: 3mm 0;
+            margin: 2mm 0;
         }
 
         .stat-box {
@@ -472,7 +545,7 @@
         /* Narrative */
         .narrative {
             font-size: 10pt;
-            line-height: 1.55;
+            line-height: 1.5;
             color: #333;
             margin: 1.5mm 0;
             text-align: justify;
@@ -487,8 +560,8 @@
             background: linear-gradient(135deg, #0a1628 0%, #1a3a5c 100%);
             color: var(--text-light);
             border-radius: 3mm;
-            padding: 4mm 6mm;
-            margin: 3mm 0;
+            padding: 3mm 6mm;
+            margin: 2mm 0;
         }
 
         .highlight-box h3 {
@@ -595,7 +668,7 @@
             border: 1px solid var(--border);
             border-radius: 3mm;
             overflow: hidden;
-            margin-bottom: 3mm;
+            margin-bottom: 2mm;
             page-break-inside: avoid;
         }
 
@@ -963,7 +1036,7 @@
             border: 1px solid var(--border);
             border-radius: 3mm;
             overflow: hidden;
-            margin-bottom: 3mm;
+            margin-bottom: 2mm;
         }
 
         .evidence-card-label {
@@ -1191,9 +1264,16 @@
     <div class="page-footer-bar"></div>
 </div>
 
-<!-- ============================================ -->
+<!-- DIVIDER: BAHAGIAN 01 -->
+<div class="page divider">
+    <div class="divider-icon">👤</div>
+    <div class="divider-number">Bahagian 01</div>
+    <div class="divider-line"></div>
+    <div class="divider-title">Profil &amp; Biodata</div>
+    <div class="divider-subtitle">Latar belakang, kelayakan, kemahiran teknikal, dan peranan di sekolah</div>
+</div>
+
 <!-- MUKA SURAT 3: BAHAGIAN 01 — PROFIL & BIODATA -->
-<!-- ============================================ -->
 <div class="page section-page">
     <div class="section-header">
         <div class="section-number">Bahagian 01</div>
@@ -1445,36 +1525,22 @@
             </div>
         </div>
 
-        <div class="highlight-box">
-            <h3>Platform Digital</h3>
-            <div class="stat-inline">
-                <div>
-                    <span>🌐</span>
-                    <span>cikguaime.com</span>
-                </div>
-                <div>
-                    <span>📱</span>
-                    <span>TikTok @ahmdaime</span>
-                </div>
-                <div>
-                    <span>📘</span>
-                    <span>FB cikguaimedotcom</span>
-                </div>
-                <div>
-                    <span>🎬</span>
-                    <span>YouTube TVPSS FiveOne</span>
-                </div>
-            </div>
-        </div>
     </div>
 
     <div class="page-number">Muka Surat <span>3</span></div>
     <div class="page-footer-bar"></div>
 </div>
 
-<!-- ============================================ -->
-<!-- MUKA SURAT 5: BAHAGIAN 02 — KATALOG OVERVIEW -->
-<!-- ============================================ -->
+<!-- DIVIDER: BAHAGIAN 02 -->
+<div class="page divider">
+    <div class="divider-icon">💻</div>
+    <div class="divider-number">Bahagian 02</div>
+    <div class="divider-line"></div>
+    <div class="divider-title">Katalog Kandungan Digital</div>
+    <div class="divider-subtitle">330+ kandungan digital merangkumi projek perisian, video pendidikan, artikel, dan kuiz interaktif</div>
+</div>
+
+<!-- BAHAGIAN 02 — KATALOG OVERVIEW -->
 <div class="page section-page">
     <div class="section-header">
         <div class="section-number">Bahagian 02</div>
@@ -1600,6 +1666,16 @@
             </tbody>
         </table>
 
+    </div>
+
+    <div class="page-number">Muka Surat <span>4</span></div>
+    <div class="page-footer-bar"></div>
+</div><div class="page section-page">
+      <div class="section-header">
+        <div class="section-number">Bahagian 02</div>
+        <h1 class="section-title">Katalog Kandungan Digital (sambungan)</h1>
+    </div>
+      <div class="section-body">
         <!-- Video Overview -->
         <div class="subsection-title">B. Video Pendidikan (176 Video)</div>
 
@@ -1621,20 +1697,6 @@
             </div>
         </div>
 
-        <!-- Artikel Overview -->
-        
-
-        
-    </div>
-
-    <div class="page-number">Muka Surat <span>4</span></div>
-    <div class="page-footer-bar"></div>
-</div><div class="page section-page">
-      <div class="section-header">
-        <div class="section-number">Bahagian 02</div>
-        <h1 class="section-title">Katalog Kandungan Digital (sambungan)</h1>
-    </div>
-      <div class="section-body">
         <div class="subsection-title">C. Artikel &amp; Tutorial (60+ Artikel)</div>
         <div class="article-cat-grid">
             <div class="article-cat"><div class="ac-count">14+</div><div class="ac-name">Sekolah</div></div>
@@ -2015,9 +2077,19 @@
             </div>
         </div>
 
-        <!-- TikTok -->
-        <div class="subsection-title">Video Pendidikan — TikTok (@ahmdaime)</div>
+    </div>
 
+    <div class="page-number">Muka Surat <span>8</span></div>
+    <div class="page-footer-bar"></div>
+</div>
+
+<!-- SAMBUNGAN: TIKTOK -->
+<div class="page section-page">
+    <div class="section-header">
+        <div class="section-number">Bahagian 02 — Video Pendidikan</div>
+        <h1 class="section-title">Video Pendidikan — TikTok (@ahmdaime)</h1>
+    </div>
+    <div class="section-body">
         <div class="narrative">
             Selain YouTube, Cikgu Aime turut aktif di TikTok dengan <strong>130 video</strong> berkait pendidikan. Platform ini digunakan untuk perkongsian tips pengajaran, tutorial teknologi, dan kandungan pendidikan ringkas yang mudah diakses oleh guru-guru di seluruh Malaysia.
         </div>
@@ -2034,7 +2106,7 @@
         </div>
     </div>
 
-    <div class="page-number">Muka Surat <span>8</span></div>
+    <div class="page-number">Muka Surat <span>9</span></div>
     <div class="page-footer-bar"></div>
 </div>
 
@@ -2159,7 +2231,7 @@
         </div>
     </div>
 
-    <div class="page-number">Muka Surat <span>9</span></div>
+    <div class="page-number">Muka Surat <span>10</span></div>
     <div class="page-footer-bar"></div>
 </div>
 
@@ -2259,7 +2331,7 @@
         
     </div>
 
-    <div class="page-number">Muka Surat <span>10</span></div>
+    <div class="page-number">Muka Surat <span>11</span></div>
     <div class="page-footer-bar"></div>
 </div><div class="page section-page">
       <div class="section-header">
@@ -2343,7 +2415,7 @@
             </div>
         </div>
       </div>
-      <div class="page-number">Muka Surat <span>11</span></div>
+      <div class="page-number">Muka Surat <span>12</span></div>
       <div class="page-footer-bar"></div>
     </div>
 
@@ -2435,6 +2507,19 @@
             <strong>37 minit dikembalikan setiap pagi.</strong> Dalam setahun 200 hari persekolahan, jumlahnya bersamaan <strong>123 jam</strong>, iaitu lebih 15 hari bekerja penuh yang dialihkan daripada kerja kerani kepada kerja mendidik.
         </div>
 
+    </div>
+
+    <div class="page-number">Muka Surat <span>13</span></div>
+    <div class="page-footer-bar"></div>
+</div>
+
+<!-- SAMBUNGAN: MOEIS SCREENSHOTS -->
+<div class="page section-page">
+    <div class="section-header">
+        <div class="section-number">Bahagian 02 — Kajian Kes Mendalam</div>
+        <h1 class="section-title">MOIES Kehadiran Helper — Bukti Visual</h1>
+    </div>
+    <div class="section-body">
         <div class="screenshot-grid">
             <div>
                 <div class="screenshot-placeholder"><img src="portfolio/img/ext-moeis.png" alt="MOEIS Kehadiran Helper - Demo Parsing"></div>
@@ -2445,14 +2530,9 @@
                 <div class="screenshot-caption">Kehadiran auto-diisi dalam sistem MOIES</div>
             </div>
         </div>
-
-        <div class="testimonial">
-            <div class="testimonial-text">Saya selalu lewat masuk kelas sebab nak siapkan kehadiran MOIES dulu. Sejak guna extension ni, 3 minit pagi-pagi dah settle. Murid-murid pun tak tertunggu lagi. Terbaik!</div>
-            <div class="testimonial-author">— Guru Kelas Tahun 4, Johor (Ulasan Chrome Web Store)</div>
-        </div>
     </div>
 
-    <div class="page-number">Muka Surat <span>12</span></div>
+    <div class="page-number">Muka Surat <span>14</span></div>
     <div class="page-footer-bar"></div>
 </div>
 
@@ -2513,8 +2593,19 @@
             </div>
         </div>
 
-        <!-- Auto eRPH -->
-        <div class="subsection-title">Auto eRPH: Automasi RPH dalam Google Sheets</div>
+    </div>
+
+    <div class="page-number">Muka Surat <span>15</span></div>
+    <div class="page-footer-bar"></div>
+</div>
+
+<!-- BAHAGIAN 02 — SAMBUNGAN: AUTO eRPH -->
+<div class="page section-page">
+    <div class="section-header">
+        <div class="section-number">Bahagian 02 — Kajian Kes Mendalam</div>
+        <h1 class="section-title">Auto eRPH: Automasi RPH dalam Google Sheets</h1>
+    </div>
+    <div class="section-body">
         <div class="narrative">
             Setiap guru wajib menulis Rancangan Pengajaran Harian (RPH). Prosesnya melibatkan membuka DSKP, mencari standard kandungan, menyalin ke eRPH, memformat ikut piawaian, dan mengulangi bagi setiap slot. Secara purata, <strong>10+ minit per RPH, 5 hari seminggu, berjumlah kira-kira 35 jam setahun</strong> hanya untuk menulis RPH.
         </div>
@@ -2556,7 +2647,7 @@
         </div>
     </div>
 
-    <div class="page-number">Muka Surat <span>13</span></div>
+    <div class="page-number">Muka Surat <span>16</span></div>
     <div class="page-footer-bar"></div>
 </div>
 
@@ -2628,7 +2719,7 @@
         </div>
     </div>
 
-    <div class="page-number">Muka Surat <span>14</span></div>
+    <div class="page-number">Muka Surat <span>17</span></div>
     <div class="page-footer-bar"></div>
 </div>
 
@@ -2735,6 +2826,19 @@
             <span class="badge gold">Johan Kebangsaan — Bantu Mula 2024</span>
         </div>
 
+    </div>
+
+    <div class="page-number">Muka Surat <span>18</span></div>
+    <div class="page-footer-bar"></div>
+</div>
+
+<!-- SAMBUNGAN: TVPSS STUDIO SCREENSHOTS -->
+<div class="page section-page">
+    <div class="section-header">
+        <div class="section-number">Bahagian 02 — Kajian Kes Mendalam</div>
+        <h1 class="section-title">TVPSS FiveOne Studio — Bukti Visual</h1>
+    </div>
+    <div class="section-body">
         <div class="screenshot-grid">
             <div>
                 <div class="screenshot-placeholder">Masukkan tangkap layar TVPSS FiveOne Studio — setup studio dengan green screen, kamera, dan peralatan</div>
@@ -2747,7 +2851,7 @@
         </div>
     </div>
 
-    <div class="page-number">Muka Surat <span>15</span></div>
+    <div class="page-number">Muka Surat <span>19</span></div>
     <div class="page-footer-bar"></div>
 </div>
 
@@ -2815,25 +2919,6 @@
             </div>
         </div>
 
-        <div class="quality-grid">
-            <div class="quality-item">
-                <span class="quality-check">✓</span>
-                <span class="quality-item-text"><strong>YouTube:</strong> 3,600 subscribers, 126K views</span>
-            </div>
-            <div class="quality-item">
-                <span class="quality-check">✓</span>
-                <span class="quality-item-text"><strong>Facebook:</strong> 381 posts, 8.8K followers</span>
-            </div>
-            <div class="quality-item">
-                <span class="quality-check">✓</span>
-                <span class="quality-item-text"><strong>Instagram:</strong> 86 posts, 582 followers</span>
-            </div>
-            <div class="quality-item">
-                <span class="quality-check">✓</span>
-                <span class="quality-item-text"><strong>TikTok:</strong> 130 videos, 15,400 followers, 556K views</span>
-            </div>
-        </div>
-
         <div class="screenshot-grid">
             <div>
                 <div class="screenshot-placeholder">Masukkan tangkap layar TVPSS FiveOne — senarai episod terpilih di YouTube dengan jumlah tontonan</div>
@@ -2846,7 +2931,7 @@
         </div>
     </div>
 
-    <div class="page-number">Muka Surat <span>16</span></div>
+    <div class="page-number">Muka Surat <span>20</span></div>
     <div class="page-footer-bar"></div>
 </div>
 
@@ -2951,7 +3036,7 @@
         </div>
     </div>
 
-    <div class="page-number">Muka Surat <span>17</span></div>
+    <div class="page-number">Muka Surat <span>21</span></div>
     <div class="page-footer-bar"></div>
 </div>
 
@@ -3019,7 +3104,7 @@ Extensions    Videos
     
 </div>
 
-    <div class="page-number">Muka Surat <span>18</span></div>
+    <div class="page-number">Muka Surat <span>22</span></div>
     <div class="page-footer-bar"></div>
 </div><div class="page section-page">
       <div class="section-header">
@@ -3053,13 +3138,20 @@ Extensions    Videos
 <div class="narrative">
             <strong>Seorang guru yang memberi impak kepada 14,900+ guru seluruh Malaysia</strong> melalui kemahiran teknikal, konsistensi selama 8 tahun, dan komitmen menyelesaikan masalah harian guru dengan teknologi digital.
         </div></div>
-      <div class="page-number">Muka Surat <span>19</span></div>
+      <div class="page-number">Muka Surat <span>23</span></div>
       <div class="page-footer-bar"></div>
     </div>
 
-<!-- ============================================ -->
-<!-- MUKA SURAT 10: BAHAGIAN 03 — BUKTI KUALITI    -->
-<!-- ============================================ -->
+<!-- DIVIDER: BAHAGIAN 03 -->
+<div class="page divider">
+    <div class="divider-icon">⭐</div>
+    <div class="divider-number">Bahagian 03</div>
+    <div class="divider-line"></div>
+    <div class="divider-title">Demo &amp; Bukti Kualiti</div>
+    <div class="divider-subtitle">Rating pengguna, testimoni, tangkap layar antaramuka, dan pematuhan kualiti kandungan digital</div>
+</div>
+
+<!-- BAHAGIAN 03 — BUKTI KUALITI -->
 <div class="page section-page">
     <div class="section-header">
         <div class="section-number">Bahagian 03</div>
@@ -3143,7 +3235,7 @@ Extensions    Videos
         </div>
     </div>
 
-    <div class="page-number">Muka Surat <span>20</span></div>
+    <div class="page-number">Muka Surat <span>24</span></div>
     <div class="page-footer-bar"></div>
 </div>
 
@@ -3246,7 +3338,7 @@ Extensions    Videos
         </div>
     </div>
 
-    <div class="page-number">Muka Surat <span>21</span></div>
+    <div class="page-number">Muka Surat <span>25</span></div>
     <div class="page-footer-bar"></div>
 </div>
 
@@ -3388,13 +3480,20 @@ Extensions    Videos
         </div>
     </div>
 
-    <div class="page-number">Muka Surat <span>22</span></div>
+    <div class="page-number">Muka Surat <span>26</span></div>
     <div class="page-footer-bar"></div>
 </div>
 
-<!-- ============================================ -->
-<!-- MUKA SURAT 13: BAHAGIAN 04 — SUMBANGAN IMPAK -->
-<!-- ============================================ -->
+<!-- DIVIDER: BAHAGIAN 04 -->
+<div class="page divider">
+    <div class="divider-icon">🌍</div>
+    <div class="divider-number">Bahagian 04</div>
+    <div class="divider-line"></div>
+    <div class="divider-title">Sumbangan &amp; Impak</div>
+    <div class="divider-subtitle">Impak kepada guru, murid, dan komuniti pendidikan merangkumi sumbangan, keberlanjutan, dan jangkauan digital</div>
+</div>
+
+<!-- BAHAGIAN 04 — SUMBANGAN IMPAK -->
 <div class="page section-page">
     <div class="section-header">
         <div class="section-number">Bahagian 04</div>
@@ -3508,7 +3607,7 @@ Extensions    Videos
         </div>
     </div>
 
-    <div class="page-number">Muka Surat <span>23</span></div>
+    <div class="page-number">Muka Surat <span>27</span></div>
     <div class="page-footer-bar"></div>
 </div>
 
@@ -3664,7 +3763,7 @@ Extensions    Videos
         </div>
     </div>
 
-    <div class="page-number">Muka Surat <span>24</span></div>
+    <div class="page-number">Muka Surat <span>28</span></div>
     <div class="page-footer-bar"></div>
 </div>
 
@@ -3773,7 +3872,7 @@ Extensions    Videos
 
     
 </div>
-    <div class="page-number">Muka Surat <span>25</span></div>
+    <div class="page-number">Muka Surat <span>29</span></div>
     <div class="page-footer-bar"></div>
 </div><div class="page section-page">
       <div class="section-header">
@@ -3823,7 +3922,7 @@ Extensions    Videos
             </div>
         </div>
       </div>
-      <div class="page-number">Muka Surat <span>26</span></div>
+      <div class="page-number">Muka Surat <span>30</span></div>
       <div class="page-footer-bar"></div>
     </div>
 
@@ -3936,7 +4035,7 @@ Extensions    Videos
 
     
 </div>
-    <div class="page-number">Muka Surat <span>27</span></div>
+    <div class="page-number">Muka Surat <span>31</span></div>
     <div class="page-footer-bar"></div>
 </div><div class="page section-page">
       <div class="section-header">
@@ -3989,7 +4088,7 @@ Extensions    Videos
             </div>
         </div>
       </div>
-      <div class="page-number">Muka Surat <span>28</span></div>
+      <div class="page-number">Muka Surat <span>32</span></div>
       <div class="page-footer-bar"></div>
     </div>
 
@@ -4065,7 +4164,7 @@ Extensions    Videos
         
 
     </div>
-    <div class="page-number">Muka Surat <span>29</span></div>
+    <div class="page-number">Muka Surat <span>33</span></div>
     <div class="page-footer-bar"></div>
 </div><div class="page section-page">
       <div class="section-header">
@@ -4105,7 +4204,7 @@ Extensions    Videos
             </div>
         </div>
       </div>
-      <div class="page-number">Muka Surat <span>30</span></div>
+      <div class="page-number">Muka Surat <span>34</span></div>
       <div class="page-footer-bar"></div>
     </div>
 
@@ -4206,7 +4305,7 @@ Extensions    Videos
         
 
     </div>
-    <div class="page-number">Muka Surat <span>31</span></div>
+    <div class="page-number">Muka Surat <span>35</span></div>
     <div class="page-footer-bar"></div>
 </div><div class="page section-page">
       <div class="section-header">
@@ -4271,7 +4370,7 @@ Extensions    Videos
             Daripada <strong>sebuah blog peribadi</strong> pada tahun 2018 kepada <strong>ekosistem digital berskala nasional</strong> pada tahun 2026. Perjalanan 8 tahun ini membuktikan bahawa teknologi, apabila digunakan secara bermatlamat, mampu memberi impak bermakna kepada pendidikan negara.
         </div>
       </div>
-      <div class="page-number">Muka Surat <span>32</span></div>
+      <div class="page-number">Muka Surat <span>36</span></div>
       <div class="page-footer-bar"></div>
     </div>
 
@@ -4378,7 +4477,7 @@ Extensions    Videos
         </div>
 
     </div>
-    <div class="page-number">Muka Surat <span>33</span></div>
+    <div class="page-number">Muka Surat <span>37</span></div>
     <div class="page-footer-bar"></div>
 </div>
 
@@ -4430,7 +4529,19 @@ Extensions    Videos
             </div>
         </div>
 
-        <h3 class="subsection-title">Perbandingan Sebelum & Selepas Pelaksanaan TVPSS</h3>
+    </div>
+    <div class="page-number">Muka Surat <span>38</span></div>
+    <div class="page-footer-bar"></div>
+</div>
+
+<!-- SAMBUNGAN: PERBANDINGAN TVPSS -->
+<div class="page section-page">
+    <div class="section-header">
+        <div class="section-number">Bahagian 04 — Pembangunan Murid</div>
+        <h1 class="section-title">Perbandingan Sebelum & Selepas TVPSS</h1>
+    </div>
+    <div class="section-body">
+
         <table class="data-table">
             <thead>
                 <tr>
@@ -4479,10 +4590,21 @@ Extensions    Videos
         </div>
 
     </div>
-    <div class="page-number">Muka Surat <span>34</span></div>
+    <div class="page-number">Muka Surat <span>39</span></div>
     <div class="page-footer-bar"></div>
 </div>
 
+
+<!-- ============================================================ -->
+<!-- BAHAGIAN 05 — DIVIDER                                        -->
+<!-- ============================================================ -->
+<div class="page divider">
+    <div class="divider-icon">🏆</div>
+    <div class="divider-number">Bahagian 05</div>
+    <div class="divider-line"></div>
+    <div class="divider-title">Sijil &amp; Pencapaian</div>
+    <div class="divider-subtitle">76 pencapaian terkumpul merangkumi kejohanan, pengiktirafan profesional, dan sumbangan kepada pendidikan digital</div>
+</div>
 
 <!-- ============================================================ -->
 <!-- BAHAGIAN 05 — PAGE 1: RINGKASAN PENCAPAIAN                   -->
@@ -4529,7 +4651,18 @@ Extensions    Videos
             <span class="badge">TOP 150 Cikgu Juara Digital (MDEC) 2023</span>
         </div>
 
-        <h3 class="subsection-title">Pecahan Pencapaian Mengikut Kategori</h3>
+    </div>
+    <div class="page-number">Muka Surat <span>40</span></div>
+    <div class="page-footer-bar"></div>
+</div>
+
+<!-- BAHAGIAN 05 — SAMBUNGAN: PECAHAN KATEGORI -->
+<div class="page section-page">
+    <div class="section-header">
+        <div class="section-number">Bahagian 05 — Pecahan Kategori</div>
+        <h1 class="section-title">Pecahan Pencapaian Mengikut Kategori</h1>
+    </div>
+    <div class="section-body">
 
         <table class="data-table">
             <thead>
@@ -4620,7 +4753,7 @@ Extensions    Videos
         </p>
 
     </div>
-    <div class="page-number">Muka Surat <span>35</span></div>
+    <div class="page-number">Muka Surat <span>41</span></div>
     <div class="page-footer-bar"></div>
 </div>
 
@@ -4714,7 +4847,18 @@ Extensions    Videos
             </tbody>
         </table>
 
-        <h3 class="subsection-title">Sorotan Pencapaian Utama</h3>
+    </div>
+    <div class="page-number">Muka Surat <span>42</span></div>
+    <div class="page-footer-bar"></div>
+</div>
+
+<!-- BAHAGIAN 05 — SOROTAN PENCAPAIAN UTAMA -->
+<div class="page section-page">
+    <div class="section-header">
+        <div class="section-number">Bahagian 05 — Sorotan Pencapaian</div>
+        <h1 class="section-title">Sorotan Pencapaian Utama</h1>
+    </div>
+    <div class="section-body">
 
         <div class="evidence-card">
             <div class="evidence-card-label">Johan Ikon Guru TVPSS Kebangsaan 2024</div>
@@ -4745,7 +4889,7 @@ Extensions    Videos
         </div>
 
     </div>
-    <div class="page-number">Muka Surat <span>36</span></div>
+    <div class="page-number">Muka Surat <span>43</span></div>
     <div class="page-footer-bar"></div>
 </div>
 
@@ -4850,7 +4994,18 @@ Extensions    Videos
             </tbody>
         </table>
 
-        <h3 class="subsection-title">Trend Pencapaian Mengikut Tahun</h3>
+    </div>
+    <div class="page-number">Muka Surat <span>44</span></div>
+    <div class="page-footer-bar"></div>
+</div>
+
+<!-- BAHAGIAN 05 — SAMBUNGAN: TREND PENCAPAIAN -->
+<div class="page section-page">
+    <div class="section-header">
+        <div class="section-number">Bahagian 05 — Analisis Trend</div>
+        <h1 class="section-title">Trend Pencapaian Mengikut Tahun</h1>
+    </div>
+    <div class="section-body">
 
         <div class="stats-row">
             <div class="stat-box">
@@ -4876,7 +5031,7 @@ Extensions    Videos
         </p>
 
     </div>
-    <div class="page-number">Muka Surat <span>37</span></div>
+    <div class="page-number">Muka Surat <span>45</span></div>
     <div class="page-footer-bar"></div>
 </div>
 
@@ -4934,7 +5089,18 @@ Extensions    Videos
             Sijil-sijil di atas merupakan sampel terpilih daripada keseluruhan 76 pencapaian yang dicatatkan. Salinan penuh semua sijil boleh dirujuk dalam fail lampiran portfolio. Setiap sijil telah disahkan dan disusun mengikut kategori untuk memudahkan semakan.
         </p>
 
-        <h3 class="subsection-title">Ringkasan Keseluruhan Bahagian 05</h3>
+    </div>
+    <div class="page-number">Muka Surat <span>46</span></div>
+    <div class="page-footer-bar"></div>
+</div>
+
+<!-- BAHAGIAN 05 — PAGE 5: RINGKASAN KESELURUHAN -->
+<div class="page section-page">
+    <div class="section-header">
+        <div class="section-number">Bahagian 05 — Rumusan</div>
+        <h1 class="section-title">Ringkasan Keseluruhan Pencapaian</h1>
+    </div>
+    <div class="section-body">
 
         <div class="highlight-box">
             <h3>Kesimpulan Pencapaian</h3>
@@ -4951,12 +5117,22 @@ Extensions    Videos
         </div>
 
     </div>
-    <div class="page-number">Muka Surat <span>38</span></div>
+    <div class="page-number">Muka Surat <span>47</span></div>
     <div class="page-footer-bar"></div>
 </div>
 
 
-<!-- BAHAGIAN 06: ETIKA & PRIVASI DIGITAL (Muka Surat 15)        -->
+<!-- BAHAGIAN 06 — DIVIDER                                        -->
+<!-- ============================================================ -->
+<div class="page divider">
+    <div class="divider-icon">🛡️</div>
+    <div class="divider-number">Bahagian 06</div>
+    <div class="divider-line"></div>
+    <div class="divider-title">Etika &amp; Privasi Digital</div>
+    <div class="divider-subtitle">Komitmen terhadap amalan digital yang beretika, selamat, dan bertanggungjawab dalam pendidikan</div>
+</div>
+
+<!-- BAHAGIAN 06: ETIKA & PRIVASI DIGITAL                         -->
 <!-- ============================================================ -->
 
 <div class="page section-page">
@@ -5058,7 +5234,7 @@ Extensions    Videos
         </div>
     </div>
 
-    <div class="page-number">Muka Surat <span>39</span></div>
+    <div class="page-number">Muka Surat <span>48</span></div>
     <div class="page-footer-bar"></div>
 </div>
 
