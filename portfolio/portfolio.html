@@ -154,18 +154,36 @@
             display: flex;
             flex-direction: column;
             height: 297mm;
-            background: var(--primary);
+            background: radial-gradient(ellipse at 50% 45%, #162d50 0%, #0f2240 30%, #0a1628 70%);
             color: var(--text-light);
+            position: relative;
+        }
+
+        .cover::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image:
+                radial-gradient(circle at 20% 80%, rgba(200,168,78,0.03) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(200,168,78,0.03) 0%, transparent 50%);
+            background-size: 100% 100%;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .cover > * {
+            position: relative;
+            z-index: 1;
         }
 
         .cover-top-bar {
             background: var(--gold-gradient);
-            height: 6px;
+            height: 8px;
         }
 
         .cover-header {
             text-align: center;
-            padding: 25mm 20mm 10mm;
+            padding: 15mm 20mm 8mm;
         }
 
         .cover-kpm-label {
@@ -216,6 +234,7 @@
             justify-content: center;
             color: var(--accent);
             font-size: 10pt;
+            box-shadow: 0 0 0 4px rgba(200,168,78,0.15), 0 0 30px rgba(200,168,78,0.2), 0 0 60px rgba(200,168,78,0.08);
         }
 
         .cover-name {
@@ -229,21 +248,37 @@
             letter-spacing: 1px;
         }
 
+        .cover-name h2::after {
+            content: '';
+            display: block;
+            width: 30mm;
+            height: 2px;
+            background: var(--gold-gradient);
+            margin: 3mm auto 0;
+        }
+
         .cover-name p {
             font-size: 11pt;
             color: var(--accent-light);
-            margin-top: 2mm;
+            margin-top: 3mm;
         }
 
         .cover-stats {
             display: flex;
             justify-content: center;
-            gap: 12mm;
-            padding: 8mm 20mm;
+            gap: 0;
+            padding: 8mm 15mm;
         }
 
         .cover-stat {
             text-align: center;
+            border-left: 2px solid rgba(200,168,78,0.25);
+            padding: 0 7mm;
+            flex: 1;
+        }
+
+        .cover-stat:first-child {
+            border-left: none;
         }
 
         .cover-stat-number {
@@ -279,7 +314,7 @@
 
         .cover-bottom-bar {
             background: var(--gold-gradient);
-            height: 6px;
+            height: 8px;
         }
 
         /* === TABLE OF CONTENTS === */
@@ -407,7 +442,7 @@
         }
 
         .section-body {
-            padding: 5mm 18mm 3mm;
+            padding: 5mm 18mm 8mm;
         }
 
         /* === CONTENT ELEMENTS === */
@@ -1149,6 +1184,7 @@
     <div class="cover-top-bar"></div>
 
     <div class="cover-header">
+        <img src="img/logo-kpm.png" alt="Logo KPM" style="height:18mm; margin-bottom:4mm;">
         <div class="cover-kpm-label">Kementerian Pendidikan Malaysia</div>
         <h1 class="cover-title">PORTFOLIO<br>PENCIPTA KANDUNGAN DIGITAL</h1>
         <p class="cover-subtitle">Anugerah Khas Pendidikan — Hari Guru Peringkat Kebangsaan 2026</p>
@@ -1171,18 +1207,19 @@
         <div class="cover-stat">
             <span class="cover-stat-number">330+</span>
             <span class="cover-stat-label">Kandungan Digital</span>
+            <span style="display:block; font-size:6.5pt; color:#6a7a8a; margin-top:1mm; letter-spacing:0.5px;">252 video · 60+ artikel · 13 projek · 7+ kuiz</span>
         </div>
         <div class="cover-stat">
             <span class="cover-stat-number">14,900+</span>
-            <span class="cover-stat-label">Guru Pengguna</span>
+            <span class="cover-stat-label">Guru Dibantu</span>
         </div>
         <div class="cover-stat">
-            <span class="cover-stat-number">3.5M</span>
-            <span class="cover-stat-label">Pelawat Web</span>
+            <span class="cover-stat-number">4.5 Juta</span>
+            <span class="cover-stat-label">Capaian Digital</span>
         </div>
         <div class="cover-stat">
-            <span class="cover-stat-number">11</span>
-            <span class="cover-stat-label">Projek Digital</span>
+            <span class="cover-stat-number">108</span>
+            <span class="cover-stat-label">Episod TVPSS</span>
         </div>
     </div>
 
@@ -1221,7 +1258,7 @@
             <div class="toc-number">02</div>
             <div class="toc-content">
                 <div class="toc-title">Katalog Kandungan Digital <span style="float:right; font-weight:400; color:#888;">ms 4–19</span></div>
-                <div class="toc-desc">330+ kandungan: 11 projek digital, 252 video, 60+ artikel, 7+ kuiz interaktif, blog &amp; ekosistem digital</div>
+                <div class="toc-desc">330+ kandungan: 13 projek digital, 252 video, 60+ artikel, 7+ kuiz interaktif, blog &amp; ekosistem digital</div>
                 <div class="toc-desc" style="font-size: 8.5pt; color: #999; margin-top: 1mm; line-height: 1.6;">
                     Kajian kes: IDME PBD Helper (ms 10–11) · MOIES Kehadiran (ms 12) · PBD OnePage &amp; Auto eRPH (ms 13) · Aplikasi Web (ms 14) · TVPSS FiveOne Studio (ms 15–16) · Blog cikguaime.com (ms 17) · Ekosistem Digital (ms 18–19)
                 </div>
@@ -1315,7 +1352,7 @@
 
         <!-- Profil Ringkas -->
         <div class="narrative">
-            <strong>Ahmad Aiman Bin Mohamed</strong>, atau lebih dikenali sebagai <strong>Cikgu Aime</strong>, merupakan seorang Pegawai Perkhidmatan Pendidikan di SK Putrajaya Presint 5(1) yang aktif membangunkan kandungan digital pendidikan sejak tahun <strong>2018</strong>, iaitu tiga tahun sebelum beliau mula berkhidmat sebagai guru sepenuh masa. Berbekalkan Ijazah Sarjana Muda Pendidikan Sejarah daripada IPG Kampus Kota Bharu dan pensijilan <strong>Google Certified Educator (Level 1 &amp; 2)</strong>, beliau telah menghasilkan lebih <strong>254 kandungan digital</strong> dalam pelbagai format yang memberi manfaat kepada lebih <strong>14,900 guru</strong> di seluruh Malaysia.
+            <strong>Ahmad Aiman Bin Mohamed</strong>, atau lebih dikenali sebagai <strong>Cikgu Aime</strong>, merupakan seorang Pegawai Perkhidmatan Pendidikan di SK Putrajaya Presint 5(1) yang aktif membangunkan kandungan digital pendidikan sejak tahun <strong>2018</strong>, iaitu tiga tahun sebelum beliau mula berkhidmat sebagai guru sepenuh masa. Berbekalkan Ijazah Sarjana Muda Pendidikan Sejarah daripada IPG Kampus Kota Bharu serta pensijilan <strong>Google Certified Educator (Level 1 &amp; 2)</strong>, <strong>Gemini Certified Educator</strong>, dan <strong>Quizizz Certified Educator</strong>, beliau telah menghasilkan lebih <strong>330+ kandungan digital</strong> dalam pelbagai format yang memberi manfaat kepada lebih <strong>14,900 guru</strong> serta ratusan ribu murid di seluruh Malaysia.
         </div>
 
         <!-- Statistik ringkas -->
@@ -1323,11 +1360,11 @@
             <h3>Ringkasan Sumbangan Kandungan Digital</h3>
             <div class="stat-inline">
                 <div>
-                    <span>11</span>
+                    <span>13</span>
                     <span>Projek Digital</span>
                 </div>
                 <div>
-                    <span>176</span>
+                    <span>252</span>
                     <span>Video Pendidikan</span>
                 </div>
                 <div>
@@ -1365,8 +1402,38 @@
                 <div class="cert-name">Edufluencer Putrajaya</div>
                 <div class="cert-issuer">2024</div>
             </div>
+            <div class="cert-card">
+                <div class="cert-icon">🎓</div>
+                <div class="cert-name">Gemini Certified Educator</div>
+                <div class="cert-issuer">Google for Education</div>
+            </div>
+            <div class="cert-card">
+                <div class="cert-icon">🎓</div>
+                <div class="cert-name">Quizizz Certified Educator</div>
+                <div class="cert-issuer">Quizizz</div>
+            </div>
+            <div class="cert-card">
+                <div class="cert-icon">🏆</div>
+                <div class="cert-name">Guru Jauhari Digital</div>
+                <div class="cert-issuer">KPM</div>
+            </div>
         </div>
+    </div>
 
+    <div class="page-number">Muka Surat <span>2</span></div>
+    <div class="page-footer-bar"></div>
+</div>
+
+<!-- ============================================ -->
+<!-- MUKA SURAT 3: PERANAN & KEMAHIRAN            -->
+<!-- ============================================ -->
+<div class="page section-page">
+    <div class="section-header">
+        <div class="section-number">Bahagian 01 — Sambungan</div>
+        <h1 class="section-title">Peranan &amp; Kemahiran Teknikal</h1>
+    </div>
+
+    <div class="section-body">
         <!-- Peranan di Sekolah -->
         <div class="subsection-title">Peranan di Sekolah</div>
 
@@ -1388,22 +1455,6 @@
                 <p>Menyedia perkhidmatan fotografi rasmi termasuk photoshoot graduasi dan studio green screen</p>
             </div>
         </div>
-    </div>
-
-    <div class="page-number">Muka Surat <span>2</span></div>
-    <div class="page-footer-bar"></div>
-</div>
-
-<!-- ============================================ -->
-<!-- MUKA SURAT 4: SAMBUNGAN PROFIL — KEMAHIRAN   -->
-<!-- ============================================ -->
-<div class="page section-page">
-    <div class="section-header">
-        <div class="section-number">Bahagian 01 — Sambungan</div>
-        <h1 class="section-title">Kemahiran Teknikal</h1>
-    </div>
-
-    <div class="section-body">
         <div class="narrative">
             Selain kemahiran pedagogi, Cikgu Aime menguasai pelbagai teknologi pembangunan perisian moden yang membolehkan beliau membina sendiri alat-alat digital untuk kegunaan guru dan murid di seluruh Malaysia.
         </div>
@@ -1473,12 +1524,12 @@
                 <tr>
                     <td><strong>Penghasilan Video</strong></td>
                     <td>YouTube (TVPSS), TikTok</td>
-                    <td>252+ video pendidikan</td>
+                    <td>252 video pendidikan</td>
                 </tr>
                 <tr>
                     <td><strong>Pembangunan Perisian</strong></td>
                     <td>Chrome Web Store, Web</td>
-                    <td>11 projek digital</td>
+                    <td>13 projek digital</td>
                 </tr>
                 <tr>
                     <td><strong>Kuiz Interaktif</strong></td>
@@ -1503,20 +1554,33 @@
             </tbody>
         </table>
 
-        <!-- Jangkauan Keseluruhan -->
-        <div class="subsection-title">Jangkauan &amp; Impak Keseluruhan</div>
+    </div>
 
+    <div class="page-number">Muka Surat <span>3</span></div>
+    <div class="page-footer-bar"></div>
+</div>
+
+<!-- ============================================ -->
+<!-- MUKA SURAT: JANGKAUAN KESELURUHAN            -->
+<!-- ============================================ -->
+<div class="page section-page">
+    <div class="section-header">
+        <div class="section-number">Bahagian 01 — Sambungan</div>
+        <h1 class="section-title">Jangkauan &amp; Impak Keseluruhan</h1>
+    </div>
+
+    <div class="section-body">
         <div class="stats-row">
             <div class="stat-box">
                 <span class="stat-box-number">14,900+</span>
-                <span class="stat-box-label">Guru Pengguna Extensions</span>
+                <span class="stat-box-label">Guru Dibantu</span>
             </div>
             <div class="stat-box">
-                <span class="stat-box-number">3.5M</span>
+                <span class="stat-box-number">3.5 Juta</span>
                 <span class="stat-box-label">Pelawat Laman Web</span>
             </div>
             <div class="stat-box">
-                <span class="stat-box-number">50K</span>
+                <span class="stat-box-number">~100K</span>
                 <span class="stat-box-label">Kunjungan / Bulan</span>
             </div>
             <div class="stat-box">
@@ -1525,9 +1589,32 @@
             </div>
         </div>
 
+        <div class="stats-row">
+            <div class="stat-box">
+                <span class="stat-box-number">3,600</span>
+                <span class="stat-box-label">Subscribers YouTube TVPSS</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-box-number">15,400</span>
+                <span class="stat-box-label">Followers TikTok TVPSS</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-box-number">40,000</span>
+                <span class="stat-box-label">Followers TikTok @ahmdaime</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-box-number">8,800</span>
+                <span class="stat-box-label">Followers Facebook</span>
+            </div>
+        </div>
+
+        <div class="highlight-box" style="margin-top:4mm; text-align:center; padding:4mm 8mm;">
+            <span style="font-size:20pt; font-weight:800; color:var(--accent);">4.5 Juta</span>
+            <span style="display:block; font-size:9pt; text-transform:uppercase; letter-spacing:1.5px; color:#ccd6e0; margin-top:1mm;">Jumlah Capaian Digital Keseluruhan</span>
+        </div>
     </div>
 
-    <div class="page-number">Muka Surat <span>3</span></div>
+    <div class="page-number">Muka Surat <span>4</span></div>
     <div class="page-footer-bar"></div>
 </div>
 
@@ -1555,11 +1642,11 @@
         <!-- Overview Stats -->
         <div class="stats-row">
             <div class="stat-box">
-                <span class="stat-box-number">11</span>
+                <span class="stat-box-number">13</span>
                 <span class="stat-box-label">Projek Perisian</span>
             </div>
             <div class="stat-box">
-                <span class="stat-box-number">176</span>
+                <span class="stat-box-number">252</span>
                 <span class="stat-box-label">Video Pendidikan</span>
             </div>
             <div class="stat-box">
@@ -1573,7 +1660,7 @@
         </div>
 
         <!-- Senarai Ringkas 11 Projek -->
-        <div class="subsection-title">A. Projek Perisian Digital (11 Projek)</div>
+        <div class="subsection-title">A. Projek Perisian Digital (13 Projek)</div>
 
         <table class="data-table">
             <thead>
@@ -1644,20 +1731,34 @@
                 </tr>
                 <tr>
                     <td>9</td>
-                    <td><strong>CikguAime Platform</strong></td>
-                    <td>Web + Apps Script</td>
-                    <td>Guru &amp; Murid</td>
+                    <td><strong>Portfolio Digital Cikgu Aime</strong></td>
+                    <td>Web App (React + Vite)</td>
+                    <td>Umum</td>
                     <td>—</td>
                 </tr>
                 <tr>
                     <td>10</td>
+                    <td><strong>Kuiz Digital Sejarah &amp; PSV</strong></td>
+                    <td>Web-based</td>
+                    <td>Murid</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td><strong>Kuiz Digital BM Tahun 4</strong></td>
+                    <td>Web-based</td>
+                    <td>Murid</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td>12</td>
                     <td><strong>Nexus Admin Dashboard</strong></td>
                     <td>Web App (Vite)</td>
                     <td>Dalaman</td>
                     <td>—</td>
                 </tr>
                 <tr>
-                    <td>11</td>
+                    <td>13</td>
                     <td><strong>Landing Page MOIES</strong></td>
                     <td>Web App (React)</td>
                     <td>Guru</td>
@@ -1668,7 +1769,7 @@
 
     </div>
 
-    <div class="page-number">Muka Surat <span>4</span></div>
+    <div class="page-number">Muka Surat <span>5</span></div>
     <div class="page-footer-bar"></div>
 </div><div class="page section-page">
       <div class="section-header">
@@ -1677,7 +1778,7 @@
     </div>
       <div class="section-body">
         <!-- Video Overview -->
-        <div class="subsection-title">B. Video Pendidikan (176 Video)</div>
+        <div class="subsection-title">B. Video Pendidikan (252 Video)</div>
 
         <div class="video-overview">
             <div class="video-year-card">
@@ -1692,7 +1793,7 @@
             </div>
             <div class="video-year-card">
                 <div class="vyc-year">Jumlah</div>
-                <div class="vyc-count">176</div>
+                <div class="vyc-count">252</div>
                 <div class="vyc-label">Video Kandungan Digital</div>
             </div>
         </div>
@@ -1710,40 +1811,51 @@
             <div class="article-cat"><div class="ac-count">7+</div><div class="ac-name">Kuiz Interaktif</div></div>
         </div>
 
+      </div>
+      <div class="page-number">Muka Surat <span>6</span></div>
+      <div class="page-footer-bar"></div>
+    </div>
+
+<div class="page section-page">
+    <div class="section-header">
+        <div class="section-number">Bahagian 02</div>
+        <h1 class="section-title">Katalog Kandungan Digital (sambungan)</h1>
+    </div>
+    <div class="section-body">
         <div class="subsection-title">D. Kuiz Interaktif (7+ Kuiz)</div>
-        <p class="narrative">Kuiz interaktif web-based yang dibangunkan khas untuk murid sekolah rendah, dengan ciri drag-and-drop, multiple choice, dan skor automatik. Semua kuiz boleh diakses percuma melalui cikguaime.com.</p>
+        <p class="narrative">Sistem kuiz interaktif web-based untuk murid sekolah rendah, berkaitan terus dengan subjek yang diajar — <strong>Sejarah</strong>, <strong>PSV</strong>, dan <strong>BM</strong>. Menyokong 7 jenis soalan (MCQ, drag-and-drop, matching, fill-in-the-blank, true/false, susun ayat, penulisan terbuka) dengan leaderboard, auto-save, dan anti-cheating.</p>
         <div class="mini-product-grid">
             <div class="mini-product">
-                <h4>Kuiz Sejarah Tahun 5 &amp; 6</h4>
-                <p>Soalan interaktif mengikut silibus terkini KSSR Semakan. Termasuk pelbagai format soalan.</p>
+                <h4>Kuiz Sejarah Tahun 6</h4>
+                <p>56 soalan interaktif merangkumi kemerdekaan, pemimpin negara, perlembagaan, ASEAN, dan perpaduan kaum. Mengikut silibus KSSR Semakan.</p>
+            </div>
+            <div class="mini-product">
+                <h4>Kuiz Pengetahuan Am</h4>
+                <p>32+ soalan pelbagai format termasuk drag-and-drop dan matching — Rukun Negara, simbol negara, dan kenegaraan Malaysia.</p>
             </div>
             <div class="mini-product">
                 <h4>Kuiz PSV Tahun 6</h4>
-                <p>Soalan Bahasa Seni Visual dan teori seni untuk persediaan UASA sekolah rendah.</p>
+                <p>Penilaian komprehensif Bahasa Seni Visual dengan sistem penjejakan kemajuan dan semakan jawapan terperinci.</p>
             </div>
             <div class="mini-product">
                 <h4>Kuiz BM Tahun 4</h4>
-                <p>Tatabahasa dan pemahaman interaktif untuk latihan kendiri murid.</p>
-            </div>
-            <div class="mini-product">
-                <h4>Kuiz UASA Pelbagai Subjek</h4>
-                <p>Koleksi soalan UASA untuk persediaan peperiksaan akhir tahun.</p>
+                <p>3 bahagian lengkap — Tatabahasa &amp; Pemahaman (23 soalan), Penulisan Perenggan (3 prompt), dan Karangan (50–80 patah perkataan) dengan auto-save.</p>
             </div>
         </div>
 
         <div class="highlight-box">
             <h3>Ringkasan Keseluruhan Katalog</h3>
             <div class="stat-inline">
-                <div><span>11</span><span>Projek Digital</span></div>
-                <div><span>176</span><span>Video Pendidikan</span></div>
+                <div><span>13</span><span>Projek Digital</span></div>
+                <div><span>252</span><span>Video Pendidikan</span></div>
                 <div><span>60+</span><span>Artikel &amp; Tutorial</span></div>
                 <div><span>7+</span><span>Kuiz Interaktif</span></div>
             </div>
         </div>
-      </div>
-      <div class="page-number">Muka Surat <span>5</span></div>
-      <div class="page-footer-bar"></div>
     </div>
+    <div class="page-number">Muka Surat <span>7</span></div>
+    <div class="page-footer-bar"></div>
+</div>
 
 <!-- ============================================ -->
 <!-- MUKA SURAT 6: PROJEK UTAMA 1 — CHROME EXT    -->
@@ -1861,7 +1973,7 @@
         </div>
     </div>
 
-    <div class="page-number">Muka Surat <span>6</span></div>
+    <div class="page-number">Muka Surat <span>8</span></div>
     <div class="page-footer-bar"></div>
 </div>
 
@@ -1897,9 +2009,7 @@
                 <div class="product-features">
                     <ul>
                         <li>Parsing pintar objektif &amp; aktiviti</li>
-                        <li>Template tanpa had per subjek</li>
-                        <li>56,813+ entri DSKP</li>
-                        <li>Navigasi multi-sheet (Isnin-Jumaat)</li>
+                        <li>56,813+ entri DSKP &amp; template tanpa had</li>
                         <li>AI Gemini untuk pengekstrakan dokumen</li>
                     </ul>
                 </div>
@@ -1933,6 +2043,22 @@
             </div>
         </div>
 
+    </div>
+
+    <div class="page-number">Muka Surat <span>9</span></div>
+    <div class="page-footer-bar"></div>
+</div>
+
+<!-- ============================================ -->
+<!-- MUKA SURAT 8b: APPS SCRIPT & WEB APPS (sambungan) -->
+<!-- ============================================ -->
+<div class="page section-page">
+    <div class="section-header">
+        <div class="section-number">Bahagian 02 — Apps Script &amp; Web Apps (sambungan)</div>
+        <h1 class="section-title">Projek Perisian Digital</h1>
+    </div>
+
+    <div class="section-body">
         <!-- Web App Headcount -->
         <div class="product-card">
             <div class="product-card-header">
@@ -1942,7 +2068,7 @@
             <div class="product-card-body">
                 <div class="product-detail" style="grid-column: 1 / -1;">
                     <div class="detail-label">Fungsi</div>
-                    <div class="detail-value">Alat pemindahan markah murid dari CSV/Excel ke fail Headcount sedia ada. Aliran kerja 5 langkah dengan padanan nama pintar, pratonton perubahan, dan format Excel 100% dikekalkan. Pemprosesan di pelayar (privasi terjamin).</div>
+                    <div class="detail-value">Alat pemindahan markah murid dari CSV/Excel ke fail Headcount sedia ada. Padanan nama pintar, pratonton perubahan, dan format Excel dikekalkan.</div>
                 </div>
                 <div class="product-features">
                     <ul>
@@ -1980,7 +2106,7 @@
         </div>
     </div>
 
-    <div class="page-number">Muka Surat <span>7</span></div>
+    <div class="page-number">Muka Surat <span>10</span></div>
     <div class="page-footer-bar"></div>
 </div>
 
@@ -1995,33 +2121,50 @@
 
     <div class="section-body">
         <!-- Remaining projects as mini cards -->
-        <div class="subsection-title">Projek Digital Lain (4 Projek)</div>
+        <div class="subsection-title">Projek Digital Lain (6 Projek)</div>
 
         <div class="mini-product-grid">
             <div class="mini-product">
                 <h4>8. Buku Tulis Digital</h4>
-                <p>Aplikasi buku tulis dan lukisan digital — 212KB sahaja, satu fail HTML tanpa pergantungan. Alat lukisan, teks kaya, jadual, berbilang halaman, 4 templat, pemasa, mod persembahan.</p>
+                <p>Aplikasi buku tulis dan lukisan digital — 212KB sahaja, satu fail HTML. Alat lukisan, teks kaya, jadual, berbilang halaman, pemasa, mod persembahan.</p>
                 <div class="mini-stats">
                     <span class="mini-stat-badge">HTML5 Canvas</span>
                     <span class="mini-stat-badge">212KB</span>
                 </div>
             </div>
             <div class="mini-product">
-                <h4>9. CikguAime Platform</h4>
-                <p>Platform pendidikan menyeluruh — kuiz interaktif murid (Sejarah, PSV), sistem lesen IDME PRO, automasi pembelian, dan penjanaan kunci lesen automatik.</p>
+                <h4>9. Portfolio Digital Cikgu Aime</h4>
+                <p>Laman web portfolio profesional yang mempamerkan semua projek digital, pencapaian, dan perkhidmatan. Dilengkapi animasi, SEO, dan reka bentuk responsif.</p>
                 <div class="mini-stats">
-                    <span class="mini-stat-badge">Web + Apps Script</span>
+                    <span class="mini-stat-badge">React 19</span>
+                    <span class="mini-stat-badge">Vite + Vercel</span>
                 </div>
             </div>
             <div class="mini-product">
-                <h4>10. Nexus Admin Dashboard</h4>
+                <h4>10. Kuiz Digital Sejarah &amp; PSV</h4>
+                <p>Sistem kuiz interaktif untuk Sejarah Tahun 6 (56 soalan) dan PSV. 7 jenis soalan termasuk drag-and-drop dan matching. Dilengkapi leaderboard, anti-cheating, dan penyerahan markah ke Google Sheets.</p>
+                <div class="mini-stats">
+                    <span class="mini-stat-badge">HTML5 + JS</span>
+                    <span class="mini-stat-badge">Google Sheets</span>
+                </div>
+            </div>
+            <div class="mini-product">
+                <h4>11. Kuiz Digital BM Tahun 4</h4>
+                <p>Kuiz Bahasa Melayu 3 bahagian — Tatabahasa &amp; Pemahaman (23 soalan), Penulisan Perenggan (3 prompt), dan Karangan (50–80 patah perkataan) dengan auto-save dan responsive.</p>
+                <div class="mini-stats">
+                    <span class="mini-stat-badge">HTML5 + JS</span>
+                    <span class="mini-stat-badge">Tailwind CSS</span>
+                </div>
+            </div>
+            <div class="mini-product">
+                <h4>12. Nexus Admin Dashboard</h4>
                 <p>Dashboard dalaman untuk pengurusan lesen semua produk digital. Penjanaan kunci lesen, penjejak status, senarai putih peranti, eksport CSV.</p>
                 <div class="mini-stats">
                     <span class="mini-stat-badge">Vite + Alpine.js</span>
                 </div>
             </div>
             <div class="mini-product">
-                <h4>11. Landing Page MOIES</h4>
+                <h4>13. Landing Page MOIES</h4>
                 <p>Laman pemasaran untuk MOIES Kehadiran Helper. Penerangan masalah/penyelesaian, demo ciri, testimoni, harga dan FAQ.</p>
                 <div class="mini-stats">
                     <span class="mini-stat-badge">React 19</span>
@@ -2079,7 +2222,7 @@
 
     </div>
 
-    <div class="page-number">Muka Surat <span>8</span></div>
+    <div class="page-number">Muka Surat <span>11</span></div>
     <div class="page-footer-bar"></div>
 </div>
 
@@ -2100,13 +2243,13 @@
                 <span class="stat-box-label">Video TikTok</span>
             </div>
             <div class="stat-box">
-                <span class="stat-box-number">176</span>
+                <span class="stat-box-number">252</span>
                 <span class="stat-box-label">Jumlah Semua Video</span>
             </div>
         </div>
     </div>
 
-    <div class="page-number">Muka Surat <span>9</span></div>
+    <div class="page-number">Muka Surat <span>12</span></div>
     <div class="page-footer-bar"></div>
 </div>
 
@@ -2130,7 +2273,7 @@
                 <span class="stat-box-label">Jumlah Pelawat</span>
             </div>
             <div class="stat-box">
-                <span class="stat-box-number">50K</span>
+                <span class="stat-box-number">~100K</span>
                 <span class="stat-box-label">Kunjungan / Bulan</span>
             </div>
             <div class="stat-box">
@@ -2182,8 +2325,8 @@
 
         <div class="mini-product-grid">
             <div class="mini-product">
-                <h4>Kuiz Interaktif</h4>
-                <p>Sejarah Tahun 5 &amp; 6, PSV Tahun 6, BM Tahun 4 — soal jawab seret-dan-lepas, pelbagai pilihan, interaktif web-based</p>
+                <h4>Kuiz Interaktif (7+ Kuiz)</h4>
+                <p>Sistem kuiz kendiri untuk Sejarah (56 soalan), PSV, BM Tahun 4 (3 bahagian) — 7 jenis soalan termasuk drag-and-drop, matching, dan penulisan terbuka. Dilengkapi leaderboard dan auto-save.</p>
             </div>
             <div class="mini-product">
                 <h4>Bank Soalan</h4>
@@ -2231,7 +2374,7 @@
         </div>
     </div>
 
-    <div class="page-number">Muka Surat <span>10</span></div>
+    <div class="page-number">Muka Surat <span>13</span></div>
     <div class="page-footer-bar"></div>
 </div>
 
@@ -2331,7 +2474,7 @@
         
     </div>
 
-    <div class="page-number">Muka Surat <span>11</span></div>
+    <div class="page-number">Muka Surat <span>14</span></div>
     <div class="page-footer-bar"></div>
 </div><div class="page section-page">
       <div class="section-header">
@@ -2415,7 +2558,7 @@
             </div>
         </div>
       </div>
-      <div class="page-number">Muka Surat <span>12</span></div>
+      <div class="page-number">Muka Surat <span>15</span></div>
       <div class="page-footer-bar"></div>
     </div>
 
@@ -2509,7 +2652,7 @@
 
     </div>
 
-    <div class="page-number">Muka Surat <span>13</span></div>
+    <div class="page-number">Muka Surat <span>16</span></div>
     <div class="page-footer-bar"></div>
 </div>
 
@@ -2532,7 +2675,7 @@
         </div>
     </div>
 
-    <div class="page-number">Muka Surat <span>14</span></div>
+    <div class="page-number">Muka Surat <span>17</span></div>
     <div class="page-footer-bar"></div>
 </div>
 
@@ -2595,7 +2738,7 @@
 
     </div>
 
-    <div class="page-number">Muka Surat <span>15</span></div>
+    <div class="page-number">Muka Surat <span>18</span></div>
     <div class="page-footer-bar"></div>
 </div>
 
@@ -2647,7 +2790,7 @@
         </div>
     </div>
 
-    <div class="page-number">Muka Surat <span>16</span></div>
+    <div class="page-number">Muka Surat <span>19</span></div>
     <div class="page-footer-bar"></div>
 </div>
 
@@ -2719,7 +2862,7 @@
         </div>
     </div>
 
-    <div class="page-number">Muka Surat <span>17</span></div>
+    <div class="page-number">Muka Surat <span>20</span></div>
     <div class="page-footer-bar"></div>
 </div>
 
@@ -2828,7 +2971,7 @@
 
     </div>
 
-    <div class="page-number">Muka Surat <span>18</span></div>
+    <div class="page-number">Muka Surat <span>21</span></div>
     <div class="page-footer-bar"></div>
 </div>
 
@@ -2851,7 +2994,7 @@
         </div>
     </div>
 
-    <div class="page-number">Muka Surat <span>19</span></div>
+    <div class="page-number">Muka Surat <span>22</span></div>
     <div class="page-footer-bar"></div>
 </div>
 
@@ -2931,7 +3074,7 @@
         </div>
     </div>
 
-    <div class="page-number">Muka Surat <span>20</span></div>
+    <div class="page-number">Muka Surat <span>23</span></div>
     <div class="page-footer-bar"></div>
 </div>
 
@@ -3019,6 +3162,22 @@
             </div>
         </div>
 
+    </div>
+
+    <div class="page-number">Muka Surat <span>24</span></div>
+    <div class="page-footer-bar"></div>
+</div>
+
+<!-- ============================================ -->
+<!-- MUKA SURAT 22b: BLOG (sambungan)              -->
+<!-- ============================================ -->
+<div class="page section-page">
+    <div class="section-header">
+        <div class="section-number">Bahagian 02 — Platform Perkongsian (sambungan)</div>
+        <h1 class="section-title">Blog cikguaime.com</h1>
+    </div>
+
+    <div class="section-body">
         <div class="subsection-title">Blog Sebagai HUB Ekosistem</div>
         <div class="narrative">
             Blog ini berfungsi sebagai <strong>hab utama</strong> yang menghubungkan semua produk digital. Pengunjung menemui Chrome Extension melalui artikel tutorial, guru TVPSS mempelajari setup studio melalui panduan, dan pelanggan Auto eRPH datang daripada ulasan di blog. Pengoptimuman <strong>SEO</strong> memastikan artikel berada di kedudukan #1 Google untuk carian pendidikan utama, menjadikan blog ini enjin penemuan bagi seluruh ekosistem.
@@ -3036,7 +3195,7 @@
         </div>
     </div>
 
-    <div class="page-number">Muka Surat <span>21</span></div>
+    <div class="page-number">Muka Surat <span>25</span></div>
     <div class="page-footer-bar"></div>
 </div>
 
@@ -3086,7 +3245,7 @@ Extensions    Videos
                 <span class="stat-box-label">Konsisten (2018-2026)</span>
             </div>
             <div class="stat-box">
-                <span class="stat-box-number">11</span>
+                <span class="stat-box-number">13</span>
                 <span class="stat-box-label">Projek Aktif</span>
             </div>
             <div class="stat-box">
@@ -3104,7 +3263,7 @@ Extensions    Videos
     
 </div>
 
-    <div class="page-number">Muka Surat <span>22</span></div>
+    <div class="page-number">Muka Surat <span>26</span></div>
     <div class="page-footer-bar"></div>
 </div><div class="page section-page">
       <div class="section-header">
@@ -3138,7 +3297,7 @@ Extensions    Videos
 <div class="narrative">
             <strong>Seorang guru yang memberi impak kepada 14,900+ guru seluruh Malaysia</strong> melalui kemahiran teknikal, konsistensi selama 8 tahun, dan komitmen menyelesaikan masalah harian guru dengan teknologi digital.
         </div></div>
-      <div class="page-number">Muka Surat <span>23</span></div>
+      <div class="page-number">Muka Surat <span>27</span></div>
       <div class="page-footer-bar"></div>
     </div>
 
@@ -3235,7 +3394,7 @@ Extensions    Videos
         </div>
     </div>
 
-    <div class="page-number">Muka Surat <span>24</span></div>
+    <div class="page-number">Muka Surat <span>28</span></div>
     <div class="page-footer-bar"></div>
 </div>
 
@@ -3338,7 +3497,7 @@ Extensions    Videos
         </div>
     </div>
 
-    <div class="page-number">Muka Surat <span>25</span></div>
+    <div class="page-number">Muka Surat <span>29</span></div>
     <div class="page-footer-bar"></div>
 </div>
 
@@ -3352,8 +3511,8 @@ Extensions    Videos
     </div>
 
     <div class="section-body">
-        <div class="narrative">
-            Bahagian ini memetakan kualiti kandungan digital yang dihasilkan kepada <strong>4 kriteria utama</strong> dalam rubrik penilaian Anugerah Pencipta Kandungan Digital (Bahagian B: Kualiti Kandungan Digital, 50% markah).
+        <div class="narrative" style="margin-bottom:1mm;">
+            Bahagian ini memetakan kualiti kandungan digital kepada <strong>4 kriteria utama</strong> rubrik penilaian (Bahagian B: Kualiti Kandungan Digital, 50% markah).
         </div>
 
         <!-- Kriteria 1: Ketepatan & Relevansi -->
@@ -3367,11 +3526,7 @@ Extensions    Videos
                     </div>
                     <div class="quality-item">
                         <div class="quality-check">✓</div>
-                        <div class="quality-item-text"><strong>Integrasi sistem KPM</strong> — IDME, MOIES, dan ISSPPB adalah portal rasmi KPM</div>
-                    </div>
-                    <div class="quality-item">
-                        <div class="quality-check">✓</div>
-                        <div class="quality-item-text"><strong>98 kod kehadiran KPM</strong> — MOIES Helper menggunakan kod rasmi pengkategorian kehadiran</div>
+                        <div class="quality-item-text"><strong>Integrasi sistem rasmi KPM</strong> — IDME, MOIES, ISSPPB; 98 kod kehadiran rasmi digunakan</div>
                     </div>
                     <div class="quality-item">
                         <div class="quality-check">✓</div>
@@ -3396,15 +3551,24 @@ Extensions    Videos
                     </div>
                     <div class="quality-item">
                         <div class="quality-check">✓</div>
-                        <div class="quality-item-text"><strong>Imej WebP optimum</strong> — Portfolio dan laman web menggunakan format moden untuk kelajuan</div>
-                    </div>
-                    <div class="quality-item">
-                        <div class="quality-check">✓</div>
-                        <div class="quality-item-text"><strong>Reka bentuk untuk projektor</strong> — Relief Activity Hub dioptimumkan untuk paparan bilik darjah</div>
+                        <div class="quality-item-text"><strong>Reka bentuk responsif</strong> — Semua projek dioptimumkan untuk paparan bilik darjah dan peranti mudah alih</div>
                     </div>
                 </div>
             </div>
         </div>
+
+    </div>
+
+    <div class="page-number">Muka Surat <span>30</span></div>
+    <div class="page-footer-bar"></div>
+</div>
+
+<div class="page section-page">
+    <div class="section-header">
+        <div class="section-number">Bahagian 03 — Senarai Semak Kualiti (sambungan)</div>
+        <h1 class="section-title">Pematuhan Kualiti Kandungan Digital</h1>
+    </div>
+    <div class="section-body">
 
         <!-- Kriteria 3: Interaktiviti -->
         <div class="evidence-card">
@@ -3421,11 +3585,7 @@ Extensions    Videos
                     </div>
                     <div class="quality-item">
                         <div class="quality-check">✓</div>
-                        <div class="quality-item-text"><strong>Buku tulis interaktif</strong> — Lukisan, teks, jadual, pemasa, berbilang halaman dalam satu HTML</div>
-                    </div>
-                    <div class="quality-item">
-                        <div class="quality-check">✓</div>
-                        <div class="quality-item-text"><strong>Sistem token sahsiah</strong> — Gamifikasi tingkah laku murid dengan papan pendahulu untuk ibu bapa</div>
+                        <div class="quality-item-text"><strong>Buku tulis &amp; token sahsiah</strong> — Buku tulis digital interaktif dan gamifikasi tingkah laku murid dengan papan pendahulu</div>
                     </div>
                 </div>
             </div>
@@ -3442,11 +3602,7 @@ Extensions    Videos
                     </div>
                     <div class="quality-item">
                         <div class="quality-check">✓</div>
-                        <div class="quality-item-text"><strong>80% penjimatan kertas</strong> — PBD OnePage mengurangkan 5-6 halaman → 1 halaman</div>
-                    </div>
-                    <div class="quality-item">
-                        <div class="quality-check">✓</div>
-                        <div class="quality-item-text"><strong>14,900+ guru mendapat manfaat</strong> — Jangkauan seluruh Malaysia melalui Chrome Web Store</div>
+                        <div class="quality-item-text"><strong>14,900+ guru dibantu</strong> — Jangkauan seluruh Malaysia; PBD OnePage jimat 80% kertas (5-6 halaman → 1)</div>
                     </div>
                     <div class="quality-item">
                         <div class="quality-check">✓</div>
@@ -3480,7 +3636,7 @@ Extensions    Videos
         </div>
     </div>
 
-    <div class="page-number">Muka Surat <span>26</span></div>
+    <div class="page-number">Muka Surat <span>31</span></div>
     <div class="page-footer-bar"></div>
 </div>
 
@@ -3607,7 +3763,7 @@ Extensions    Videos
         </div>
     </div>
 
-    <div class="page-number">Muka Surat <span>27</span></div>
+    <div class="page-number">Muka Surat <span>32</span></div>
     <div class="page-footer-bar"></div>
 </div>
 
@@ -3735,7 +3891,7 @@ Extensions    Videos
             </div>
             <div class="quality-item">
                 <div class="quality-check">✓</div>
-                <div class="quality-item-text"><strong>Ekosistem bersepadu</strong> — 11 projek saling menyokong (Platform → Extensions → Blog → Video)</div>
+                <div class="quality-item-text"><strong>Ekosistem bersepadu</strong> — 13 projek saling menyokong (Platform → Extensions → Blog → Video)</div>
             </div>
         </div>
 
@@ -3763,7 +3919,7 @@ Extensions    Videos
         </div>
     </div>
 
-    <div class="page-number">Muka Surat <span>28</span></div>
+    <div class="page-number">Muka Surat <span>33</span></div>
     <div class="page-footer-bar"></div>
 </div>
 
@@ -3872,7 +4028,7 @@ Extensions    Videos
 
     
 </div>
-    <div class="page-number">Muka Surat <span>29</span></div>
+    <div class="page-number">Muka Surat <span>34</span></div>
     <div class="page-footer-bar"></div>
 </div><div class="page section-page">
       <div class="section-header">
@@ -3922,7 +4078,7 @@ Extensions    Videos
             </div>
         </div>
       </div>
-      <div class="page-number">Muka Surat <span>30</span></div>
+      <div class="page-number">Muka Surat <span>35</span></div>
       <div class="page-footer-bar"></div>
     </div>
 
@@ -4035,7 +4191,7 @@ Extensions    Videos
 
     
 </div>
-    <div class="page-number">Muka Surat <span>31</span></div>
+    <div class="page-number">Muka Surat <span>36</span></div>
     <div class="page-footer-bar"></div>
 </div><div class="page section-page">
       <div class="section-header">
@@ -4088,7 +4244,7 @@ Extensions    Videos
             </div>
         </div>
       </div>
-      <div class="page-number">Muka Surat <span>32</span></div>
+      <div class="page-number">Muka Surat <span>37</span></div>
       <div class="page-footer-bar"></div>
     </div>
 
@@ -4164,7 +4320,7 @@ Extensions    Videos
         
 
     </div>
-    <div class="page-number">Muka Surat <span>33</span></div>
+    <div class="page-number">Muka Surat <span>38</span></div>
     <div class="page-footer-bar"></div>
 </div><div class="page section-page">
       <div class="section-header">
@@ -4204,7 +4360,7 @@ Extensions    Videos
             </div>
         </div>
       </div>
-      <div class="page-number">Muka Surat <span>34</span></div>
+      <div class="page-number">Muka Surat <span>39</span></div>
       <div class="page-footer-bar"></div>
     </div>
 
@@ -4305,7 +4461,7 @@ Extensions    Videos
         
 
     </div>
-    <div class="page-number">Muka Surat <span>35</span></div>
+    <div class="page-number">Muka Surat <span>40</span></div>
     <div class="page-footer-bar"></div>
 </div><div class="page section-page">
       <div class="section-header">
@@ -4370,7 +4526,7 @@ Extensions    Videos
             Daripada <strong>sebuah blog peribadi</strong> pada tahun 2018 kepada <strong>ekosistem digital berskala nasional</strong> pada tahun 2026. Perjalanan 8 tahun ini membuktikan bahawa teknologi, apabila digunakan secara bermatlamat, mampu memberi impak bermakna kepada pendidikan negara.
         </div>
       </div>
-      <div class="page-number">Muka Surat <span>36</span></div>
+      <div class="page-number">Muka Surat <span>41</span></div>
       <div class="page-footer-bar"></div>
     </div>
 
@@ -4477,7 +4633,7 @@ Extensions    Videos
         </div>
 
     </div>
-    <div class="page-number">Muka Surat <span>37</span></div>
+    <div class="page-number">Muka Surat <span>42</span></div>
     <div class="page-footer-bar"></div>
 </div>
 
@@ -4530,7 +4686,7 @@ Extensions    Videos
         </div>
 
     </div>
-    <div class="page-number">Muka Surat <span>38</span></div>
+    <div class="page-number">Muka Surat <span>43</span></div>
     <div class="page-footer-bar"></div>
 </div>
 
@@ -4590,7 +4746,7 @@ Extensions    Videos
         </div>
 
     </div>
-    <div class="page-number">Muka Surat <span>39</span></div>
+    <div class="page-number">Muka Surat <span>44</span></div>
     <div class="page-footer-bar"></div>
 </div>
 
@@ -4652,7 +4808,7 @@ Extensions    Videos
         </div>
 
     </div>
-    <div class="page-number">Muka Surat <span>40</span></div>
+    <div class="page-number">Muka Surat <span>45</span></div>
     <div class="page-footer-bar"></div>
 </div>
 
@@ -4753,7 +4909,7 @@ Extensions    Videos
         </p>
 
     </div>
-    <div class="page-number">Muka Surat <span>41</span></div>
+    <div class="page-number">Muka Surat <span>46</span></div>
     <div class="page-footer-bar"></div>
 </div>
 
@@ -4848,7 +5004,7 @@ Extensions    Videos
         </table>
 
     </div>
-    <div class="page-number">Muka Surat <span>42</span></div>
+    <div class="page-number">Muka Surat <span>47</span></div>
     <div class="page-footer-bar"></div>
 </div>
 
@@ -4889,7 +5045,7 @@ Extensions    Videos
         </div>
 
     </div>
-    <div class="page-number">Muka Surat <span>43</span></div>
+    <div class="page-number">Muka Surat <span>48</span></div>
     <div class="page-footer-bar"></div>
 </div>
 
@@ -4995,7 +5151,7 @@ Extensions    Videos
         </table>
 
     </div>
-    <div class="page-number">Muka Surat <span>44</span></div>
+    <div class="page-number">Muka Surat <span>49</span></div>
     <div class="page-footer-bar"></div>
 </div>
 
@@ -5031,7 +5187,7 @@ Extensions    Videos
         </p>
 
     </div>
-    <div class="page-number">Muka Surat <span>45</span></div>
+    <div class="page-number">Muka Surat <span>50</span></div>
     <div class="page-footer-bar"></div>
 </div>
 
@@ -5090,7 +5246,7 @@ Extensions    Videos
         </p>
 
     </div>
-    <div class="page-number">Muka Surat <span>46</span></div>
+    <div class="page-number">Muka Surat <span>51</span></div>
     <div class="page-footer-bar"></div>
 </div>
 
@@ -5105,7 +5261,7 @@ Extensions    Videos
         <div class="highlight-box">
             <h3>Kesimpulan Pencapaian</h3>
             <div class="stat-inline">
-                Dengan <strong>76 pencapaian</strong> merangkumi <strong>22 Johan</strong>, <strong>8 Naib Johan</strong>, <strong>12 Tempat Ketiga</strong>, dan <strong>5 Anugerah Khas</strong> dalam tempoh 2019-2024, calon telah membuktikan kecemerlangan yang konsisten, pelbagai, dan berimpak tinggi. Pencapaian digital, termasuk Johan Ikon Guru TVPSS Kebangsaan 2024, TOP 150 Cikgu Juara Digital, dan pengiktirafan sebagai Edufluencer KPM, menjadi bukti kukuh bahawa calon merupakan pendidik yang memanfaatkan teknologi digital secara berkesan dalam pembelajaran.
+                Dengan <strong>76 pencapaian</strong> merangkumi <strong>22 Johan</strong>, <strong>8 Naib Johan</strong>, <strong>12 Tempat Ketiga</strong>, dan <strong>5 Anugerah Khas</strong> dalam tempoh 2019–2024, calon membuktikan kecemerlangan yang konsisten dan berimpak tinggi. Pencapaian utama termasuk Johan Ikon Guru TVPSS Kebangsaan 2024, TOP 150 Cikgu Juara Digital, dan Edufluencer KPM.
             </div>
         </div>
 
@@ -5117,7 +5273,7 @@ Extensions    Videos
         </div>
 
     </div>
-    <div class="page-number">Muka Surat <span>47</span></div>
+    <div class="page-number">Muka Surat <span>52</span></div>
     <div class="page-footer-bar"></div>
 </div>
 
@@ -5177,7 +5333,7 @@ Extensions    Videos
             </div>
             <div class="info-card" style="padding: 10px;">
                 <h4 style="font-size: 11px; color: var(--accent-dark); margin-bottom: 4px;">Kod Sumber Sendiri</h4>
-                <p style="font-size: 10px;">Semua 11 projek digital ditulis sendiri (~50,000+ baris kod). Hak cipta © 2018–2026 Ahmad Aiman Bin Mohamed.</p>
+                <p style="font-size: 10px;">Semua 13 projek digital ditulis sendiri (~50,000+ baris kod). Hak cipta © 2018–2026 Ahmad Aiman Bin Mohamed.</p>
             </div>
             <div class="info-card" style="padding: 10px;">
                 <h4 style="font-size: 11px; color: var(--accent-dark); margin-bottom: 4px;">Perkongsian Percuma</h4>
@@ -5234,7 +5390,7 @@ Extensions    Videos
         </div>
     </div>
 
-    <div class="page-number">Muka Surat <span>48</span></div>
+    <div class="page-number">Muka Surat <span>53</span></div>
     <div class="page-footer-bar"></div>
 </div>
 
