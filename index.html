@@ -441,6 +441,17 @@
             letter-spacing: 1px;
         }
 
+        .section-title img.ext-logo-lg {
+            width: 12mm;
+            height: 12mm;
+            border-radius: 3mm;
+            object-fit: contain;
+            vertical-align: middle;
+            margin-right: 2mm;
+            background: white;
+            padding: 0.5mm;
+        }
+
         .section-body {
             padding: 5mm 18mm 8mm;
         }
@@ -626,6 +637,84 @@
             letter-spacing: 0.8px;
         }
 
+        /* Katalog Ringkasan Circles */
+        .katalog-ringkasan {
+            background: linear-gradient(135deg, #0a1628 0%, #1a3a5c 100%);
+            color: var(--text-light);
+            border-radius: 4mm;
+            padding: 5mm 4mm 4mm;
+            margin: 3mm 0 0;
+        }
+        .katalog-ringkasan h3 {
+            text-align: center;
+            color: var(--accent);
+            font-size: 10pt;
+            margin-bottom: 4mm;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        .katalog-circles {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .katalog-circle-item {
+            text-align: center;
+            flex: 1;
+        }
+        .katalog-ring {
+            width: 22mm;
+            height: 22mm;
+            border-radius: 50%;
+            border: 3px solid rgba(200,168,78,0.25);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 2mm;
+            position: relative;
+        }
+        .katalog-ring::before {
+            content: '';
+            position: absolute;
+            inset: -3px;
+            border-radius: 50%;
+            border: 3px solid transparent;
+            border-top-color: var(--accent);
+            border-right-color: var(--accent);
+        }
+        .katalog-ring .kr-num {
+            font-size: 16pt;
+            font-weight: 800;
+            color: var(--accent);
+            line-height: 1;
+        }
+        .katalog-circle-item .kr-label {
+            font-size: 7.5pt;
+            color: #aabbcc;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .katalog-total {
+            text-align: center;
+            margin-top: 4mm;
+            padding-top: 3mm;
+            border-top: 1px solid rgba(200,168,78,0.2);
+        }
+        .katalog-total span:first-child {
+            font-size: 20pt;
+            font-weight: 800;
+            color: var(--accent);
+        }
+        .katalog-total span:last-child {
+            font-size: 8pt;
+            color: #aabbcc;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: block;
+            margin-top: 1mm;
+        }
+
         /* Certifications */
         .cert-grid {
             display: flex;
@@ -719,6 +808,18 @@
         .product-card-header h3 {
             font-size: 10pt;
             font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 2.5mm;
+        }
+
+        .product-card-header h3 img.ext-logo {
+            width: 8mm;
+            height: 8mm;
+            border-radius: 2mm;
+            object-fit: contain;
+            background: white;
+            padding: 0.5mm;
         }
 
         .product-card-header .product-type {
@@ -907,30 +1008,47 @@
         }
 
         /* Article category list */
-        .article-cat-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            gap: 3mm;
+        .article-bar-chart {
             margin: 4mm 0;
         }
-
-        .article-cat {
-            background: var(--bg-light);
-            border-radius: 3mm;
-            padding: 4mm;
-            text-align: center;
+        .article-bar-row {
+            display: flex;
+            align-items: center;
+            margin-bottom: 2mm;
         }
-
-        .article-cat .ac-count {
-            font-size: 16pt;
-            font-weight: 800;
-            color: var(--primary);
+        .article-bar-label {
+            width: 38mm;
+            font-size: 8.5pt;
+            color: #444;
+            text-align: right;
+            padding-right: 3mm;
+            flex-shrink: 0;
         }
-
-        .article-cat .ac-name {
-            font-size: 9pt;
-            color: #666;
-            margin-top: 1mm;
+        .article-bar-track {
+            flex: 1;
+            height: 7mm;
+            background: #eef1f5;
+            border-radius: 1.5mm;
+            position: relative;
+            overflow: hidden;
+        }
+        .article-bar-fill {
+            height: 100%;
+            border-radius: 1.5mm;
+            background: linear-gradient(90deg, var(--primary), #1a4a8a);
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding-right: 2mm;
+            min-width: 10mm;
+        }
+        .article-bar-fill span {
+            font-size: 8pt;
+            font-weight: 700;
+            color: white;
+        }
+        .article-bar-fill.gold {
+            background: linear-gradient(90deg, #b8942e, var(--accent));
         }
 
         /* === DEMO & BUKTI COMPONENTS === */
@@ -1636,7 +1754,7 @@
 
     <div class="section-body">
         <div class="narrative">
-            Berikut ialah senarai lengkap kandungan digital yang dibangunkan oleh Cikgu Aime, dibahagikan kepada <strong>4 kategori</strong>: projek perisian digital, video pendidikan, artikel dan tutorial, serta kuiz interaktif. Semua kandungan boleh diakses secara terbuka.
+            Berikut ialah senarai lengkap kandungan digital yang dibangunkan oleh Cikgu Aime, dibahagikan kepada <strong>4 kategori</strong>: projek perisian, video, penulisan dan blog, serta kuiz interaktif. Semua kandungan boleh diakses secara terbuka.
         </div>
 
         <!-- Overview Stats -->
@@ -1647,11 +1765,11 @@
             </div>
             <div class="stat-box">
                 <span class="stat-box-number">307</span>
-                <span class="stat-box-label">Video Pendidikan</span>
+                <span class="stat-box-label">Video</span>
             </div>
             <div class="stat-box">
                 <span class="stat-box-number">97</span>
-                <span class="stat-box-label">Artikel &amp; Tutorial</span>
+                <span class="stat-box-label">Penulisan &amp; Blog</span>
             </div>
             <div class="stat-box">
                 <span class="stat-box-number">7+</span>
@@ -1660,7 +1778,7 @@
         </div>
 
         <!-- Senarai Ringkas 11 Projek -->
-        <div class="subsection-title">A. Projek Perisian Digital (13 Projek)</div>
+        <div class="subsection-title">2.1 Projek Perisian (13 Projek)</div>
 
         <table class="data-table">
             <thead>
@@ -1778,7 +1896,7 @@
     </div>
       <div class="section-body">
         <!-- Video Overview -->
-        <div class="subsection-title">B. Video Pendidikan (307 video)</div>
+        <div class="subsection-title">2.2 Video (307 Video)</div>
 
         <div class="video-overview">
             <div class="video-year-card">
@@ -1798,17 +1916,56 @@
             </div>
         </div>
 
-        <div class="subsection-title">C. Artikel &amp; Tutorial (97 Artikel)</div>
-        <div class="article-cat-grid">
-            <div class="article-cat"><div class="ac-count">14+</div><div class="ac-name">Sekolah</div></div>
-            <div class="article-cat"><div class="ac-count">12</div><div class="ac-name">Sejarah</div></div>
-            <div class="article-cat"><div class="ac-count">8</div><div class="ac-name">PSV</div></div>
-            <div class="article-cat"><div class="ac-count">8</div><div class="ac-name">Tutorial Pendidikan</div></div>
-            <div class="article-cat"><div class="ac-count">8</div><div class="ac-name">Tutorial Teknologi</div></div>
-            <div class="article-cat"><div class="ac-count">6</div><div class="ac-name">Blog</div></div>
-            <div class="article-cat"><div class="ac-count">5</div><div class="ac-name">SPP / Guru Baru</div></div>
-            <div class="article-cat"><div class="ac-count">2</div><div class="ac-name">Refleksi Tahunan</div></div>
-            <div class="article-cat"><div class="ac-count">7+</div><div class="ac-name">Kuiz Interaktif</div></div>
+        <div class="subsection-title">2.3 Penulisan &amp; Blog (97 Artikel di cikguaime.com)</div>
+        <div class="article-bar-chart">
+            <div class="article-bar-row">
+                <div class="article-bar-label">Sekolah</div>
+                <div class="article-bar-track"><div class="article-bar-fill gold" style="width:100%"><span>14</span></div></div>
+            </div>
+            <div class="article-bar-row">
+                <div class="article-bar-label">Sejarah</div>
+                <div class="article-bar-track"><div class="article-bar-fill gold" style="width:86%"><span>12</span></div></div>
+            </div>
+            <div class="article-bar-row">
+                <div class="article-bar-label">PSV</div>
+                <div class="article-bar-track"><div class="article-bar-fill" style="width:57%"><span>8</span></div></div>
+            </div>
+            <div class="article-bar-row">
+                <div class="article-bar-label">Tutorial Pendidikan</div>
+                <div class="article-bar-track"><div class="article-bar-fill" style="width:57%"><span>8</span></div></div>
+            </div>
+            <div class="article-bar-row">
+                <div class="article-bar-label">Tutorial Teknologi</div>
+                <div class="article-bar-track"><div class="article-bar-fill" style="width:57%"><span>8</span></div></div>
+            </div>
+            <div class="article-bar-row">
+                <div class="article-bar-label">Blog</div>
+                <div class="article-bar-track"><div class="article-bar-fill" style="width:43%"><span>6</span></div></div>
+            </div>
+            <div class="article-bar-row">
+                <div class="article-bar-label">SPP / Guru Baru</div>
+                <div class="article-bar-track"><div class="article-bar-fill" style="width:36%"><span>5</span></div></div>
+            </div>
+            <div class="article-bar-row">
+                <div class="article-bar-label">Nota IPG</div>
+                <div class="article-bar-track"><div class="article-bar-fill" style="width:36%"><span>5</span></div></div>
+            </div>
+            <div class="article-bar-row">
+                <div class="article-bar-label">Bahasa Melayu</div>
+                <div class="article-bar-track"><div class="article-bar-fill" style="width:29%"><span>4</span></div></div>
+            </div>
+            <div class="article-bar-row">
+                <div class="article-bar-label">IPG</div>
+                <div class="article-bar-track"><div class="article-bar-fill" style="width:29%"><span>4</span></div></div>
+            </div>
+            <div class="article-bar-row">
+                <div class="article-bar-label">Pencapaian</div>
+                <div class="article-bar-track"><div class="article-bar-fill" style="width:14%"><span>2</span></div></div>
+            </div>
+            <div class="article-bar-row">
+                <div class="article-bar-label">Lain-lain</div>
+                <div class="article-bar-track"><div class="article-bar-fill" style="width:7%"><span>1</span></div></div>
+            </div>
         </div>
 
       </div>
@@ -1822,34 +1979,50 @@
         <h1 class="section-title">Katalog Kandungan Digital (sambungan)</h1>
     </div>
     <div class="section-body">
-        <div class="subsection-title">D. Kuiz Interaktif (7+ Kuiz)</div>
-        <p class="narrative">Sistem kuiz interaktif web-based untuk murid sekolah rendah, berkaitan terus dengan subjek yang diajar iaitu <strong>Sejarah</strong>, <strong>PSV</strong>, dan <strong>BM</strong>. Menyokong 7 jenis soalan (MCQ, drag-and-drop, matching, fill-in-the-blank, true/false, susun ayat, penulisan terbuka) dengan leaderboard, auto-save, dan anti-cheating.</p>
+        <div class="subsection-title">2.4 Kuiz Interaktif (7+ Kuiz)</div>
+        <p class="narrative">Sistem kuiz interaktif web-based untuk murid sekolah rendah. Menyokong 7 jenis soalan (MCQ, drag-and-drop, matching, fill-in-the-blank, true/false, susun ayat, penulisan terbuka) dengan leaderboard, auto-save, dan anti-cheating.</p>
         <div class="mini-product-grid">
             <div class="mini-product">
                 <h4>Kuiz Sejarah Tahun 6</h4>
-                <p>56 soalan interaktif merangkumi kemerdekaan, pemimpin negara, perlembagaan, ASEAN, dan perpaduan kaum. Mengikut silibus KSSR Semakan.</p>
+                <p>56 soalan: kemerdekaan, pemimpin negara, perlembagaan, ASEAN. Mengikut KSSR Semakan.</p>
             </div>
             <div class="mini-product">
                 <h4>Kuiz Pengetahuan Am</h4>
-                <p>32+ soalan pelbagai format termasuk drag-and-drop dan matching merangkumi Rukun Negara, simbol negara, dan kenegaraan Malaysia.</p>
+                <p>32+ soalan pelbagai format: Rukun Negara, simbol negara, kenegaraan Malaysia.</p>
             </div>
             <div class="mini-product">
                 <h4>Kuiz PSV Tahun 6</h4>
-                <p>Penilaian komprehensif Bahasa Seni Visual dengan sistem penjejakan kemajuan dan semakan jawapan terperinci.</p>
+                <p>Penilaian Bahasa Seni Visual dengan penjejakan kemajuan dan semakan jawapan.</p>
             </div>
             <div class="mini-product">
                 <h4>Kuiz BM Tahun 4</h4>
-                <p>3 bahagian lengkap iaitu Tatabahasa &amp; Pemahaman (23 soalan), Penulisan Perenggan (3 prompt), dan Karangan (50-80 patah perkataan) dengan auto-save.</p>
+                <p>3 bahagian: Tatabahasa &amp; Pemahaman (23 soalan), Penulisan Perenggan (3 prompt), Karangan dengan auto-save.</p>
             </div>
         </div>
 
-        <div class="highlight-box">
+        <div class="katalog-ringkasan">
             <h3>Ringkasan Keseluruhan Katalog</h3>
-            <div class="stat-inline">
-                <div><span>13</span><span>Projek Digital</span></div>
-                <div><span>307</span><span>Video Pendidikan</span></div>
-                <div><span>97</span><span>Artikel &amp; Tutorial</span></div>
-                <div><span>7+</span><span>Kuiz Interaktif</span></div>
+            <div class="katalog-circles">
+                <div class="katalog-circle-item">
+                    <div class="katalog-ring"><span class="kr-num">13</span></div>
+                    <span class="kr-label">Projek Perisian</span>
+                </div>
+                <div class="katalog-circle-item">
+                    <div class="katalog-ring"><span class="kr-num">307</span></div>
+                    <span class="kr-label">Video</span>
+                </div>
+                <div class="katalog-circle-item">
+                    <div class="katalog-ring"><span class="kr-num">97</span></div>
+                    <span class="kr-label">Penulisan &amp; Blog</span>
+                </div>
+                <div class="katalog-circle-item">
+                    <div class="katalog-ring"><span class="kr-num">7+</span></div>
+                    <span class="kr-label">Kuiz Interaktif</span>
+                </div>
+            </div>
+            <div class="katalog-total">
+                <span>420+</span>
+                <span>Jumlah Kandungan Digital</span>
             </div>
         </div>
     </div>
@@ -1870,7 +2043,7 @@
         <!-- IDME PBD Helper -->
         <div class="product-card">
             <div class="product-card-header">
-                <h3>1. IDME PBD Helper</h3>
+                <h3><img src="portfolio/img/pbd-helper.png" alt="IDME PBD Helper" class="ext-logo">1. IDME PBD Helper</h3>
                 <span class="product-type">Chrome Extension</span>
             </div>
             <div class="product-card-body">
@@ -1892,7 +2065,7 @@
                         <li>Auto Usaha Murid</li>
                         <li>Auto Ulasan Guru</li>
                         <li>Kemahiran Bahasa (BM/BI)</li>
-                        <li>PRO: Cadangan TP pintar berdasarkan markah</li>
+                        <li>Cadangan TP pintar berdasarkan markah (AI)</li>
                     </ul>
                 </div>
             </div>
@@ -1905,7 +2078,7 @@
         <!-- MOIES Kehadiran Helper -->
         <div class="product-card">
             <div class="product-card-header">
-                <h3>2. MOIES Kehadiran Helper</h3>
+                <h3><img src="portfolio/img/moies-helper.png" alt="MOIES Kehadiran Helper" class="ext-logo">2. MOIES Kehadiran Helper</h3>
                 <span class="product-type">Chrome Extension</span>
             </div>
             <div class="product-card-body">
@@ -1927,7 +2100,7 @@
                         <li>Fuzzy matching untuk typo</li>
                         <li>98 kod kehadiran KPM</li>
                         <li>Pemprosesan 100% tempatan</li>
-                        <li>PRO: AI Gemini ~100% ketepatan</li>
+                        <li>AI Gemini untuk ketepatan ~100%</li>
                     </ul>
                 </div>
             </div>
@@ -1940,7 +2113,7 @@
         <!-- PBD OnePage -->
         <div class="product-card">
             <div class="product-card-header">
-                <h3>3. PBD OnePage</h3>
+                <h3><img src="portfolio/img/onepage-pbd.png" alt="PBD OnePage" class="ext-logo">3. PBD OnePage</h3>
                 <span class="product-type">Chrome Extension</span>
             </div>
             <div class="product-card-body">
@@ -2041,6 +2214,23 @@
                     </ul>
                 </div>
             </div>
+            <div class="product-card-stats">
+                <div class="pcs-item"><strong>Masalah:</strong> <span>Rekod sahsiah murid dalam buku fizikal, sukar dijejak dan dikongsi</span></div>
+                <div class="pcs-item"><strong>Impak:</strong> <span>Rekod digital telus, ibu bapa boleh pantau melalui portal</span></div>
+            </div>
+        </div>
+
+        <div class="highlight-box" style="margin-top:3mm;">
+            <h3>Teknologi Yang Digunakan</h3>
+            <div class="stat-inline">
+                <div><span>6</span><span>Bahasa Pengaturcaraan</span></div>
+                <div><span>5</span><span>Framework</span></div>
+                <div><span>3</span><span>Platform</span></div>
+                <div><span>2</span><span>AI API</span></div>
+            </div>
+            <div style="text-align:center; margin-top:3mm; font-size:8pt; color:#8899aa; letter-spacing:0.3px;">
+                JavaScript · TypeScript · Python · HTML/CSS · Apps Script · React · Next.js · Vite · Alpine.js · Google Sheets · Chrome Extension · Web App · Google Gemini · OpenAI
+            </div>
         </div>
 
     </div>
@@ -2080,6 +2270,10 @@
                     </ul>
                 </div>
             </div>
+            <div class="product-card-stats">
+                <div class="pcs-item"><strong>Masalah:</strong> <span>Pindah markah dari Excel ke Headcount secara manual, rawan kesilapan</span></div>
+                <div class="pcs-item"><strong>Impak:</strong> <span>Proses automatik dengan padanan nama pintar, tiada kesilapan salin</span></div>
+            </div>
         </div>
 
         <!-- Relief Activity Hub -->
@@ -2102,6 +2296,20 @@
                         <li>Optimum untuk projektor</li>
                     </ul>
                 </div>
+            </div>
+            <div class="product-card-stats">
+                <div class="pcs-item"><strong>Masalah:</strong> <span>Kelas ganti tanpa aktiviti terancang, murid tidak fokus</span></div>
+                <div class="pcs-item"><strong>Impak:</strong> <span>Pembelajaran melalui permainan, murid kekal aktif dan terkawal</span></div>
+            </div>
+        </div>
+
+        <div class="highlight-box" style="margin-top:3mm;">
+            <h3>Ringkasan 13 Projek Perisian Digital</h3>
+            <div class="stat-inline">
+                <div><span>14,900+</span><span>Pengguna Keseluruhan</span></div>
+                <div><span>4.98</span><span>Rating Purata</span></div>
+                <div><span>90%+</span><span>Penjimatan Masa</span></div>
+                <div><span>100%</span><span>Dibina Sendiri</span></div>
             </div>
         </div>
     </div>
@@ -2165,7 +2373,7 @@
             </div>
             <div class="mini-product">
                 <h4>13. Landing Page MOIES</h4>
-                <p>Laman pemasaran untuk MOIES Kehadiran Helper. Penerangan masalah/penyelesaian, demo ciri, testimoni, harga dan FAQ.</p>
+                <p>Laman rasmi MOIES Kehadiran Helper. Penerangan masalah/penyelesaian, demo ciri, testimoni, dan FAQ.</p>
                 <div class="mini-stats">
                     <span class="mini-stat-badge">React 19</span>
                     <span class="mini-stat-badge">Framer Motion</span>
@@ -2400,7 +2608,7 @@
 <div class="page section-page">
     <div class="section-header">
         <div class="section-number">Bahagian 02: Kajian Kes Mendalam</div>
-        <h1 class="section-title">IDME PBD Helper</h1>
+        <h1 class="section-title"><img src="portfolio/img/pbd-helper.png" alt="" class="ext-logo-lg">IDME PBD Helper</h1>
     </div>
 
     <div class="section-body">
@@ -2436,7 +2644,7 @@
             IDME PBD Helper ialah <strong>Chrome Extension</strong> yang mengubah proses pengisian PBD daripada kerja manual kepada proses automatik. Guru hanya perlu membuka sistem IDME, klik ikon extension, pilih Tahap Penguasaan untuk semua murid secara pukal, dan klik Auto-isi. Usaha Murid dijana automatik berdasarkan TP, Ulasan Guru dijana secara pintar, dan Kemahiran Bahasa BM/BI diisi secara automatik.
         </div>
         <div class="narrative">
-            Versi <strong>PRO</strong> (RM10/bulan) menambah ciri <strong>Cadangan TP Pintar</strong> yang menganalisis markah peperiksaan murid dan mencadangkan TP yang sesuai menggunakan AI. Guru hanya perlu mengesahkan cadangan tersebut.
+            Ciri lanjutan termasuk <strong>Cadangan TP Pintar</strong> yang menganalisis markah peperiksaan murid dan mencadangkan TP yang sesuai menggunakan AI. Guru hanya perlu mengesahkan cadangan tersebut.
         </div>
 
         <div class="subsection-title">Aliran Kerja: 4 Langkah Mudah</div>
@@ -2495,7 +2703,7 @@
 </div><div class="page section-page">
       <div class="section-header">
         <div class="section-number">Bahagian 02: Kajian Kes Mendalam</div>
-        <h1 class="section-title">IDME PBD Helper (sambungan)</h1>
+        <h1 class="section-title"><img src="portfolio/img/pbd-helper.png" alt="" class="ext-logo-lg">IDME PBD Helper (sambungan)</h1>
     </div>
       <div class="section-body">
         <div class="subsection-title">Tangkap Layar Antaramuka</div>
@@ -2536,14 +2744,14 @@
                     <td><strong>8 minit</strong></td>
                 </tr>
                 <tr>
-                    <td>Sokongan AI (PRO)</td>
+                    <td>Sokongan AI</td>
                     <td>Tiada</td>
                     <td><strong>Gemini AI</strong>: cadangan TP automatik</td>
                 </tr>
                 <tr>
                     <td>Kos kepada guru</td>
                     <td>Masa &amp; tenaga</td>
-                    <td><strong>Percuma</strong> (asas) / RM10 (PRO)</td>
+                    <td><strong>Percuma</strong></td>
                 </tr>
             </tbody>
         </table>
@@ -2570,7 +2778,7 @@
                 <div><span>5,900+</span><span>Pengguna Aktif</span></div>
                 <div><span>5.0 ★</span><span>Rating Chrome Store</span></div>
                 <div><span>93%</span><span>Penjimatan Masa</span></div>
-                <div><span>50+</span><span>Pelanggan PRO</span></div>
+                <div><span>v3.9</span><span>Versi Terkini</span></div>
             </div>
         </div>
       </div>
@@ -2584,7 +2792,7 @@
 <div class="page section-page">
     <div class="section-header">
         <div class="section-number">Bahagian 02: Kajian Kes Mendalam</div>
-        <h1 class="section-title">MOIES Kehadiran Helper</h1>
+        <h1 class="section-title"><img src="portfolio/img/moies-helper.png" alt="" class="ext-logo-lg">MOIES Kehadiran Helper</h1>
     </div>
 
     <div class="section-body">
@@ -2636,7 +2844,7 @@
             </div>
             <div class="quality-item">
                 <span class="quality-check">✓</span>
-                <span class="quality-item-text"><strong>AI (PRO)</strong>: Google Gemini untuk ketepatan ~100% dalam pengecaman sebab</span>
+                <span class="quality-item-text"><strong>AI Gemini</strong>: ketepatan ~100% dalam pengecaman sebab ketidakhadiran</span>
             </div>
         </div>
 
@@ -2676,7 +2884,7 @@
 <div class="page section-page">
     <div class="section-header">
         <div class="section-number">Bahagian 02: Kajian Kes Mendalam</div>
-        <h1 class="section-title">MOIES Kehadiran Helper : Bukti Visual</h1>
+        <h1 class="section-title"><img src="portfolio/img/moies-helper.png" alt="" class="ext-logo-lg">MOIES Kehadiran Helper : Bukti Visual</h1>
     </div>
     <div class="section-body">
         <div class="screenshot-grid">
@@ -2701,7 +2909,7 @@
 <div class="page section-page">
     <div class="section-header">
         <div class="section-number">Bahagian 02: Kajian Kes Mendalam</div>
-        <h1 class="section-title">PBD OnePage &amp; Auto eRPH</h1>
+        <h1 class="section-title"><img src="portfolio/img/onepage-pbd.png" alt="" class="ext-logo-lg">PBD OnePage &amp; Auto eRPH</h1>
     </div>
 
     <div class="section-body">
@@ -2769,7 +2977,7 @@
             Setiap guru wajib menulis Rancangan Pengajaran Harian (RPH). Prosesnya melibatkan membuka DSKP, mencari standard kandungan, menyalin ke eRPH, memformat ikut piawaian, dan mengulangi bagi setiap slot. Secara purata, <strong>10+ minit per RPH, 5 hari seminggu, berjumlah kira-kira 35 jam setahun</strong> hanya untuk menulis RPH.
         </div>
         <div class="narrative">
-            <strong>Auto eRPH</strong> menyelesaikan masalah ini melalui Google Sheets dengan <strong>56,813+ entri DSKP rasmi</strong> yang terbina dalam. Guru memilih subjek, tahun, dan minggu, kemudian RPH dijana automatik dengan format KPM. Versi PRO dengan <strong>AI Gemini</strong> boleh mengekstrak DSKP daripada dokumen Word secara pintar.
+            <strong>Auto eRPH</strong> menyelesaikan masalah ini melalui Google Sheets dengan <strong>56,813+ entri DSKP rasmi</strong> yang terbina dalam. Guru memilih subjek, tahun, dan minggu, kemudian RPH dijana automatik dengan format KPM. Ciri AI Gemini boleh mengekstrak DSKP daripada dokumen Word secara pintar.
         </div>
 
         <div class="highlight-box">
@@ -2777,7 +2985,7 @@
             <div class="stat-inline">
                 <div>
                     <span>50+</span>
-                    <span>Pelanggan Aktif</span>
+                    <span>Guru Pengguna</span>
                 </div>
                 <div>
                     <span>56,813</span>
@@ -2788,8 +2996,8 @@
                     <span>Dijimat / Guru / Tahun</span>
                 </div>
                 <div>
-                    <span>RM80</span>
-                    <span>Sahaja</span>
+                    <span>90%</span>
+                    <span>Penjimatan Masa</span>
                 </div>
             </div>
         </div>
@@ -3722,8 +3930,8 @@ Extensions    Videos
                         </tr>
                         <tr>
                             <td><strong>Auto eRPH</strong>: automasi RPH dalam Google Sheets</td>
-                            <td>50+ guru pelanggan</td>
-                            <td>RM80</td>
+                            <td>50+ guru pengguna</td>
+                            <td>Berbayar (mampu milik)</td>
                         </tr>
                         <tr>
                             <td><strong>97 artikel</strong> tutorial &amp; panduan pendidikan</td>
@@ -3899,7 +4107,7 @@ Extensions    Videos
             </div>
             <div class="quality-item">
                 <div class="quality-check">✓</div>
-                <div class="quality-item-text"><strong>Model pendapatan</strong>: Auto eRPH &amp; IDME PRO memastikan penyelenggaraan jangka panjang</div>
+                <div class="quality-item-text"><strong>Kelestarian projek</strong>: penyelenggaraan aktif dan kemaskini berterusan sejak 2022</div>
             </div>
             <div class="quality-item">
                 <div class="quality-check">✓</div>
@@ -5362,8 +5570,8 @@ Extensions    Videos
                 <p style="font-size: 10px;">Majoriti kandungan dikongsi secara percuma (3 Chrome Extensions, 97 artikel, 307 video) untuk manfaat komuniti pendidikan.</p>
             </div>
             <div class="info-card" style="padding: 10px;">
-                <h4 style="font-size: 11px; color: var(--accent-dark); margin-bottom: 4px;">Lesen Berpatutan</h4>
-                <p style="font-size: 10px;">Ciri premium (PRO) ditawarkan pada harga sangat rendah (RM10/bulan), memastikan akses inklusif untuk semua guru.</p>
+                <h4 style="font-size: 11px; color: var(--accent-dark); margin-bottom: 4px;">Akses Inklusif</h4>
+                <p style="font-size: 10px;">Semua ciri utama disediakan secara percuma. Ciri lanjutan ditawarkan pada kadar mampu milik untuk memastikan akses terbuka kepada semua guru.</p>
             </div>
         </div>
 
@@ -5403,7 +5611,7 @@ Extensions    Videos
         <div class="info-grid" style="grid-template-columns: 1fr 1fr; gap: 10px;">
             <div class="info-card" style="padding: 10px;">
                 <h4 style="font-size: 11px; color: var(--accent-dark); margin-bottom: 4px;">AI Sebagai Pembantu, Bukan Pengganti</h4>
-                <p style="font-size: 10px;">Google Gemini API digunakan dalam MOIES Helper (PRO) dan Auto eRPH untuk membantu parsing data, bukan menggantikan pertimbangan guru.</p>
+                <p style="font-size: 10px;">Google Gemini API digunakan dalam MOIES Helper dan Auto eRPH untuk membantu parsing data, bukan menggantikan pertimbangan guru.</p>
             </div>
             <div class="info-card" style="padding: 10px;">
                 <h4 style="font-size: 11px; color: var(--accent-dark); margin-bottom: 4px;">Ketelusan Penggunaan AI</h4>
