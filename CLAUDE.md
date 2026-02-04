@@ -6,27 +6,28 @@ Portfolio digital untuk pencalonan **Anugerah Khas Pencipta Kandungan Digital**,
 
 ## Status Semasa (4 Feb 2026)
 
-- **Jumlah halaman**: 61
-- **Gambar**: 70+ gambar telah dimasukkan
+- **Jumlah halaman**: 62
+- **Gambar**: 76+ gambar telah dimasukkan
 - **Bahagian TVPSS FiveOne**: Lengkap dengan liputan, pertandingan, pencapaian, dan collage
+- **Bahagian Blog cikguaime.com**: Lengkap dengan statistik, artikel berimpak tinggi, dan kedudukan carian Google
 
 ## Struktur Fail
 
-- `portfolio/portfolio.html` — Fail utama portfolio (satu fail HTML + CSS inline, 61 halaman A4)
+- `portfolio/portfolio.html` — Fail utama portfolio (satu fail HTML + CSS inline, 62 halaman A4)
 - `index.html` — Salinan untuk GitHub Pages (MESTI sync selepas setiap perubahan)
 - `portfolio/img/` — Semua gambar portfolio
 
-## Struktur Portfolio (61 halaman)
+## Struktur Portfolio (62 halaman)
 
 | Bahagian | Halaman | Kandungan |
 |----------|---------|-----------|
 | Cover & TOC | 0-1 | Muka depan, isi kandungan |
 | 01 Profil & Biodata | 2-3 | Maklumat peribadi, kemahiran |
-| 02 Katalog Kandungan | 4-35 | Extensions, Apps, TVPSS, Blog |
-| 03 Demo & Bukti | 36-40 | Rating, testimoni, tangkap layar |
-| 04 Sumbangan & Impak | 41-50 | Impak guru/murid, keberlanjutan |
-| 05 Sijil & Pencapaian | 51-57 | 76 pencapaian, sijil |
-| 06 Etika & Privasi | 58-61 | Privasi, hak cipta, keselamatan |
+| 02 Katalog Kandungan | 4-37 | Extensions, Apps, TVPSS, Blog, Kedudukan Carian Google, Ekosistem |
+| 03 Demo & Bukti | 38-41 | Rating, testimoni, tangkap layar |
+| 04 Sumbangan & Impak | 42-51 | Impak guru/murid, keberlanjutan |
+| 05 Sijil & Pencapaian | 52-58 | 76 pencapaian, sijil |
+| 06 Etika & Privasi | 59-62 | Privasi, hak cipta, keselamatan |
 
 ## TVPSS FiveOne (ms 22-31)
 
@@ -38,6 +39,22 @@ Portfolio digital untuk pencalonan **Anugerah Khas Pencipta Kandungan Digital**,
 | 28 | Penyertaan Pertandingan Video (5 gambar) |
 | 29 | Tulang Belakang Sekolah - Collage (26 gambar) |
 | 30-31 | Pencapaian & Bukti Gambar |
+
+## Blog cikguaime.com (ms 34-37)
+
+| Halaman | Kandungan |
+|---------|-----------|
+| 34 | Statistik blog, jadual artikel berimpak tinggi, jenis kandungan |
+| 35 | Blog sebagai HUB ekosistem, halaman utama, statistik pengunjung |
+| 36 | Kedudukan di Carian Google (4 bukti screenshot) |
+| 37 | Peta Ekosistem Digital, Ringkasan Impak Keseluruhan |
+
+## Data Penting
+
+- **Pengunjung blog**: 3,548,600 (All Time)
+- **Guru pengguna extensions**: 14,900+
+- **Jumlah video**: 307 (YouTube 104 + TikTok 203)
+- **Jumlah kandungan digital**: 420+
 
 ## Sync index.html
 
