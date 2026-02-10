@@ -4,57 +4,100 @@
 
 Portfolio digital untuk pencalonan **Anugerah Khas Pencipta Kandungan Digital**, Hari Guru Peringkat Kebangsaan 2026. Calon: Ahmad Aiman Bin Mohamed (Cikgu Aime), SK Putrajaya Presint 5(1).
 
-## Status Semasa (4 Feb 2026)
+## Status Semasa (10 Feb 2026)
 
-- **Jumlah halaman**: 62
+- **Jumlah halaman**: 68 bernombor + Cover + 6 dividers
 - **Gambar**: 76+ gambar telah dimasukkan
 - **Bahagian TVPSS FiveOne**: Lengkap dengan liputan, pertandingan, pencapaian, dan collage
 - **Bahagian Blog cikguaime.com**: Lengkap dengan statistik, artikel berimpak tinggi, dan kedudukan carian Google
+- **Semakan fakta**: Selesai (111,600 DSKP, 89 episod TVPSS, 15.5M+ tontonan)
+
+## Perubahan Terkini (10 Feb 2026)
+
+### Penambahbaikan HIGH Priority (Audit Juri Kebangsaan)
+1. **ISI KANDUNGAN**: Sync dengan struktur sebenar portfolio
+2. **Ringkasan Eksekutif (ms 2)**: Halaman baharu dengan pemetaan rubrik A-E, 6 kajian kes utama, dan pencapaian tertinggi
+3. **Roadmap 2026-2029**: Ditambah ke bahagian Keberlanjutan (ms 49) untuk tunjuk visi jangka panjang
+4. **Emojis diganti**: Semua emojis warna diganti dengan simbol Unicode selamat untuk cetakan
+   - Divider icons: ◉ ▣ ✦ ◎ ★ ◆
+   - Content: ★ (johan), ③ (ketiga), ♦ ◆ ▶ (kategori)
+
+### Penambahbaikan MEDIUM Priority
+1. **Placeholder imej diganti**: Halaman Analitik (ms 57) kini ada imej YouTube/TikTok sebenar
+2. **Sijil-sijil terpilih**: Halaman 66 kini papar 6 sijil dengan imej sebenar (bukan teks placeholder)
+3. **Bahagian lain sudah lengkap**:
+   - Pembangunan murid TVPSS: Jadual perbandingan sebelum/selepas sudah ada
+   - Testimoni: 8+ tangkap layar ulasan Chrome Web Store
+   - Bukti visual: 90+ gambar dalam portfolio
+
+### Penambahbaikan LOW Priority
+1. **Konsistensi visual**: Font sizes dan spacing sudah konsisten (8-10pt body, 14-28pt headers)
+2. **Data disahkan**: Semua angka konsisten (14,900 pengguna, 307 video, 111,600 DSKP)
+3. **Tiada typo**: Ejaan dan tatabahasa telah disemak
+
+### Catatan
+- Semua nombor halaman dikemaskini (+1 kerana Ringkasan Eksekutif baharu)
+- QR codes: Perlu dijana secara manual menggunakan goqr.me atau serupa
 
 ## Struktur Fail
 
-- `portfolio/portfolio.html` — Fail utama portfolio (satu fail HTML + CSS inline, 62 halaman A4)
+- `portfolio/portfolio.html` — Fail utama portfolio (satu fail HTML + CSS inline, 68 halaman bernombor)
 - `index.html` — Salinan untuk GitHub Pages (MESTI sync selepas setiap perubahan)
 - `portfolio/img/` — Semua gambar portfolio
 
-## Struktur Portfolio (62 halaman)
+## Struktur Portfolio (68 halaman bernombor)
 
 | Bahagian | Halaman | Kandungan |
 |----------|---------|-----------|
-| Cover & TOC | 0-1 | Muka depan, isi kandungan |
-| 01 Profil & Biodata | 2-3 | Maklumat peribadi, kemahiran |
-| 02 Katalog Kandungan | 4-37 | Extensions, Apps, TVPSS, Blog, Kedudukan Carian Google, Ekosistem |
-| 03 Demo & Bukti | 38-41 | Rating, testimoni, tangkap layar |
-| 04 Sumbangan & Impak | 42-51 | Impak guru/murid, keberlanjutan |
-| 05 Sijil & Pencapaian | 52-58 | 76 pencapaian, sijil |
-| 06 Etika & Privasi | 59-62 | Privasi, hak cipta, keselamatan |
+| Cover | — | Muka depan (tanpa nombor) |
+| ISI KANDUNGAN | 1 | Senarai bahagian dan halaman |
+| Ringkasan Eksekutif | 2 | Pemetaan rubrik, 6 kajian kes, pencapaian tertinggi |
+| 01 Profil & Biodata | 3-5 | Maklumat peribadi, peranan, kemahiran, jangkauan |
+| 02 Katalog Kandungan | 6-39 | Extensions, Apps, TVPSS, Blog, Kedudukan Carian Google, Ekosistem |
+| 03 Demo & Bukti | 40-46 | Antaramuka, rating 5.0★, testimoni, senarai semak kualiti |
+| 04 Sumbangan & Impak | 47-59 | Impak guru/murid, perkongsian ilmu, garis masa, analitik |
+| 05 Sijil & Pencapaian | 60-67 | 76 pencapaian, sijil, trend |
+| 06 Etika & Privasi | 68 | Privasi data, hak cipta, keselamatan, AI beretika |
 
-## TVPSS FiveOne (ms 22-31)
+**Nota:** Setiap bahagian bermula dengan halaman divider (tanpa nombor).
 
-| Halaman | Kandungan |
-|---------|-----------|
-| 22-23 | Studio & Pembangunan Kemahiran Murid |
-| 24-25 | Behind The Scene |
-| 26-27 | Liputan Antarabangsa, Kebangsaan, Negeri (15 gambar) |
-| 28 | Penyertaan Pertandingan Video (5 gambar) |
-| 29 | Tulang Belakang Sekolah - Collage (26 gambar) |
-| 30-31 | Pencapaian & Bukti Gambar |
-
-## Blog cikguaime.com (ms 34-37)
+## TVPSS FiveOne (ms 25-34)
 
 | Halaman | Kandungan |
 |---------|-----------|
-| 34 | Statistik blog, jadual artikel berimpak tinggi, jenis kandungan |
-| 35 | Blog sebagai HUB ekosistem, halaman utama, statistik pengunjung |
-| 36 | Kedudukan di Carian Google (4 bukti screenshot) |
-| 37 | Peta Ekosistem Digital, Ringkasan Impak Keseluruhan |
+| 25 | Studio, statistik video, video viral |
+| 26 | Pembangunan Kemahiran Murid, kemahiran dikuasai |
+| 27-28 | Liputan Antarabangsa, Kebangsaan, Negeri (15 gambar) |
+| 29 | Penyertaan Pertandingan Video (5 gambar) |
+| 30 | Tulang Belakang Sekolah, Collage (26 gambar) |
+| 31-34 | Pencapaian Antarabangsa, Kebangsaan, Negeri |
+
+## Blog cikguaime.com (ms 35-37)
+
+| Halaman | Kandungan |
+|---------|-----------|
+| 35 | Statistik blog, jadual artikel berimpak tinggi, jenis kandungan |
+| 36 | Blog sebagai HUB, gambar halaman utama |
+| 37 | Kedudukan di Carian Google (4 bukti screenshot) |
+
+## Ekosistem Digital (ms 38-39)
+
+| Halaman | Kandungan |
+|---------|-----------|
+| 38 | Peta Ekosistem Digital, Ringkasan Impak, 15 Projek & 6 Format |
+| 39 | Timeline 2018-2026, Mengapa Juri Perlu Tahu |
 
 ## Data Penting
 
 - **Pengunjung blog**: 3,548,600 (All Time)
 - **Guru pengguna extensions**: 14,900+
-- **Jumlah video**: 307 (YouTube 104 + TikTok 203)
+- **Jumlah video**: 307
+  - YouTube TVPSS: 104 (89 episod + 15 siaran langsung)
+  - TikTok: 203 (108 TVPSS + 95 peribadi @AHMDAIME)
 - **Jumlah kandungan digital**: 420+
+- **Tontonan video**: 15.5M+ (YouTube 530K + TikTok ~15M)
+- **DSKP dalam Auto eRPH**: 111,600 entri
+- **Murid mencuba kuiz**: 2,000+
 
 ## Sync index.html
 
@@ -83,6 +126,14 @@ document.querySelectorAll('.page').forEach((p, i) => {
   if (p.scrollHeight > 1125) console.log(`Page ${i} OVERFLOW: ${p.scrollHeight}px`);
 });
 ```
+
+## Arahan Kerja (WAJIB IKUT)
+
+1. **Semak keseluruhan mukasurat dahulu** sebelum buat sebarang perubahan atau tambahbaik untuk mengelakkan kesalahan atau kepincangan data
+2. **JANGAN guna Playwright** untuk semakan melainkan pengguna beri kebenaran secara eksplisit
+3. **Rujuk data dari portfolio** (terutama mukasurat 6 untuk video) sebelum menulis fakta
+4. **Portfolio mesti berkualiti tinggi** dan memberi impak kepada juri semasa proses penjurian
+5. **Murid adalah klien utama guru** — setiap impak kepada guru perlu dikaitkan dengan impak kepada murid
 
 ## Gaya Penulisan
 
