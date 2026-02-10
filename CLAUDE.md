@@ -10,7 +10,7 @@ Portfolio digital untuk pencalonan **Anugerah Khas Pencipta Kandungan Digital**,
 - **Gambar**: 76+ gambar telah dimasukkan
 - **Bahagian TVPSS FiveOne**: Lengkap dengan liputan, pertandingan, pencapaian, dan collage
 - **Bahagian Blog cikguaime.com**: Lengkap dengan statistik, artikel berimpak tinggi, dan kedudukan carian Google
-- **Semakan fakta**: Selesai (111,600 DSKP, 89 episod TVPSS, 15.5M+ tontonan)
+- **Semakan fakta**: Selesai (89 episod TVPSS, 15.5M+ tontonan, 14,900+ guru pengguna)
 - **QR Codes**: Halaman baharu (ms 45) untuk akses pantas kepada demo interaktif
 
 ## Perubahan Terkini (10 Feb 2026)
@@ -35,7 +35,7 @@ Portfolio digital untuk pencalonan **Anugerah Khas Pencipta Kandungan Digital**,
 
 ### Penambahbaikan LOW Priority
 1. **Konsistensi visual**: Font sizes dan spacing sudah konsisten (8-10pt body, 14-28pt headers)
-2. **Data disahkan**: Semua angka konsisten (14,900 pengguna, 307 video, 111,600 DSKP)
+2. **Data disahkan**: Semua angka konsisten (14,900 pengguna, 307 video, 75% penjimatan masa RPH)
 3. **Tiada typo**: Ejaan dan tatabahasa telah disemak
 
 ### Catatan
@@ -100,7 +100,7 @@ Portfolio digital untuk pencalonan **Anugerah Khas Pencipta Kandungan Digital**,
   - TikTok: 203 (108 TVPSS + 95 peribadi @AHMDAIME)
 - **Jumlah kandungan digital**: 420+
 - **Tontonan video**: 15.5M+ (YouTube 530K + TikTok ~15M)
-- **DSKP dalam Auto eRPH**: 111,600 entri
+- **Auto eRPH**: AI Gemini integration, 75% penjimatan masa (40 min → 9 min)
 - **Murid mencuba kuiz**: 2,000+
 
 ## Sync index.html

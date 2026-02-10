@@ -149,6 +149,41 @@
             opacity: 0.3;
         }
 
+        /* Divider Roadmap */
+        .divider-roadmap {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2mm;
+            margin-top: 12mm;
+            flex-wrap: wrap;
+            max-width: 180mm;
+        }
+        .divider-roadmap-item {
+            background: rgba(255,255,255,0.08);
+            border: 1px solid rgba(200,168,78,0.3);
+            border-radius: 2mm;
+            padding: 3mm 4mm;
+            text-align: center;
+            min-width: 24mm;
+        }
+        .divider-roadmap-item .dr-title {
+            font-size: 9pt;
+            font-weight: 600;
+            color: white;
+            margin-bottom: 1mm;
+        }
+        .divider-roadmap-item .dr-page {
+            font-size: 7pt;
+            color: var(--accent);
+            opacity: 0.8;
+        }
+        .divider-roadmap-arrow {
+            color: var(--accent);
+            font-size: 10pt;
+            opacity: 0.6;
+        }
+
         /* === COVER PAGE === */
         .cover {
             display: flex;
@@ -1618,7 +1653,7 @@
                 <tr>
                     <td style="padding:1.5mm 3mm; border-bottom:1px solid #e0dcd3;"><strong>B: Kualiti Kandungan</strong></td>
                     <td style="padding:1.5mm 3mm; border-bottom:1px solid #e0dcd3; text-align:center; color:var(--accent); font-weight:700;">50%</td>
-                    <td style="padding:1.5mm 3mm; border-bottom:1px solid #e0dcd3;">111,600 DSKP, 307 video, rating 5.0, kuiz interaktif</td>
+                    <td style="padding:1.5mm 3mm; border-bottom:1px solid #e0dcd3;">AI Gemini RPH, 307 video, rating 5.0, kuiz interaktif</td>
                     <td style="padding:1.5mm 3mm; border-bottom:1px solid #e0dcd3; text-align:center;">ms 46-47</td>
                 </tr>
                 <tr style="background:#f8f6f0;">
@@ -1657,7 +1692,7 @@
             </div>
             <div style="background:linear-gradient(135deg, #0a1628 0%, #1a3a5c 100%); padding:2.5mm; border-radius:2mm; border-left:3px solid var(--accent);">
                 <div style="font-size:9pt; font-weight:700; color:white;">3. Auto eRPH</div>
-                <div style="font-size:7.5pt; color:#94a3b8; margin-top:0.5mm;">111,600 entri DSKP · Automasi RPH lengkap</div>
+                <div style="font-size:7.5pt; color:#94a3b8; margin-top:0.5mm;">AI Gemini · 75% penjimatan masa RPH</div>
                 <div style="font-size:7pt; color:var(--accent); margin-top:0.5mm;">Lihat ms 22-24</div>
             </div>
             <div style="background:linear-gradient(135deg, #0a1628 0%, #1a3a5c 100%); padding:2.5mm; border-radius:2mm; border-left:3px solid var(--accent);">
@@ -1978,14 +2013,47 @@
     <div class="divider-number">Bahagian 02</div>
     <div class="divider-line"></div>
     <div class="divider-title">Katalog Kandungan Digital</div>
-    <div class="divider-subtitle">420+ kandungan digital merangkumi projek perisian, video pendidikan, artikel, dan kuiz interaktif</div>
+    <div class="divider-subtitle">420+ kandungan digital: perisian, video, artikel, kuiz — dengan 6 kajian kes mendalam</div>
+
+    <!-- Roadmap Navigation -->
+    <div class="divider-roadmap">
+        <div class="divider-roadmap-item">
+            <div class="dr-title">Katalog</div>
+            <div class="dr-page">ms 5–8</div>
+        </div>
+        <div class="divider-roadmap-arrow">→</div>
+        <div class="divider-roadmap-item">
+            <div class="dr-title">Perisian</div>
+            <div class="dr-page">ms 9–12</div>
+        </div>
+        <div class="divider-roadmap-arrow">→</div>
+        <div class="divider-roadmap-item">
+            <div class="dr-title">Video</div>
+            <div class="dr-page">ms 13–14</div>
+        </div>
+        <div class="divider-roadmap-arrow">→</div>
+        <div class="divider-roadmap-item">
+            <div class="dr-title">Penulisan</div>
+            <div class="dr-page">ms 15</div>
+        </div>
+        <div class="divider-roadmap-arrow">→</div>
+        <div class="divider-roadmap-item">
+            <div class="dr-title">Kajian Kes</div>
+            <div class="dr-page">ms 16–37</div>
+        </div>
+        <div class="divider-roadmap-arrow">→</div>
+        <div class="divider-roadmap-item">
+            <div class="dr-title">Rumusan</div>
+            <div class="dr-page">ms 38–39</div>
+        </div>
+    </div>
 </div>
 
 <!-- BAHAGIAN 02  KATALOG OVERVIEW -->
 <div class="page section-page">
     <div class="section-header">
-        <div class="section-number">Bahagian 02</div>
-        <h1 class="section-title">Katalog Kandungan Digital</h1>
+        <div class="section-number">Bahagian 02: Katalog</div>
+        <h1 class="section-title">Ringkasan 420+ Kandungan Digital</h1>
     </div>
 
     <div class="section-body">
@@ -1996,7 +2064,7 @@
         <!-- Overview Stats -->
         <div class="stats-row">
             <div class="stat-box">
-                <span class="stat-box-number">15</span>
+                <span class="stat-box-number">17</span>
                 <span class="stat-box-label">Projek Perisian</span>
             </div>
             <div class="stat-box">
@@ -2013,7 +2081,7 @@
             </div>
         </div>
 
-        <!-- Senarai Ringkas 11 Projek -->
+        <!-- Senarai Ringkas Projek -->
         <div class="subsection-title">2.1 Projek Perisian (17 Projek)</div>
 
         <table class="data-table">
@@ -2155,8 +2223,8 @@
     <div class="page-footer-bar"></div>
 </div><div class="page section-page">
       <div class="section-header">
-        <div class="section-number">Bahagian 02</div>
-        <h1 class="section-title">Katalog Kandungan Digital (sambungan)</h1>
+        <div class="section-number">Bahagian 02: Katalog</div>
+        <h1 class="section-title">Video & Penulisan</h1>
     </div>
       <div class="section-body">
         <!-- Video Overview -->
@@ -2266,8 +2334,8 @@
 
 <div class="page section-page">
     <div class="section-header">
-        <div class="section-number">Bahagian 02</div>
-        <h1 class="section-title">Katalog Kandungan Digital (sambungan)</h1>
+        <div class="section-number">Bahagian 02: Katalog</div>
+        <h1 class="section-title">Kuiz Interaktif</h1>
     </div>
     <div class="section-body">
         <div class="subsection-title">2.4 Kuiz Interaktif (7+ Kuiz)</div>
@@ -2362,8 +2430,8 @@
 <!-- ============================================ -->
 <div class="page section-page">
     <div class="section-header">
-        <div class="section-number">Bahagian 02: Inovasi AI</div>
-        <h1 class="section-title">AI Chatbot &amp; Custom GPT</h1>
+        <div class="section-number">Bahagian 02: Katalog</div>
+        <h1 class="section-title">AI Chatbot & Custom GPT</h1>
     </div>
 
     <div class="section-body">
@@ -2445,7 +2513,7 @@
 <!-- ============================================ -->
 <div class="page section-page">
     <div class="section-header">
-        <div class="section-number">Bahagian 02: Projek Perisian Digital</div>
+        <div class="section-number">Bahagian 02: Perisian</div>
         <h1 class="section-title">Chrome Extensions (14,900+ Pengguna)</h1>
     </div>
 
@@ -2565,8 +2633,8 @@
 <!-- ============================================ -->
 <div class="page section-page">
     <div class="section-header">
-        <div class="section-number">Bahagian 02: Projek Perisian Digital</div>
-        <h1 class="section-title">Apps Script &amp; Web Apps</h1>
+        <div class="section-number">Bahagian 02: Perisian</div>
+        <h1 class="section-title">Apps Script & Web Apps</h1>
     </div>
 
     <div class="section-body">
@@ -2587,19 +2655,19 @@
                 </div>
                 <div class="product-detail" style="grid-column: 1 / -1;">
                     <div class="detail-label">Fungsi</div>
-                    <div class="detail-value">Automasi penulisan RPH (Rancangan Pelajaran Harian) dalam Google Sheets. Pangkalan data DSKP mengandungi 56,813+ entri kurikulum. Pengekstrakan dokumen Word melalui AI Gemini.</div>
+                    <div class="detail-value">Automasi penulisan RPH (Rancangan Pelajaran Harian) dalam Google Sheets. Integrasi AI Gemini untuk pengekstrakan objektif dari dokumen Word secara pintar. Template tanpa had.</div>
                 </div>
                 <div class="product-features">
                     <ul>
                         <li>Parsing pintar objektif &amp; aktiviti</li>
-                        <li>56,813+ entri DSKP &amp; template tanpa had</li>
                         <li>AI Gemini untuk pengekstrakan dokumen</li>
+                        <li>Template RPH tanpa had &amp; format KPM</li>
                     </ul>
                 </div>
             </div>
             <div class="product-card-stats">
-                <div class="pcs-item"><strong>Masalah:</strong> <span>10+ minit per RPH untuk copy-paste dan format</span></div>
-                <div class="pcs-item"><strong>Impak:</strong> <span>10 min → 2 min; 70+ jam dijimatkan setahun per guru</span></div>
+                <div class="pcs-item"><strong>Masalah:</strong> <span>30-40 minit setiap minggu untuk siapkan RPH</span></div>
+                <div class="pcs-item"><strong>Impak:</strong> <span>40 min → 9 min; 75% penjimatan masa</span></div>
             </div>
         </div>
 
@@ -2654,8 +2722,8 @@
 <!-- ============================================ -->
 <div class="page section-page">
     <div class="section-header">
-        <div class="section-number">Bahagian 02: Apps Script &amp; Web Apps (sambungan)</div>
-        <h1 class="section-title">Projek Perisian Digital</h1>
+        <div class="section-number">Bahagian 02: Perisian</div>
+        <h1 class="section-title">Apps Script & Web Apps (2/2)</h1>
     </div>
 
     <div class="section-body">
@@ -2733,8 +2801,8 @@
 <!-- ============================================ -->
 <div class="page section-page">
     <div class="section-header">
-        <div class="section-number">Bahagian 02: Projek Digital &amp; Video</div>
-        <h1 class="section-title">Projek Sokongan &amp; Video Pendidikan</h1>
+        <div class="section-number">Bahagian 02: Perisian</div>
+        <h1 class="section-title">Projek Sokongan & Video</h1>
     </div>
 
     <div class="section-body">
@@ -2775,18 +2843,16 @@
             </div>
             <div class="mini-product">
                 <h4>12. Kuiz Digital Sejarah &amp; PSV</h4>
-                <p>Kuiz interaktif Sejarah Tahun 6 (56 soalan) dan PSV dengan 7 format soalan. Menyokong leaderboard, anti-cheating, dan penyerahan markah ke Google Sheets.</p>
+                <p>Kuiz interaktif dengan 7 format soalan, leaderboard, dan anti-cheating. <em>Lihat ms 7 untuk perincian.</em></p>
                 <div class="mini-stats">
-                    <span class="mini-stat-badge">HTML5 + JS</span>
-                    <span class="mini-stat-badge">Google Sheets</span>
+                    <span class="mini-stat-badge">2,000+ murid</span>
                 </div>
             </div>
             <div class="mini-product">
                 <h4>13. Kuiz Digital BM Tahun 4</h4>
-                <p>Kuiz Bahasa Melayu 3 bahagian: Tatabahasa (23 soalan), Penulisan Perenggan (3 prompt), dan Karangan (50-80 patah perkataan) dengan auto-save.</p>
+                <p>Kuiz Bahasa Melayu 3 bahagian dengan auto-save. <em>Lihat ms 7 untuk perincian.</em></p>
                 <div class="mini-stats">
                     <span class="mini-stat-badge">HTML5 + JS</span>
-                    <span class="mini-stat-badge">Tailwind CSS</span>
                 </div>
             </div>
             <div class="mini-product">
@@ -2817,13 +2883,13 @@
 <!-- ============================================ -->
 <div class="page section-page">
     <div class="section-header">
-        <div class="section-number">Bahagian 02: Video Pendidikan</div>
+        <div class="section-number">Bahagian 02: Video</div>
         <h1 class="section-title">Video Pendidikan: YouTube TVPSS FiveOne</h1>
     </div>
 
     <div class="section-body">
         <div class="narrative">
-            Sebagai Penyelaras TVPSS FiveOne Studio di SK Putrajaya Presint 5(1), Cikgu Aime telah menghasilkan <strong>89 episod</strong> dan <strong>15 siaran langsung</strong> sepanjang 4 tahun (2022-2026). Video merangkumi buletin, dokumentari, temu bual, pertandingan, acara sekolah, dan kandungan pendidikan.
+            Sebagai Penyelaras TVPSS FiveOne Studio di SK Putrajaya Presint 5(1), dengan sokongan kru murid TVPSS serta rakan guru (Cikgu Reyysmaan dan Cikgu Syiham), Cikgu Aime telah memimpin penghasilan <strong>89 episod</strong> dan <strong>15 siaran langsung</strong> sepanjang 4 tahun (2022-2026). Video merangkumi buletin, dokumentari, temu bual, pertandingan, acara sekolah, dan kandungan pendidikan.
         </div>
 
         <div style="margin:4mm 0;">
@@ -2881,7 +2947,7 @@
 <!-- SAMBUNGAN: TIKTOK -->
 <div class="page section-page">
     <div class="section-header">
-        <div class="section-number">Bahagian 02: Video Pendidikan</div>
+        <div class="section-number">Bahagian 02: Video</div>
         <h1 class="section-title">Video Pendidikan: TikTok</h1>
     </div>
     <div class="section-body">
@@ -2934,7 +3000,7 @@
 <!-- ============================================ -->
 <div class="page section-page">
     <div class="section-header">
-        <div class="section-number">Bahagian 02: Artikel &amp; Kuiz Interaktif</div>
+        <div class="section-number">Bahagian 02: Penulisan</div>
         <h1 class="section-title">Blog, Tutorial &amp; Kuiz Interaktif</h1>
     </div>
 
@@ -3057,7 +3123,7 @@
 <!-- ============================================ -->
 <div class="page section-page">
     <div class="section-header">
-        <div class="section-number">Bahagian 02: Kajian Kes Mendalam</div>
+        <div class="section-number">Bahagian 02: Kajian Kes</div>
         <h1 class="section-title"><img src="portfolio/img/pbd-helper.png" alt="" class="ext-logo-lg">IDME PBD Helper</h1>
     </div>
 
@@ -3152,8 +3218,8 @@
     <div class="page-footer-bar"></div>
 </div><div class="page section-page">
       <div class="section-header">
-        <div class="section-number">Bahagian 02: Kajian Kes Mendalam</div>
-        <h1 class="section-title"><img src="portfolio/img/pbd-helper.png" alt="" class="ext-logo-lg">IDME PBD Helper (sambungan)</h1>
+        <div class="section-number">Bahagian 02: Kajian Kes</div>
+        <h1 class="section-title"><img src="portfolio/img/pbd-helper.png" alt="" class="ext-logo-lg">IDME PBD Helper (2/2)</h1>
     </div>
       <div class="section-body">
         <div class="subsection-title">Tangkap Layar Antaramuka</div>
@@ -3233,7 +3299,7 @@
 <!-- ============================================ -->
 <div class="page section-page">
     <div class="section-header">
-        <div class="section-number">Bahagian 02: Kajian Kes Mendalam</div>
+        <div class="section-number">Bahagian 02: Kajian Kes</div>
         <h1 class="section-title"><img src="portfolio/img/moies-helper.png" alt="" class="ext-logo-lg">MOIES Kehadiran Helper</h1>
     </div>
 
@@ -3325,8 +3391,8 @@
 <!-- SAMBUNGAN: MOEIS SCREENSHOTS & BUKTI -->
 <div class="page section-page">
     <div class="section-header">
-        <div class="section-number">Bahagian 02: Kajian Kes Mendalam</div>
-        <h1 class="section-title"><img src="portfolio/img/moies-helper.png" alt="" class="ext-logo-lg">MOIES Kehadiran Helper (sambungan)</h1>
+        <div class="section-number">Bahagian 02: Kajian Kes</div>
+        <h1 class="section-title"><img src="portfolio/img/moies-helper.png" alt="" class="ext-logo-lg">MOIES Kehadiran Helper (2/2)</h1>
     </div>
     <div class="section-body">
         <div class="subsection-title">Tangkap Layar Antaramuka</div>
@@ -3407,7 +3473,7 @@
 <!-- ============================================ -->
 <div class="page section-page">
     <div class="section-header">
-        <div class="section-number">Bahagian 02: Kajian Kes Mendalam</div>
+        <div class="section-number">Bahagian 02: Kajian Kes</div>
         <h1 class="section-title"><img src="portfolio/img/onepage-pbd.png" alt="" class="ext-logo-lg">PBD OnePage: Dari 6 Halaman ke 1 Halaman</h1>
     </div>
 
@@ -3487,28 +3553,28 @@
 <!-- BAHAGIAN 02  SAMBUNGAN: AUTO eRPH -->
 <div class="page section-page">
     <div class="section-header">
-        <div class="section-number">Bahagian 02: Kajian Kes Mendalam</div>
+        <div class="section-number">Bahagian 02: Kajian Kes</div>
         <h1 class="section-title">Auto eRPH: Automasi RPH dalam Google Sheets</h1>
     </div>
     <div class="section-body">
         <div class="subsection-title">Masalah: Beban Dokumentasi RPH</div>
         <div class="narrative">
-            Setiap guru wajib menulis Rancangan Pengajaran Harian (RPH) mengikut format KPM. Proses manual melibatkan membuka dokumen DSKP, mencari standard kandungan yang sesuai, menyalin ke sistem eRPH, memformat ikut piawaian, dan mengulangi langkah ini bagi setiap slot pengajaran. Bagi guru yang mengajar 6 mata pelajaran, proses ini perlu diulang ratusan kali setahun.
+            Setiap guru wajib menulis Rancangan Pengajaran Harian (RPH) mengikut format KPM. Proses manual melibatkan membuka dokumen kurikulum, mencari standard kandungan yang sesuai, menyalin ke sistem eRPH, memformat ikut piawaian, dan mengulangi langkah ini bagi setiap slot pengajaran. Bagi guru yang mengajar 6 mata pelajaran, proses ini perlu diulang ratusan kali setahun.
         </div>
 
         <div class="highlight-box">
             <h3>Beban Penulisan RPH Manual</h3>
             <div class="stat-inline">
                 <div>
-                    <span>10+ minit</span>
-                    <span>Per RPH</span>
+                    <span>30-40 min</span>
+                    <span>Per Minggu</span>
                 </div>
                 <div>
                     <span>200+</span>
                     <span>RPH / Guru / Tahun</span>
                 </div>
                 <div>
-                    <span>35+ jam</span>
+                    <span>25+ jam</span>
                     <span>Masa Terbuang / Tahun</span>
                 </div>
             </div>
@@ -3516,33 +3582,33 @@
 
         <div class="subsection-title">Penyelesaian: Auto eRPH</div>
         <div class="narrative">
-            <strong>Auto eRPH</strong> ialah sistem automasi RPH berasaskan Google Sheets yang mengandungi <strong>56,813+ entri DSKP rasmi</strong> dari Tahun 1 hingga Tingkatan 5. Guru hanya perlu memilih subjek, tahun, dan minggu, kemudian RPH lengkap dijana automatik dengan format yang mematuhi piawaian KPM. Sistem ini turut dilengkapi ciri AI Gemini untuk mengekstrak DSKP dari dokumen Word secara pintar.
+            <strong>Auto eRPH</strong> ialah sistem automasi RPH berasaskan Google Sheets dengan integrasi <strong>AI Gemini</strong>. Guru hanya perlu memilih subjek, tahun, dan minggu, kemudian RPH lengkap dijana automatik dengan format yang mematuhi piawaian KPM. Ciri AI Gemini membolehkan pengekstrakan objektif pembelajaran dari dokumen Word secara pintar.
         </div>
 
         <div class="stats-row">
             <div class="stat-box">
-                <span class="stat-box-number">100+</span>
+                <span class="stat-box-number">50+</span>
                 <span class="stat-box-label">Guru Pengguna</span>
             </div>
             <div class="stat-box">
-                <span class="stat-box-number">56,813</span>
-                <span class="stat-box-label">Entri DSKP</span>
-            </div>
-            <div class="stat-box">
-                <span class="stat-box-number">70+ jam</span>
-                <span class="stat-box-label">Dijimat / Guru / Tahun</span>
-            </div>
-            <div class="stat-box">
-                <span class="stat-box-number">90%</span>
+                <span class="stat-box-number">75%</span>
                 <span class="stat-box-label">Penjimatan Masa</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-box-number">9 min</span>
+                <span class="stat-box-label">RPH Seminggu</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-box-number">AI</span>
+                <span class="stat-box-label">Gemini Powered</span>
             </div>
         </div>
 
         <div class="subsection-title">Ciri-ciri Utama</div>
         <div style="display:grid; grid-template-columns: 1fr 1fr; gap:2mm; margin-top:2mm;">
             <div style="background:linear-gradient(135deg,#f8f9fa,#e9ecef); padding:3mm; border-radius:2mm; border-left:3px solid var(--accent);">
-                <div style="font-weight:600; color:var(--primary); font-size:9pt; margin-bottom:1mm;">▣ Pangkalan Data DSKP</div>
-                <div style="font-size:8pt; color:#444;">56,813 entri merangkumi semua subjek dari Tahun 1 hingga Tingkatan 5</div>
+                <div style="font-weight:600; color:var(--primary); font-size:9pt; margin-bottom:1mm;">✦ AI Gemini Integration</div>
+                <div style="font-size:8pt; color:#444;">Ekstrak objektif pembelajaran dari dokumen Word secara pintar dan automatik</div>
             </div>
             <div style="background:linear-gradient(135deg,#f8f9fa,#e9ecef); padding:3mm; border-radius:2mm; border-left:3px solid var(--accent);">
                 <div style="font-weight:600; color:var(--primary); font-size:9pt; margin-bottom:1mm;">⚡ Jana Automatik</div>
@@ -3553,8 +3619,8 @@
                 <div style="font-size:8pt; color:#444;">Output mematuhi format rasmi Kementerian Pendidikan Malaysia</div>
             </div>
             <div style="background:linear-gradient(135deg,#f8f9fa,#e9ecef); padding:3mm; border-radius:2mm; border-left:3px solid var(--accent);">
-                <div style="font-weight:600; color:var(--primary); font-size:9pt; margin-bottom:1mm;">✦ AI Gemini</div>
-                <div style="font-size:8pt; color:#444;">Ekstrak DSKP dari dokumen Word secara pintar</div>
+                <div style="font-weight:600; color:var(--primary); font-size:9pt; margin-bottom:1mm;">📋 Template Tanpa Had</div>
+                <div style="font-size:8pt; color:#444;">Cipta dan simpan template RPH peribadi untuk kegunaan berulang</div>
             </div>
             <div style="background:linear-gradient(135deg,#f8f9fa,#e9ecef); padding:3mm; border-radius:2mm; border-left:3px solid var(--accent); grid-column: span 2;">
                 <div style="font-weight:600; color:var(--primary); font-size:9pt; margin-bottom:1mm;">☁️ Berasaskan Cloud</div>
@@ -3571,7 +3637,7 @@
 <!-- BAHAGIAN 02  SAMBUNGAN: AUTO eRPH (HALAMAN 2) -->
 <div class="page section-page">
     <div class="section-header">
-        <div class="section-number">Bahagian 02: Kajian Kes Mendalam</div>
+        <div class="section-number">Bahagian 02: Kajian Kes</div>
         <h1 class="section-title">Auto eRPH: Antaramuka dan Aliran Kerja</h1>
     </div>
     <div class="section-body">
@@ -3604,7 +3670,7 @@
 <!-- BAHAGIAN 02  SAMBUNGAN: AUTO eRPH (HALAMAN 3) -->
 <div class="page section-page">
     <div class="section-header">
-        <div class="section-number">Bahagian 02: Kajian Kes Mendalam</div>
+        <div class="section-number">Bahagian 02: Kajian Kes</div>
         <h1 class="section-title">Auto eRPH: Impak dan Kesimpulan</h1>
     </div>
     <div class="section-body">
@@ -3633,8 +3699,8 @@
             <div style="background:#fef2f2; border:1px solid #fecaca; border-radius:2mm; padding:3mm;">
                 <div style="font-weight:700; color:#dc2626; font-size:9pt; margin-bottom:2mm; text-align:center;">✗ Sebelum Auto eRPH</div>
                 <div style="font-size:8pt; color:#444; line-height:1.6;">
-                    <div style="margin-bottom:1.5mm;">• Masa: <strong>10+ minit</strong> per RPH</div>
-                    <div style="margin-bottom:1.5mm;">• Cari DSKP: Buka dokumen, scroll, salin manual</div>
+                    <div style="margin-bottom:1.5mm;">• Masa: <strong>30-40 minit</strong> seminggu</div>
+                    <div style="margin-bottom:1.5mm;">• Proses: Buka dokumen, scroll, salin manual</div>
                     <div style="margin-bottom:1.5mm;">• Format: Tidak konsisten</div>
                     <div style="margin-bottom:1.5mm;">• Lokasi: Komputer sekolah sahaja</div>
                     <div>• Beban: Masa dan tenaga terbuang</div>
@@ -3644,8 +3710,8 @@
             <div style="background:#f0fdf4; border:1px solid #bbf7d0; border-radius:2mm; padding:3mm;">
                 <div style="font-weight:700; color:#16a34a; font-size:9pt; margin-bottom:2mm; text-align:center;">✓ Selepas Auto eRPH</div>
                 <div style="font-size:8pt; color:#444; line-height:1.6;">
-                    <div style="margin-bottom:1.5mm;">• Masa: <strong>1-2 minit</strong> per RPH</div>
-                    <div style="margin-bottom:1.5mm;">• Cari DSKP: Dropdown automatik</div>
+                    <div style="margin-bottom:1.5mm;">• Masa: <strong>9 minit</strong> seminggu</div>
+                    <div style="margin-bottom:1.5mm;">• Proses: AI Gemini ekstrak automatik</div>
                     <div style="margin-bottom:1.5mm;">• Format: Piawaian KPM 100%</div>
                     <div style="margin-bottom:1.5mm;">• Lokasi: Mana-mana peranti</div>
                     <div>• Manfaat: <strong>Lebih masa untuk PdP</strong></div>
@@ -3655,21 +3721,21 @@
 
         <div class="stats-row" style="margin-top:4mm;">
             <div class="stat-box">
-                <span class="stat-box-number">100+</span>
+                <span class="stat-box-number">50+</span>
                 <span class="stat-box-label">Guru Pengguna</span>
             </div>
             <div class="stat-box">
-                <span class="stat-box-number">56,813</span>
-                <span class="stat-box-label">Entri DSKP</span>
+                <span class="stat-box-number">75%</span>
+                <span class="stat-box-label">Penjimatan Masa</span>
             </div>
             <div class="stat-box">
-                <span class="stat-box-number">80%</span>
-                <span class="stat-box-label">Penjimatan Masa</span>
+                <span class="stat-box-number">AI</span>
+                <span class="stat-box-label">Gemini Powered</span>
             </div>
         </div>
 
         <div style="margin-top:4mm; font-size:8pt; color:#555; padding:2mm 3mm; background:#f0f4f8; border-radius:1.5mm; border-left:2.5px solid var(--accent);">
-            <strong>Nota:</strong> Projek ini dibangunkan dengan kos masa dan tenaga yang besar untuk mengumpul dan menyusun 56,813 entri DSKP. Yuran langganan minima dikenakan untuk menampung kos penyelenggaraan dan penambahbaikan berterusan.
+            <strong>Pautan:</strong> <span style="color:var(--primary);">portfolio-cikguaime.vercel.app/auto-erph</span> — Sistem ini dibangunkan dengan integrasi AI Gemini untuk automasi pengekstrakan objektif pembelajaran. Yuran langganan minima dikenakan untuk menampung kos API dan penyelenggaraan.
         </div>
 
     </div>
@@ -3683,7 +3749,7 @@
 <!-- ============================================ -->
 <div class="page section-page">
     <div class="section-header">
-        <div class="section-number">Bahagian 02: Kajian Kes Mendalam</div>
+        <div class="section-number">Bahagian 02: Kajian Kes</div>
         <h1 class="section-title">Aplikasi Web untuk Bilik Darjah</h1>
     </div>
 
@@ -3753,7 +3819,7 @@
 <!-- ============================================ -->
 <div class="page section-page">
     <div class="section-header">
-        <div class="section-number">Bahagian 02: Kajian Kes Mendalam</div>
+        <div class="section-number">Bahagian 02: Kajian Kes</div>
         <h1 class="section-title">TVPSS FiveOne Studio</h1>
     </div>
 
@@ -3831,7 +3897,7 @@
 <!-- SAMBUNGAN: TVPSS PEMBANGUNAN MURID -->
 <div class="page section-page">
     <div class="section-header">
-        <div class="section-number">Bahagian 02: Kajian Kes Mendalam</div>
+        <div class="section-number">Bahagian 02: Kajian Kes</div>
         <h1 class="section-title">TVPSS FiveOne: Pembangunan Kemahiran Murid</h1>
     </div>
     <div class="section-body">
@@ -3920,7 +3986,7 @@
 <!-- ============================================ -->
 <div class="page section-page">
     <div class="section-header">
-        <div class="section-number">Bahagian 02: Kajian Kes Mendalam</div>
+        <div class="section-number">Bahagian 02: Kajian Kes</div>
         <h1 class="section-title">TVPSS FiveOne: Liputan Pelbagai Peringkat</h1>
     </div>
 
@@ -3993,7 +4059,7 @@
 <!-- ============================================ -->
 <div class="page section-page">
     <div class="section-header">
-        <div class="section-number">Bahagian 02: Kajian Kes Mendalam</div>
+        <div class="section-number">Bahagian 02: Kajian Kes</div>
         <h1 class="section-title">TVPSS FiveOne: Liputan Peringkat Negeri</h1>
     </div>
 
@@ -4074,7 +4140,7 @@
 <!-- ============================================ -->
 <div class="page section-page">
     <div class="section-header">
-        <div class="section-number">Bahagian 02: Kajian Kes Mendalam</div>
+        <div class="section-number">Bahagian 02: Kajian Kes</div>
         <h1 class="section-title">TVPSS FiveOne: Penyertaan Pertandingan Video</h1>
     </div>
 
@@ -4143,7 +4209,7 @@
 <!-- ============================================ -->
 <div class="page section-page">
     <div class="section-header">
-        <div class="section-number">Bahagian 02: Kajian Kes Mendalam</div>
+        <div class="section-number">Bahagian 02: Kajian Kes</div>
         <h1 class="section-title">TVPSS FiveOne: Tulang Belakang Sekolah</h1>
     </div>
 
@@ -4209,7 +4275,7 @@
 <!-- ============================================ -->
 <div class="page section-page">
     <div class="section-header">
-        <div class="section-number">Bahagian 02: Kajian Kes Mendalam</div>
+        <div class="section-number">Bahagian 02: Kajian Kes</div>
         <h1 class="section-title">TVPSS FiveOne: Pencapaian</h1>
     </div>
 
@@ -4321,7 +4387,7 @@
 <!-- ============================================ -->
 <div class="page section-page">
     <div class="section-header">
-        <div class="section-number">Bahagian 02: Kajian Kes Mendalam</div>
+        <div class="section-number">Bahagian 02: Kajian Kes</div>
         <h1 class="section-title">TVPSS FiveOne: Pencapaian Antarabangsa</h1>
     </div>
 
@@ -4356,7 +4422,7 @@
 <!-- ============================================ -->
 <div class="page section-page">
     <div class="section-header">
-        <div class="section-number">Bahagian 02: Kajian Kes Mendalam</div>
+        <div class="section-number">Bahagian 02: Kajian Kes</div>
         <h1 class="section-title">TVPSS FiveOne: Pencapaian Kebangsaan</h1>
     </div>
 
@@ -4426,7 +4492,7 @@
 <!-- ============================================ -->
 <div class="page section-page">
     <div class="section-header">
-        <div class="section-number">Bahagian 02: Kajian Kes Mendalam</div>
+        <div class="section-number">Bahagian 02: Kajian Kes</div>
         <h1 class="section-title">TVPSS FiveOne: Pencapaian Negeri WP Putrajaya</h1>
     </div>
 
@@ -4490,7 +4556,7 @@
 <!-- ============================================ -->
 <div class="page section-page">
     <div class="section-header">
-        <div class="section-number">Bahagian 02: Platform Perkongsian</div>
+        <div class="section-number">Bahagian 02: Platform</div>
         <h1 class="section-title">Blog cikguaime.com</h1>
     </div>
 
@@ -4580,7 +4646,7 @@
 <!-- ============================================ -->
 <div class="page section-page">
     <div class="section-header">
-        <div class="section-number">Bahagian 02: Platform Perkongsian (sambungan)</div>
+        <div class="section-number">Bahagian 02: Platform</div>
         <h1 class="section-title">Blog cikguaime.com</h1>
     </div>
 
@@ -4640,7 +4706,7 @@
 <!-- ============================================ -->
 <div class="page section-page">
     <div class="section-header">
-        <div class="section-number">Bahagian 02: Platform Perkongsian (sambungan)</div>
+        <div class="section-number">Bahagian 02: Platform</div>
         <h1 class="section-title">Kedudukan di Carian Google</h1>
     </div>
 
@@ -4728,7 +4794,7 @@
 <!-- ============================================ -->
 <div class="page section-page">
     <div class="section-header">
-        <div class="section-number">Bahagian 02: Gambaran Keseluruhan</div>
+        <div class="section-number">Bahagian 02: Rumusan</div>
         <h1 class="section-title">Ekosistem Digital CikguAime</h1>
     </div>
 
@@ -4831,8 +4897,8 @@
     <div class="page-footer-bar"></div>
 </div><div class="page section-page">
       <div class="section-header">
-        <div class="section-number">Bahagian 02: Gambaran Keseluruhan</div>
-        <h1 class="section-title">Ekosistem Digital CikguAime (sambungan)</h1>
+        <div class="section-number">Bahagian 02: Rumusan</div>
+        <h1 class="section-title">Ekosistem Digital CikguAime (2/2)</h1>
     </div>
       <div class="section-body"><div class="data-table">
             <table style="width:100%; border-collapse:collapse; font-size:9pt;">
@@ -5303,7 +5369,7 @@
                 <div class="quality-grid">
                     <div class="quality-item">
                         <div class="quality-check">✓</div>
-                        <div class="quality-item-text"><strong>Berasaskan DSKP rasmi KPM</strong>: Auto eRPH mengandungi 111,600 entri DSKP Sekolah Rendah dan Menengah</div>
+                        <div class="quality-item-text"><strong>Integrasi AI Gemini</strong>: Auto eRPH menggunakan AI untuk ekstrak objektif pembelajaran secara automatik</div>
                     </div>
                     <div class="quality-item">
                         <div class="quality-check">✓</div>
@@ -5362,8 +5428,8 @@
                 <div style="font-size: 7.5pt; color: #94a3b8;">Jumlah Tontonan</div>
             </div>
             <div style="background: linear-gradient(135deg, #1e3a5f 0%, #0a1628 100%); padding: 3mm; border-radius: 2mm; border: 1px solid var(--accent);">
-                <div style="font-size: 14pt; font-weight: 700; color: var(--accent);">111,600</div>
-                <div style="font-size: 7.5pt; color: #94a3b8;">Entri DSKP</div>
+                <div style="font-size: 14pt; font-weight: 700; color: var(--accent);">14,900+</div>
+                <div style="font-size: 7.5pt; color: #94a3b8;">Guru Pengguna</div>
             </div>
             <div style="background: linear-gradient(135deg, #1e3a5f 0%, #0a1628 100%); padding: 3mm; border-radius: 2mm; border: 1px solid var(--accent);">
                 <div style="font-size: 14pt; font-weight: 700; color: var(--accent);">5.0★</div>
@@ -5448,7 +5514,7 @@
                 <tr style="background: #f8f6f0;">
                     <td style="padding: 1.5mm 3mm; border-bottom: 1px solid #e0dcd3;">B1: Ketepatan Ilmu</td>
                     <td style="padding: 1.5mm 3mm; border-bottom: 1px solid #e0dcd3; text-align: center;">12.5%</td>
-                    <td style="padding: 1.5mm 3mm; border-bottom: 1px solid #e0dcd3;">DSKP, sistem KPM, kuiz silibus</td>
+                    <td style="padding: 1.5mm 3mm; border-bottom: 1px solid #e0dcd3;">AI Gemini, sistem KPM, kuiz silibus</td>
                 </tr>
                 <tr>
                     <td style="padding: 1.5mm 3mm; border-bottom: 1px solid #e0dcd3;">B2: Reka Bentuk Visual</td>
