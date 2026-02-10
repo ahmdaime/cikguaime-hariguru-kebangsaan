@@ -6,11 +6,12 @@ Portfolio digital untuk pencalonan **Anugerah Khas Pencipta Kandungan Digital**,
 
 ## Status Semasa (10 Feb 2026)
 
-- **Jumlah halaman**: 68 bernombor + Cover + 6 dividers
+- **Jumlah halaman**: 70 bernombor + Cover + 6 dividers
 - **Gambar**: 76+ gambar telah dimasukkan
 - **Bahagian TVPSS FiveOne**: Lengkap dengan liputan, pertandingan, pencapaian, dan collage
 - **Bahagian Blog cikguaime.com**: Lengkap dengan statistik, artikel berimpak tinggi, dan kedudukan carian Google
 - **Semakan fakta**: Selesai (111,600 DSKP, 89 episod TVPSS, 15.5M+ tontonan)
+- **QR Codes**: Halaman baharu (ms 45) untuk akses pantas kepada demo interaktif
 
 ## Perubahan Terkini (10 Feb 2026)
 
@@ -21,6 +22,8 @@ Portfolio digital untuk pencalonan **Anugerah Khas Pencipta Kandungan Digital**,
 4. **Emojis diganti**: Semua emojis warna diganti dengan simbol Unicode selamat untuk cetakan
    - Divider icons: ◉ ▣ ✦ ◎ ★ ◆
    - Content: ★ (johan), ③ (ketiga), ♦ ◆ ▶ (kategori)
+5. **Video Persembahan (ms 69)**: Halaman preview video 3 minit dengan storyboard 4 segmen dan pematuhan kriteria E1-E3
+6. **QR Codes Demo (ms 45)**: 6 QR code untuk akses pantas ke produk digital (perlu dijana secara manual)
 
 ### Penambahbaikan MEDIUM Priority
 1. **Placeholder imej diganti**: Halaman Analitik (ms 57) kini ada imej YouTube/TikTok sebenar
@@ -41,11 +44,11 @@ Portfolio digital untuk pencalonan **Anugerah Khas Pencipta Kandungan Digital**,
 
 ## Struktur Fail
 
-- `portfolio/portfolio.html` — Fail utama portfolio (satu fail HTML + CSS inline, 68 halaman bernombor)
+- `portfolio/portfolio.html` — Fail utama portfolio (satu fail HTML + CSS inline, 70 halaman bernombor)
 - `index.html` — Salinan untuk GitHub Pages (MESTI sync selepas setiap perubahan)
 - `portfolio/img/` — Semua gambar portfolio
 
-## Struktur Portfolio (68 halaman bernombor)
+## Struktur Portfolio (70 halaman bernombor)
 
 | Bahagian | Halaman | Kandungan |
 |----------|---------|-----------|
@@ -54,10 +57,11 @@ Portfolio digital untuk pencalonan **Anugerah Khas Pencipta Kandungan Digital**,
 | Ringkasan Eksekutif | 2 | Pemetaan rubrik, 6 kajian kes, pencapaian tertinggi |
 | 01 Profil & Biodata | 3-5 | Maklumat peribadi, peranan, kemahiran, jangkauan |
 | 02 Katalog Kandungan | 6-39 | Extensions, Apps, TVPSS, Blog, Kedudukan Carian Google, Ekosistem |
-| 03 Demo & Bukti | 40-46 | Antaramuka, rating 5.0★, testimoni, senarai semak kualiti |
-| 04 Sumbangan & Impak | 47-59 | Impak guru/murid, perkongsian ilmu, garis masa, analitik |
-| 05 Sijil & Pencapaian | 60-67 | 76 pencapaian, sijil, trend |
-| 06 Etika & Privasi | 68 | Privasi data, hak cipta, keselamatan, AI beretika |
+| 03 Demo & Bukti | 40-47 | Antaramuka, QR Codes (ms 45), rating 5.0★, testimoni, senarai semak kualiti |
+| 04 Sumbangan & Impak | 48-60 | Impak guru/murid, perkongsian ilmu, garis masa, analitik |
+| 05 Sijil & Pencapaian | 61-68 | 76 pencapaian, sijil, trend |
+| Video Persembahan (E) | 69 | Preview video 3 minit, storyboard, kriteria E1-E3 |
+| 06 Etika & Privasi | 70 | Privasi data, hak cipta, keselamatan, AI beretika |
 
 **Nota:** Setiap bahagian bermula dengan halaman divider (tanpa nombor).
 
