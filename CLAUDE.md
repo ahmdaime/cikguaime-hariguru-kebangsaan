@@ -4,7 +4,7 @@
 
 Portfolio digital untuk pencalonan **Anugerah Khas Pencipta Kandungan Digital**, Hari Guru Peringkat Kebangsaan 2026. Calon: Ahmad Aiman Bin Mohamed (Cikgu Aime), SK Putrajaya Presint 5(1).
 
-## Status Semasa (11 Feb 2026)
+## Status Semasa (12 Feb 2026)
 
 - **Jumlah halaman**: 70 bernombor + Cover + 6 dividers
 - **Gambar**: 76+ gambar telah dimasukkan
@@ -14,7 +14,13 @@ Portfolio digital untuk pencalonan **Anugerah Khas Pencipta Kandungan Digital**,
 - **QR Codes**: Halaman baharu (ms 45) untuk akses pantas kepada demo interaktif
 - **Data disahkan**: Kunjungan blog 50K/bulan, MOIES 10 min→1 min, episod 2022-2025 lengkap
 
-## Perubahan Terkini (11 Feb 2026)
+## Perubahan Terkini (12 Feb 2026)
+
+### Sesi 12 Feb 2026
+1. **Ms 39 (Apa yang Membezakan Calon)**: Kemaskini USP 2 kepada "Membimbing Murid Mencipta Kandungan" untuk menonjolkan aspek TVPSS dan penciptaan kandungan digital oleh murid
+2. **Ms 41 (Ulasan Sebenar Pengguna)**: Tukar layout dari grid 2x2 (4 gambar kecil) kepada 3 gambar full-width tersusun menegak. Buang ulasan Kausalyah Krishnan (tiada tag KPM-Guru)
+3. **Ms 47 (Senarai Semak Kualiti)**: Betulkan overflow dengan kurangkan margin (4mm→3mm), padding, font size (8.5pt→8pt), dan ringkaskan teks
+4. **Ms 45 (QR Codes)**: Betulkan warna teks "Nota untuk Juri" dari gelap kepada #ccd6e0 supaya boleh dibaca
 
 ### Sesi 11 Feb 2026
 1. **Ms 13 (YouTube TVPSS)**: Tambah kad tahun 2025 (24 episod), betulkan 2024 dari 15→19 episod, grid 3→4 lajur
@@ -81,8 +87,8 @@ Portfolio digital untuk pencalonan **Anugerah Khas Pencipta Kandungan Digital**,
 
 | Halaman | Kandungan |
 |---------|-----------|
-| 38 | Peta Ekosistem Digital, Ringkasan Impak, 15 Projek & 6 Format |
-| 39 | Timeline 2018-2026, Mengapa Juri Perlu Tahu |
+| 38 | Peta Ekosistem Digital, Ringkasan Impak, 17 Projek & 6 Format |
+| 39 | Apa yang Membezakan Calon Ini (5 USP), Rumusan |
 
 ## Data Penting
 
