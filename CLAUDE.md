@@ -4,7 +4,7 @@
 
 Portfolio digital untuk pencalonan **Anugerah Khas Pencipta Kandungan Digital**, Hari Guru Peringkat Kebangsaan 2026. Calon: Ahmad Aiman Bin Mohamed (Cikgu Aime), SK Putrajaya Presint 5(1).
 
-## Status Semasa (10 Feb 2026)
+## Status Semasa (11 Feb 2026)
 
 - **Jumlah halaman**: 70 bernombor + Cover + 6 dividers
 - **Gambar**: 76+ gambar telah dimasukkan
@@ -12,31 +12,24 @@ Portfolio digital untuk pencalonan **Anugerah Khas Pencipta Kandungan Digital**,
 - **Bahagian Blog cikguaime.com**: Lengkap dengan statistik, artikel berimpak tinggi, dan kedudukan carian Google
 - **Semakan fakta**: Selesai (89 episod TVPSS, 15.5M+ tontonan, 14,900+ guru pengguna)
 - **QR Codes**: Halaman baharu (ms 45) untuk akses pantas kepada demo interaktif
+- **Data disahkan**: Kunjungan blog 50K/bulan, MOIES 10 min→1 min, episod 2022-2025 lengkap
 
-## Perubahan Terkini (10 Feb 2026)
+## Perubahan Terkini (11 Feb 2026)
 
-### Penambahbaikan HIGH Priority (Audit Juri Kebangsaan)
+### Sesi 11 Feb 2026
+1. **Ms 13 (YouTube TVPSS)**: Tambah kad tahun 2025 (24 episod), betulkan 2024 dari 15→19 episod, grid 3→4 lajur
+2. **Ms 14 (TikTok)**: Tambah kotak Pencapaian TikTok (~15M tontonan, 5 pertandingan, ★ Anugerah Khas Juri Kebangsaan 2025, ③ Ketiga Sekolahku Sejahtera 2022)
+3. **Ms 13-14**: Tukar gaya kotak pencapaian dari latar gelap (boros ink) ke putih + aksen emas (jimat ink, profesional)
+4. **Ms 15, 48, 62**: Betulkan kunjungan blog bulanan dari 100,000→50,000 (5 lokasi)
+5. **Ms 18-19 (MOIES Kehadiran Helper)**: Tukar tajuk "Masalah: ...Paling Membazir" → "Cabaran: Pengurusan Kehadiran Harian", betulkan data masa dari 40 min→10 min (sebelum) dan 3 min→1 min (selepas), penjimatan 92%→90%, 123 jam→30 jam setahun (8 lokasi)
+
+### Sesi sebelum (10 Feb 2026)
 1. **ISI KANDUNGAN**: Sync dengan struktur sebenar portfolio
 2. **Ringkasan Eksekutif (ms 2)**: Halaman baharu dengan pemetaan rubrik A-E, 6 kajian kes utama, dan pencapaian tertinggi
-3. **Roadmap 2026-2029**: Ditambah ke bahagian Keberlanjutan (ms 49) untuk tunjuk visi jangka panjang
-4. **Emojis diganti**: Semua emojis warna diganti dengan simbol Unicode selamat untuk cetakan
-   - Divider icons: ◉ ▣ ✦ ◎ ★ ◆
-   - Content: ★ (johan), ③ (ketiga), ♦ ◆ ▶ (kategori)
-5. **Video Persembahan (ms 69)**: Halaman preview video 3 minit dengan storyboard 4 segmen dan pematuhan kriteria E1-E3
-6. **QR Codes Demo (ms 45)**: 6 QR code untuk akses pantas ke produk digital (perlu dijana secara manual)
-
-### Penambahbaikan MEDIUM Priority
-1. **Placeholder imej diganti**: Halaman Analitik (ms 57) kini ada imej YouTube/TikTok sebenar
-2. **Sijil-sijil terpilih**: Halaman 66 kini papar 6 sijil dengan imej sebenar (bukan teks placeholder)
-3. **Bahagian lain sudah lengkap**:
-   - Pembangunan murid TVPSS: Jadual perbandingan sebelum/selepas sudah ada
-   - Testimoni: 8+ tangkap layar ulasan Chrome Web Store
-   - Bukti visual: 90+ gambar dalam portfolio
-
-### Penambahbaikan LOW Priority
-1. **Konsistensi visual**: Font sizes dan spacing sudah konsisten (8-10pt body, 14-28pt headers)
-2. **Data disahkan**: Semua angka konsisten (14,900 pengguna, 307 video, 75% penjimatan masa RPH)
-3. **Tiada typo**: Ejaan dan tatabahasa telah disemak
+3. **Roadmap 2026-2029**: Ditambah ke bahagian Keberlanjutan (ms 49)
+4. **Emojis diganti**: Semua emojis warna diganti dengan simbol Unicode selamat cetak
+5. **Video Persembahan (ms 69)**: Halaman preview video 3 minit
+6. **QR Codes Demo (ms 45)**: 6 QR code (perlu dijana secara manual)
 
 ### Catatan
 - Semua nombor halaman dikemaskini (+1 kerana Ringkasan Eksekutif baharu)
@@ -100,7 +93,11 @@ Portfolio digital untuk pencalonan **Anugerah Khas Pencipta Kandungan Digital**,
   - TikTok: 203 (108 TVPSS + 95 peribadi @AHMDAIME)
 - **Jumlah kandungan digital**: 420+
 - **Tontonan video**: 15.5M+ (YouTube 530K + TikTok ~15M)
+- **Kunjungan blog bulanan**: ~50,000
+- **MOIES Kehadiran Helper**: 10 min → 1 min (90% penjimatan, 30 jam/tahun), 5,770 guru pengguna
 - **Auto eRPH**: AI Gemini integration, 75% penjimatan masa (40 min → 9 min)
+- **Episod TVPSS YouTube**: 2022 (22) + 2023 (24) + 2024 (19) + 2025 (24) = 89 episod
+- **Pencapaian TikTok**: ~15M tontonan, 5 pertandingan, 2 anugerah
 - **Murid mencuba kuiz**: 2,000+
 
 ## Sync index.html
