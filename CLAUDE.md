@@ -4,7 +4,7 @@
 
 Portfolio digital untuk pencalonan **Anugerah Khas Pencipta Kandungan Digital**, Hari Guru Peringkat Kebangsaan 2026. Calon: Ahmad Aiman Bin Mohamed (Cikgu Aime), SK Putrajaya Presint 5(1).
 
-## Status Semasa (12 Feb 2026)
+## Status Semasa (14 Feb 2026)
 
 - **Jumlah halaman**: 70 bernombor + Cover + 6 dividers
 - **Gambar**: 76+ gambar telah dimasukkan
@@ -14,7 +14,14 @@ Portfolio digital untuk pencalonan **Anugerah Khas Pencipta Kandungan Digital**,
 - **QR Codes**: Halaman baharu (ms 45) untuk akses pantas kepada demo interaktif
 - **Data disahkan**: Kunjungan blog 50K/bulan, MOIES 10 min→1 min, episod 2022-2025 lengkap
 
-## Perubahan Terkini (12 Feb 2026)
+## Perubahan Terkini (14 Feb 2026)
+
+### Sesi 14 Feb 2026
+1. **Bahagian 04 (ms 48-60)**: Susun semula mengikut urutan C1→C2→C3. Asal: C1→C3→C2 bercampur
+2. **Ms 48**: Tambah jadual Pemetaan Rubrik C (C1/C2/C3 dengan halaman), kurangkan gambar 52mm→40mm
+3. **Rumusan**: Pindah dari ms 50 (tengah) ke ms 60 (halaman terakhir Bahagian 04)
+4. **Label section-number**: Kemaskini semua halaman kepada C1/C2/C3 Sumbangan/Impak/Keberlanjutan
+5. **ISI KANDUNGAN**: Kemaskini pemetaan "C1: Sumbangan (ms 48-54) · C2: Impak (ms 55-57) · C3: Keberlanjutan (ms 58-60)"
 
 ### Sesi 12 Feb 2026
 1. **Ms 39 (Apa yang Membezakan Calon)**: Kemaskini USP 2 kepada "Membimbing Murid Mencipta Kandungan" untuk menonjolkan aspek TVPSS dan penciptaan kandungan digital oleh murid
@@ -57,7 +64,7 @@ Portfolio digital untuk pencalonan **Anugerah Khas Pencipta Kandungan Digital**,
 | 01 Profil & Biodata | 3-5 | Maklumat peribadi, peranan, kemahiran, jangkauan |
 | 02 Katalog Kandungan | 6-39 | Extensions, Apps, TVPSS, Blog, Kedudukan Carian Google, Ekosistem |
 | 03 Demo & Bukti | 40-47 | Antaramuka, QR Codes (ms 45), rating 5.0★, testimoni, senarai semak kualiti |
-| 04 Sumbangan & Impak | 48-60 | Impak guru/murid, perkongsian ilmu, garis masa, analitik |
+| 04 Sumbangan & Impak | 48-60 | C1: Sumbangan (48-54), C2: Impak (55-57), C3: Keberlanjutan (58-60) |
 | 05 Sijil & Pencapaian | 61-68 | 76 pencapaian, sijil, trend |
 | Video Persembahan (E) | 69 | Preview video 3 minit, storyboard, kriteria E1-E3 |
 | 06 Etika & Privasi | 70 | Privasi data, hak cipta, keselamatan, AI beretika |
@@ -82,6 +89,24 @@ Portfolio digital untuk pencalonan **Anugerah Khas Pencipta Kandungan Digital**,
 | 35 | Statistik blog, jadual artikel berimpak tinggi, jenis kandungan |
 | 36 | Blog sebagai HUB, gambar halaman utama |
 | 37 | Kedudukan di Carian Google (4 bukti screenshot) |
+
+## Bahagian 04: Sumbangan & Impak (ms 48-60)
+
+| Halaman | Rubrik | Kandungan |
+|---------|--------|-----------|
+| 48 | C1 | Pemetaan Rubrik C + Overview + Jadual Sumbangan |
+| 49 | C1 | Perkongsian Ilmu (Smart Sharing + Knowledge Sharing) |
+| 50 | C1 | Perkongsian Ilmu sambungan (Juri + UKM) |
+| 51 | C1 | Pensijilan & Pengiktirafan Profesional |
+| 52 | C1 | Sumbangan Kepada Komuniti |
+| 53 | C1 | Sumbangan Komuniti sambungan (Pengiktirafan Rasmi) |
+| 54 | C1 | Jangkauan Media Sosial & Digital |
+| 55 | C2 | Impak Kepada Guru & Murid |
+| 56 | C2 | Pembangunan Murid (TVPSS) |
+| 57 | C2 | Perbandingan Sebelum & Selepas TVPSS |
+| 58 | C3 | Keberlanjutan Kandungan Digital + Roadmap |
+| 59 | C3 | Garis Masa 2018-2022 |
+| 60 | C3 | Garis Masa 2023-2026 + Rumusan Bahagian 04 |
 
 ## Ekosistem Digital (ms 38-39)
 
