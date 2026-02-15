@@ -21,6 +21,15 @@ Portfolio digital untuk pencalonan **Anugerah Khas Pencipta Kandungan Digital**,
 
 ## Perubahan Terkini (15 Feb 2026)
 
+### Sesi 15 Feb 2026 (Malam - Codex Reverse-Sync)
+1. **Reverse-sync**: Codex ubah index.html → reverse-sync ke portfolio.html
+2. **Matriks Keberkesanan PdP (B4)**: "Senarai Bukti Sokongan" diganti dengan jadual 6 intervensi (IDME, MOIES, Auto eRPH, PBD OnePage, TVPSS, Kuiz)
+3. **Pembetulan fakta Codex**: Edufluencer 2024→2023 (3 lokasi), Anugerah TikTok 2024→2025, YouTube 522.4K→530K+
+4. **Format nombor halaman**: `Muka Surat <span>X</span>` → `<span>X</span>` (semua halaman)
+5. **Body class**: `print-safe` ditambah
+6. **2 SVG placeholder**: polisi-privasi-chrome.svg, qr-video-persembahan.svg (ganti .png)
+7. **Renumber script dikemaskini**: Cari `class="page-number">` + `<span>` (bukan lagi "Muka Surat")
+
 ### Sesi 15 Feb 2026 (Petang - TikTok + Kajian Tindakan)
 1. **Ms 16-17 (BAHARU)**: TikTok @ahmdaime — Kandungan Pendidikan Digital + Impak & Ekosistem
    - Ms 16: 5 kategori video, 3 video popular (310K/180K/106K), 4 statistik (95 video, 40.5K pengikut, 313.2K suka, 310K tontonan tertinggi)
@@ -250,5 +259,5 @@ document.querySelectorAll('.page').forEach((p, i) => {
 Selepas tambah/buang halaman, jalankan untuk renumber:
 
 ```
-node -e "const fs=require('fs');let h=fs.readFileSync('portfolio/portfolio.html','utf8');const lines=h.split('\n');let p=1;for(let i=0;i<lines.length;i++){if(lines[i].match(/Muka Surat <span>\d+<\/span>/)){lines[i]=lines[i].replace(/Muka Surat <span>\d+<\/span>/,'Muka Surat <span>'+p+'</span>');p++;}}fs.writeFileSync('portfolio/portfolio.html',lines.join('\n'));console.log('Total:',p-1);"
+node -e "const fs=require('fs');let h=fs.readFileSync('portfolio/portfolio.html','utf8');const lines=h.split('\n');let p=1;for(let i=0;i<lines.length;i++){if(lines[i].match(/class=\"page-number\">.*?<span>\d+<\/span>/)){lines[i]=lines[i].replace(/<span>\d+<\/span>/,'<span>'+p+'</span>');p++;}}fs.writeFileSync('portfolio/portfolio.html',lines.join('\n'));console.log('Total:',p-1);"
 ```
