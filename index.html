@@ -1483,11 +1483,12 @@
                 overflow: visible;
             }
 
-            /* Divider pages perlu kekalkan height untuk centering */
-            .page:has(.divider),
-            .page:has(.cover) {
+            /* Divider & cover pages kekalkan height untuk centering */
+            .page.divider,
+            .page.cover {
                 height: 297mm;
                 min-height: 297mm;
+                overflow: hidden;
             }
         }
 
@@ -1502,8 +1503,8 @@
                 border-radius: 2px;
             }
 
-            .page:has(.divider),
-            .page:has(.cover) {
+            .page.divider,
+            .page.cover {
                 height: 297mm;
                 min-height: 297mm;
             }
