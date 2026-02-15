@@ -1474,7 +1474,7 @@
     <div class="cover-top-bar"></div>
 
     <div class="cover-header">
-        <img src="portfolio/img/logo-kpm.png" alt="Logo KPM" style="height:18mm; margin-bottom:4mm;">
+        <img src="img/logo-kpm.png" alt="Logo KPM" style="height:18mm; margin-bottom:4mm;">
         <div class="cover-kpm-label">Kementerian Pendidikan Malaysia</div>
         <h1 class="cover-title">PORTFOLIO<br>PENCIPTA KANDUNGAN DIGITAL</h1>
         <p class="cover-subtitle">Anugerah Khas Pendidikan, Hari Guru Peringkat Kebangsaan 2026</p>
@@ -1484,7 +1484,7 @@
     <div class="cover-photo-section">
         <!-- GANTI: Tukar src kepada URL gambar profil sebenar -->
         <div class="cover-photo" id="profile-photo">
-            <img src="portfolio/img/profil.jpg" alt="Ahmad Aiman Bin Mohamed" style="width:100%;height:100%;object-fit:cover;border-radius:50%;">
+            <img src="img/profil.jpg" alt="Ahmad Aiman Bin Mohamed" style="width:100%;height:100%;object-fit:cover;border-radius:50%;">
         </div>
     </div>
 
@@ -1574,21 +1574,21 @@
         <li class="toc-item">
             <div class="toc-number">05</div>
             <div class="toc-content">
-                <div class="toc-title">Sijil &amp; Pencapaian <span style="float:right; font-weight:400; color:#888;">ms 61-71</span></div>
+                <div class="toc-title">Sijil &amp; Pencapaian <span style="float:right; font-weight:400; color:#888;">ms 61-68</span></div>
                 <div class="toc-desc">76 pencapaian (22 Johan), anugerah &amp; pengiktirafan di pelbagai peringkat, sijil &amp; bukti dokumentasi</div>
             </div>
         </li>
         <li class="toc-item">
             <div class="toc-number">E</div>
             <div class="toc-content">
-                <div class="toc-title">Video Persembahan (E) <span style="float:right; font-weight:400; color:#888;">ms 72</span></div>
+                <div class="toc-title">Video Persembahan (E) <span style="float:right; font-weight:400; color:#888;">ms 69</span></div>
                 <div class="toc-desc">Preview video 3 minit, storyboard 4 segmen, pematuhan kriteria E1-E3</div>
             </div>
         </li>
         <li class="toc-item">
             <div class="toc-number">06</div>
             <div class="toc-content">
-                <div class="toc-title">Etika &amp; Privasi Digital <span style="float:right; font-weight:400; color:#888;">ms 73</span></div>
+                <div class="toc-title">Etika &amp; Privasi Digital <span style="float:right; font-weight:400; color:#888;">ms 70</span></div>
                 <div class="toc-desc">Privasi data murid, pemprosesan tempatan, hak cipta &amp; keselamatan web</div>
             </div>
         </li>
@@ -1833,7 +1833,7 @@
             <!-- Left: GCE Certificate Image -->
             <div style="background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%); border-radius: 10px; padding: 8px; display: flex; flex-direction: column; align-items: center; justify-content: center;">
                 <div style="font-size: 10px; font-weight: 700; color: var(--primary); margin-bottom: 4px;">Google Certified Educator Level 1 &amp; 2</div>
-                <img src="portfolio/img/sijil-gce-L1L2.png" alt="Google Certified Educator Level 1 & 2" style="width: 100%; height: auto; object-fit: contain; border-radius: 4px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                <img src="img/sijil-gce-L1L2.png" alt="Google Certified Educator Level 1 & 2" style="width: 100%; height: auto; object-fit: contain; border-radius: 4px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
                 <div style="font-size: 8px; color: #64748b; margin-top: 3px;">Google for Education</div>
             </div>
             <!-- Right: Other Certs Grid -->
@@ -2391,12 +2391,12 @@
         <div style="display:grid; grid-template-columns: 1fr 1fr 1fr; gap:3mm; margin-top:4mm;">
             <!-- Gambar Kuiz Sejarah -->
             <div style="border-radius:2mm; overflow:hidden; border:1px solid var(--border); background:#f8f6f0;">
-                <img src="portfolio/img/kuiz-sejarah.png" alt="Kuiz Sejarah" style="width:100%; height:auto; display:block;">
+                <img src="img/kuiz-sejarah.png" alt="Kuiz Sejarah" style="width:100%; height:auto; display:block;">
                 <div style="padding:2mm; text-align:center; font-size:8pt; color:#555;">Kuiz Sejarah Tahun 6</div>
             </div>
             <!-- Gambar Kuiz PSV -->
             <div style="border-radius:2mm; overflow:hidden; border:1px solid var(--border); background:#f8f6f0;">
-                <img src="portfolio/img/kuiz-psv.png" alt="Kuiz PSV" style="width:100%; height:auto; display:block;">
+                <img src="img/kuiz-psv.png" alt="Kuiz PSV" style="width:100%; height:auto; display:block;">
                 <div style="padding:2mm; text-align:center; font-size:8pt; color:#555;">Kuiz PSV Tahun 6</div>
             </div>
             <!-- Stats Impak -->
@@ -2450,7 +2450,7 @@
                     <div style="font-size:8pt; color:var(--accent); margin-top:1mm;">AI Chatbot untuk Murid</div>
                 </div>
                 <div style="padding:3mm;">
-                    <img src="portfolio/img/chatbot-sejarah-tahun6.png" alt="Chatbot Sejarah Tahun 6" style="width:100%; border-radius:2mm; border:1px solid var(--border);">
+                    <img src="img/chatbot-sejarah-tahun6.png" alt="Chatbot Sejarah Tahun 6" style="width:100%; border-radius:2mm; border:1px solid var(--border);">
                 </div>
                 <div style="padding:0 4mm 3mm; font-size:9pt; color:#555;">
                     <div style="margin-bottom:2mm;"><strong>Fungsi:</strong> Membantu murid belajar Sejarah Tahun 6 dengan kaedah interaktif</div>
@@ -2469,7 +2469,7 @@
                     <div style="font-size:8pt; color:var(--accent); margin-top:1mm;">AI Chatbot untuk Guru TVPSS</div>
                 </div>
                 <div style="padding:3mm;">
-                    <img src="portfolio/img/chatbot-caption-mediasosial.png" alt="Chatbot Caption Media Sosial" style="width:100%; border-radius:2mm; border:1px solid var(--border);">
+                    <img src="img/chatbot-caption-mediasosial.png" alt="Chatbot Caption Media Sosial" style="width:100%; border-radius:2mm; border:1px solid var(--border);">
                 </div>
                 <div style="padding:0 4mm 3mm; font-size:9pt; color:#555;">
                     <div style="margin-bottom:2mm;"><strong>Fungsi:</strong> Menjana caption profesional untuk media sosial sekolah</div>
@@ -2523,7 +2523,7 @@
         <!-- IDME PBD Helper -->
         <div class="product-card">
             <div class="product-card-header">
-                <h3><img src="portfolio/img/pbd-helper.png" alt="IDME PBD Helper" class="ext-logo">1. IDME PBD Helper</h3>
+                <h3><img src="img/pbd-helper.png" alt="IDME PBD Helper" class="ext-logo">1. IDME PBD Helper</h3>
                 <span class="product-type">Chrome Extension</span>
             </div>
             <div class="product-card-body">
@@ -2558,7 +2558,7 @@
         <!-- MOIES Kehadiran Helper -->
         <div class="product-card">
             <div class="product-card-header">
-                <h3><img src="portfolio/img/moies-helper.png" alt="MOIES Kehadiran Helper" class="ext-logo">2. MOIES Kehadiran Helper</h3>
+                <h3><img src="img/moies-helper.png" alt="MOIES Kehadiran Helper" class="ext-logo">2. MOIES Kehadiran Helper</h3>
                 <span class="product-type">Chrome Extension</span>
             </div>
             <div class="product-card-body">
@@ -2593,7 +2593,7 @@
         <!-- PBD OnePage -->
         <div class="product-card">
             <div class="product-card-header">
-                <h3><img src="portfolio/img/onepage-pbd.png" alt="PBD OnePage" class="ext-logo">3. PBD OnePage</h3>
+                <h3><img src="img/onepage-pbd.png" alt="PBD OnePage" class="ext-logo">3. PBD OnePage</h3>
                 <span class="product-type">Chrome Extension</span>
             </div>
             <div class="product-card-body">
@@ -2896,7 +2896,7 @@
 
         <div style="margin:4mm 0;">
             <div class="screenshot-placeholder" style="background:#000; border:none; padding:0; overflow:hidden; border-radius:3mm;">
-                <img src="portfolio/img/ss-youtube-tvpss.png" alt="YouTube TVPSS FiveOne Studio" style="width:100%; max-height:70mm; object-fit:cover; object-position:top; display:block; border-radius:3mm;">
+                <img src="img/ss-youtube-tvpss.png" alt="YouTube TVPSS FiveOne Studio" style="width:100%; max-height:70mm; object-fit:cover; object-position:top; display:block; border-radius:3mm;">
             </div>
             <div class="screenshot-caption">Saluran YouTube TVPSS FiveOne Studio (3,588 subscribers)</div>
         </div>
@@ -2966,13 +2966,13 @@
         <div style="display:flex; gap:4mm; margin:4mm 0;">
             <div style="flex:1;">
                 <div style="background:#000; border-radius:3mm; overflow:hidden;">
-                    <img src="portfolio/img/ss-tt-tvpss.png" alt="TikTok TVPSS FiveOne" style="width:100%; max-height:80mm; object-fit:cover; object-position:top; display:block;">
+                    <img src="img/ss-tt-tvpss.png" alt="TikTok TVPSS FiveOne" style="width:100%; max-height:80mm; object-fit:cover; object-position:top; display:block;">
                 </div>
                 <div class="screenshot-caption">TikTok @tvpssfiveone (15,500 pengikut)</div>
             </div>
             <div style="flex:1;">
                 <div style="background:#000; border-radius:3mm; overflow:hidden;">
-                    <img src="portfolio/img/ss-tt-ahmdaime.png" alt="TikTok @ahmdaime" style="width:100%; max-height:80mm; object-fit:cover; object-position:top; display:block;">
+                    <img src="img/ss-tt-ahmdaime.png" alt="TikTok @ahmdaime" style="width:100%; max-height:80mm; object-fit:cover; object-position:top; display:block;">
                 </div>
                 <div class="screenshot-caption">TikTok @ahmdaime (40,400 pengikut)</div>
             </div>
@@ -3067,7 +3067,7 @@
                     <div style="font-size:7pt; color:#666; text-transform:uppercase;">Bacaan</div>
                 </div>
                 <div style="flex:1; overflow:hidden; border-radius:1.5mm; border:1px solid #ddd;">
-                    <img src="portfolio/img/statistik-artikel-1.png" alt="Statistik Artikel 1" style="width:100%; display:block;">
+                    <img src="img/statistik-artikel-1.png" alt="Statistik Artikel 1" style="width:100%; display:block;">
                 </div>
             </div>
             <div style="display:flex; align-items:center; gap:3mm; background:#f8f9fb; border-radius:2mm; padding:2mm 3mm; border:1px solid #e0e0e0;">
@@ -3076,7 +3076,7 @@
                     <div style="font-size:7pt; color:#666; text-transform:uppercase;">Bacaan</div>
                 </div>
                 <div style="flex:1; overflow:hidden; border-radius:1.5mm; border:1px solid #ddd;">
-                    <img src="portfolio/img/statistik-artikel-2.png" alt="Statistik Artikel 2" style="width:100%; display:block;">
+                    <img src="img/statistik-artikel-2.png" alt="Statistik Artikel 2" style="width:100%; display:block;">
                 </div>
             </div>
             <div style="display:flex; align-items:center; gap:3mm; background:#f8f9fb; border-radius:2mm; padding:2mm 3mm; border:1px solid #e0e0e0;">
@@ -3085,7 +3085,7 @@
                     <div style="font-size:7pt; color:#666; text-transform:uppercase;">Bacaan</div>
                 </div>
                 <div style="flex:1; overflow:hidden; border-radius:1.5mm; border:1px solid #ddd;">
-                    <img src="portfolio/img/statistik-artikel-3.png" alt="Statistik Artikel 3" style="width:100%; display:block;">
+                    <img src="img/statistik-artikel-3.png" alt="Statistik Artikel 3" style="width:100%; display:block;">
                 </div>
             </div>
         </div>
@@ -3153,7 +3153,7 @@
 <div class="page section-page">
     <div class="section-header">
         <div class="section-number">Bahagian 02: Kajian Kes</div>
-        <h1 class="section-title"><img src="portfolio/img/pbd-helper.png" alt="" class="ext-logo-lg">IDME PBD Helper</h1>
+        <h1 class="section-title"><img src="img/pbd-helper.png" alt="" class="ext-logo-lg">IDME PBD Helper</h1>
     </div>
 
     <div class="section-body">
@@ -3250,19 +3250,19 @@
 <div class="page section-page">
       <div class="section-header">
         <div class="section-number">Bahagian 02: Kajian Kes</div>
-        <h1 class="section-title"><img src="portfolio/img/pbd-helper.png" alt="" class="ext-logo-lg">IDME PBD Helper (2/2)</h1>
+        <h1 class="section-title"><img src="img/pbd-helper.png" alt="" class="ext-logo-lg">IDME PBD Helper (2/2)</h1>
     </div>
       <div class="section-body">
         <div class="subsection-title">Tangkap Layar Antaramuka</div>
         <div style="display:flex; gap:2mm; margin:2mm 0;">
             <div style="flex:1; border-radius:2mm; overflow:hidden; border:1px solid #ddd;">
-                <img src="portfolio/img/pbd-helper1.png" alt="IDME PBD Helper - Antaramuka utama" style="width:100%; display:block;">
+                <img src="img/pbd-helper1.png" alt="IDME PBD Helper - Antaramuka utama" style="width:100%; display:block;">
             </div>
             <div style="flex:1; border-radius:2mm; overflow:hidden; border:1px solid #ddd;">
-                <img src="portfolio/img/pbd-helper2.png" alt="IDME PBD Helper - Pilihan TP dan mod operasi" style="width:100%; display:block;">
+                <img src="img/pbd-helper2.png" alt="IDME PBD Helper - Pilihan TP dan mod operasi" style="width:100%; display:block;">
             </div>
             <div style="flex:1; border-radius:2mm; overflow:hidden; border:1px solid #ddd;">
-                <img src="portfolio/img/pbd-helper3.png" alt="IDME PBD Helper - Proses automasi" style="width:100%; display:block;">
+                <img src="img/pbd-helper3.png" alt="IDME PBD Helper - Proses automasi" style="width:100%; display:block;">
             </div>
         </div>
 
@@ -3307,13 +3307,13 @@
         <div class="subsection-title">Ulasan Sebenar dari Chrome Web Store ★★★★★</div>
         <div style="display:flex; flex-direction:column; gap:1.5mm; margin:2mm 0;">
             <div style="border-radius:2mm; overflow:hidden; border:1px solid #ddd; background:#fff;">
-                <img src="portfolio/img/pbd-helper-review1.png" alt="Ulasan guru dari Chrome Web Store" style="width:100%; display:block;">
+                <img src="img/pbd-helper-review1.png" alt="Ulasan guru dari Chrome Web Store" style="width:100%; display:block;">
             </div>
             <div style="border-radius:2mm; overflow:hidden; border:1px solid #ddd; background:#fff;">
-                <img src="portfolio/img/pbd-helper-review2.png" alt="Ulasan guru dari Chrome Web Store" style="width:100%; display:block;">
+                <img src="img/pbd-helper-review2.png" alt="Ulasan guru dari Chrome Web Store" style="width:100%; display:block;">
             </div>
             <div style="border-radius:2mm; overflow:hidden; border:1px solid #ddd; background:#fff;">
-                <img src="portfolio/img/pbd-helper-review3.png" alt="Ulasan guru dari Chrome Web Store" style="width:100%; display:block;">
+                <img src="img/pbd-helper-review3.png" alt="Ulasan guru dari Chrome Web Store" style="width:100%; display:block;">
             </div>
         </div>
 
@@ -3331,7 +3331,7 @@
 <div class="page section-page">
     <div class="section-header">
         <div class="section-number">Bahagian 02: Kajian Kes</div>
-        <h1 class="section-title"><img src="portfolio/img/moies-helper.png" alt="" class="ext-logo-lg">MOIES Kehadiran Helper</h1>
+        <h1 class="section-title"><img src="img/moies-helper.png" alt="" class="ext-logo-lg">MOIES Kehadiran Helper</h1>
     </div>
 
     <div class="section-body">
@@ -3423,17 +3423,17 @@
 <div class="page section-page">
     <div class="section-header">
         <div class="section-number">Bahagian 02: Kajian Kes</div>
-        <h1 class="section-title"><img src="portfolio/img/moies-helper.png" alt="" class="ext-logo-lg">MOIES Kehadiran Helper (2/2)</h1>
+        <h1 class="section-title"><img src="img/moies-helper.png" alt="" class="ext-logo-lg">MOIES Kehadiran Helper (2/2)</h1>
     </div>
     <div class="section-body">
         <div class="subsection-title">Tangkap Layar Antaramuka</div>
         <div style="display:flex; gap:2.5mm; margin:2mm 0;">
             <div style="flex:1; border-radius:2mm; overflow:hidden; border:1px solid #ddd;">
-                <img src="portfolio/img/moies-helper1.png" alt="MOIES Kehadiran Helper - Paste mesej WhatsApp untuk analisis automatik" style="width:100%; display:block;">
+                <img src="img/moies-helper1.png" alt="MOIES Kehadiran Helper - Paste mesej WhatsApp untuk analisis automatik" style="width:100%; display:block;">
                 <div style="font-size:7pt; text-align:center; padding:1.5mm; background:#f8f9fb; color:#444;">Guru paste mesej WhatsApp, extension auto-detect nama dan sebab ketidakhadiran</div>
             </div>
             <div style="flex:1; border-radius:2mm; overflow:hidden; border:1px solid #ddd;">
-                <img src="portfolio/img/moies-helper2.png" alt="MOIES Kehadiran Helper - Hasil analisis dan auto-isi ke sistem MOIES" style="width:100%; display:block;">
+                <img src="img/moies-helper2.png" alt="MOIES Kehadiran Helper - Hasil analisis dan auto-isi ke sistem MOIES" style="width:100%; display:block;">
                 <div style="font-size:7pt; text-align:center; padding:1.5mm; background:#f8f9fb; color:#444;">Hasil padanan dipaparkan, satu klik untuk isi ke sistem MOIES</div>
             </div>
         </div>
@@ -3474,13 +3474,13 @@
         <div class="subsection-title">Ulasan Sebenar dari Chrome Web Store ★★★★★</div>
         <div style="display:flex; flex-direction:column; gap:1.5mm; margin:2mm 0;">
             <div style="border-radius:2mm; overflow:hidden; border:1px solid #ddd; background:#fff;">
-                <img src="portfolio/img/moies-helper-review1.png" alt="Ulasan guru dari Chrome Web Store" style="width:100%; display:block;">
+                <img src="img/moies-helper-review1.png" alt="Ulasan guru dari Chrome Web Store" style="width:100%; display:block;">
             </div>
             <div style="border-radius:2mm; overflow:hidden; border:1px solid #ddd; background:#fff;">
-                <img src="portfolio/img/moies-helper-review2.png" alt="Ulasan guru dari Chrome Web Store" style="width:100%; display:block;">
+                <img src="img/moies-helper-review2.png" alt="Ulasan guru dari Chrome Web Store" style="width:100%; display:block;">
             </div>
             <div style="border-radius:2mm; overflow:hidden; border:1px solid #ddd; background:#fff;">
-                <img src="portfolio/img/moies-helper-review3.png" alt="Ulasan guru dari Chrome Web Store" style="width:100%; display:block;">
+                <img src="img/moies-helper-review3.png" alt="Ulasan guru dari Chrome Web Store" style="width:100%; display:block;">
             </div>
         </div>
 
@@ -3505,7 +3505,7 @@
 <div class="page section-page">
     <div class="section-header">
         <div class="section-number">Bahagian 02: Kajian Kes</div>
-        <h1 class="section-title"><img src="portfolio/img/onepage-pbd.png" alt="" class="ext-logo-lg">PBD OnePage: Dari 6 Halaman ke 1 Halaman</h1>
+        <h1 class="section-title"><img src="img/onepage-pbd.png" alt="" class="ext-logo-lg">PBD OnePage: Dari 6 Halaman ke 1 Halaman</h1>
     </div>
 
     <div class="section-body">
@@ -3556,11 +3556,11 @@
 
         <div class="screenshot-grid">
             <div>
-                <div class="screenshot-placeholder"><img src="portfolio/img/ext-pbd1.png" alt="PBD OnePage - Muka Utama"></div>
+                <div class="screenshot-placeholder"><img src="img/ext-pbd1.png" alt="PBD OnePage - Muka Utama"></div>
                 <div class="screenshot-caption">Antaramuka utama PBD OnePage</div>
             </div>
             <div>
-                <div class="screenshot-placeholder"><img src="portfolio/img/ext-pbd.png" alt="PBD OnePage - Hasil"></div>
+                <div class="screenshot-placeholder"><img src="img/ext-pbd.png" alt="PBD OnePage - Hasil"></div>
                 <div class="screenshot-caption">Hasil: 6 halaman dimampatkan ke 1 halaman</div>
             </div>
         </div>
@@ -3568,10 +3568,10 @@
         <div class="subsection-title">Ulasan Sebenar dari Chrome Web Store ★★★★★</div>
         <div style="display:flex; flex-direction:column; gap:1.5mm; margin:2mm 0;">
             <div style="border-radius:2mm; overflow:hidden; border:1px solid #ddd; background:#fff;">
-                <img src="portfolio/img/pbd-onepage-review.png" alt="Ulasan guru dari Chrome Web Store" style="width:100%; display:block;">
+                <img src="img/pbd-onepage-review.png" alt="Ulasan guru dari Chrome Web Store" style="width:100%; display:block;">
             </div>
             <div style="border-radius:2mm; overflow:hidden; border:1px solid #ddd; background:#fff;">
-                <img src="portfolio/img/pbd-onepage-review2.png" alt="Ulasan guru dari Chrome Web Store" style="width:100%; display:block;">
+                <img src="img/pbd-onepage-review2.png" alt="Ulasan guru dari Chrome Web Store" style="width:100%; display:block;">
             </div>
         </div>
 
@@ -3677,17 +3677,17 @@
 
         <div style="display:flex; flex-direction:column; gap:2mm;">
             <div style="border-radius:2mm; overflow:hidden; border:1px solid #ddd; background:#fff;">
-                <img src="portfolio/img/rph-helper-1.png" alt="Auto eRPH - Muka Utama" style="width:100%; max-height:75mm; object-fit:contain; display:block;">
+                <img src="img/rph-helper-1.png" alt="Auto eRPH - Muka Utama" style="width:100%; max-height:75mm; object-fit:contain; display:block;">
             </div>
             <div style="font-size:7.5pt; color:#555; text-align:center;">Muka utama: Pilih hari dan lihat senarai RPH mengikut jadual waktu</div>
 
             <div style="border-radius:2mm; overflow:hidden; border:1px solid #ddd; background:#fff;">
-                <img src="portfolio/img/rph-helper-2.png" alt="Auto eRPH - Template Mingguan" style="width:100%; max-height:75mm; object-fit:contain; display:block;">
+                <img src="img/rph-helper-2.png" alt="Auto eRPH - Template Mingguan" style="width:100%; max-height:75mm; object-fit:contain; display:block;">
             </div>
             <div style="font-size:7.5pt; color:#555; text-align:center;">Template Mingguan: Pilih subjek, tahun, minggu dan slot untuk jana RPH</div>
 
             <div style="border-radius:2mm; overflow:hidden; border:1px solid #ddd; background:#fff;">
-                <img src="portfolio/img/rph-helper-3.png" alt="Auto eRPH - Alat Tambahan" style="width:100%; max-height:75mm; object-fit:contain; display:block;">
+                <img src="img/rph-helper-3.png" alt="Auto eRPH - Alat Tambahan" style="width:100%; max-height:75mm; object-fit:contain; display:block;">
             </div>
             <div style="font-size:7.5pt; color:#555; text-align:center;">Alat Tambahan: Copy RPH, Planner, Upload Word, PDF, dan AI Parser Gemini</div>
         </div>
@@ -3752,7 +3752,7 @@
 
         <div class="subsection-title" style="margin-top:4mm;">Landing Page Auto eRPH</div>
         <div style="border-radius:2mm; overflow:hidden; border:1px solid #ddd; background:#fff;">
-            <img src="portfolio/img/landing-page-autoerph.png" alt="Auto eRPH Landing Page" style="width:100%; display:block;">
+            <img src="img/landing-page-autoerph.png" alt="Auto eRPH Landing Page" style="width:100%; display:block;">
         </div>
         <div style="font-size:7.5pt; color:#555; text-align:center; margin-top:1.5mm;">Landing page Auto eRPH di portfolio-cikguaime.vercel.app/auto-erph</div>
 
@@ -3784,7 +3784,7 @@
                 </div>
             </div>
             <div style="border-radius:2mm; overflow:hidden; border:1px solid #ddd;">
-                <img src="portfolio/img/relief-hub1.png" alt="Relief Activity Hub" style="width:100%; display:block;">
+                <img src="img/relief-hub1.png" alt="Relief Activity Hub" style="width:100%; display:block;">
             </div>
         </div>
 
@@ -3800,7 +3800,7 @@
                 </div>
             </div>
             <div style="border-radius:2mm; overflow:hidden; border:1px solid #ddd;">
-                <img src="portfolio/img/buku-tulis-digital.png" alt="Buku Tulis Digital" style="width:100%; display:block;">
+                <img src="img/buku-tulis-digital.png" alt="Buku Tulis Digital" style="width:100%; display:block;">
             </div>
         </div>
 
@@ -3816,7 +3816,7 @@
                 </div>
             </div>
             <div style="border-radius:2mm; overflow:hidden; border:1px solid #ddd;">
-                <img src="portfolio/img/sistem-erekod1.png" alt="Sistem e-Rekod PBD Sahsiah" style="width:100%; display:block;">
+                <img src="img/sistem-erekod1.png" alt="Sistem e-Rekod PBD Sahsiah" style="width:100%; display:block;">
             </div>
         </div>
 
@@ -3872,14 +3872,14 @@
         <div class="subsection-title">Transformasi Studio: Dari Kosong ke Profesional</div>
         <div style="display:grid; grid-template-columns: 1fr 1fr; gap:3mm;">
             <div style="border-radius:2mm; overflow:hidden; border:1px solid #ddd; background:#fff;">
-                <img src="portfolio/img/tvpss-dahulu.png" alt="TVPSS 2022" style="width:100%; height:48mm; object-fit:cover; display:block;">
+                <img src="img/tvpss-dahulu.png" alt="TVPSS 2022" style="width:100%; height:48mm; object-fit:cover; display:block;">
                 <div style="padding:2mm 3mm; background:#fef2f2; border-top:1px solid #fecaca; text-align:center;">
                     <div style="font-size:8.5pt; font-weight:700; color:#dc2626;">2022: Permulaan</div>
                     <div style="font-size:7pt; color:#666;">Bilik kosong, tiada peralatan tetap</div>
                 </div>
             </div>
             <div style="border-radius:2mm; overflow:hidden; border:1px solid #ddd; background:#fff;">
-                <img src="portfolio/img/tvpss-sekarang.png" alt="TVPSS 2026" style="width:100%; height:48mm; object-fit:cover; display:block;">
+                <img src="img/tvpss-sekarang.png" alt="TVPSS 2026" style="width:100%; height:48mm; object-fit:cover; display:block;">
                 <div style="padding:2mm 3mm; background:#f0fdf4; border-top:1px solid #bbf7d0; text-align:center;">
                     <div style="font-size:8.5pt; font-weight:700; color:#16a34a;">2026: Hari Ini</div>
                     <div style="font-size:7pt; color:#666;">Studio lengkap, peralatan profesional</div>
@@ -4021,14 +4021,14 @@
         <div class="subsection-title">Behind The Scene: Murid Sebagai Peneraju</div>
         <div style="display:grid; grid-template-columns: 1fr 1fr; gap:4mm;">
             <div style="border-radius:2mm; overflow:hidden; border:1px solid #ddd; background:#fff;">
-                <img src="portfolio/img/kendali-kamera.png" alt="Murid mengendalikan kamera" style="width:100%; max-height:65mm; object-fit:cover; display:block;">
+                <img src="img/kendali-kamera.png" alt="Murid mengendalikan kamera" style="width:100%; max-height:65mm; object-fit:cover; display:block;">
                 <div style="padding:2.5mm 3mm; background:#f0f9ff; border-top:1px solid #ddd;">
                     <div style="font-size:8.5pt; font-weight:700; color:#0369a1;">▶ Pengendalian Kamera</div>
                     <div style="font-size:8.5pt; color:#555;">Murid mengendalikan kamera semasa sesi rakaman</div>
                 </div>
             </div>
             <div style="border-radius:2mm; overflow:hidden; border:1px solid #ddd; background:#fff;">
-                <img src="portfolio/img/sunting-video.png" alt="Murid menyunting video" style="width:100%; max-height:65mm; object-fit:cover; display:block;">
+                <img src="img/sunting-video.png" alt="Murid menyunting video" style="width:100%; max-height:65mm; object-fit:cover; display:block;">
                 <div style="padding:2.5mm 3mm; background:#f0f9ff; border-top:1px solid #ddd;">
                     <div style="font-size:8.5pt; font-weight:700; color:#0369a1;">▶ Penyuntingan Video</div>
                     <div style="font-size:8.5pt; color:#555;">Murid menyunting video menggunakan perisian profesional</div>
@@ -4060,13 +4060,13 @@
         <div class="subsection-title">◉ Liputan Peringkat Antarabangsa</div>
         <div style="display:grid; grid-template-columns: 1fr 1fr; gap:3mm;">
             <div style="border-radius:2mm; overflow:hidden; border:2px solid #f59e0b; background:#fff;">
-                <img src="portfolio/img/liputan1.png" alt="Liputan WALS 2022" style="width:100%; max-height:52mm; object-fit:cover; display:block;">
+                <img src="img/liputan1.png" alt="Liputan WALS 2022" style="width:100%; max-height:52mm; object-fit:cover; display:block;">
                 <div style="padding:2mm 3mm; background:linear-gradient(135deg,#fef3c7,#fde68a); border-top:2px solid #f59e0b;">
                     <div style="font-size:8pt; font-weight:700; color:#92400e;">World Association of Lesson Studies (PLC) 2022</div>
                 </div>
             </div>
             <div style="border-radius:2mm; overflow:hidden; border:2px solid #f59e0b; background:#fff;">
-                <img src="portfolio/img/liputan2.png" alt="Liputan Delegasi Jepun 2023" style="width:100%; max-height:52mm; object-fit:cover; display:block;">
+                <img src="img/liputan2.png" alt="Liputan Delegasi Jepun 2023" style="width:100%; max-height:52mm; object-fit:cover; display:block;">
                 <div style="padding:2mm 3mm; background:linear-gradient(135deg,#fef3c7,#fde68a); border-top:2px solid #f59e0b;">
                     <div style="font-size:8pt; font-weight:700; color:#92400e;">Kehadiran Delegasi Jepun: Program Active Child 2023</div>
                 </div>
@@ -4077,25 +4077,25 @@
         <div class="subsection-title" style="margin-top:4mm;">Liputan Peringkat Kebangsaan</div>
         <div style="display:grid; grid-template-columns: 1fr 1fr; gap:3mm;">
             <div style="border-radius:2mm; overflow:hidden; border:1px solid #16a34a; background:#fff;">
-                <img src="portfolio/img/liputan3.png" alt="Showcase Transformasi Pendidikan 2022" style="width:100%; max-height:42mm; object-fit:cover; display:block;">
+                <img src="img/liputan3.png" alt="Showcase Transformasi Pendidikan 2022" style="width:100%; max-height:42mm; object-fit:cover; display:block;">
                 <div style="padding:2mm 3mm; background:#f0fdf4; border-top:1px solid #16a34a;">
                     <div style="font-size:7.5pt; font-weight:700; color:#16a34a;">Showcase Transformasi Pendidikan Kebangsaan 2022</div>
                 </div>
             </div>
             <div style="border-radius:2mm; overflow:hidden; border:1px solid #16a34a; background:#fff;">
-                <img src="portfolio/img/liputan4.png" alt="Kem Kepimpinan Kelab 2023" style="width:100%; max-height:42mm; object-fit:cover; display:block;">
+                <img src="img/liputan4.png" alt="Kem Kepimpinan Kelab 2023" style="width:100%; max-height:42mm; object-fit:cover; display:block;">
                 <div style="padding:2mm 3mm; background:#f0fdf4; border-top:1px solid #16a34a;">
                     <div style="font-size:7.5pt; font-weight:700; color:#16a34a;">Kem Kepimpinan Kelab &amp; Persatuan SR Kebangsaan 2023</div>
                 </div>
             </div>
             <div style="border-radius:2mm; overflow:hidden; border:1px solid #16a34a; background:#fff;">
-                <img src="portfolio/img/liputan5.png" alt="Pelancaran Sepak Takraw 2022" style="width:100%; max-height:42mm; object-fit:cover; display:block;">
+                <img src="img/liputan5.png" alt="Pelancaran Sepak Takraw 2022" style="width:100%; max-height:42mm; object-fit:cover; display:block;">
                 <div style="padding:2mm 3mm; background:#f0fdf4; border-top:1px solid #16a34a;">
                     <div style="font-size:7.5pt; font-weight:700; color:#16a34a;">Pelancaran Pengukuhan Sukan Sepak Takraw Kebangsaan 2022</div>
                 </div>
             </div>
             <div style="border-radius:2mm; overflow:hidden; border:1px solid #16a34a; background:#fff;">
-                <img src="portfolio/img/liputan6.png" alt="MyDigitalMaker 2023" style="width:100%; max-height:42mm; object-fit:cover; display:block;">
+                <img src="img/liputan6.png" alt="MyDigitalMaker 2023" style="width:100%; max-height:42mm; object-fit:cover; display:block;">
                 <div style="padding:2mm 3mm; background:#f0fdf4; border-top:1px solid #16a34a;">
                     <div style="font-size:7.5pt; font-weight:700; color:#16a34a;">Karnival #MyDigitalMaker Kebangsaan 2023</div>
                 </div>
@@ -4103,7 +4103,7 @@
         </div>
         <div style="display:grid; grid-template-columns: 1fr; gap:3mm; margin-top:3mm;">
             <div style="border-radius:2mm; overflow:hidden; border:1px solid #16a34a; background:#fff; max-width:50%; margin:0 auto;">
-                <img src="portfolio/img/liputan7.png" alt="Pameran Jiwa Merdeka 2024" style="width:100%; max-height:42mm; object-fit:cover; display:block;">
+                <img src="img/liputan7.png" alt="Pameran Jiwa Merdeka 2024" style="width:100%; max-height:42mm; object-fit:cover; display:block;">
                 <div style="padding:2mm 3mm; background:#f0fdf4; border-top:1px solid #16a34a; text-align:center;">
                     <div style="font-size:7.5pt; font-weight:700; color:#16a34a;">Pameran Jiwa Merdeka 2024</div>
                 </div>
@@ -4130,13 +4130,13 @@
         <!-- Row 1 -->
         <div style="display:grid; grid-template-columns: 1fr 1fr; gap:3mm;">
             <div style="border-radius:2mm; overflow:hidden; border:1px solid #2563eb; background:#fff;">
-                <img src="portfolio/img/liputan8.png" alt="Kibar Jalur Gemilang 2022" style="width:100%; max-height:42mm; object-fit:cover; display:block;">
+                <img src="img/liputan8.png" alt="Kibar Jalur Gemilang 2022" style="width:100%; max-height:42mm; object-fit:cover; display:block;">
                 <div style="padding:2mm 3mm; background:#eff6ff; border-top:1px solid #2563eb;">
                     <div style="font-size:7.5pt; font-weight:700; color:#2563eb;">Pertandingan Kibar Jalur Gemilang 2022</div>
                 </div>
             </div>
             <div style="border-radius:2mm; overflow:hidden; border:1px solid #2563eb; background:#fff;">
-                <img src="portfolio/img/liputan9.png" alt="Laman Cantik SR 2022" style="width:100%; max-height:42mm; object-fit:cover; display:block;">
+                <img src="img/liputan9.png" alt="Laman Cantik SR 2022" style="width:100%; max-height:42mm; object-fit:cover; display:block;">
                 <div style="padding:2mm 3mm; background:#eff6ff; border-top:1px solid #2563eb;">
                     <div style="font-size:7.5pt; font-weight:700; color:#2563eb;">Pertandingan Laman Cantik Sekolah Rendah 2022</div>
                 </div>
@@ -4146,13 +4146,13 @@
         <!-- Row 2 -->
         <div style="display:grid; grid-template-columns: 1fr 1fr; gap:3mm; margin-top:3mm;">
             <div style="border-radius:2mm; overflow:hidden; border:1px solid #2563eb; background:#fff;">
-                <img src="portfolio/img/liputan10.png" alt="Dekad Bahasa 2022" style="width:100%; max-height:42mm; object-fit:cover; display:block;">
+                <img src="img/liputan10.png" alt="Dekad Bahasa 2022" style="width:100%; max-height:42mm; object-fit:cover; display:block;">
                 <div style="padding:2mm 3mm; background:#eff6ff; border-top:1px solid #2563eb;">
                     <div style="font-size:7.5pt; font-weight:700; color:#2563eb;">Pelancaran Gerakan Dekad Bahasa 2022</div>
                 </div>
             </div>
             <div style="border-radius:2mm; overflow:hidden; border:1px solid #2563eb; background:#fff;">
-                <img src="portfolio/img/liputan11.png" alt="Apresiasi Kesenian 2023" style="width:100%; max-height:42mm; object-fit:cover; display:block;">
+                <img src="img/liputan11.png" alt="Apresiasi Kesenian 2023" style="width:100%; max-height:42mm; object-fit:cover; display:block;">
                 <div style="padding:2mm 3mm; background:#eff6ff; border-top:1px solid #2563eb;">
                     <div style="font-size:7.5pt; font-weight:700; color:#2563eb;">Majlis Apresiasi Kesenian Visual &amp; Teater 2023</div>
                 </div>
@@ -4162,13 +4162,13 @@
         <!-- Row 3 -->
         <div style="display:grid; grid-template-columns: 1fr 1fr; gap:3mm; margin-top:3mm;">
             <div style="border-radius:2mm; overflow:hidden; border:1px solid #2563eb; background:#fff;">
-                <img src="portfolio/img/liputan12.png" alt="Replika Kemerdekaan 2023" style="width:100%; max-height:42mm; object-fit:cover; display:block;">
+                <img src="img/liputan12.png" alt="Replika Kemerdekaan 2023" style="width:100%; max-height:42mm; object-fit:cover; display:block;">
                 <div style="padding:2mm 3mm; background:#eff6ff; border-top:1px solid #2563eb;">
                     <div style="font-size:7.5pt; font-weight:700; color:#2563eb;">Pertandingan Replika Kemerdekaan 2023</div>
                 </div>
             </div>
             <div style="border-radius:2mm; overflow:hidden; border:1px solid #2563eb; background:#fff;">
-                <img src="portfolio/img/liputan13.png" alt="Replika Kemerdekaan 2024" style="width:100%; max-height:42mm; object-fit:cover; display:block;">
+                <img src="img/liputan13.png" alt="Replika Kemerdekaan 2024" style="width:100%; max-height:42mm; object-fit:cover; display:block;">
                 <div style="padding:2mm 3mm; background:#eff6ff; border-top:1px solid #2563eb;">
                     <div style="font-size:7.5pt; font-weight:700; color:#2563eb;">Pertandingan Replika Kemerdekaan 2024</div>
                 </div>
@@ -4178,13 +4178,13 @@
         <!-- Row 4 -->
         <div style="display:grid; grid-template-columns: 1fr 1fr; gap:3mm; margin-top:3mm;">
             <div style="border-radius:2mm; overflow:hidden; border:1px solid #2563eb; background:#fff;">
-                <img src="portfolio/img/liputan14.png" alt="Akuatik MSSWP 2024" style="width:100%; max-height:42mm; object-fit:cover; display:block;">
+                <img src="img/liputan14.png" alt="Akuatik MSSWP 2024" style="width:100%; max-height:42mm; object-fit:cover; display:block;">
                 <div style="padding:2mm 3mm; background:#eff6ff; border-top:1px solid #2563eb;">
                     <div style="font-size:7.5pt; font-weight:700; color:#2563eb;">Kejohanan Akuatik MSSWP 2024</div>
                 </div>
             </div>
             <div style="border-radius:2mm; overflow:hidden; border:1px solid #2563eb; background:#fff;">
-                <img src="portfolio/img/liputan15.png" alt="Pesta Pantun 2024" style="width:100%; max-height:42mm; object-fit:cover; display:block;">
+                <img src="img/liputan15.png" alt="Pesta Pantun 2024" style="width:100%; max-height:42mm; object-fit:cover; display:block;">
                 <div style="padding:2mm 3mm; background:#eff6ff; border-top:1px solid #2563eb;">
                     <div style="font-size:7.5pt; font-weight:700; color:#2563eb;">Siaran Langsung Pesta Pantun 2024</div>
                 </div>
@@ -4215,13 +4215,13 @@
         <!-- Row 1: 2 images -->
         <div style="display:grid; grid-template-columns: 1fr 1fr; gap:3mm;">
             <div style="border-radius:2mm; overflow:hidden; border:1px solid #7c3aed; background:#fff;">
-                <img src="portfolio/img/pertandingan1.png" alt="TikTok BSTP Semarak Merdeka 2023" style="width:100%; max-height:52mm; object-fit:cover; display:block;">
+                <img src="img/pertandingan1.png" alt="TikTok BSTP Semarak Merdeka 2023" style="width:100%; max-height:52mm; object-fit:cover; display:block;">
                 <div style="padding:2mm 3mm; background:#faf5ff; border-top:1px solid #7c3aed;">
                     <div style="font-size:7.5pt; font-weight:700; color:#7c3aed;">TikTok BSTP Semarak Merdeka 2023</div>
                 </div>
             </div>
             <div style="border-radius:2mm; overflow:hidden; border:1px solid #7c3aed; background:#fff;">
-                <img src="portfolio/img/pertandingan2.png" alt="TikTok Kreatif TNB Jimat Tenaga 2023" style="width:100%; max-height:52mm; object-fit:cover; display:block;">
+                <img src="img/pertandingan2.png" alt="TikTok Kreatif TNB Jimat Tenaga 2023" style="width:100%; max-height:52mm; object-fit:cover; display:block;">
                 <div style="padding:2mm 3mm; background:#faf5ff; border-top:1px solid #7c3aed;">
                     <div style="font-size:7.5pt; font-weight:700; color:#7c3aed;">TikTok Kreatif TNB: Jimat Tenaga 2023</div>
                 </div>
@@ -4231,13 +4231,13 @@
         <!-- Row 2: 2 images -->
         <div style="display:grid; grid-template-columns: 1fr 1fr; gap:3mm; margin-top:3mm;">
             <div style="border-radius:2mm; overflow:hidden; border:1px solid #7c3aed; background:#fff;">
-                <img src="portfolio/img/pertandingan3.png" alt="TikTok Saya Sayang Guru 2024" style="width:100%; max-height:52mm; object-fit:cover; display:block;">
+                <img src="img/pertandingan3.png" alt="TikTok Saya Sayang Guru 2024" style="width:100%; max-height:52mm; object-fit:cover; display:block;">
                 <div style="padding:2mm 3mm; background:#faf5ff; border-top:1px solid #7c3aed;">
                     <div style="font-size:7.5pt; font-weight:700; color:#7c3aed;">TikTok Saya Sayang Guru Sinar Bestari 2024</div>
                 </div>
             </div>
             <div style="border-radius:2mm; overflow:hidden; border:1px solid #7c3aed; background:#fff;">
-                <img src="portfolio/img/pertandingan4.png" alt="Video Terbaik TVPSS 2024" style="width:100%; max-height:52mm; object-fit:cover; display:block;">
+                <img src="img/pertandingan4.png" alt="Video Terbaik TVPSS 2024" style="width:100%; max-height:52mm; object-fit:cover; display:block;">
                 <div style="padding:2mm 3mm; background:#faf5ff; border-top:1px solid #7c3aed;">
                     <div style="font-size:7.5pt; font-weight:700; color:#7c3aed;">Pertandingan Video Terbaik TVPSS 2024</div>
                 </div>
@@ -4247,7 +4247,7 @@
         <!-- Row 3: 1 image centered -->
         <div style="display:grid; grid-template-columns: 1fr; gap:3mm; margin-top:3mm;">
             <div style="border-radius:2mm; overflow:hidden; border:1px solid #7c3aed; background:#fff; max-width:50%; margin:0 auto;">
-                <img src="portfolio/img/pertandingan5.png" alt="Video Kreatif Kebangsaan 2023" style="width:100%; max-height:52mm; object-fit:cover; display:block;">
+                <img src="img/pertandingan5.png" alt="Video Kreatif Kebangsaan 2023" style="width:100%; max-height:52mm; object-fit:cover; display:block;">
                 <div style="padding:2mm 3mm; background:#faf5ff; border-top:1px solid #7c3aed; text-align:center;">
                     <div style="font-size:7.5pt; font-weight:700; color:#7c3aed;">Video Kreatif Kebangsaan (VKK) 2023</div>
                 </div>
@@ -4282,42 +4282,42 @@
         <!-- Collage Container -->
         <div style="position:relative; width:100%; height:218mm; overflow:hidden; background:#f8fafc; border-radius:3mm;">
             <!-- Row 1 -->
-            <img src="portfolio/img/tulang-belakang-sekolah1.png" style="position:absolute; left:0; top:0; width:28%; height:20%; object-fit:cover; border-radius:2mm; box-shadow:0 2px 8px rgba(0,0,0,0.15); transform:rotate(-2deg);">
-            <img src="portfolio/img/tulang-belakang-sekolah2.png" style="position:absolute; left:26%; top:2%; width:22%; height:17%; object-fit:cover; border-radius:2mm; box-shadow:0 2px 8px rgba(0,0,0,0.15); transform:rotate(1deg);">
-            <img src="portfolio/img/tulang-belakang-sekolah3.png" style="position:absolute; left:46%; top:0; width:26%; height:18%; object-fit:cover; border-radius:2mm; box-shadow:0 2px 8px rgba(0,0,0,0.15); transform:rotate(-1deg);">
-            <img src="portfolio/img/tulang-belakang-sekolah4.png" style="position:absolute; left:70%; top:1%; width:30%; height:21%; object-fit:cover; border-radius:2mm; box-shadow:0 2px 8px rgba(0,0,0,0.15); transform:rotate(2deg);">
+            <img src="img/tulang-belakang-sekolah1.png" style="position:absolute; left:0; top:0; width:28%; height:20%; object-fit:cover; border-radius:2mm; box-shadow:0 2px 8px rgba(0,0,0,0.15); transform:rotate(-2deg);">
+            <img src="img/tulang-belakang-sekolah2.png" style="position:absolute; left:26%; top:2%; width:22%; height:17%; object-fit:cover; border-radius:2mm; box-shadow:0 2px 8px rgba(0,0,0,0.15); transform:rotate(1deg);">
+            <img src="img/tulang-belakang-sekolah3.png" style="position:absolute; left:46%; top:0; width:26%; height:18%; object-fit:cover; border-radius:2mm; box-shadow:0 2px 8px rgba(0,0,0,0.15); transform:rotate(-1deg);">
+            <img src="img/tulang-belakang-sekolah4.png" style="position:absolute; left:70%; top:1%; width:30%; height:21%; object-fit:cover; border-radius:2mm; box-shadow:0 2px 8px rgba(0,0,0,0.15); transform:rotate(2deg);">
 
             <!-- Row 2 -->
-            <img src="portfolio/img/tulang-belakang-sekolah5.png" style="position:absolute; left:2%; top:18%; width:24%; height:16%; object-fit:cover; border-radius:2mm; box-shadow:0 2px 8px rgba(0,0,0,0.15); transform:rotate(1deg);">
-            <img src="portfolio/img/tulang-belakang-sekolah6.png" style="position:absolute; left:24%; top:17%; width:28%; height:19%; object-fit:cover; border-radius:2mm; box-shadow:0 2px 8px rgba(0,0,0,0.15); transform:rotate(-2deg);">
-            <img src="portfolio/img/tulang-belakang-sekolah7.png" style="position:absolute; left:50%; top:17%; width:22%; height:15%; object-fit:cover; border-radius:2mm; box-shadow:0 2px 8px rgba(0,0,0,0.15); transform:rotate(2deg);">
-            <img src="portfolio/img/tulang-belakang-sekolah8.png" style="position:absolute; left:70%; top:20%; width:28%; height:18%; object-fit:cover; border-radius:2mm; box-shadow:0 2px 8px rgba(0,0,0,0.15); transform:rotate(-1deg);">
+            <img src="img/tulang-belakang-sekolah5.png" style="position:absolute; left:2%; top:18%; width:24%; height:16%; object-fit:cover; border-radius:2mm; box-shadow:0 2px 8px rgba(0,0,0,0.15); transform:rotate(1deg);">
+            <img src="img/tulang-belakang-sekolah6.png" style="position:absolute; left:24%; top:17%; width:28%; height:19%; object-fit:cover; border-radius:2mm; box-shadow:0 2px 8px rgba(0,0,0,0.15); transform:rotate(-2deg);">
+            <img src="img/tulang-belakang-sekolah7.png" style="position:absolute; left:50%; top:17%; width:22%; height:15%; object-fit:cover; border-radius:2mm; box-shadow:0 2px 8px rgba(0,0,0,0.15); transform:rotate(2deg);">
+            <img src="img/tulang-belakang-sekolah8.png" style="position:absolute; left:70%; top:20%; width:28%; height:18%; object-fit:cover; border-radius:2mm; box-shadow:0 2px 8px rgba(0,0,0,0.15); transform:rotate(-1deg);">
 
             <!-- Row 3 -->
-            <img src="portfolio/img/tulang-belakang-sekolah9.png" style="position:absolute; left:0; top:32%; width:26%; height:18%; object-fit:cover; border-radius:2mm; box-shadow:0 2px 8px rgba(0,0,0,0.15); transform:rotate(-1deg);">
-            <img src="portfolio/img/tulang-belakang-sekolah10.png" style="position:absolute; left:24%; top:34%; width:24%; height:16%; object-fit:cover; border-radius:2mm; box-shadow:0 2px 8px rgba(0,0,0,0.15); transform:rotate(2deg);">
-            <img src="portfolio/img/tulang-belakang-sekolah11.png" style="position:absolute; left:46%; top:31%; width:28%; height:19%; object-fit:cover; border-radius:2mm; box-shadow:0 2px 8px rgba(0,0,0,0.15); transform:rotate(-2deg);">
-            <img src="portfolio/img/tulang-belakang-sekolah12.png" style="position:absolute; left:72%; top:36%; width:26%; height:16%; object-fit:cover; border-radius:2mm; box-shadow:0 2px 8px rgba(0,0,0,0.15); transform:rotate(1deg);">
+            <img src="img/tulang-belakang-sekolah9.png" style="position:absolute; left:0; top:32%; width:26%; height:18%; object-fit:cover; border-radius:2mm; box-shadow:0 2px 8px rgba(0,0,0,0.15); transform:rotate(-1deg);">
+            <img src="img/tulang-belakang-sekolah10.png" style="position:absolute; left:24%; top:34%; width:24%; height:16%; object-fit:cover; border-radius:2mm; box-shadow:0 2px 8px rgba(0,0,0,0.15); transform:rotate(2deg);">
+            <img src="img/tulang-belakang-sekolah11.png" style="position:absolute; left:46%; top:31%; width:28%; height:19%; object-fit:cover; border-radius:2mm; box-shadow:0 2px 8px rgba(0,0,0,0.15); transform:rotate(-2deg);">
+            <img src="img/tulang-belakang-sekolah12.png" style="position:absolute; left:72%; top:36%; width:26%; height:16%; object-fit:cover; border-radius:2mm; box-shadow:0 2px 8px rgba(0,0,0,0.15); transform:rotate(1deg);">
 
             <!-- Row 4 -->
-            <img src="portfolio/img/tulang-belakang-sekolah13.png" style="position:absolute; left:2%; top:48%; width:22%; height:15%; object-fit:cover; border-radius:2mm; box-shadow:0 2px 8px rgba(0,0,0,0.15); transform:rotate(2deg);">
-            <img src="portfolio/img/tulang-belakang-sekolah14.png" style="position:absolute; left:22%; top:49%; width:26%; height:17%; object-fit:cover; border-radius:2mm; box-shadow:0 2px 8px rgba(0,0,0,0.15); transform:rotate(-1deg);">
-            <img src="portfolio/img/tulang-belakang-sekolah15.png" style="position:absolute; left:46%; top:49%; width:24%; height:16%; object-fit:cover; border-radius:2mm; box-shadow:0 2px 8px rgba(0,0,0,0.15); transform:rotate(1deg);">
-            <img src="portfolio/img/tulang-belakang-sekolah16.png" style="position:absolute; left:68%; top:50%; width:30%; height:19%; object-fit:cover; border-radius:2mm; box-shadow:0 2px 8px rgba(0,0,0,0.15); transform:rotate(-2deg);">
+            <img src="img/tulang-belakang-sekolah13.png" style="position:absolute; left:2%; top:48%; width:22%; height:15%; object-fit:cover; border-radius:2mm; box-shadow:0 2px 8px rgba(0,0,0,0.15); transform:rotate(2deg);">
+            <img src="img/tulang-belakang-sekolah14.png" style="position:absolute; left:22%; top:49%; width:26%; height:17%; object-fit:cover; border-radius:2mm; box-shadow:0 2px 8px rgba(0,0,0,0.15); transform:rotate(-1deg);">
+            <img src="img/tulang-belakang-sekolah15.png" style="position:absolute; left:46%; top:49%; width:24%; height:16%; object-fit:cover; border-radius:2mm; box-shadow:0 2px 8px rgba(0,0,0,0.15); transform:rotate(1deg);">
+            <img src="img/tulang-belakang-sekolah16.png" style="position:absolute; left:68%; top:50%; width:30%; height:19%; object-fit:cover; border-radius:2mm; box-shadow:0 2px 8px rgba(0,0,0,0.15); transform:rotate(-2deg);">
 
             <!-- Row 5 -->
-            <img src="portfolio/img/tulang-belakang-sekolah17.png" style="position:absolute; left:0; top:62%; width:28%; height:17%; object-fit:cover; border-radius:2mm; box-shadow:0 2px 8px rgba(0,0,0,0.15); transform:rotate(-2deg);">
-            <img src="portfolio/img/tulang-belakang-sekolah18.png" style="position:absolute; left:26%; top:64%; width:22%; height:15%; object-fit:cover; border-radius:2mm; box-shadow:0 2px 8px rgba(0,0,0,0.15); transform:rotate(2deg);">
-            <img src="portfolio/img/tulang-belakang-sekolah19.png" style="position:absolute; left:46%; top:63%; width:26%; height:17%; object-fit:cover; border-radius:2mm; box-shadow:0 2px 8px rgba(0,0,0,0.15); transform:rotate(-1deg);">
-            <img src="portfolio/img/tulang-belakang-sekolah20.png" style="position:absolute; left:70%; top:67%; width:28%; height:16%; object-fit:cover; border-radius:2mm; box-shadow:0 2px 8px rgba(0,0,0,0.15); transform:rotate(1deg);">
+            <img src="img/tulang-belakang-sekolah17.png" style="position:absolute; left:0; top:62%; width:28%; height:17%; object-fit:cover; border-radius:2mm; box-shadow:0 2px 8px rgba(0,0,0,0.15); transform:rotate(-2deg);">
+            <img src="img/tulang-belakang-sekolah18.png" style="position:absolute; left:26%; top:64%; width:22%; height:15%; object-fit:cover; border-radius:2mm; box-shadow:0 2px 8px rgba(0,0,0,0.15); transform:rotate(2deg);">
+            <img src="img/tulang-belakang-sekolah19.png" style="position:absolute; left:46%; top:63%; width:26%; height:17%; object-fit:cover; border-radius:2mm; box-shadow:0 2px 8px rgba(0,0,0,0.15); transform:rotate(-1deg);">
+            <img src="img/tulang-belakang-sekolah20.png" style="position:absolute; left:70%; top:67%; width:28%; height:16%; object-fit:cover; border-radius:2mm; box-shadow:0 2px 8px rgba(0,0,0,0.15); transform:rotate(1deg);">
 
             <!-- Row 6 -->
-            <img src="portfolio/img/tulang-belakang-sekolah21.png" style="position:absolute; left:2%; top:77%; width:24%; height:14%; object-fit:cover; border-radius:2mm; box-shadow:0 2px 8px rgba(0,0,0,0.15); transform:rotate(1deg);">
-            <img src="portfolio/img/tulang-belakang-sekolah22.png" style="position:absolute; left:24%; top:78%; width:20%; height:13%; object-fit:cover; border-radius:2mm; box-shadow:0 2px 8px rgba(0,0,0,0.15); transform:rotate(-2deg);">
-            <img src="portfolio/img/tulang-belakang-sekolah23.png" style="position:absolute; left:42%; top:79%; width:22%; height:12%; object-fit:cover; border-radius:2mm; box-shadow:0 2px 8px rgba(0,0,0,0.15); transform:rotate(2deg);">
-            <img src="portfolio/img/tulang-belakang-sekolah24.png" style="position:absolute; left:62%; top:81%; width:18%; height:11%; object-fit:cover; border-radius:2mm; box-shadow:0 2px 8px rgba(0,0,0,0.15); transform:rotate(-1deg);">
-            <img src="portfolio/img/tulang-belakang-sekolah25.png" style="position:absolute; left:78%; top:82%; width:20%; height:10%; object-fit:cover; border-radius:2mm; box-shadow:0 2px 8px rgba(0,0,0,0.15); transform:rotate(1deg);">
-            <img src="portfolio/img/tulang-belakang-sekolah26.png" style="position:absolute; left:0%; top:90%; width:100%; height:10%; object-fit:cover; border-radius:2mm; box-shadow:0 2px 8px rgba(0,0,0,0.15);">
+            <img src="img/tulang-belakang-sekolah21.png" style="position:absolute; left:2%; top:77%; width:24%; height:14%; object-fit:cover; border-radius:2mm; box-shadow:0 2px 8px rgba(0,0,0,0.15); transform:rotate(1deg);">
+            <img src="img/tulang-belakang-sekolah22.png" style="position:absolute; left:24%; top:78%; width:20%; height:13%; object-fit:cover; border-radius:2mm; box-shadow:0 2px 8px rgba(0,0,0,0.15); transform:rotate(-2deg);">
+            <img src="img/tulang-belakang-sekolah23.png" style="position:absolute; left:42%; top:79%; width:22%; height:12%; object-fit:cover; border-radius:2mm; box-shadow:0 2px 8px rgba(0,0,0,0.15); transform:rotate(2deg);">
+            <img src="img/tulang-belakang-sekolah24.png" style="position:absolute; left:62%; top:81%; width:18%; height:11%; object-fit:cover; border-radius:2mm; box-shadow:0 2px 8px rgba(0,0,0,0.15); transform:rotate(-1deg);">
+            <img src="img/tulang-belakang-sekolah25.png" style="position:absolute; left:78%; top:82%; width:20%; height:10%; object-fit:cover; border-radius:2mm; box-shadow:0 2px 8px rgba(0,0,0,0.15); transform:rotate(1deg);">
+            <img src="img/tulang-belakang-sekolah26.png" style="position:absolute; left:0%; top:90%; width:100%; height:10%; object-fit:cover; border-radius:2mm; box-shadow:0 2px 8px rgba(0,0,0,0.15);">
 
             <!-- Center highlight -->
             <div style="position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); background:rgba(10,22,40,0.9); padding:4mm 6mm; border-radius:2mm; text-align:center; border:1px solid #c8a84e;">
@@ -4464,7 +4464,7 @@
         <!-- SAS International -->
         <div class="subsection-title">◉ SAS International Techno Drama Competition</div>
         <div style="border-radius:2mm; overflow:hidden; border:2px solid #f59e0b; background:#fff;">
-            <img src="portfolio/img/sas-international-technodrama.png" alt="SAS International Techno Drama" style="width:100%; max-height:115mm; object-fit:contain; display:block;">
+            <img src="img/sas-international-technodrama.png" alt="SAS International Techno Drama" style="width:100%; max-height:115mm; object-fit:contain; display:block;">
             <div style="padding:3mm 4mm; background:linear-gradient(135deg,#fef3c7,#fde68a); border-top:2px solid #f59e0b;">
                 <div style="font-size:9pt; font-weight:700; color:#92400e; text-align:center;">★ Platinum Award (3rd Place) · ♦ Best Actress · ◆ Best Poster</div>
                 <div style="font-size:8pt; color:#78350f; text-align:center; margin-top:1mm;">130 sekolah dari Asia Tenggara</div>
@@ -4474,7 +4474,7 @@
         <!-- Filem Pendek 2025 -->
         <div class="subsection-title" style="margin-top:5mm;">Pertandingan Filem Pendek WP Putrajaya 2025</div>
         <div style="border-radius:2mm; overflow:hidden; border:2px solid #ef4444; background:#fff;">
-            <img src="portfolio/img/pertandingan-filem-pendek-2025.png" alt="Pertandingan Filem Pendek 2025" style="width:100%; max-height:115mm; object-fit:contain; display:block;">
+            <img src="img/pertandingan-filem-pendek-2025.png" alt="Pertandingan Filem Pendek 2025" style="width:100%; max-height:115mm; object-fit:contain; display:block;">
             <div style="padding:3mm 4mm; background:#fef2f2; border-top:2px solid #fecaca;">
                 <div style="font-size:9pt; font-weight:700; color:#dc2626; text-align:center;">♦ Pelakon Wanita Terbaik · ▶ Suntingan Terbaik · ◆ Poster Terbaik · ③ Ketiga Keseluruhan</div>
                 <div style="font-size:8pt; color:#7f1d1d; text-align:center; margin-top:1mm;">4 anugerah dalam 1 pertandingan</div>
@@ -4502,7 +4502,7 @@
         <div style="display:grid; grid-template-columns: 1fr 1fr; gap:3mm;">
             <!-- Johan Ikon Guru Kebangsaan -->
             <div style="border-radius:2mm; overflow:hidden; border:2px solid #16a34a; background:#fff;">
-                <img src="portfolio/img/johan-ikon-guru-kebangsaan.png" alt="Johan Ikon Guru TVPSS Kebangsaan" style="width:100%; max-height:70mm; object-fit:contain; display:block;">
+                <img src="img/johan-ikon-guru-kebangsaan.png" alt="Johan Ikon Guru TVPSS Kebangsaan" style="width:100%; max-height:70mm; object-fit:contain; display:block;">
                 <div style="padding:2mm 3mm; background:#f0fdf4; border-top:2px solid #16a34a;">
                     <div style="font-size:8.5pt; font-weight:700; color:#16a34a;">★ Johan Ikon Guru TVPSS 2024</div>
                     <div style="font-size:7.5pt; color:#555;">Peringkat Kebangsaan</div>
@@ -4511,7 +4511,7 @@
 
             <!-- Johan Video Bantu Mula Kebangsaan (Perempuan) -->
             <div style="border-radius:2mm; overflow:hidden; border:2px solid #16a34a; background:#fff;">
-                <img src="portfolio/img/johan-video-bantu-kebangsaan.png" alt="Johan Video Bantu Mula Kebangsaan" style="width:100%; max-height:70mm; object-fit:contain; display:block;">
+                <img src="img/johan-video-bantu-kebangsaan.png" alt="Johan Video Bantu Mula Kebangsaan" style="width:100%; max-height:70mm; object-fit:contain; display:block;">
                 <div style="padding:2mm 3mm; background:#f0fdf4; border-top:2px solid #16a34a;">
                     <div style="font-size:8.5pt; font-weight:700; color:#16a34a;">★ Johan Video Bantu Mula BSMM 2024</div>
                     <div style="font-size:7.5pt; color:#555;">Peringkat Kebangsaan (Kategori Perempuan)</div>
@@ -4523,7 +4523,7 @@
         <div style="display:grid; grid-template-columns: 1fr 1fr; gap:3mm; margin-top:3mm;">
             <!-- Ketiga Video Bantu Mula Kebangsaan (Lelaki) -->
             <div style="border-radius:2mm; overflow:hidden; border:2px solid #b45309; background:#fff;">
-                <img src="portfolio/img/ketiga-video-bantu-kebangsaan.png" alt="Ketiga Video Bantu Mula Kebangsaan" style="width:100%; max-height:70mm; object-fit:contain; display:block;">
+                <img src="img/ketiga-video-bantu-kebangsaan.png" alt="Ketiga Video Bantu Mula Kebangsaan" style="width:100%; max-height:70mm; object-fit:contain; display:block;">
                 <div style="padding:2mm 3mm; background:#fef3c7; border-top:2px solid #b45309;">
                     <div style="font-size:8.5pt; font-weight:700; color:#b45309;">③ Ketiga Video Bantu Mula BSMM 2024</div>
                     <div style="font-size:7.5pt; color:#555;">Peringkat Kebangsaan (Kategori Lelaki)</div>
@@ -4532,7 +4532,7 @@
 
             <!-- Kelima Video Kreatif TVPSS Kebangsaan -->
             <div style="border-radius:2mm; overflow:hidden; border:2px solid #ca8a04; background:#fff;">
-                <img src="portfolio/img/kelima-kebangsaan-video-kreatif-tvpss.png" alt="Kelima Video Kreatif TVPSS Kebangsaan" style="width:100%; max-height:70mm; object-fit:contain; display:block;">
+                <img src="img/kelima-kebangsaan-video-kreatif-tvpss.png" alt="Kelima Video Kreatif TVPSS Kebangsaan" style="width:100%; max-height:70mm; object-fit:contain; display:block;">
                 <div style="padding:2mm 3mm; background:#fefce8; border-top:2px solid #ca8a04;">
                     <div style="font-size:8.5pt; font-weight:700; color:#ca8a04;">★ Kelima Video Kreatif TVPSS 2024</div>
                     <div style="font-size:7.5pt; color:#555;">Peringkat Kebangsaan</div>
@@ -4543,7 +4543,7 @@
         <!-- Row 3: Anugerah Khas Juri (centered) -->
         <div style="display:grid; grid-template-columns: 1fr; gap:3mm; margin-top:3mm;">
             <div style="border-radius:2mm; overflow:hidden; border:2px solid #ca8a04; background:#fff; max-width:50%; margin:0 auto;">
-                <img src="portfolio/img/anugerah-khas-juri.png" alt="Anugerah Khas Juri TikTok Kebangsaan" style="width:100%; max-height:70mm; object-fit:contain; display:block;">
+                <img src="img/anugerah-khas-juri.png" alt="Anugerah Khas Juri TikTok Kebangsaan" style="width:100%; max-height:70mm; object-fit:contain; display:block;">
                 <div style="padding:2mm 3mm; background:#fefce8; border-top:2px solid #ca8a04; text-align:center;">
                     <div style="font-size:8.5pt; font-weight:700; color:#ca8a04;">★ Anugerah Khas Juri 2025</div>
                     <div style="font-size:7.5pt; color:#555;">TikTok Keselamatan Jalan Raya Kebangsaan</div>
@@ -4571,14 +4571,14 @@
         <!-- Row 1: 2023 Terbaik (3 anugerah) + Johan Suntingan -->
         <div style="display:grid; grid-template-columns: 1fr 1fr; gap:4mm;">
             <div style="border-radius:2mm; overflow:hidden; border:2px solid #16a34a; background:#fff;">
-                <img src="portfolio/img/tvpss-terbaik-2023.png" alt="TVPSS Terbaik 2023" style="width:100%; max-height:75mm; object-fit:contain; display:block;">
+                <img src="img/tvpss-terbaik-2023.png" alt="TVPSS Terbaik 2023" style="width:100%; max-height:75mm; object-fit:contain; display:block;">
                 <div style="padding:3mm 4mm; background:#f0fdf4; border-top:2px solid #16a34a;">
                     <div style="font-size:8.5pt; font-weight:700; color:#16a34a;">★ WP Putrajaya 2023</div>
                     <div style="font-size:7.5pt; color:#555; line-height:1.4;">Johan Video Terbaik · Naib Johan Studio · Guru TVPSS Terbaik</div>
                 </div>
             </div>
             <div style="border-radius:2mm; overflow:hidden; border:2px solid #16a34a; background:#fff;">
-                <img src="portfolio/img/johan-suntingan-video.png" alt="Johan Suntingan Video" style="width:100%; max-height:75mm; object-fit:contain; display:block;">
+                <img src="img/johan-suntingan-video.png" alt="Johan Suntingan Video" style="width:100%; max-height:75mm; object-fit:contain; display:block;">
                 <div style="padding:3mm 4mm; background:#f0fdf4; border-top:2px solid #16a34a;">
                     <div style="font-size:8.5pt; font-weight:700; color:#16a34a;">★ Johan Suntingan Video</div>
                     <div style="font-size:7.5pt; color:#555;">Jelajah TVPSS Zon Tengah 2024</div>
@@ -4589,14 +4589,14 @@
         <!-- Row 2: Naib Johan 2022 + Naib Johan 2025 -->
         <div style="display:grid; grid-template-columns: 1fr 1fr; gap:4mm; margin-top:4mm;">
             <div style="border-radius:2mm; overflow:hidden; border:2px solid #2563eb; background:#fff;">
-                <img src="portfolio/img/naib-johan-video-terbaik-tvpss-2022.png" alt="Naib Johan 2022" style="width:100%; max-height:75mm; object-fit:contain; display:block;">
+                <img src="img/naib-johan-video-terbaik-tvpss-2022.png" alt="Naib Johan 2022" style="width:100%; max-height:75mm; object-fit:contain; display:block;">
                 <div style="padding:3mm 4mm; background:#eff6ff; border-top:2px solid #2563eb;">
                     <div style="font-size:8.5pt; font-weight:700; color:#2563eb;">◆ Naib Johan Video Terbaik TVPSS</div>
                     <div style="font-size:7.5pt; color:#555;">WP Putrajaya 2022</div>
                 </div>
             </div>
             <div style="border-radius:2mm; overflow:hidden; border:2px solid #2563eb; background:#fff;">
-                <img src="portfolio/img/naib-johan-video-kreatif-2025.png" alt="Naib Johan 2025" style="width:100%; max-height:75mm; object-fit:contain; display:block;">
+                <img src="img/naib-johan-video-kreatif-2025.png" alt="Naib Johan 2025" style="width:100%; max-height:75mm; object-fit:contain; display:block;">
                 <div style="padding:3mm 4mm; background:#eff6ff; border-top:2px solid #2563eb;">
                     <div style="font-size:8.5pt; font-weight:700; color:#2563eb;">◆ Naib Johan Video Kreatif TVPSS</div>
                     <div style="font-size:7.5pt; color:#555;">WP Putrajaya 2025</div>
@@ -4607,7 +4607,7 @@
         <!-- Row 3: Ketiga TikTok -->
         <div style="display:grid; grid-template-columns: 1fr; gap:4mm; margin-top:4mm;">
             <div style="border-radius:2mm; overflow:hidden; border:2px solid #7c3aed; background:#fff; max-width:50%; margin:0 auto;">
-                <img src="portfolio/img/ketiga-tiktok-sekolahkusejahtera.png" alt="Ketiga TikTok" style="width:100%; max-height:75mm; object-fit:contain; display:block;">
+                <img src="img/ketiga-tiktok-sekolahkusejahtera.png" alt="Ketiga TikTok" style="width:100%; max-height:75mm; object-fit:contain; display:block;">
                 <div style="padding:3mm 4mm; background:#faf5ff; border-top:2px solid #7c3aed; text-align:center;">
                     <div style="font-size:8.5pt; font-weight:700; color:#7c3aed;">③ Ketiga TikTok Sekolahku Sejahtera</div>
                     <div style="font-size:7.5pt; color:#555;">WP Putrajaya 2022</div>
@@ -4728,7 +4728,7 @@
         <!-- Halaman Utama Blog -->
         <div class="subsection-title">Halaman Utama Blog</div>
         <div style="border-radius:3mm; overflow:hidden; border:1px solid #e0e0e0; margin-bottom:4mm;">
-            <img src="portfolio/img/blog-cikguaime.png" alt="Halaman utama cikguaime.com" style="width:100%; display:block;">
+            <img src="img/blog-cikguaime.png" alt="Halaman utama cikguaime.com" style="width:100%; display:block;">
         </div>
         <div style="display:flex; gap:3mm; margin-bottom:4mm;">
             <div style="flex:1; background:#f8f9fb; border-radius:2mm; padding:2.5mm 3mm; border-left:3px solid var(--accent);">
@@ -4744,7 +4744,7 @@
         <!-- Statistik Pengunjung -->
         <div class="subsection-title">Statistik Pengunjung</div>
         <div style="border-radius:3mm; overflow:hidden; border:1px solid #e0e0e0; margin-bottom:3mm;">
-            <img src="portfolio/img/analitik-blog.png" alt="Statistik pengunjung blog" style="width:100%; display:block;">
+            <img src="img/analitik-blog.png" alt="Statistik pengunjung blog" style="width:100%; display:block;">
         </div>
 
         <div class="highlight-box">
@@ -4796,7 +4796,7 @@
         <div style="display:grid; grid-template-columns:1fr 1fr; gap:3mm; margin-top:3mm;">
             <div style="background:#f8f9fb; border-radius:2mm; overflow:hidden; border:1px solid #e0e0e0;">
                 <div style="height:32mm; overflow:hidden;">
-                    <img src="portfolio/img/contoh-ulasan-guru-kelas.png" alt="Carian Google: contoh ulasan guru" style="width:100%; height:100%; object-fit:cover; object-position:top;">
+                    <img src="img/contoh-ulasan-guru-kelas.png" alt="Carian Google: contoh ulasan guru" style="width:100%; height:100%; object-fit:cover; object-position:top;">
                 </div>
                 <div style="padding:2mm 3mm; background:var(--primary);">
                     <div style="font-size:8pt; color:var(--accent); font-weight:700;">#1 GOOGLE</div>
@@ -4805,7 +4805,7 @@
             </div>
             <div style="background:#f8f9fb; border-radius:2mm; overflow:hidden; border:1px solid #e0e0e0;">
                 <div style="height:32mm; overflow:hidden;">
-                    <img src="portfolio/img/contoh-kerja-kursus-sejarah.png" alt="Carian Google: contoh kerja kursus sejarah" style="width:100%; height:100%; object-fit:cover; object-position:center;">
+                    <img src="img/contoh-kerja-kursus-sejarah.png" alt="Carian Google: contoh kerja kursus sejarah" style="width:100%; height:100%; object-fit:cover; object-position:center;">
                 </div>
                 <div style="padding:2mm 3mm; background:var(--primary);">
                     <div style="font-size:8pt; color:white; font-weight:700;">#2 GOOGLE</div>
@@ -4814,7 +4814,7 @@
             </div>
             <div style="background:#f8f9fb; border-radius:2mm; overflow:hidden; border:1px solid #e0e0e0;">
                 <div style="height:32mm; overflow:hidden;">
-                    <img src="portfolio/img/panduan-kerja-kursus-sejarah.png" alt="Carian Google: panduan kerja kursus sejarah" style="width:100%; height:100%; object-fit:cover; object-position:center;">
+                    <img src="img/panduan-kerja-kursus-sejarah.png" alt="Carian Google: panduan kerja kursus sejarah" style="width:100%; height:100%; object-fit:cover; object-position:center;">
                 </div>
                 <div style="padding:2mm 3mm; background:var(--primary);">
                     <div style="font-size:8pt; color:white; font-weight:700;">#2 GOOGLE</div>
@@ -4823,7 +4823,7 @@
             </div>
             <div style="background:#f8f9fb; border-radius:2mm; overflow:hidden; border:1px solid #e0e0e0;">
                 <div style="height:32mm; overflow:hidden;">
-                    <img src="portfolio/img/soalan-uasa-psv.png" alt="Carian Google: soalan uasa psv" style="width:100%; height:100%; object-fit:cover; object-position:center;">
+                    <img src="img/soalan-uasa-psv.png" alt="Carian Google: soalan uasa psv" style="width:100%; height:100%; object-fit:cover; object-position:center;">
                 </div>
                 <div style="padding:2mm 3mm; background:var(--primary);">
                     <div style="font-size:8pt; color:white; font-weight:700;">#2 GOOGLE</div>
@@ -5057,7 +5057,7 @@
         <!-- Tier 1: IDME PBD Helper -->
         <div style="display:flex; gap:3mm; margin-bottom:3mm; align-items:stretch;">
             <div style="flex:7; border:1.5px solid #2a3f5f; border-radius:2mm; overflow:hidden; background:#f8fafc; display:flex; align-items:center;">
-                <img src="portfolio/img/cws-idme.png" alt="IDME PBD Helper - Chrome Web Store" style="width:100%; height:auto; display:block;">
+                <img src="img/cws-idme.png" alt="IDME PBD Helper - Chrome Web Store" style="width:100%; height:auto; display:block;">
             </div>
             <div style="flex:3; background:#f8f6f0; border-radius:2mm; padding:3mm; border-left:3px solid var(--accent); display:flex; flex-direction:column; justify-content:center;">
                 <div style="font-size:10pt; font-weight:700; color:var(--primary); margin-bottom:1.5mm;">IDME PBD Helper</div>
@@ -5072,7 +5072,7 @@
         <!-- Tier 2: MOIES Kehadiran Helper -->
         <div style="display:flex; gap:3mm; margin-bottom:3mm; align-items:stretch;">
             <div style="flex:7; border:1.5px solid #2a3f5f; border-radius:2mm; overflow:hidden; background:#f8fafc; display:flex; align-items:center;">
-                <img src="portfolio/img/cws-moeis.png" alt="MOEIS Kehadiran Helper - Chrome Web Store" style="width:100%; height:auto; display:block;">
+                <img src="img/cws-moeis.png" alt="MOEIS Kehadiran Helper - Chrome Web Store" style="width:100%; height:auto; display:block;">
             </div>
             <div style="flex:3; background:#f8f6f0; border-radius:2mm; padding:3mm; border-left:3px solid var(--accent); display:flex; flex-direction:column; justify-content:center;">
                 <div style="font-size:10pt; font-weight:700; color:var(--primary); margin-bottom:1.5mm;">MOIES Kehadiran</div>
@@ -5087,7 +5087,7 @@
         <!-- Tier 3: PBD OnePage -->
         <div style="display:flex; gap:3mm; align-items:stretch;">
             <div style="flex:7; border:1.5px solid #2a3f5f; border-radius:2mm; overflow:hidden; background:#f8fafc; display:flex; align-items:center;">
-                <img src="portfolio/img/cws-pbd.png" alt="PBD OnePage - Chrome Web Store" style="width:100%; height:auto; display:block;">
+                <img src="img/cws-pbd.png" alt="PBD OnePage - Chrome Web Store" style="width:100%; height:auto; display:block;">
             </div>
             <div style="flex:3; background:#f8f6f0; border-radius:2mm; padding:3mm; border-left:3px solid var(--accent); display:flex; flex-direction:column; justify-content:center;">
                 <div style="font-size:10pt; font-weight:700; color:var(--primary); margin-bottom:1.5mm;">PBD OnePage</div>
@@ -5154,7 +5154,7 @@
         <!-- Ulasan 1 -->
         <div style="margin-top: 2mm; margin-bottom: 3mm;">
             <div style="border: 1.5px solid #2a3f5f; border-radius: 2mm; overflow: hidden; background: #f8fafc; padding: 3mm;">
-                <img src="portfolio/img/pbd-helper-review1.png" alt="Ulasan IDME PBD Helper" style="width: 100%; height: auto; display: block;">
+                <img src="img/pbd-helper-review1.png" alt="Ulasan IDME PBD Helper" style="width: 100%; height: auto; display: block;">
             </div>
             <div class="screenshot-caption" style="font-size: 8pt;">Nurshafiqah Binti Hamidon, KPM-Guru (Jan 2026), IDME PBD Helper</div>
         </div>
@@ -5162,7 +5162,7 @@
         <!-- Ulasan 2 -->
         <div style="margin-bottom: 3mm;">
             <div style="border: 1.5px solid #2a3f5f; border-radius: 2mm; overflow: hidden; background: #f8fafc; padding: 3mm;">
-                <img src="portfolio/img/moies-helper-review1.png" alt="Ulasan MOIES Helper" style="width: 100%; height: auto; display: block;">
+                <img src="img/moies-helper-review1.png" alt="Ulasan MOIES Helper" style="width: 100%; height: auto; display: block;">
             </div>
             <div class="screenshot-caption" style="font-size: 8pt;">Nur Anis Nadia, KPM-Guru (Nov 2025), MOIES Helper</div>
         </div>
@@ -5170,7 +5170,7 @@
         <!-- Ulasan 3 -->
         <div style="margin-bottom: 3mm;">
             <div style="border: 1.5px solid #2a3f5f; border-radius: 2mm; overflow: hidden; background: #f8fafc; padding: 3mm;">
-                <img src="portfolio/img/pbd-onepage-review.png" alt="Ulasan PBD OnePage" style="width: 100%; height: auto; display: block;">
+                <img src="img/pbd-onepage-review.png" alt="Ulasan PBD OnePage" style="width: 100%; height: auto; display: block;">
             </div>
             <div class="screenshot-caption" style="font-size: 8pt;">Chee Chi Khiong, KPM-Guru (Dec 2025), PBD OnePage</div>
         </div>
@@ -5214,7 +5214,7 @@
                 </div>
             </div>
             <div style="border: 1px solid #e2e8f0; border-radius: 3mm; overflow: hidden; background: #f8fafc; text-align: center; padding: 3mm;">
-                <img src="portfolio/img/antaramuka-idme-pbd.png" alt="IDME PBD Helper - Antaramuka" style="max-width: 90%; height: auto; display: inline-block;">
+                <img src="img/antaramuka-idme-pbd.png" alt="IDME PBD Helper - Antaramuka" style="max-width: 90%; height: auto; display: inline-block;">
             </div>
         </div>
 
@@ -5230,7 +5230,7 @@
                 </div>
             </div>
             <div style="border: 1px solid #e2e8f0; border-radius: 3mm; overflow: hidden; background: #f8fafc; text-align: center; padding: 3mm;">
-                <img src="portfolio/img/antaramuka-kehadiran-helper.png" alt="MOEIS Kehadiran Helper - Antaramuka" style="max-width: 90%; height: auto; display: inline-block;">
+                <img src="img/antaramuka-kehadiran-helper.png" alt="MOEIS Kehadiran Helper - Antaramuka" style="max-width: 90%; height: auto; display: inline-block;">
             </div>
         </div>
     </div>
@@ -5265,7 +5265,7 @@
                 </div>
             </div>
             <div style="border: 1px solid #e2e8f0; border-radius: 3mm; overflow: hidden; background: #f8fafc; text-align: center; padding: 3mm;">
-                <img src="portfolio/img/antaramuka-onepage-pbd.png" alt="PBD OnePage - Antaramuka" style="max-width: 90%; height: auto; display: inline-block;">
+                <img src="img/antaramuka-onepage-pbd.png" alt="PBD OnePage - Antaramuka" style="max-width: 90%; height: auto; display: inline-block;">
             </div>
         </div>
 
@@ -5281,7 +5281,7 @@
                 </div>
             </div>
             <div style="border: 1px solid #e2e8f0; border-radius: 3mm; overflow: hidden; background: #f8fafc; text-align: center; padding: 3mm;">
-                <img src="portfolio/img/antaramuka-rph-helper.png" alt="RPH Helper - Antaramuka" style="max-width: 90%; height: auto; display: inline-block;">
+                <img src="img/antaramuka-rph-helper.png" alt="RPH Helper - Antaramuka" style="max-width: 90%; height: auto; display: inline-block;">
             </div>
         </div>
     </div>
@@ -5309,7 +5309,7 @@
             <!-- Relief Activity Hub -->
             <div style="background: #fff; border: 1px solid #e2e8f0; border-radius: 3mm; overflow: hidden;">
                 <div style="height: 75mm; background: #f8fafc; display: flex; align-items: center; justify-content: center; padding: 2mm;">
-                    <img src="portfolio/img/relief-hub1.png" alt="Relief Activity Hub" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+                    <img src="img/relief-hub1.png" alt="Relief Activity Hub" style="max-width: 100%; max-height: 100%; object-fit: contain;">
                 </div>
                 <div style="padding: 2mm 3mm; background: #f1f5f9; border-top: 1px solid #e2e8f0;">
                     <div style="font-size: 9pt; font-weight: 700; color: #1e293b;">Relief Activity Hub</div>
@@ -5320,7 +5320,7 @@
             <!-- Buku Tulis Digital -->
             <div style="background: #fff; border: 1px solid #e2e8f0; border-radius: 3mm; overflow: hidden;">
                 <div style="height: 75mm; background: #f8fafc; display: flex; align-items: center; justify-content: center; padding: 2mm;">
-                    <img src="portfolio/img/buku-tulis-digital.png" alt="Buku Tulis Digital" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+                    <img src="img/buku-tulis-digital.png" alt="Buku Tulis Digital" style="max-width: 100%; max-height: 100%; object-fit: contain;">
                 </div>
                 <div style="padding: 2mm 3mm; background: #f1f5f9; border-top: 1px solid #e2e8f0;">
                     <div style="font-size: 9pt; font-weight: 700; color: #1e293b;">Buku Tulis Digital</div>
@@ -5331,7 +5331,7 @@
             <!-- Blog: Kerja Kursus Sejarah -->
             <div style="background: #fff; border: 1px solid #e2e8f0; border-radius: 3mm; overflow: hidden;">
                 <div style="height: 75mm; background: #f8fafc; display: flex; align-items: center; justify-content: center; padding: 2mm;">
-                    <img src="portfolio/img/contoh-kerja-kursus-sejarah.png" alt="Artikel Kerja Kursus Sejarah" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+                    <img src="img/contoh-kerja-kursus-sejarah.png" alt="Artikel Kerja Kursus Sejarah" style="max-width: 100%; max-height: 100%; object-fit: contain;">
                 </div>
                 <div style="padding: 2mm 3mm; background: #f1f5f9; border-top: 1px solid #e2e8f0;">
                     <div style="font-size: 9pt; font-weight: 700; color: #1e293b;">Blog: Panduan Kerja Kursus</div>
@@ -5342,7 +5342,7 @@
             <!-- Blog: Ulasan Guru Kelas -->
             <div style="background: #fff; border: 1px solid #e2e8f0; border-radius: 3mm; overflow: hidden;">
                 <div style="height: 75mm; background: #f8fafc; display: flex; align-items: center; justify-content: center; padding: 2mm;">
-                    <img src="portfolio/img/contoh-ulasan-guru-kelas.png" alt="Contoh Ulasan Guru Kelas" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+                    <img src="img/contoh-ulasan-guru-kelas.png" alt="Contoh Ulasan Guru Kelas" style="max-width: 100%; max-height: 100%; object-fit: contain;">
                 </div>
                 <div style="padding: 2mm 3mm; background: #f1f5f9; border-top: 1px solid #e2e8f0;">
                     <div style="font-size: 9pt; font-weight: 700; color: #1e293b;">Blog: Template Ulasan Guru</div>
@@ -5376,7 +5376,7 @@
             <!-- QR 1: IDME PBD Helper -->
             <div style="text-align:center; background:#f8f9fa; border:1px solid #e0e0e0; border-radius:2mm; padding:3mm;">
                 <div style="width:28mm; height:28mm; margin:0 auto 2mm;">
-                    <img src="portfolio/img/qrcode-idme-pbd-helper.png" alt="QR IDME PBD Helper" style="width:100%; height:100%; object-fit:contain;">
+                    <img src="img/qrcode-idme-pbd-helper.png" alt="QR IDME PBD Helper" style="width:100%; height:100%; object-fit:contain;">
                 </div>
                 <div style="font-size:8pt; font-weight:700; color:var(--primary);">IDME PBD Helper</div>
                 <div style="font-size:6.5pt; color:#666;">Chrome Web Store</div>
@@ -5386,7 +5386,7 @@
             <!-- QR 2: MOIES Kehadiran -->
             <div style="text-align:center; background:#f8f9fa; border:1px solid #e0e0e0; border-radius:2mm; padding:3mm;">
                 <div style="width:28mm; height:28mm; margin:0 auto 2mm;">
-                    <img src="portfolio/img/qrcode-moies-kehadiran.png" alt="QR MOIES Kehadiran" style="width:100%; height:100%; object-fit:contain;">
+                    <img src="img/qrcode-moies-kehadiran.png" alt="QR MOIES Kehadiran" style="width:100%; height:100%; object-fit:contain;">
                 </div>
                 <div style="font-size:8pt; font-weight:700; color:var(--primary);">MOIES Kehadiran</div>
                 <div style="font-size:6.5pt; color:#666;">Chrome Web Store</div>
@@ -5396,7 +5396,7 @@
             <!-- QR 3: PBD OnePage -->
             <div style="text-align:center; background:#f8f9fa; border:1px solid #e0e0e0; border-radius:2mm; padding:3mm;">
                 <div style="width:28mm; height:28mm; margin:0 auto 2mm;">
-                    <img src="portfolio/img/qrcode-pbd-onepage.png" alt="QR PBD OnePage" style="width:100%; height:100%; object-fit:contain;">
+                    <img src="img/qrcode-pbd-onepage.png" alt="QR PBD OnePage" style="width:100%; height:100%; object-fit:contain;">
                 </div>
                 <div style="font-size:8pt; font-weight:700; color:var(--primary);">PBD OnePage</div>
                 <div style="font-size:6.5pt; color:#666;">Chrome Web Store</div>
@@ -5406,7 +5406,7 @@
             <!-- QR 4: Auto eRPH -->
             <div style="text-align:center; background:#f8f9fa; border:1px solid #e0e0e0; border-radius:2mm; padding:3mm;">
                 <div style="width:28mm; height:28mm; margin:0 auto 2mm;">
-                    <img src="portfolio/img/qrcode-auto-erph.png" alt="QR Auto eRPH" style="width:100%; height:100%; object-fit:contain;">
+                    <img src="img/qrcode-auto-erph.png" alt="QR Auto eRPH" style="width:100%; height:100%; object-fit:contain;">
                 </div>
                 <div style="font-size:8pt; font-weight:700; color:var(--primary);">Auto eRPH</div>
                 <div style="font-size:6.5pt; color:#666;">Aplikasi Web (AI Gemini)</div>
@@ -5416,7 +5416,7 @@
             <!-- QR 5: YouTube TVPSS -->
             <div style="text-align:center; background:#f8f9fa; border:1px solid #e0e0e0; border-radius:2mm; padding:3mm;">
                 <div style="width:28mm; height:28mm; margin:0 auto 2mm;">
-                    <img src="portfolio/img/qrcode-tvpss.png" alt="QR YouTube TVPSS" style="width:100%; height:100%; object-fit:contain;">
+                    <img src="img/qrcode-tvpss.png" alt="QR YouTube TVPSS" style="width:100%; height:100%; object-fit:contain;">
                 </div>
                 <div style="font-size:8pt; font-weight:700; color:var(--primary);">YouTube TVPSS</div>
                 <div style="font-size:6.5pt; color:#666;">89 Episod + 15 Live</div>
@@ -5426,7 +5426,7 @@
             <!-- QR 6: Blog cikguaime.com -->
             <div style="text-align:center; background:#f8f9fa; border:1px solid #e0e0e0; border-radius:2mm; padding:3mm;">
                 <div style="width:28mm; height:28mm; margin:0 auto 2mm;">
-                    <img src="portfolio/img/qrcode-cikguaimedotcom.png" alt="QR Blog cikguaime.com" style="width:100%; height:100%; object-fit:contain;">
+                    <img src="img/qrcode-cikguaimedotcom.png" alt="QR Blog cikguaime.com" style="width:100%; height:100%; object-fit:contain;">
                 </div>
                 <div style="font-size:8pt; font-weight:700; color:var(--primary);">Blog cikguaime.com</div>
                 <div style="font-size:6.5pt; color:#666;">97 Artikel Pendidikan</div>
@@ -5436,7 +5436,7 @@
             <!-- QR 7: TikTok TVPSS -->
             <div style="text-align:center; background:#f8f9fa; border:1px solid #e0e0e0; border-radius:2mm; padding:3mm;">
                 <div style="width:28mm; height:28mm; margin:0 auto 2mm;">
-                    <img src="portfolio/img/qrcode-tiktok-tvpssfiveone.png" alt="QR TikTok TVPSS" style="width:100%; height:100%; object-fit:contain;">
+                    <img src="img/qrcode-tiktok-tvpssfiveone.png" alt="QR TikTok TVPSS" style="width:100%; height:100%; object-fit:contain;">
                 </div>
                 <div style="font-size:8pt; font-weight:700; color:var(--primary);">TikTok TVPSS</div>
                 <div style="font-size:6.5pt; color:#666;">108 Video Pendidikan</div>
@@ -5446,7 +5446,7 @@
             <!-- QR 8: TikTok @ahmdaime -->
             <div style="text-align:center; background:#f8f9fa; border:1px solid #e0e0e0; border-radius:2mm; padding:3mm;">
                 <div style="width:28mm; height:28mm; margin:0 auto 2mm;">
-                    <img src="portfolio/img/qrcode-tiktok-ahmdaime.png" alt="QR TikTok @ahmdaime" style="width:100%; height:100%; object-fit:contain;">
+                    <img src="img/qrcode-tiktok-ahmdaime.png" alt="QR TikTok @ahmdaime" style="width:100%; height:100%; object-fit:contain;">
                 </div>
                 <div style="font-size:8pt; font-weight:700; color:var(--primary);">TikTok @ahmdaime</div>
                 <div style="font-size:6.5pt; color:#666;">95 Video Peribadi</div>
@@ -5456,7 +5456,7 @@
             <!-- QR 9: Kuiz Interaktif -->
             <div style="text-align:center; background:#f8f9fa; border:1px solid #e0e0e0; border-radius:2mm; padding:3mm;">
                 <div style="width:28mm; height:28mm; margin:0 auto 2mm;">
-                    <img src="portfolio/img/qrcode-kuiz-interaktif.png" alt="QR Kuiz Interaktif" style="width:100%; height:100%; object-fit:contain;">
+                    <img src="img/qrcode-kuiz-interaktif.png" alt="QR Kuiz Interaktif" style="width:100%; height:100%; object-fit:contain;">
                 </div>
                 <div style="font-size:8pt; font-weight:700; color:var(--primary);">Kuiz Interaktif</div>
                 <div style="font-size:6.5pt; color:#666;">Quizizz &amp; Google Forms</div>
@@ -5844,13 +5844,13 @@
         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3mm; margin-top: 2mm;">
             <div style="text-align: center;">
                 <div style="border: 1.5px solid #c8a84e; border-radius: 2mm; padding: 1.5mm; background: #fff; height: 24mm; display: flex; align-items: center; justify-content: center;">
-                    <img src="portfolio/img/cws-idme.png" alt="Chrome Web Store - IDME PBD Helper" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+                    <img src="img/cws-idme.png" alt="Chrome Web Store - IDME PBD Helper" style="max-width: 100%; max-height: 100%; object-fit: contain;">
                 </div>
                 <div style="font-size: 7pt; color: #64748b; margin-top: 1mm; font-weight: 500;">IDME PBD Helper: 4,592 pengguna</div>
             </div>
             <div style="text-align: center;">
                 <div style="border: 1.5px solid #c8a84e; border-radius: 2mm; padding: 1.5mm; background: #fff; height: 24mm; display: flex; align-items: center; justify-content: center;">
-                    <img src="portfolio/img/views-blog.png" alt="Statistik Blog cikguaime.com" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+                    <img src="img/views-blog.png" alt="Statistik Blog cikguaime.com" style="max-width: 100%; max-height: 100%; object-fit: contain;">
                 </div>
                 <div style="font-size: 7pt; color: #64748b; margin-top: 1mm; font-weight: 500;">Blog cikguaime.com: 3.5 juta+ pelawat</div>
             </div>
@@ -5906,19 +5906,19 @@
         <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 4mm; margin-bottom: 4mm;">
             <div style="text-align: center;">
                 <div style="border: 1.5px solid #c8a84e; border-radius: 2mm; padding: 2mm; background: #fff;">
-                    <img src="portfolio/img/program-mesra-pdpr.png" alt="Program Mesra PDPR" style="max-width: 100%; max-height: 42mm; object-fit: contain; display: block; margin: 0 auto;">
+                    <img src="img/program-mesra-pdpr.png" alt="Program Mesra PDPR" style="max-width: 100%; max-height: 42mm; object-fit: contain; display: block; margin: 0 auto;">
                 </div>
                 <div style="font-size: 7pt; color: #64748b; margin-top: 1.5mm; font-weight: 500;">Program Mesra PDPR</div>
             </div>
             <div style="text-align: center;">
                 <div style="border: 1.5px solid #c8a84e; border-radius: 2mm; padding: 2mm; background: #fff;">
-                    <img src="portfolio/img/perkongsian-malaya-heroes.png" alt="Perkongsian Malaya Heroes" style="max-width: 100%; max-height: 42mm; object-fit: contain; display: block; margin: 0 auto;">
+                    <img src="img/perkongsian-malaya-heroes.png" alt="Perkongsian Malaya Heroes" style="max-width: 100%; max-height: 42mm; object-fit: contain; display: block; margin: 0 auto;">
                 </div>
                 <div style="font-size: 7pt; color: #64748b; margin-top: 1.5mm; font-weight: 500;">Malaya Heroes</div>
             </div>
             <div style="text-align: center;">
                 <div style="border: 1.5px solid #c8a84e; border-radius: 2mm; padding: 2mm; background: #fff;">
-                    <img src="portfolio/img/perkongsian-mylink.png" alt="Perkongsian MyLink" style="max-width: 100%; max-height: 42mm; object-fit: contain; display: block; margin: 0 auto;">
+                    <img src="img/perkongsian-mylink.png" alt="Perkongsian MyLink" style="max-width: 100%; max-height: 42mm; object-fit: contain; display: block; margin: 0 auto;">
                 </div>
                 <div style="font-size: 7pt; color: #64748b; margin-top: 1.5mm; font-weight: 500;">MyLink</div>
             </div>
@@ -5952,13 +5952,13 @@
         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4mm;">
             <div style="text-align: center;">
                 <div style="border: 1.5px solid #c8a84e; border-radius: 2mm; padding: 2mm; background: #fff;">
-                    <img src="portfolio/img/penggunaan-google-workspace.png" alt="Penggunaan Google Workspace" style="max-width: 100%; max-height: 42mm; object-fit: contain; display: block; margin: 0 auto;">
+                    <img src="img/penggunaan-google-workspace.png" alt="Penggunaan Google Workspace" style="max-width: 100%; max-height: 42mm; object-fit: contain; display: block; margin: 0 auto;">
                 </div>
                 <div style="font-size: 7pt; color: #64748b; margin-top: 1.5mm; font-weight: 500;">Google Workspace</div>
             </div>
             <div style="text-align: center;">
                 <div style="border: 1.5px solid #c8a84e; border-radius: 2mm; padding: 2mm; background: #fff;">
-                    <img src="portfolio/img/penggunaan-canva.png" alt="Penggunaan Canva For Education" style="max-width: 100%; max-height: 42mm; object-fit: contain; display: block; margin: 0 auto;">
+                    <img src="img/penggunaan-canva.png" alt="Penggunaan Canva For Education" style="max-width: 100%; max-height: 42mm; object-fit: contain; display: block; margin: 0 auto;">
                 </div>
                 <div style="font-size: 7pt; color: #64748b; margin-top: 1.5mm; font-weight: 500;">Canva For Education</div>
             </div>
@@ -5996,7 +5996,7 @@
             </div>
             <div style="text-align: center;">
                 <div style="border: 1.5px solid #c8a84e; border-radius: 2mm; padding: 2mm; background: #fff;">
-                    <img src="portfolio/img/pelantikan-juri.png" alt="Sijil Pelantikan Juri" style="max-width: 100%; max-height: 70mm; object-fit: contain; display: block; margin: 0 auto;">
+                    <img src="img/pelantikan-juri.png" alt="Sijil Pelantikan Juri" style="max-width: 100%; max-height: 70mm; object-fit: contain; display: block; margin: 0 auto;">
                 </div>
                 <div style="font-size: 7pt; color: #64748b; margin-top: 1.5mm; font-weight: 500;">Sijil Pelantikan Juri</div>
             </div>
@@ -6013,7 +6013,7 @@
 
         <div style="text-align: center; margin-top: 4mm;">
             <div style="border: 1.5px solid #c8a84e; border-radius: 2mm; padding: 2mm; background: #fff; display: inline-block;">
-                <img src="portfolio/img/ukm-permata-pintar.png" alt="Bersama Murid Permata Pintar" style="max-height: 85mm; object-fit: contain;">
+                <img src="img/ukm-permata-pintar.png" alt="Bersama Murid Permata Pintar" style="max-height: 85mm; object-fit: contain;">
             </div>
             <div style="font-size: 7pt; color: #64748b; margin-top: 2mm; font-weight: 500;">Bersama murid Permata Pintar UKM (2023 &amp; 2024)</div>
         </div>
@@ -6040,37 +6040,37 @@
         <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 3mm; margin-top: 3mm;">
             <div style="text-align: center;">
                 <div style="border: 1.5px solid #c8a84e; border-radius: 2mm; padding: 2mm; background: #fff; height: 45mm; display: flex; align-items: center; justify-content: center;">
-                    <img src="portfolio/img/gambar-cjd.png" alt="CJD Top 150 Kebangsaan" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+                    <img src="img/gambar-cjd.png" alt="CJD Top 150 Kebangsaan" style="max-width: 100%; max-height: 100%; object-fit: contain;">
                 </div>
                 <div style="font-size: 7pt; color: #64748b; margin-top: 1.5mm; font-weight: 500;">CJD Top 150 Kebangsaan</div>
             </div>
             <div style="text-align: center;">
                 <div style="border: 1.5px solid #c8a84e; border-radius: 2mm; padding: 2mm; background: #fff; height: 45mm; display: flex; align-items: center; justify-content: center;">
-                    <img src="portfolio/img/sijil-gce-L1L2.png" alt="Google Certified Educator L1 & L2" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+                    <img src="img/sijil-gce-L1L2.png" alt="Google Certified Educator L1 & L2" style="max-width: 100%; max-height: 100%; object-fit: contain;">
                 </div>
                 <div style="font-size: 7pt; color: #64748b; margin-top: 1.5mm; font-weight: 500;">GCE Level 1 &amp; Level 2</div>
             </div>
             <div style="text-align: center;">
                 <div style="border: 1.5px solid #c8a84e; border-radius: 2mm; padding: 2mm; background: #fff; height: 45mm; display: flex; align-items: center; justify-content: center;">
-                    <img src="portfolio/img/sijil-classpoint.png" alt="ClassPoint Certified" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+                    <img src="img/sijil-classpoint.png" alt="ClassPoint Certified" style="max-width: 100%; max-height: 100%; object-fit: contain;">
                 </div>
                 <div style="font-size: 7pt; color: #64748b; margin-top: 1.5mm; font-weight: 500;">ClassPoint Certified</div>
             </div>
             <div style="text-align: center;">
                 <div style="border: 1.5px solid #c8a84e; border-radius: 2mm; padding: 2mm; background: #fff; height: 45mm; display: flex; align-items: center; justify-content: center;">
-                    <img src="portfolio/img/sijil-gemini.png" alt="Google Gemini" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+                    <img src="img/sijil-gemini.png" alt="Google Gemini" style="max-width: 100%; max-height: 100%; object-fit: contain;">
                 </div>
                 <div style="font-size: 7pt; color: #64748b; margin-top: 1.5mm; font-weight: 500;">Google Gemini</div>
             </div>
             <div style="text-align: center;">
                 <div style="border: 1.5px solid #c8a84e; border-radius: 2mm; padding: 2mm; background: #fff; height: 45mm; display: flex; align-items: center; justify-content: center;">
-                    <img src="portfolio/img/sijil-google-sites.png" alt="Google Sites" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+                    <img src="img/sijil-google-sites.png" alt="Google Sites" style="max-width: 100%; max-height: 100%; object-fit: contain;">
                 </div>
                 <div style="font-size: 7pt; color: #64748b; margin-top: 1.5mm; font-weight: 500;">Google Sites</div>
             </div>
             <div style="text-align: center;">
                 <div style="border: 1.5px solid #c8a84e; border-radius: 2mm; padding: 2mm; background: #fff; height: 45mm; display: flex; align-items: center; justify-content: center;">
-                    <img src="portfolio/img/sijil-schoolytics.png" alt="Schoolytics" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+                    <img src="img/sijil-schoolytics.png" alt="Schoolytics" style="max-width: 100%; max-height: 100%; object-fit: contain;">
                 </div>
                 <div style="font-size: 7pt; color: #64748b; margin-top: 1.5mm; font-weight: 500;">Schoolytics</div>
             </div>
@@ -6163,7 +6163,7 @@
         <div style="margin: 2mm -14mm 0 -14mm;">
             <div style="font-size: 8pt; font-weight: 600; color: #c8a84e; margin-bottom: 1.5mm; text-align: center;">Bukti: Ulasan Sebenar Ibu Bapa di Facebook</div>
             <div style="border: 1.5px solid #c8a84e; border-radius: 2mm; padding: 2mm; background: #fff; text-align: center;">
-                <img src="portfolio/img/ulasan-ibubapa-tvpss.png" alt="Ulasan ibu bapa di Facebook tentang TVPSS FiveOne" style="max-width: 100%; max-height: 155mm; object-fit: contain; display: block; margin: 0 auto;">
+                <img src="img/ulasan-ibubapa-tvpss.png" alt="Ulasan ibu bapa di Facebook tentang TVPSS FiveOne" style="max-width: 100%; max-height: 155mm; object-fit: contain; display: block; margin: 0 auto;">
             </div>
             <div style="font-size: 7pt; color: #64748b; margin-top: 1.5mm; text-align: center;">Ulasan ibu bapa dan komuniti di laman Facebook TVPSS SK Putrajaya Presint 5(1)</div>
         </div>
@@ -6303,13 +6303,13 @@
         <div style="display:grid; grid-template-columns:1fr 1fr; gap:3mm; margin-top: 3mm;">
             <div style="text-align:center;">
                 <div style="border:1.5px solid #c8a84e; border-radius:2mm; padding:1.5mm; background:#fff;">
-                    <img src="portfolio/img/ss-youtube-tvpss.png" alt="YouTube TVPSS FiveOne" style="max-width:100%; max-height:70mm; object-fit:contain; display:block; margin:0 auto;">
+                    <img src="img/ss-youtube-tvpss.png" alt="YouTube TVPSS FiveOne" style="max-width:100%; max-height:70mm; object-fit:contain; display:block; margin:0 auto;">
                 </div>
                 <div style="font-size:7pt; color:#64748b; margin-top:1mm; font-weight:500;">YouTube TVPSS FiveOne: 530K tontonan</div>
             </div>
             <div style="text-align:center;">
                 <div style="border:1.5px solid #c8a84e; border-radius:2mm; padding:1.5mm; background:#fff;">
-                    <img src="portfolio/img/ss-tt-tvpss.png" alt="TikTok TVPSS FiveOne" style="max-width:100%; max-height:70mm; object-fit:contain; display:block; margin:0 auto;">
+                    <img src="img/ss-tt-tvpss.png" alt="TikTok TVPSS FiveOne" style="max-width:100%; max-height:70mm; object-fit:contain; display:block; margin:0 auto;">
                 </div>
                 <div style="font-size:7pt; color:#64748b; margin-top:1mm; font-weight:500;">TikTok TVPSS FiveOne: 15.4K pengikut</div>
             </div>
@@ -6416,13 +6416,13 @@
         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4mm; margin-top: 4mm;">
             <div style="text-align: center;">
                 <div style="border: 1.5px solid #c8a84e; border-radius: 2mm; padding: 2mm; background: #fff;">
-                    <img src="portfolio/img/testimoni-extension.png" alt="Testimoni Guru - Chrome Extension" style="max-width: 100%; max-height: 45mm; object-fit: contain; display: block; margin: 0 auto;">
+                    <img src="img/testimoni-extension.png" alt="Testimoni Guru - Chrome Extension" style="max-width: 100%; max-height: 45mm; object-fit: contain; display: block; margin: 0 auto;">
                 </div>
                 <div style="font-size: 7pt; color: #64748b; margin-top: 1.5mm; font-weight: 500;">Testimoni guru pengguna extension</div>
             </div>
             <div style="text-align: center;">
                 <div style="border: 1.5px solid #c8a84e; border-radius: 2mm; padding: 2mm; background: #fff;">
-                    <img src="portfolio/img/kendali-kamera.png" alt="Murid mengendalikan kamera TVPSS" style="max-width: 100%; max-height: 45mm; object-fit: contain; display: block; margin: 0 auto;">
+                    <img src="img/kendali-kamera.png" alt="Murid mengendalikan kamera TVPSS" style="max-width: 100%; max-height: 45mm; object-fit: contain; display: block; margin: 0 auto;">
                 </div>
                 <div style="font-size: 7pt; color: #64748b; margin-top: 1.5mm; font-weight: 500;">Murid mengendalikan kamera TVPSS</div>
             </div>
@@ -6497,13 +6497,13 @@
         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3mm;">
             <div style="text-align: center;">
                 <div style="border: 1.5px solid #c8a84e; border-radius: 2mm; padding: 1.5mm; background: #fff;">
-                    <img src="portfolio/img/tvpss-sekarang.png" alt="Studio TVPSS FiveOne 2026" style="max-width: 100%; max-height: 55mm; object-fit: cover; display: block; margin: 0 auto;">
+                    <img src="img/tvpss-sekarang.png" alt="Studio TVPSS FiveOne 2026" style="max-width: 100%; max-height: 55mm; object-fit: cover; display: block; margin: 0 auto;">
                 </div>
                 <div style="font-size: 7pt; color: #64748b; margin-top: 1mm; font-weight: 500;">Studio TVPSS FiveOne: diurus sepenuhnya oleh murid</div>
             </div>
             <div style="text-align: center;">
                 <div style="border: 1.5px solid #c8a84e; border-radius: 2mm; padding: 1.5mm; background: #fff;">
-                    <img src="portfolio/img/pertandingan4.png" alt="Video Terbaik TVPSS 2024" style="max-width: 100%; max-height: 55mm; object-fit: cover; display: block; margin: 0 auto;">
+                    <img src="img/pertandingan4.png" alt="Video Terbaik TVPSS 2024" style="max-width: 100%; max-height: 55mm; object-fit: cover; display: block; margin: 0 auto;">
                 </div>
                 <div style="font-size: 7pt; color: #64748b; margin-top: 1mm; font-weight: 500;">Hasil kerja murid: Video Terbaik TVPSS 2024</div>
             </div>
@@ -7131,90 +7131,138 @@
 </div>
 
 <!-- ============================================================ -->
-<!-- BAHAGIAN 05.2  SOROTAN BUKTI DIGITAL: SIJIL TVPSS           -->
+<!-- BAHAGIAN 05.2  SOROTAN BUKTI DIGITAL: SIJIL PERTANDINGAN     -->
 <!-- ============================================================ -->
 <div class="page section-page">
     <div class="section-header">
         <div class="section-number">05.2 Sorotan Bukti Digital</div>
-        <h1 class="section-title">Sijil TVPSS &amp; Pengiktirafan Digital</h1>
+        <h1 class="section-title">Sijil Pertandingan Digital &amp; TVPSS</h1>
     </div>
     <div class="section-body">
 
         <p class="narrative" style="margin-bottom: 3mm;">
-            Sijil pencapaian utama TVPSS dan pengiktirafan digital di peringkat kebangsaan dan negeri.
+            Sijil terpilih bagi pencapaian utama berkaitan kandungan digital, TVPSS, dan inovasi teknologi pendidikan.
         </p>
 
-        <div style="display:grid; grid-template-columns:repeat(2, 1fr); gap:4mm;">
+        <div style="display:grid; grid-template-columns:repeat(3, 1fr); gap:3mm;">
             <div style="text-align:center;">
-                <div style="border:1px solid #c8a84e; border-radius:2mm; padding:3mm; background:#fff; height:95mm; display:flex; align-items:center; justify-content:center;">
-                    <img src="portfolio/img/sijil-ikon-guru-kebangsaan.png" alt="Sijil Ikon Guru TVPSS Kebangsaan 2024" style="max-width:100%; max-height:100%; object-fit:contain;">
+                <div style="border:1px solid #c8a84e; border-radius:2mm; padding:2mm; background:#fff; height:48mm; display:flex; align-items:center; justify-content:center;">
+                    <img src="img/johan-ikon-guru-kebangsaan.png" alt="Johan Ikon Guru TVPSS Kebangsaan 2024" style="max-width:100%; max-height:100%; object-fit:contain;">
                 </div>
-                <div style="font-size:9pt; color:#1e293b; margin-top:2mm; line-height:1.4; font-weight:600;">Ikon Guru TVPSS Kebangsaan 2024<br><span style="font-size:7.5pt; color:#64748b; font-weight:500;">Lampiran D1</span></div>
+                <div style="font-size:7pt; color:#94a3b8; margin-top:1.5mm; line-height:1.3;">Johan Ikon Guru TVPSS<br>Kebangsaan | 2024 | Lampiran D1</div>
             </div>
             <div style="text-align:center;">
-                <div style="border:1px solid #c8a84e; border-radius:2mm; padding:3mm; background:#fff; height:95mm; display:flex; align-items:center; justify-content:center;">
-                    <img src="portfolio/img/sijil-johan-tvpss-2023-negeri.png" alt="Sijil Johan TVPSS Negeri 2023" style="max-width:100%; max-height:100%; object-fit:contain;">
+                <div style="border:1px solid #c8a84e; border-radius:2mm; padding:2mm; background:#fff; height:48mm; display:flex; align-items:center; justify-content:center;">
+                    <img src="img/kelima-kebangsaan-video-kreatif-tvpss.png" alt="TOP 5 Video Kreatif TVPSS Kebangsaan 2024" style="max-width:100%; max-height:100%; object-fit:contain;">
                 </div>
-                <div style="font-size:9pt; color:#1e293b; margin-top:2mm; line-height:1.4; font-weight:600;">Johan TVPSS Terbaik Negeri 2023<br><span style="font-size:7.5pt; color:#64748b; font-weight:500;">Lampiran D2</span></div>
+                <div style="font-size:7pt; color:#94a3b8; margin-top:1.5mm; line-height:1.3;">TOP 5 Video Kreatif TVPSS<br>Kebangsaan | 2024 | Lampiran D2</div>
             </div>
             <div style="text-align:center;">
-                <div style="border:1px solid #c8a84e; border-radius:2mm; padding:3mm; background:#fff; height:95mm; display:flex; align-items:center; justify-content:center;">
-                    <img src="portfolio/img/sijil-ikon-guru-tvpss-negeri-2023.png" alt="Sijil Ikon Guru TVPSS Negeri 2023" style="max-width:100%; max-height:100%; object-fit:contain;">
+                <div style="border:1px solid #c8a84e; border-radius:2mm; padding:2mm; background:#fff; height:48mm; display:flex; align-items:center; justify-content:center;">
+                    <img src="img/tvpss-terbaik-2023.png" alt="Johan TVPSS Negeri WP Putrajaya 2023" style="max-width:100%; max-height:100%; object-fit:contain;">
                 </div>
-                <div style="font-size:9pt; color:#1e293b; margin-top:2mm; line-height:1.4; font-weight:600;">Ikon Guru TVPSS Negeri 2023<br><span style="font-size:7.5pt; color:#64748b; font-weight:500;">Lampiran D3</span></div>
+                <div style="font-size:7pt; color:#94a3b8; margin-top:1.5mm; line-height:1.3;">Johan TVPSS Terbaik<br>Negeri | 2023 | Lampiran D3</div>
             </div>
             <div style="text-align:center;">
-                <div style="border:1px solid #c8a84e; border-radius:2mm; padding:3mm; background:#fff; height:95mm; display:flex; align-items:center; justify-content:center;">
-                    <img src="portfolio/img/sijil-top150-cjd.png" alt="Sijil TOP 150 Cikgu Juara Digital MDEC 2023" style="max-width:100%; max-height:100%; object-fit:contain;">
+                <div style="border:1px solid #c8a84e; border-radius:2mm; padding:2mm; background:#fff; height:48mm; display:flex; align-items:center; justify-content:center;">
+                    <img src="img/anugerah-khas-juri.png" alt="Anugerah Khas Juri TikTok Kebangsaan 2024" style="max-width:100%; max-height:100%; object-fit:contain;">
                 </div>
-                <div style="font-size:9pt; color:#1e293b; margin-top:2mm; line-height:1.4; font-weight:600;">TOP 150 Cikgu Juara Digital 2023<br><span style="font-size:7.5pt; color:#64748b; font-weight:500;">Lampiran D4</span></div>
+                <div style="font-size:7pt; color:#94a3b8; margin-top:1.5mm; line-height:1.3;">Anugerah Khas Juri TikTok<br>Kebangsaan | 2024 | Lampiran D4</div>
+            </div>
+            <div style="text-align:center;">
+                <div style="border:1px solid #c8a84e; border-radius:2mm; padding:2mm; background:#fff; height:48mm; display:flex; align-items:center; justify-content:center;">
+                    <img src="img/johan-video-bantu-kebangsaan.png" alt="Johan Bantu Mula Kebangsaan" style="max-width:100%; max-height:100%; object-fit:contain;">
+                </div>
+                <div style="font-size:7pt; color:#94a3b8; margin-top:1.5mm; line-height:1.3;">Johan Bantu Mula<br>Kebangsaan | 2024 | Lampiran D5</div>
+            </div>
+            <div style="text-align:center;">
+                <div style="border:1px solid #c8a84e; border-radius:2mm; padding:2mm; background:#fff; height:48mm; display:flex; align-items:center; justify-content:center;">
+                    <img src="img/sas-international-technodrama.png" alt="Johan International Technodrama" style="max-width:100%; max-height:100%; object-fit:contain;">
+                </div>
+                <div style="font-size:7pt; color:#94a3b8; margin-top:1.5mm; line-height:1.3;">Johan International Competition<br>Antarabangsa | 2022 | Lampiran D6</div>
             </div>
         </div>
+
+        <p class="narrative" style="margin-top: 3mm;">
+            Semua sijil asal disimpan dalam fail lampiran portfolio. Setiap pencapaian disahkan melalui sijil rasmi daripada penganjur.
+        </p>
 
     </div>
     <div class="page-number">Muka Surat <span>63</span></div>
     <div class="page-footer-bar"></div>
 </div>
 
-<!-- BAHAGIAN 05.2  SIJIL PENGIKTIRAFAN & PERTANDINGAN VIDEO     -->
+<!-- ============================================================ -->
+<!-- BAHAGIAN 05.2  SIJIL PERTANDINGAN & PENSIJILAN PROFESIONAL   -->
 <!-- ============================================================ -->
 <div class="page section-page">
     <div class="section-header">
         <div class="section-number">05.2 Sorotan Bukti Digital</div>
-        <h1 class="section-title">Sijil Pengiktirafan & Pertandingan Video</h1>
+        <h1 class="section-title">Sijil Pertandingan &amp; Pensijilan Profesional</h1>
     </div>
     <div class="section-body">
 
-        <p class="narrative" style="margin-bottom: 3mm;">
-            Sijil pengiktirafan sebagai Edufluencer, Hakim Pertandingan, dan pencapaian pertandingan video.
-        </p>
+        <h3 class="subsection-title">Sijil Pertandingan (sambungan)</h3>
 
-        <div style="display:grid; grid-template-columns:repeat(2, 1fr); gap:4mm;">
+        <div style="display:grid; grid-template-columns:repeat(3, 1fr); gap:3mm; margin-bottom: 4mm;">
             <div style="text-align:center;">
-                <div style="border:1px solid #c8a84e; border-radius:2mm; padding:3mm; background:#fff; height:95mm; display:flex; align-items:center; justify-content:center;">
-                    <img src="portfolio/img/sijil-edufluencers-kpm-2022.png" alt="Sijil Edufluencers KPM 2022" style="max-width:100%; max-height:100%; object-fit:contain;">
+                <div style="border:1px solid #c8a84e; border-radius:2mm; padding:2mm; background:#fff; height:45mm; display:flex; align-items:center; justify-content:center;">
+                    <img src="img/naib-johan-video-terbaik-tvpss-2022.png" alt="Naib Johan Video Terbaik TVPSS 2022" style="max-width:100%; max-height:100%; object-fit:contain;">
                 </div>
-                <div style="font-size:9pt; color:#1e293b; margin-top:2mm; line-height:1.4; font-weight:600;">Edufluencers 2.0 KPM 2022<br><span style="font-size:7.5pt; color:#64748b; font-weight:500;">Lampiran D5</span></div>
+                <div style="font-size:7pt; color:#94a3b8; margin-top:1.5mm; line-height:1.3;">Naib Johan Video Terbaik TVPSS<br>Negeri | 2022 | Lampiran D7</div>
             </div>
             <div style="text-align:center;">
-                <div style="border:1px solid #c8a84e; border-radius:2mm; padding:3mm; background:#fff; height:95mm; display:flex; align-items:center; justify-content:center;">
-                    <img src="portfolio/img/sijil-edufluencers-kpm-2023.png" alt="Sijil Edufluencers KPM 2023" style="max-width:100%; max-height:100%; object-fit:contain;">
+                <div style="border:1px solid #c8a84e; border-radius:2mm; padding:2mm; background:#fff; height:45mm; display:flex; align-items:center; justify-content:center;">
+                    <img src="img/naib-johan-video-kreatif-2025.png" alt="Naib Johan Video Kreatif 2025" style="max-width:100%; max-height:100%; object-fit:contain;">
                 </div>
-                <div style="font-size:9pt; color:#1e293b; margin-top:2mm; line-height:1.4; font-weight:600;">Edufluencer KPM Putrajaya 2023<br><span style="font-size:7.5pt; color:#64748b; font-weight:500;">Lampiran D6</span></div>
+                <div style="font-size:7pt; color:#94a3b8; margin-top:1.5mm; line-height:1.3;">Naib Johan Video Kreatif<br>Kebangsaan | 2025 | Lampiran D8</div>
             </div>
             <div style="text-align:center;">
-                <div style="border:1px solid #c8a84e; border-radius:2mm; padding:3mm; background:#fff; height:95mm; display:flex; align-items:center; justify-content:center;">
-                    <img src="portfolio/img/sijil-hakim-pertandingan-cipta-video-sikubest-kebangsaan.png" alt="Sijil Hakim Pertandingan Video Kebangsaan 2023" style="max-width:100%; max-height:100%; object-fit:contain;">
+                <div style="border:1px solid #c8a84e; border-radius:2mm; padding:2mm; background:#fff; height:45mm; display:flex; align-items:center; justify-content:center;">
+                    <img src="img/johan-suntingan-video.png" alt="Johan Suntingan Video" style="max-width:100%; max-height:100%; object-fit:contain;">
                 </div>
-                <div style="font-size:9pt; color:#1e293b; margin-top:2mm; line-height:1.4; font-weight:600;">Hakim Pertandingan Video Kebangsaan 2023<br><span style="font-size:7.5pt; color:#64748b; font-weight:500;">Lampiran D7</span></div>
-            </div>
-            <div style="text-align:center;">
-                <div style="border:1px solid #c8a84e; border-radius:2mm; padding:3mm; background:#fff; height:95mm; display:flex; align-items:center; justify-content:center;">
-                    <img src="portfolio/img/sijil-pertandingan-video-tvpss-negeri-2023.png" alt="Sijil Naib Johan Video TVPSS Negeri 2023" style="max-width:100%; max-height:100%; object-fit:contain;">
-                </div>
-                <div style="font-size:9pt; color:#1e293b; margin-top:2mm; line-height:1.4; font-weight:600;">Naib Johan Video TVPSS Negeri 2023<br><span style="font-size:7.5pt; color:#64748b; font-weight:500;">Lampiran D8</span></div>
+                <div style="font-size:7pt; color:#94a3b8; margin-top:1.5mm; line-height:1.3;">Johan Suntingan Video<br>Negeri | 2024 | Lampiran D9</div>
             </div>
         </div>
+
+        <h3 class="subsection-title">Pensijilan Profesional Digital</h3>
+
+        <div style="display:grid; grid-template-columns:repeat(5, 1fr); gap:2mm; margin-bottom: 3mm;">
+            <div style="text-align:center;">
+                <div style="border:1px solid #334155; border-radius:2mm; padding:1.5mm; background:#fff; height:34mm; display:flex; align-items:center; justify-content:center;">
+                    <img src="img/sijil-gce-L1L2.png" alt="Google Certified Educator L1 &amp; L2" style="max-width:100%; max-height:100%; object-fit:contain;">
+                </div>
+                <div style="font-size:6.5pt; color:#94a3b8; margin-top:1mm; line-height:1.3;">Google Certified<br>Educator L1 &amp; L2</div>
+            </div>
+            <div style="text-align:center;">
+                <div style="border:1px solid #334155; border-radius:2mm; padding:1.5mm; background:#fff; height:34mm; display:flex; align-items:center; justify-content:center;">
+                    <img src="img/sijil-gemini.png" alt="Google Gemini Academy" style="max-width:100%; max-height:100%; object-fit:contain;">
+                </div>
+                <div style="font-size:6.5pt; color:#94a3b8; margin-top:1mm; line-height:1.3;">Google Gemini<br>Academy</div>
+            </div>
+            <div style="text-align:center;">
+                <div style="border:1px solid #334155; border-radius:2mm; padding:1.5mm; background:#fff; height:34mm; display:flex; align-items:center; justify-content:center;">
+                    <img src="img/sijil-classpoint.png" alt="ClassPoint Certified" style="max-width:100%; max-height:100%; object-fit:contain;">
+                </div>
+                <div style="font-size:6.5pt; color:#94a3b8; margin-top:1mm; line-height:1.3;">ClassPoint<br>Certified</div>
+            </div>
+            <div style="text-align:center;">
+                <div style="border:1px solid #334155; border-radius:2mm; padding:1.5mm; background:#fff; height:34mm; display:flex; align-items:center; justify-content:center;">
+                    <img src="img/sijil-schoolytics.png" alt="Schoolytics Certified" style="max-width:100%; max-height:100%; object-fit:contain;">
+                </div>
+                <div style="font-size:6.5pt; color:#94a3b8; margin-top:1mm; line-height:1.3;">Schoolytics<br>Certified</div>
+            </div>
+            <div style="text-align:center;">
+                <div style="border:1px solid #334155; border-radius:2mm; padding:1.5mm; background:#fff; height:34mm; display:flex; align-items:center; justify-content:center;">
+                    <img src="img/sijil-google-sites.png" alt="Google Sites Certified" style="max-width:100%; max-height:100%; object-fit:contain;">
+                </div>
+                <div style="font-size:6.5pt; color:#94a3b8; margin-top:1mm; line-height:1.3;">Google Sites<br>Certified</div>
+            </div>
+        </div>
+
+        <p class="narrative">
+            Pensijilan profesional di atas menunjukkan komitmen calon untuk meningkatkan kemahiran digital secara berterusan. Kesemua pensijilan diperoleh melalui kursus dalam talian yang diiktiraf dan berkaitan langsung dengan penghasilan kandungan digital pendidikan.
+        </p>
 
     </div>
     <div class="page-number">Muka Surat <span>64</span></div>
@@ -7222,165 +7270,6 @@
 </div>
 
 <!-- ============================================================ -->
-<!-- BAHAGIAN 05.2  SIJIL INOVASI DIGITAL & PENYERTAAN           -->
-<!-- ============================================================ -->
-<div class="page section-page">
-    <div class="section-header">
-        <div class="section-number">05.2 Sorotan Bukti Digital</div>
-        <h1 class="section-title">Sijil Inovasi Digital & Penyertaan</h1>
-    </div>
-    <div class="section-body">
-
-        <p class="narrative" style="margin-bottom: 3mm;">
-            Sijil inovasi digital, poster, pameran, dan penyertaan pertandingan media kreatif.
-        </p>
-
-        <div style="display:grid; grid-template-columns:repeat(2, 1fr); gap:4mm;">
-            <div style="text-align:center;">
-                <div style="border:1px solid #c8a84e; border-radius:2mm; padding:3mm; background:#fff; height:95mm; display:flex; align-items:center; justify-content:center;">
-                    <img src="portfolio/img/sijil-anugerah-emas-inovasi-antarabangsa.png" alt="Sijil Anugerah Emas Inovasi Antarabangsa" style="max-width:100%; max-height:100%; object-fit:contain;">
-                </div>
-                <div style="font-size:9pt; color:#1e293b; margin-top:2mm; line-height:1.4; font-weight:600;">Anugerah Emas Inovasi Antarabangsa 2019<br><span style="font-size:7.5pt; color:#64748b; font-weight:500;">Lampiran D9</span></div>
-            </div>
-            <div style="text-align:center;">
-                <div style="border:1px solid #c8a84e; border-radius:2mm; padding:3mm; background:#fff; height:95mm; display:flex; align-items:center; justify-content:center;">
-                    <img src="portfolio/img/sijil-anugerah-emas-poster-digital-kajian-tindakan.png" alt="Sijil Anugerah Emas Poster Digital" style="max-width:100%; max-height:100%; object-fit:contain;">
-                </div>
-                <div style="font-size:9pt; color:#1e293b; margin-top:2mm; line-height:1.4; font-weight:600;">Anugerah Emas Poster Digital 2021<br><span style="font-size:7.5pt; color:#64748b; font-weight:500;">Lampiran D10</span></div>
-            </div>
-            <div style="text-align:center;">
-                <div style="border:1px solid #c8a84e; border-radius:2mm; padding:3mm; background:#fff; height:95mm; display:flex; align-items:center; justify-content:center;">
-                    <img src="portfolio/img/sijil-anugerah-perak-inovasi-pendigital-negeri-2023.png" alt="Sijil Anugerah Perak Inovasi Pendigital" style="max-width:100%; max-height:100%; object-fit:contain;">
-                </div>
-                <div style="font-size:9pt; color:#1e293b; margin-top:2mm; line-height:1.4; font-weight:600;">Anugerah Perak Inovasi Pendigital 2023<br><span style="font-size:7.5pt; color:#64748b; font-weight:500;">Lampiran D11</span></div>
-            </div>
-            <div style="text-align:center;">
-                <div style="border:1px solid #c8a84e; border-radius:2mm; padding:3mm; background:#fff; height:95mm; display:flex; align-items:center; justify-content:center;">
-                    <img src="portfolio/img/sijil-pameran-tvpss-showcase-pendidikan.png" alt="Sijil Pameran TVPSS Showcase" style="max-width:100%; max-height:100%; object-fit:contain;">
-                </div>
-                <div style="font-size:9pt; color:#1e293b; margin-top:2mm; line-height:1.4; font-weight:600;">Pameran TVPSS Showcase Pendidikan 2022<br><span style="font-size:7.5pt; color:#64748b; font-weight:500;">Lampiran D12</span></div>
-            </div>
-        </div>
-
-    </div>
-    <div class="page-number">Muka Surat <span>65</span></div>
-    <div class="page-footer-bar"></div>
-</div>
-
-<!-- ============================================================ -->
-<!-- BAHAGIAN 05.2  SIJIL PENYERTAAN & MEDIA KREATIF             -->
-<!-- ============================================================ -->
-<div class="page section-page">
-    <div class="section-header">
-        <div class="section-number">05.2 Sorotan Bukti Digital</div>
-        <h1 class="section-title">Sijil Penyertaan & Media Kreatif</h1>
-    </div>
-    <div class="section-body">
-
-        <p class="narrative" style="margin-bottom: 3mm;">
-            Sijil penyertaan pertandingan video, dokumentari, lagu, fotografi, dan kajian tindakan digital.
-        </p>
-
-        <div style="display:grid; grid-template-columns:repeat(2, 1fr); gap:4mm;">
-            <div style="text-align:center;">
-                <div style="border:1px solid #c8a84e; border-radius:2mm; padding:3mm; background:#fff; height:95mm; display:flex; align-items:center; justify-content:center;">
-                    <img src="portfolio/img/sijil-mini-documentary.png" alt="Sijil Mini Documentary" style="max-width:100%; max-height:100%; object-fit:contain;">
-                </div>
-                <div style="font-size:9pt; color:#1e293b; margin-top:2mm; line-height:1.4; font-weight:600;">Penyertaan Mini Documentary 2022<br><span style="font-size:7.5pt; color:#64748b; font-weight:500;">Lampiran D13</span></div>
-            </div>
-            <div style="text-align:center;">
-                <div style="border:1px solid #c8a84e; border-radius:2mm; padding:3mm; background:#fff; height:95mm; display:flex; align-items:center; justify-content:center;">
-                    <img src="portfolio/img/sijil-merekacipta-lagu-dan-puisi.png" alt="Sijil Merekacipta Lagu dan Puisi" style="max-width:100%; max-height:100%; object-fit:contain;">
-                </div>
-                <div style="font-size:9pt; color:#1e293b; margin-top:2mm; line-height:1.4; font-weight:600;">Penyertaan Merekacipta Lagu & Puisi 2023<br><span style="font-size:7.5pt; color:#64748b; font-weight:500;">Lampiran D14</span></div>
-            </div>
-            <div style="text-align:center;">
-                <div style="border:1px solid #c8a84e; border-radius:2mm; padding:3mm; background:#fff; height:95mm; display:flex; align-items:center; justify-content:center;">
-                    <img src="portfolio/img/sijil-fotografi-pengukuhan-bakat-sukan.png" alt="Sijil Fotografi" style="max-width:100%; max-height:100%; object-fit:contain;">
-                </div>
-                <div style="font-size:9pt; color:#1e293b; margin-top:2mm; line-height:1.4; font-weight:600;">Fotografi Pengukuhan Bakat Sukan 2022<br><span style="font-size:7.5pt; color:#64748b; font-weight:500;">Lampiran D15</span></div>
-            </div>
-            <div style="text-align:center;">
-                <div style="border:1px solid #c8a84e; border-radius:2mm; padding:3mm; background:#fff; height:95mm; display:flex; align-items:center; justify-content:center;">
-                    <img src="portfolio/img/sijil-penyertaan-kajian-tindakan.png" alt="Sijil Kajian Tindakan" style="max-width:100%; max-height:100%; object-fit:contain;">
-                </div>
-                <div style="font-size:9pt; color:#1e293b; margin-top:2mm; line-height:1.4; font-weight:600;">Penyertaan Kajian Tindakan Digital<br><span style="font-size:7.5pt; color:#64748b; font-weight:500;">Lampiran D16</span></div>
-            </div>
-        </div>
-
-    </div>
-    <div class="page-number">Muka Surat <span>66</span></div>
-    <div class="page-footer-bar"></div>
-</div>
-
-<!-- ============================================================ -->
-<!-- BAHAGIAN 05.2  PENSIJILAN PROFESIONAL DIGITAL               -->
-<!-- ============================================================ -->
-<div class="page section-page">
-    <div class="section-header">
-        <div class="section-number">05.2 Sorotan Bukti Digital</div>
-        <h1 class="section-title">Pensijilan Profesional Digital</h1>
-    </div>
-    <div class="section-body">
-
-        <p class="narrative" style="margin-bottom: 3mm;">
-            Pensijilan profesional yang diperoleh untuk meningkatkan kemahiran digital dalam penghasilan kandungan pendidikan.
-        </p>
-
-        <div style="display:grid; grid-template-columns:repeat(2, 1fr); gap:4mm; margin-bottom: 4mm;">
-            <div style="text-align:center;">
-                <div style="border:1px solid #334155; border-radius:2mm; padding:3mm; background:#fff; height:75mm; display:flex; align-items:center; justify-content:center;">
-                    <img src="portfolio/img/sijil-gce-L1L2.png" alt="Google Certified Educator L1 & L2" style="max-width:100%; max-height:100%; object-fit:contain;">
-                </div>
-                <div style="font-size:9pt; color:#1e293b; margin-top:2mm; line-height:1.4; font-weight:600;">Google Certified Educator L1 & L2<br><span style="font-size:7.5pt; color:#64748b; font-weight:500;">Pensijilan Profesional</span></div>
-            </div>
-            <div style="text-align:center;">
-                <div style="border:1px solid #334155; border-radius:2mm; padding:3mm; background:#fff; height:75mm; display:flex; align-items:center; justify-content:center;">
-                    <img src="portfolio/img/sijil-gemini.png" alt="Google Gemini Academy" style="max-width:100%; max-height:100%; object-fit:contain;">
-                </div>
-                <div style="font-size:9pt; color:#1e293b; margin-top:2mm; line-height:1.4; font-weight:600;">Google Gemini Academy<br><span style="font-size:7.5pt; color:#64748b; font-weight:500;">Pensijilan Profesional</span></div>
-            </div>
-            <div style="text-align:center;">
-                <div style="border:1px solid #334155; border-radius:2mm; padding:3mm; background:#fff; height:75mm; display:flex; align-items:center; justify-content:center;">
-                    <img src="portfolio/img/sijil-classpoint.png" alt="ClassPoint Certified" style="max-width:100%; max-height:100%; object-fit:contain;">
-                </div>
-                <div style="font-size:9pt; color:#1e293b; margin-top:2mm; line-height:1.4; font-weight:600;">ClassPoint Certified<br><span style="font-size:7.5pt; color:#64748b; font-weight:500;">Pensijilan Profesional</span></div>
-            </div>
-            <div style="text-align:center;">
-                <div style="border:1px solid #334155; border-radius:2mm; padding:3mm; background:#fff; height:75mm; display:flex; align-items:center; justify-content:center;">
-                    <img src="portfolio/img/sijil-schoolytics.png" alt="Schoolytics Certified" style="max-width:100%; max-height:100%; object-fit:contain;">
-                </div>
-                <div style="font-size:9pt; color:#1e293b; margin-top:2mm; line-height:1.4; font-weight:600;">Schoolytics Certified<br><span style="font-size:7.5pt; color:#64748b; font-weight:500;">Pensijilan Profesional</span></div>
-            </div>
-        </div>
-
-        <div style="display:grid; grid-template-columns:repeat(3, 1fr); gap:4mm;">
-            <div style="text-align:center;">
-                <div style="border:1px solid #334155; border-radius:2mm; padding:3mm; background:#fff; height:60mm; display:flex; align-items:center; justify-content:center;">
-                    <img src="portfolio/img/sijil-google-sites.png" alt="Google Sites Certified" style="max-width:100%; max-height:100%; object-fit:contain;">
-                </div>
-                <div style="font-size:9pt; color:#1e293b; margin-top:2mm; line-height:1.4; font-weight:600;">Google Sites<br><span style="font-size:7.5pt; color:#64748b; font-weight:500;">Pensijilan Profesional</span></div>
-            </div>
-            <div style="text-align:center;">
-                <div style="border:1px solid #334155; border-radius:2mm; padding:3mm; background:#fff; height:60mm; display:flex; align-items:center; justify-content:center;">
-                    <img src="portfolio/img/sijil-adobe-indesign.png" alt="Adobe InDesign" style="max-width:100%; max-height:100%; object-fit:contain;">
-                </div>
-                <div style="font-size:9pt; color:#1e293b; margin-top:2mm; line-height:1.4; font-weight:600;">Adobe InDesign<br><span style="font-size:7.5pt; color:#64748b; font-weight:500;">Pensijilan Profesional</span></div>
-            </div>
-            <div style="text-align:center;">
-                <div style="border:1px solid #334155; border-radius:2mm; padding:3mm; background:#fff; height:60mm; display:flex; align-items:center; justify-content:center;">
-                    <img src="portfolio/img/sijil-autodesk-maya.png" alt="Autodesk Maya" style="max-width:100%; max-height:100%; object-fit:contain;">
-                </div>
-                <div style="font-size:9pt; color:#1e293b; margin-top:2mm; line-height:1.4; font-weight:600;">Autodesk Maya<br><span style="font-size:7.5pt; color:#64748b; font-weight:500;">Pensijilan Profesional</span></div>
-            </div>
-        </div>
-
-    </div>
-    <div class="page-number">Muka Surat <span>67</span></div>
-    <div class="page-footer-bar"></div>
-</div>
-
-
 <!-- BAHAGIAN 05.3  VERIFIKASI DOKUMEN                            -->
 <!-- ============================================================ -->
 <div class="page section-page">
@@ -7528,7 +7417,7 @@
         </div>
 
     </div>
-    <div class="page-number">Muka Surat <span>68</span></div>
+    <div class="page-number">Muka Surat <span>65</span></div>
     <div class="page-footer-bar"></div>
 </div>
 
@@ -7631,7 +7520,7 @@
         </table>
 
     </div>
-    <div class="page-number">Muka Surat <span>69</span></div>
+    <div class="page-number">Muka Surat <span>66</span></div>
     <div class="page-footer-bar"></div>
 </div>
 
@@ -7716,7 +7605,7 @@
         </p>
 
     </div>
-    <div class="page-number">Muka Surat <span>70</span></div>
+    <div class="page-number">Muka Surat <span>67</span></div>
     <div class="page-footer-bar"></div>
 </div>
 
@@ -7770,7 +7659,7 @@
         </p>
 
     </div>
-    <div class="page-number">Muka Surat <span>71</span></div>
+    <div class="page-number">Muka Surat <span>68</span></div>
     <div class="page-footer-bar"></div>
 </div>
 
@@ -7883,7 +7772,7 @@
         </div>
 
     </div>
-    <div class="page-number">Muka Surat <span>72</span></div>
+    <div class="page-number">Muka Surat <span>69</span></div>
     <div class="page-footer-bar"></div>
 </div>
 
@@ -7937,7 +7826,7 @@
             <div style="background: var(--bg-light); border-radius: 8px; padding: 8px; display: flex; flex-direction: column;">
                 <div style="font-size: 10px; font-weight: 700; color: var(--primary); margin-bottom: 6px; text-align: center;">Bukti: Polisi Privasi di Chrome Web Store</div>
                 <div style="flex: 1; display: flex; align-items: center; justify-content: center; background: white; border-radius: 6px; border: 1px solid #e0e0e0; min-height: 100px;">
-                    <img src="portfolio/img/polisi-privasi-chrome.png" alt="Screenshot Polisi Privasi Chrome Web Store" style="max-width: 100%; max-height: 120px; object-fit: contain;">
+                    <img src="img/polisi-privasi-chrome.png" alt="Screenshot Polisi Privasi Chrome Web Store" style="max-width: 100%; max-height: 120px; object-fit: contain;">
                 </div>
                 <div style="font-size: 8px; color: #666; text-align: center; margin-top: 4px;">Halaman Privacy Policy IDME PBD Helper</div>
             </div>
@@ -8010,7 +7899,7 @@
         </div>
     </div>
 
-    <div class="page-number">Muka Surat <span>73</span></div>
+    <div class="page-number">Muka Surat <span>70</span></div>
     <div class="page-footer-bar"></div>
 </div>
 

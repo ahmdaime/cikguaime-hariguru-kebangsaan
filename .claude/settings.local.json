@@ -61,7 +61,8 @@
       "mcp__playwright__browser_resize",
       "mcp__playwright__browser_run_code",
       "mcp__playwright__browser_close",
-      "Bash(del \"F:\\\\Koleksi Coding\\\\anugerah-hari-guru-kebangsaan\\\\bahagian05-new.html\")"
+      "Bash(del \"F:\\\\Koleksi Coding\\\\anugerah-hari-guru-kebangsaan\\\\bahagian05-new.html\")",
+      "Bash(python:*)"
     ]
   }
 }

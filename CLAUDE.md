@@ -4,17 +4,37 @@
 
 Portfolio digital untuk pencalonan **Anugerah Khas Pencipta Kandungan Digital**, Hari Guru Peringkat Kebangsaan 2026. Calon: Ahmad Aiman Bin Mohamed (Cikgu Aime), SK Putrajaya Presint 5(1).
 
-## Status Semasa (14 Feb 2026)
+## Status Semasa (15 Feb 2026)
 
-- **Jumlah halaman**: 70 bernombor + Cover + 6 dividers
-- **Gambar**: 76+ gambar telah dimasukkan
+- **Jumlah halaman**: 73 bernombor + Cover + 6 dividers
+- **Gambar**: 99+ gambar telah dimasukkan (termasuk 23 gambar sijil baharu)
+- **Bahagian Sijil (ms 63-71)**: Lengkap dengan 19 sijil digital (TVPSS, Pengiktirafan, Inovasi, Penyertaan)
 - **Bahagian TVPSS FiveOne**: Lengkap dengan liputan, pertandingan, pencapaian, dan collage
 - **Bahagian Blog cikguaime.com**: Lengkap dengan statistik, artikel berimpak tinggi, dan kedudukan carian Google
-- **Semakan fakta**: Selesai (89 episod TVPSS, 15.5M+ tontonan, 14,900+ guru pengguna)
+- **Semakan fakta TVPSS 2024**: Selesai - "Ikon Guru TVPSS Kebangsaan 2024" (bukan "Johan"), "Nombor 5 Kebangsaan" Video Kreatif
+- **Data disahkan**: 89 episod TVPSS, 15.5M+ tontonan, 14,900+ guru pengguna
 - **QR Codes**: Halaman baharu (ms 45) untuk akses pantas kepada demo interaktif
-- **Data disahkan**: Kunjungan blog 50K/bulan, MOIES 10 min→1 min, episod 2022-2025 lengkap
+- **ISI KANDUNGAN**: Dikemaskini dengan nombor halaman yang betul (Bahagian 05: ms 61-71, Video: ms 72, Etika: ms 73)
 
-## Perubahan Terkini (14 Feb 2026)
+## Perubahan Terkini (15 Feb 2026)
+
+### Sesi 15 Feb 2026 (Pagi - Restructure Sijil)
+1. **Bahagian 05 (ms 63-67)**: Restructure lengkap bahagian sijil digital
+   - **Ms 63**: Sijil TVPSS & Pengiktirafan Digital (4 sijil, 2 lajur, 95mm height)
+   - **Ms 64**: Sijil Pengiktirafan & Pertandingan Video (4 sijil, 2 lajur, 95mm height)
+   - **Ms 65**: Sijil Inovasi Digital & Penyertaan (4 sijil, 2 lajur, 95mm height)
+   - **Ms 66**: Sijil Penyertaan & Media Kreatif (7 sijil, 3 lajur, 95mm height)
+   - **Ms 67**: Kosong (template tidak lengkap, diterima pengguna)
+2. **19 gambar sijil** dimasukkan dengan saiz yang jelas untuk juri (95mm height)
+3. **Caption sijil**: Warna gelap (#1e293b, 9pt, font-weight 600) untuk keterbacaan
+4. **Pembetulan fakta TVPSS 2024**:
+   - Betulkan "Johan Ikon Guru TVPSS Kebangsaan 2024" → **"Ikon Guru TVPSS Kebangsaan 2024"** (12+ lokasi)
+   - Betulkan "Tempat Kelima/TOP 5" → **"Nombor 5 Kebangsaan - Pertandingan Video Kreatif TVPSS 2024"**
+5. **ISI KANDUNGAN**: Kemaskini pemetaan "Sijil & Pencapaian (ms 61-71)", "Video Persembahan (ms 72)", "Etika & Privasi (ms 73)"
+6. **Renumber**: Semua halaman dikemaskini (+3 mukasurat baharu dari 70 → 73 halaman)
+7. **Restore pages 32-34**: Dipulihkan dari backup selepas kesilapan ubah gambar di mukasurat yang salah
+
+### Sesi 14 Feb 2026
 
 ### Sesi 14 Feb 2026
 1. **Bahagian 04 (ms 48-60)**: Susun semula mengikut urutan C1→C2→C3. Asal: C1→C3→C2 bercampur
@@ -50,11 +70,11 @@ Portfolio digital untuk pencalonan **Anugerah Khas Pencipta Kandungan Digital**,
 
 ## Struktur Fail
 
-- `portfolio/portfolio.html` — Fail utama portfolio (satu fail HTML + CSS inline, 70 halaman bernombor)
+- `portfolio/portfolio.html` — Fail utama portfolio (satu fail HTML + CSS inline, 73 halaman bernombor)
 - `index.html` — Salinan untuk GitHub Pages (MESTI sync selepas setiap perubahan)
-- `portfolio/img/` — Semua gambar portfolio
+- `portfolio/img/` — Semua gambar portfolio (termasuk 19 gambar sijil)
 
-## Struktur Portfolio (70 halaman bernombor)
+## Struktur Portfolio (73 halaman bernombor)
 
 | Bahagian | Halaman | Kandungan |
 |----------|---------|-----------|
@@ -65,9 +85,9 @@ Portfolio digital untuk pencalonan **Anugerah Khas Pencipta Kandungan Digital**,
 | 02 Katalog Kandungan | 6-39 | Extensions, Apps, TVPSS, Blog, Kedudukan Carian Google, Ekosistem |
 | 03 Demo & Bukti | 40-47 | Antaramuka, QR Codes (ms 45), rating 5.0★, testimoni, senarai semak kualiti |
 | 04 Sumbangan & Impak | 48-60 | C1: Sumbangan (48-54), C2: Impak (55-57), C3: Keberlanjutan (58-60) |
-| 05 Sijil & Pencapaian | 61-68 | 76 pencapaian, sijil, trend |
-| Video Persembahan (E) | 69 | Preview video 3 minit, storyboard, kriteria E1-E3 |
-| 06 Etika & Privasi | 70 | Privasi data, hak cipta, keselamatan, AI beretika |
+| 05 Sijil & Pencapaian | 61-71 | 19 sijil digital (ms 63-66), 76 pencapaian, verifikasi dokumen, trend |
+| Video Persembahan (E) | 72 | Preview video 3 minit, storyboard, kriteria E1-E3 |
+| 06 Etika & Privasi | 73 | Privasi data, hak cipta, keselamatan, AI beretika |
 
 **Nota:** Setiap bahagian bermula dengan halaman divider (tanpa nombor).
 
@@ -130,6 +150,24 @@ Portfolio digital untuk pencalonan **Anugerah Khas Pencipta Kandungan Digital**,
 - **Episod TVPSS YouTube**: 2022 (22) + 2023 (24) + 2024 (19) + 2025 (24) = 89 episod
 - **Pencapaian TikTok**: ~15M tontonan, 5 pertandingan, 2 anugerah
 - **Murid mencuba kuiz**: 2,000+
+
+## Pencapaian TVPSS 2024 (PENTING - Fakta Disahkan)
+
+Pada tahun 2024, terdapat **DUA anugerah TVPSS yang berasingan**:
+
+1. **Ikon Guru TVPSS Kebangsaan 2024**
+   - Anugerah untuk **guru** (Ahmad Aiman Bin Mohamed)
+   - **BUKAN** "Johan Ikon Guru" - tiada perkataan "Johan"
+   - Pengiktirafan peribadi untuk pengurusan TVPSS dan penerbitan kandungan
+
+2. **Nombor 5 Kebangsaan - Pertandingan Video Kreatif TVPSS 2024**
+   - Anugerah untuk **video yang dihasilkan murid dengan kerjasama guru**
+   - Pertandingan Video Kreatif peringkat kebangsaan
+   - Kedudukan: Nombor 5 Kebangsaan (bukan "Johan", bukan "Tempat Kelima")
+
+**Progression TVPSS yang betul:**
+- 2023: Johan TVPSS Negeri Putrajaya
+- 2024: Ikon Guru TVPSS Kebangsaan 2024 (guru) + Nombor 5 Kebangsaan Video Kreatif (murid+guru)
 
 ## Sync index.html
 
