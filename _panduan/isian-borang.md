@@ -49,9 +49,8 @@
 | 1 | Platinum Award (Tempat Ketiga) — SAS International Techno Drama (130 sekolah Asia Tenggara, membimbing murid) | Drama / Video | 2025 | SAS International |
 | 2 | Best Actress Award — SAS International Techno Drama (murid bimbingan) | Drama / Video | 2025 | SAS International |
 | 3 | Best Poster Award — SAS International Techno Drama (murid bimbingan) | Reka Bentuk Visual | 2025 | SAS International |
-| 4 | Johan International Junior War Cry (membimbing pasukan murid) | TKRS / Badan Beruniform | 2024 | TKRS Antarabangsa |
-| 5 | Pensijilan Google Certified Educator Level 1 & Level 2 | Teknologi Pendidikan | 2024 | Google for Education |
-| 6 | Johan International Junior War Cry (membimbing pasukan murid) | TKRS / Badan Beruniform | 2023 | TKRS Antarabangsa |
+| 4 | Pensijilan Google Certified Educator Level 1 & Level 2 | Teknologi Pendidikan | 2024 | Google for Education |
+| 5 | 3× Johan International Junior War Cry — Kategori Trainer Lelaki, PPIM, Pengakap (membimbing pasukan murid, sumbangan rakaman video) | TKRS / Badan Beruniform | 2022 | TKRS Antarabangsa |
 
 ### Kebangsaan (3 slot — cadangan tambah baris kerana lebih dari 3)
 
@@ -64,7 +63,6 @@
 | 5 | Ketiga Video Bantu Mula BSMM Kebangsaan — Kategori Lelaki (membimbing murid) | Video / BSMM | 2024 | BSMM / KPM |
 | 6 | TOP 150 Cikgu Juara Digital | Inovasi Digital | 2023 | MDEC |
 | 7 | Hakim Pertandingan Reka Cipta Video Sifirku Best Kebangsaan | Video / Penilaian | 2023 | KPM |
-| 8 | TOP 10 Petronas Science Drama (membimbing murid) | STEM / Drama | 2023 | PETRONAS / KPM |
 
 > **Nota:** Borang asal hanya 3 baris Kebangsaan. Cadangan: Masukkan #1–3 dalam borang, selebihnya lampirkan sebagai jadual tambahan.
 
@@ -257,7 +255,7 @@ Ahmad Aiman bukan sekadar pencipta kandungan, tetapi telah membina satu kitaran 
 
 **5. Pencapaian Merentas Bidang: Bukan Sekadar Digital**
 
-Walaupun calon dicalonkan untuk Anugerah Pencipta Kandungan Digital, beliau turut membimbing murid ke 80 pencapaian merentas pelbagai bidang, termasuk 21 tempat Johan, dalam bidang TKRS (3 kali Johan Junior War Cry Antarabangsa), Drama (Platinum Award SAS International Techno Drama 2025, 130 sekolah Asia Tenggara), dan STEM (TOP 10 Petronas Science Drama Kebangsaan). Ini membuktikan bahawa kemahiran digital beliau bukan terasing, tetapi disepadukan ke dalam pembangunan murid yang menyeluruh.
+Walaupun calon dicalonkan untuk Anugerah Pencipta Kandungan Digital, beliau turut membimbing murid ke 76 pencapaian merentas pelbagai bidang, termasuk 19 tempat Johan, dalam bidang TKRS (3 kali Johan Junior War Cry Antarabangsa), Drama (Platinum Award SAS International Techno Drama 2025, 130 sekolah Asia Tenggara), dan STEM. Ini membuktikan bahawa kemahiran digital beliau bukan terasing, tetapi disepadukan ke dalam pembangunan murid yang menyeluruh.
 
 ---
 
@@ -291,7 +289,7 @@ Ahmad Aiman merupakan guru yang menunjukkan komitmen dan inisiatif luar biasa da
 
 Di peringkat sekolah, beliau menubuhkan Studio TVPSS FiveOne yang menghasilkan 89 episod video pendidikan di YouTube. Keunikan pendekatan beliau ialah murid diberikan tanggungjawab penuh untuk meneraju penerbitan, membina kemahiran penggambaran, suntingan, dan penyiaran dalam kalangan murid sekolah rendah. Model ini telah menarik lawatan penanda aras daripada empat buah sekolah luar.
 
-Pencapaian beliau diiktiraf di peringkat kebangsaan melalui Ikon Guru TVPSS Kebangsaan 2024, TOP 150 Cikgu Juara Digital 2023 (MDEC), dan Anugerah Khas Juri Tanda Suka Tertinggi TikTok Keselamatan Jalan Raya Peringkat Kebangsaan 2025 (JPJ). Selain bidang digital, beliau turut membimbing murid meraih 80 pencapaian dalam pelbagai bidang, termasuk 21 Johan, merangkumi peringkat antarabangsa, kebangsaan, dan negeri.
+Pencapaian beliau diiktiraf di peringkat kebangsaan melalui Ikon Guru TVPSS Kebangsaan 2024, TOP 150 Cikgu Juara Digital 2023 (MDEC), dan Anugerah Khas Juri Tanda Suka Tertinggi TikTok Keselamatan Jalan Raya Peringkat Kebangsaan 2025 (JPJ). Selain bidang digital, beliau turut membimbing murid meraih 76 pencapaian dalam pelbagai bidang, termasuk 19 Johan, merangkumi peringkat antarabangsa, kebangsaan, dan negeri.
 
 Blog beliau, cikguaime.com, telah menjadi platform rujukan bagi lebih 3.5 juta pelawat dan merupakan antara blog pendidikan guru sekolah rendah yang paling banyak dikunjungi di Malaysia. Semua sumbangan ini dilakukan secara sukarela dan percuma, mencerminkan semangat keguruan yang tulen dan berimpak tinggi.
 
@@ -301,8 +299,8 @@ Saya dengan penuh yakin memperakukan pencalonan beliau untuk anugerah ini.
 
 ## NOTA PENTING
 
-1. **Bahagian 4 (Kebangsaan)** — borang hanya 3 baris tetapi ada 8 entri layak. Cadangan: masukkan 3 teratas, lampirkan selebihnya sebagai jadual tambahan.
-2. **Semua fakta dan angka** tally dengan portfolio (14,900+ pengguna, 89 episod, 530K+ tontonan, 3,548,600 pelawat, 80 pencapaian, 21 Johan).
+1. **Bahagian 4 (Kebangsaan)** — borang hanya 3 baris tetapi ada 7 entri layak. Cadangan: masukkan 3 teratas, lampirkan selebihnya sebagai jadual tambahan.
+2. **Semua fakta dan angka** tally dengan portfolio (14,900+ pengguna, 89 episod, 530K+ tontonan, 3,548,600 pelawat, 76 pencapaian, 19 Johan).
 3. **Bahagian Perakuan** — serahkan draf kepada PK dan GB untuk semakan dan penyesuaian mengikut gaya mereka.
 4. **Video Persembahan** — panduan menyatakan **maksimum 15 minit** (bukan 3 minit seperti dalam portfolio). Ini mungkin perlu dikemaskini.
 5. **Dokumen sokongan** — setiap entri dalam borang MESTI disertakan bukti (sijil/gambar/buku program). Pastikan semua sijil yang dirujuk ada dalam portfolio atau lampiran.

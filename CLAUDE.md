@@ -113,7 +113,7 @@ Portfolio digital untuk pencalonan **Anugerah Khas Pencipta Kandungan Digital**,
 | 02 Katalog Kandungan | 6-41 | Extensions, Apps, TikTok @ahmdaime (ms 16-17), TVPSS, Blog, Ekosistem |
 | 03 Demo & Bukti | 42-49 | Antaramuka, QR Codes (ms 47), rating 5.0★, testimoni, senarai semak kualiti |
 | 04 Sumbangan & Impak | 50-66 | C1: Sumbangan (50-60), C2: Impak (61-63), C3: Keberlanjutan (64-66) |
-| 05 Sijil & Pencapaian | 67-77 | 19 sijil digital (ms 68-71), 80 pencapaian, verifikasi dokumen, trend |
+| 05 Sijil & Pencapaian | 67-77 | 19 sijil digital (ms 68-71), 76 pencapaian, verifikasi dokumen, trend |
 | Video Persembahan (E) | 78 | Preview video 3 minit, storyboard, kriteria E1-E3 |
 | 06 Etika & Privasi | 79 | Privasi data, hak cipta, keselamatan, AI beretika |
 
