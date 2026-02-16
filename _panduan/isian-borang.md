@@ -20,19 +20,22 @@
 
 | # | Pingat / Anugerah / Penghargaan | Tahun |
 |---|---|---|
-| 3 | Anugerah Khas Juri Tanda Suka Tertinggi TikTok Keselamatan Jalan Raya Peringkat Kebangsaan (JPJ) | 2025 |
-| 4 | Ikon Guru TVPSS Kebangsaan 2024 (KPM) | 2024 |
-| 5 | Nombor 5 Kebangsaan — Pertandingan Video Kreatif TVPSS 2024 (KPM) | 2024 |
-| 6 | TOP 150 Cikgu Juara Digital (MDEC) | 2023 |
-| 7 | Edufluencer KPM WP Putrajaya | 2023 |
+| 3 | Pelantikan Rasmi Edufluencers KPM (YB Menteri Pendidikan) | 2025 |
+| 4 | Guru Juara Digital — Pasukan Pakar Jauhari (KPM) | 2025 |
+| 5 | Anugerah Khas Juri Tanda Suka Tertinggi TikTok Keselamatan Jalan Raya Peringkat Kebangsaan (JPJ) | 2025 |
+| 6 | Ikon Guru TVPSS Kebangsaan 2024 (KPM) | 2024 |
+| 7 | Nombor 5 Kebangsaan — Pertandingan Video Kreatif TVPSS 2024 (KPM) | 2024 |
+| 8 | TOP 150 Cikgu Juara Digital (MDEC) | 2023 |
+| 9 | Edufluencer KPM WP Putrajaya | 2023 |
 
 ### Negeri
 
 | # | Pingat / Anugerah / Penghargaan | Tahun |
 |---|---|---|
-| 8 | Johan TVPSS Terbaik Negeri WP Putrajaya | 2023 |
-| 9 | Ikon Guru TVPSS Negeri WP Putrajaya | 2023 |
-| 10 | Anugerah Perak Inovasi Pendigital Negeri WP Putrajaya (JPWPP) | 2023 |
+| 10 | Anugerah Kualiti Guru: Pencipta Kandungan Digital WP Putrajaya | 2025 |
+| 11 | Johan TVPSS Terbaik Negeri WP Putrajaya | 2023 |
+| 12 | Ikon Guru TVPSS Negeri WP Putrajaya | 2023 |
+| 13 | Anugerah Perak Inovasi Pendigital Negeri WP Putrajaya (JPWPP) | 2023 |
 
 > **Nota:** Kalau ruang tidak cukup, masukkan anugerah Kebangsaan (#3–7) dahulu, kemudian lampirkan selebihnya.
 
@@ -97,8 +100,9 @@
 | 2 | JPWPP — AJK Teknikal (Juruvideo dan Jurugambar rasmi program JPWPP termasuk Kawad Kenegaraan Negeri, MSSM Boling Tenpin, MSSM Sepak Takraw, Festival Nasyid Kebangsaan) | Kebangsaan / Negeri | 2023–2025 |
 | 3 | Smart Sharing / Knowledge Sharing — Pembentang sesi perkongsian ilmu (Google Workspace, Canva For Education, Malaya Heroes, MyLink, PDPR) kepada guru pelbagai negeri | Kebangsaan / Negeri | 2021–2024 |
 | 4 | UKM Permata Pintar — Pembantu Program (Membimbing murid pintar cerdas dalam kemahiran digital dan penciptaan kandungan) | Kebangsaan | 2023–2024 |
-| 5 | KPM — Hakim Pertandingan Reka Cipta Video Sifirku Best Kebangsaan | Kebangsaan | 2023 |
-| 6 | JPWPP — Hakim Pertandingan Video TVPSS WP Putrajaya | Negeri | 2023 |
+| 5 | KPM — Duta Integriti (Pelantikan YB Menteri Pendidikan) | Kebangsaan | 2024/2025 |
+| 6 | KPM — Hakim Pertandingan Reka Cipta Video Sifirku Best Kebangsaan | Kebangsaan | 2023 |
+| 7 | JPWPP — Hakim Pertandingan Video TVPSS WP Putrajaya | Negeri | 2023 |
 
 ---
 
@@ -154,21 +158,24 @@
 | 2 | Pensijilan Google Certified Educator | Google | Sijil profesional pendidikan digital | 2024 |
 | 3 | Pembangunan aplikasi web gamifikasi Malaya Heroes untuk PdP Sejarah | IPG Kampus Kota Bharu / Inisiatif Sendiri | Anugerah Emas Inovasi Antarabangsa; 2,000+ murid, 15,000+ sesi | 2019 |
 
-### Kebangsaan (4 slot)
+### Kebangsaan (4 slot — cadangan tambah baris)
 
 | # | Program / Aktiviti | Anjuran | Pencapaian | Tahun |
 |---|---|---|---|---|
 | 1 | Pembangunan 3 Chrome Extensions pendidikan percuma (IDME PBD Helper, MOIES Kehadiran Helper, PBD OnePage) | Inisiatif Sendiri / Chrome Web Store | 14,900+ guru pengguna seluruh Malaysia; rating 5.0/5.0 | 2022–2025 |
 | 2 | Pengurusan Studio TVPSS FiveOne dan penerbitan 89 episod YouTube + 108 video TikTok | KPM / Sekolah | Ikon Guru TVPSS Kebangsaan 2024; 530K+ tontonan YouTube; 15M+ tontonan TikTok | 2022–2024 |
-| 3 | Hakim Pertandingan Reka Cipta Video Sifirku Best Kebangsaan | KPM | Dilantik sebagai penilai standard kualiti kandungan digital | 2023 |
-| 4 | Pameran TVPSS Showcase Transformasi Pendidikan | KPM | Pameran di peringkat kebangsaan | 2022 |
+| 3 | Pelantikan Rasmi Edufluencers KPM (3× pelantikan: 2022, 2023, 2025) | KPM | Ditandatangani YB Menteri Pendidikan (2025) | 2022–2025 |
+| 4 | Guru Juara Digital — Pasukan Pakar Jauhari | KPM | Terpilih dalam pasukan pakar digital kebangsaan | 2025 |
+| 5 | Pameran TVPSS Kebangsaan (3×: Showcase Pendidikan, Karnival Digital, Jiwa Merdeka) | KPM | Pameran di peringkat kebangsaan | 2022–2024 |
+| 6 | Hakim Pertandingan Reka Cipta Video Sifirku Best Kebangsaan | KPM | Dilantik sebagai penilai standard kualiti kandungan digital | 2023 |
 
-### Negeri / Daerah (4 slot)
+### Negeri / Daerah (4 slot — cadangan tambah baris)
 
 | # | Program / Aktiviti | Anjuran | Pencapaian | Tahun |
 |---|---|---|---|---|
-| 1 | AJK Teknikal JPWPP — Juruvideo dan Jurugambar rasmi (Kawad Kenegaraan, MSSM, Festival Nasyid) | JPWPP | Pelantikan rasmi | 2023–2025 |
-| 2 | Pertandingan Video Kreatif TVPSS WP Putrajaya | JPWPP | Johan (2024); Naib Johan (2025) | 2024–2025 |
+| 1 | Anugerah Kualiti Guru: Pencipta Kandungan Digital WP Putrajaya | JPWPP | Anugerah peringkat negeri yang selari dengan kategori pencalonan | 2025 |
+| 2 | AJK Teknikal JPWPP — Juruvideo dan Jurugambar rasmi (Kawad Kenegaraan, MSSM, Festival Nasyid) | JPWPP | Pelantikan rasmi | 2023–2025 |
+| 3 | Pertandingan Video Kreatif TVPSS WP Putrajaya | JPWPP | Johan (2024); Naib Johan (2025) | 2024–2025 |
 | 3 | Knowledge Sharing: Google Workspace, Canva For Education | PPD / Komuniti Guru | Perkongsian merentas negeri | 2023–2024 |
 | 4 | Smart Sharing: Program Mesra PDPR, Malaya Heroes, MyLink | PPD / Sekolah | Perkongsian ilmu digital kepada guru | 2021–2023 |
 
@@ -209,27 +216,34 @@
 
 | # | Anugerah / Penghargaan | Tahun |
 |---|---|---|
-| 4 | Anugerah Khas Juri Tanda Suka Tertinggi TikTok Keselamatan Jalan Raya Peringkat Kebangsaan (JPJ) | 2025 |
-| 5 | Ikon Guru TVPSS Kebangsaan 2024 (KPM) | 2024 |
-| 6 | Nombor 5 Kebangsaan — Pertandingan Video Kreatif TVPSS 2024 | 2024 |
-| 7 | Johan Suntingan Video Jelajah TVPSS Zon Tengah | 2024 |
-| 8 | TOP 150 Cikgu Juara Digital (MDEC) | 2023 |
-| 9 | Edufluencer KPM WP Putrajaya | 2023 |
-| 10 | Hakim Pertandingan Reka Cipta Video Sifirku Best Kebangsaan | 2023 |
-| 11 | Pameran TVPSS Showcase Transformasi Pendidikan (KPM) | 2022 |
-| 12 | Edufluencers 2.0 KPM (180 guru terpilih seluruh Malaysia) | 2022 |
+| 4 | Pelantikan Rasmi Edufluencers KPM (YB Menteri Pendidikan) | 2025 |
+| 5 | Guru Juara Digital — Pasukan Pakar Jauhari (KPM) | 2025 |
+| 6 | Duta Integriti KPM (YB Menteri Pendidikan) | 2024/2025 |
+| 7 | Anugerah Khas Juri Tanda Suka Tertinggi TikTok Keselamatan Jalan Raya Peringkat Kebangsaan (JPJ) | 2025 |
+| 8 | Ikon Guru TVPSS Kebangsaan 2024 (KPM) | 2024 |
+| 9 | Nombor 5 Kebangsaan — Pertandingan Video Kreatif TVPSS 2024 | 2024 |
+| 10 | Pempamer TVPSS Karnival Pendidikan Digital Kebangsaan (KPM) | 2024 |
+| 11 | Pameran TVPSS Pertandingan Jiwa Merdeka Antara Kementerian (KPM) | 2024 |
+| 12 | Seminar Harta Intelek Sumber PdP Kebangsaan (MyIPO) | 2024 |
+| 13 | Johan Suntingan Video Jelajah TVPSS Zon Tengah | 2024 |
+| 14 | TOP 150 Cikgu Juara Digital (MDEC) | 2023 |
+| 15 | Edufluencer KPM WP Putrajaya | 2023 |
+| 16 | Hakim Pertandingan Reka Cipta Video Sifirku Best Kebangsaan | 2023 |
+| 17 | Pameran TVPSS Showcase Transformasi Pendidikan (KPM) | 2022 |
+| 18 | Edufluencers 2.0 KPM (180 guru terpilih seluruh Malaysia) | 2022 |
 
 ### Negeri
 
 | # | Anugerah / Penghargaan | Tahun |
 |---|---|---|
-| 13 | Naib Johan Video Kreatif TVPSS WP Putrajaya | 2025 |
-| 14 | Johan Video Kreatif TVPSS WP Putrajaya | 2024 |
-| 15 | Johan TVPSS Terbaik Negeri WP Putrajaya | 2023 |
-| 16 | Ikon Guru TVPSS Negeri WP Putrajaya | 2023 |
-| 17 | Anugerah Perak Inovasi Pendigital Negeri WP Putrajaya (JPWPP) | 2023 |
-| 18 | Anugerah Emas Poster Digital — Konvensyen Pendidikan Putrajaya | 2021 |
-| 19 | Anugerah Perak Penulisan Kajian Tindakan — Konvensyen Pendidikan Putrajaya | 2021 |
+| 19 | Anugerah Kualiti Guru: Pencipta Kandungan Digital WP Putrajaya | 2025 |
+| 20 | Naib Johan Video Kreatif TVPSS WP Putrajaya | 2025 |
+| 21 | Johan Video Kreatif TVPSS WP Putrajaya | 2024 |
+| 22 | Johan TVPSS Terbaik Negeri WP Putrajaya | 2023 |
+| 23 | Ikon Guru TVPSS Negeri WP Putrajaya | 2023 |
+| 24 | Anugerah Perak Inovasi Pendigital Negeri WP Putrajaya (JPWPP) | 2023 |
+| 25 | Anugerah Emas Poster Digital — Konvensyen Pendidikan Putrajaya | 2021 |
+| 26 | Anugerah Perak Penulisan Kajian Tindakan — Konvensyen Pendidikan Putrajaya | 2021 |
 
 ---
 
@@ -269,7 +283,7 @@ Sepanjang berkhidmat di SK Putrajaya Presint 5(1) sejak 2021, Ahmad Aiman telah 
 
 Beliau juga menubuhkan dan menguruskan Studio TVPSS FiveOne yang telah menghasilkan 89 episod YouTube dan 108 video TikTok, kesemuanya diterbitkan oleh murid dengan bimbingan beliau. Model pengurusan TVPSS ini telah menarik empat sekolah luar untuk hadir melakukan sesi penanda aras di sekolah kami.
 
-Pengiktirafan peringkat kebangsaan yang diterima beliau membuktikan kualiti sumbangan ini: Ikon Guru TVPSS Kebangsaan 2024 (KPM), TOP 150 Cikgu Juara Digital 2023 (MDEC), Anugerah Khas Juri Tanda Suka Tertinggi TikTok Keselamatan Jalan Raya Peringkat Kebangsaan 2025 (JPJ), dan Edufluencer KPM.
+Pengiktirafan peringkat kebangsaan dan negeri yang diterima beliau membuktikan kualiti sumbangan ini: Ikon Guru TVPSS Kebangsaan 2024 (KPM), Anugerah Kualiti Guru: Pencipta Kandungan Digital (Negeri 2025), TOP 150 Cikgu Juara Digital 2023 (MDEC), Anugerah Khas Juri Tanda Suka Tertinggi TikTok Keselamatan Jalan Raya Peringkat Kebangsaan 2025 (JPJ), dan Edufluencer KPM (3 kali pelantikan).
 
 Blog beliau, cikguaime.com, telah menjadi rujukan lebih 3.5 juta guru dengan 97 artikel panduan pendidikan, manakala 95 video tutorial beliau di TikTok @ahmdaime telah menjangkau 40,400 pengikut guru di seluruh negara.
 
@@ -289,7 +303,7 @@ Ahmad Aiman merupakan guru yang menunjukkan komitmen dan inisiatif luar biasa da
 
 Di peringkat sekolah, beliau menubuhkan Studio TVPSS FiveOne yang menghasilkan 89 episod video pendidikan di YouTube. Keunikan pendekatan beliau ialah murid diberikan tanggungjawab penuh untuk meneraju penerbitan, membina kemahiran penggambaran, suntingan, dan penyiaran dalam kalangan murid sekolah rendah. Model ini telah menarik lawatan penanda aras daripada empat buah sekolah luar.
 
-Pencapaian beliau diiktiraf di peringkat kebangsaan melalui Ikon Guru TVPSS Kebangsaan 2024, TOP 150 Cikgu Juara Digital 2023 (MDEC), dan Anugerah Khas Juri Tanda Suka Tertinggi TikTok Keselamatan Jalan Raya Peringkat Kebangsaan 2025 (JPJ). Selain bidang digital, beliau turut membimbing murid meraih 76 pencapaian dalam pelbagai bidang, termasuk 19 Johan, merangkumi peringkat antarabangsa, kebangsaan, dan negeri.
+Pencapaian beliau diiktiraf di peringkat kebangsaan dan negeri melalui Ikon Guru TVPSS Kebangsaan 2024, Anugerah Kualiti Guru: Pencipta Kandungan Digital (Negeri 2025), TOP 150 Cikgu Juara Digital 2023 (MDEC), Anugerah Khas Juri Tanda Suka Tertinggi TikTok Keselamatan Jalan Raya Peringkat Kebangsaan 2025 (JPJ), dan Edufluencer KPM (3 kali pelantikan). Selain bidang digital, beliau turut membimbing murid meraih 76 pencapaian dalam pelbagai bidang, termasuk 19 Johan, merangkumi peringkat antarabangsa, kebangsaan, dan negeri.
 
 Blog beliau, cikguaime.com, telah menjadi platform rujukan bagi lebih 3.5 juta pelawat dan merupakan antara blog pendidikan guru sekolah rendah yang paling banyak dikunjungi di Malaysia. Semua sumbangan ini dilakukan secara sukarela dan percuma, mencerminkan semangat keguruan yang tulen dan berimpak tinggi.
 
