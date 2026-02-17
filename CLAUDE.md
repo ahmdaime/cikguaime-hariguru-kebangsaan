@@ -6,17 +6,17 @@ Portfolio digital untuk pencalonan **Anugerah Khas Pencipta Kandungan Digital**,
 
 ## Status Semasa (15 Feb 2026)
 
-- **Jumlah halaman**: 85 bernombor + Cover + 6 dividers
+- **Jumlah halaman**: 86 bernombor + Cover + 6 dividers
 - **Gambar**: 150+ gambar telah dimasukkan (termasuk 45 sijil + 22 gambar baharu sesi ini)
 - **TikTok @ahmdaime (ms 16-17)**: 2 halaman baharu — kandungan pendidikan digital + impak ekosistem
 - **Kajian Tindakan (ms 58)**: Halaman baharu — penyelidikan Malaya Heroes, dwi-anugerah Emas+Perak
-- **Bahagian Sijil (ms 67-83)**: 45 sijil dipamerkan (19 digital sedia ada + 26 baharu)
+- **Bahagian Sijil (ms 67-84)**: 45 sijil dipamerkan (19 digital sedia ada + 26 baharu)
 - **Bahagian TVPSS FiveOne**: Lengkap dengan liputan, pertandingan, pencapaian, dan collage
 - **Bahagian Blog cikguaime.com**: Lengkap dengan statistik, artikel berimpak tinggi, dan kedudukan carian Google
 - **Semakan fakta TVPSS 2024**: Selesai - "Ikon Guru TVPSS Kebangsaan 2024" (bukan "Johan"), "Nombor 5 Kebangsaan" Video Kreatif
 - **Data disahkan**: 89 episod TVPSS, 15.5M+ tontonan, 14,900+ guru pengguna
 - **QR Codes**: Halaman baharu (ms 47) untuk akses pantas kepada demo interaktif
-- **ISI KANDUNGAN**: Dikemaskini (Bahagian 04: ms 50-66, Bahagian 05: ms 67-83, Video: ms 84, Etika: ms 85)
+- **ISI KANDUNGAN**: Dikemaskini (Bahagian 04: ms 50-66, Bahagian 05: ms 67-84, Video: ms 85, Etika: ms 86)
 - **Sempadan C1/C2/C3**: Diperbetulkan — C1: ms 50-60, C2: ms 61-63, C3: ms 64-66
 
 ## Perubahan Terkini (15 Feb 2026)
@@ -98,11 +98,11 @@ Portfolio digital untuk pencalonan **Anugerah Khas Pencipta Kandungan Digital**,
 
 ## Struktur Fail
 
-- `portfolio/portfolio.html` — Fail utama portfolio (satu fail HTML + CSS inline, 79 halaman bernombor)
+- `portfolio/portfolio.html` — Fail utama portfolio (satu fail HTML + CSS inline, 86 halaman bernombor)
 - `index.html` — Salinan untuk GitHub Pages (MESTI sync selepas setiap perubahan)
 - `portfolio/img/` — Semua gambar portfolio (120+ gambar termasuk 19 sijil)
 
-## Struktur Portfolio (79 halaman bernombor)
+## Struktur Portfolio (86 halaman bernombor)
 
 | Bahagian | Halaman | Kandungan |
 |----------|---------|-----------|
@@ -113,9 +113,9 @@ Portfolio digital untuk pencalonan **Anugerah Khas Pencipta Kandungan Digital**,
 | 02 Katalog Kandungan | 6-41 | Extensions, Apps, TikTok @ahmdaime (ms 16-17), TVPSS, Blog, Ekosistem |
 | 03 Demo & Bukti | 42-49 | Antaramuka, QR Codes (ms 47), rating 5.0★, testimoni, senarai semak kualiti |
 | 04 Sumbangan & Impak | 50-66 | C1: Sumbangan (50-60), C2: Impak (61-63), C3: Keberlanjutan (64-66) |
-| 05 Sijil & Pencapaian | 67-83 | 45 sijil dipamerkan (ms 69-79), 76 pencapaian, verifikasi dokumen, trend |
-| Video Persembahan (E) | 84 | Preview video 3 minit, storyboard, kriteria E1-E3 |
-| 06 Etika & Privasi | 85 | Privasi data, hak cipta, keselamatan, AI beretika |
+| 05 Sijil & Pencapaian | 67-84 | 45 sijil dipamerkan (ms 69-80), 76 pencapaian, verifikasi dokumen, trend |
+| Video Persembahan (E) | 85 | Preview video 3 minit, storyboard, kriteria E1-E3 |
+| 06 Etika & Privasi | 86 | Privasi data, hak cipta, keselamatan, AI beretika |
 
 **Nota:** Setiap bahagian bermula dengan halaman divider (tanpa nombor).
 
