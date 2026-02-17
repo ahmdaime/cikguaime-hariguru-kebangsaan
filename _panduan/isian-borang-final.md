@@ -59,7 +59,7 @@
 | # | Pingat / Anugerah / Penghargaan | Tahun |
 |---|--------------------------------|-------|
 | 1 | Google Certified Educator Level 1 & Level 2 (Portfolio: ms 73) | 2024 |
-| 2 | Google Certified Educator (Portfolio: ms 73) | 2024 |
+| 2 | Gemini Certified (Portfolio: ms 73) `[KEMASKINI]` | 2024 |
 
 ### Kebangsaan
 
@@ -223,7 +223,7 @@
 | # | Program / Aktiviti | Anjuran | Pencapaian | Tahun | Portfolio |
 |---|-------------------|---------|-----------|-------|----------|
 | 1 | Pensijilan Google Certified Educator Level 1 & Level 2 | Google for Education | Lulus kedua-dua tahap pensijilan | 2024 | ms 73 |
-| 2 | Pensijilan Google Certified Educator | Google | Sijil profesional pendidikan digital | 2024 | ms 73 |
+| 2 | Pensijilan Gemini Certified | Google | Sijil profesional AI pendidikan digital `[KEMASKINI]` | 2024 | ms 73 |
 | 3 | Pembangunan aplikasi web gamifikasi Malaya Heroes untuk PdP Sejarah | IPG Kampus Kota Bharu / Inisiatif Sendiri | Anugerah Emas Inovasi Antarabangsa; 2,000+ murid, 15,000+ sesi | 2019 | ms 58, 71 |
 
 ### Kebangsaan (4 slot — tambah baris dalam Word)
@@ -284,7 +284,7 @@
 | # | Anugerah / Penghargaan | Tahun | Portfolio |
 |---|----------------------|-------|----------|
 | 1 | Google Certified Educator Level 1 & Level 2 | 2024 | ms 73 |
-| 2 | Google Certified Educator | 2024 | ms 73 |
+| 2 | Gemini Certified `[KEMASKINI]` | 2024 | ms 73 |
 | 3 | Anugerah Emas Inovasi Antarabangsa — Aplikasi Malaya Heroes | 2019 | ms 71 |
 
 ### Kebangsaan
