@@ -62,7 +62,18 @@
       "mcp__playwright__browser_run_code",
       "mcp__playwright__browser_close",
       "Bash(del \"F:\\\\Koleksi Coding\\\\anugerah-hari-guru-kebangsaan\\\\bahagian05-new.html\")",
-      "Bash(python:*)"
+      "Bash(python:*)",
+      "mcp__playwright__browser_wait_for",
+      "Bash(git pull:*)",
+      "Bash(pip install:*)",
+      "Bash(comm:*)",
+      "Bash(for page in 69 70 71 73 74 75 77 80 81)",
+      "Bash(do echo \"=== PAGE $page ===\")",
+      "Bash(while read line)",
+      "Bash(do read next)",
+      "Bash(echo:*)",
+      "Bash(powershell -File:*)",
+      "Bash(du:*)"
     ]
   }
 }
