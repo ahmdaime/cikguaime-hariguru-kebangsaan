@@ -426,8 +426,8 @@
         }
 
         .toc-desc {
-            font-size: 9pt;
-            color: #666;
+            font-size: 10pt;
+            color: #444;
             margin-top: 1mm;
         }
 
@@ -592,10 +592,11 @@
         }
 
         .stat-box-label {
-            font-size: 8pt;
+            font-size: 9pt;
             text-transform: uppercase;
             letter-spacing: 0.8px;
-            color: #666;
+            color: #444;
+            font-weight: 600;
             margin-top: 0.5mm;
             display: block;
         }
@@ -666,8 +667,9 @@
         }
 
         .highlight-box .stat-inline div span:last-child {
-            font-size: 8pt;
-            color: #aabbcc;
+            font-size: 9pt;
+            color: #ffffff;
+            font-weight: 600;
             text-transform: uppercase;
             letter-spacing: 0.8px;
         }
@@ -1036,10 +1038,11 @@
         }
 
         .video-year-card .vyc-label {
-            font-size: 8.5pt;
-            color: #888;
+            font-size: 9pt;
+            color: #444;
+            font-weight: 600;
             text-transform: uppercase;
-            letter-spacing: 1px;
+            letter-spacing: 0.8px;
         }
 
         /* Article category list */
@@ -1464,6 +1467,108 @@
             .kr-label {
                 color: #555 !important;
             }
+
+            /* PATCH 5: Teks putih atas latar gelap — tebalkan untuk inkjet */
+            .highlight-box,
+            .highlight-box div,
+            .highlight-box span,
+            .highlight-box strong {
+                -webkit-text-stroke: 0.3px;
+            }
+
+            .highlight-box div[style*="color: #ccd6e0"],
+            .highlight-box div[style*="color:#ccd6e0"] {
+                font-weight: 600 !important;
+            }
+
+            .product-card-stats span,
+            .product-card-stats .pcs-item span {
+                font-weight: 600 !important;
+            }
+        }
+
+        /* === PATCH 6: Global Print Readability Fix === */
+        /* Menangani 200+ font kecil & 170+ warna pucat sekaligus */
+        @media print {
+
+            /* ---- A. FONT SIZE: Minimum 8.5pt untuk semua inline styles ---- */
+            [style*="font-size: 6pt"], [style*="font-size:6pt"],
+            [style*="font-size: 6.5pt"], [style*="font-size:6.5pt"],
+            [style*="font-size: 7pt"], [style*="font-size:7pt"],
+            [style*="font-size: 7.5pt"], [style*="font-size:7.5pt"],
+            [style*="font-size: 8pt"], [style*="font-size:8pt"] {
+                font-size: 8.5pt !important;
+            }
+
+            /* Pixel fonts: 8px≈6pt, 9px≈6.75pt, 10px≈7.5pt, 11px≈8.25pt */
+            [style*="font-size: 8px"], [style*="font-size:8px"],
+            [style*="font-size: 9px"], [style*="font-size:9px"],
+            [style*="font-size: 10px"], [style*="font-size:10px"],
+            [style*="font-size: 11px"], [style*="font-size:11px"] {
+                font-size: 8.5pt !important;
+            }
+
+            /* ---- B. FONT SIZE: CSS class-defined kecil → minimum 8.5pt ---- */
+            .kr-label,
+            .katalog-total span:last-child,
+            .cover-stat-label,
+            .article-bar-label,
+            .mini-stat-badge {
+                font-size: 8.5pt !important;
+            }
+
+            /* ---- C. WARNA: Teks pucat atas LATAR CERAH → gelap ---- */
+            [style*="color: #94a3b8"], [style*="color:#94a3b8"],
+            [style*="color: #64748b"], [style*="color:#64748b"] {
+                color: #555 !important;
+            }
+
+            [style*="color: #888"], [style*="color:#888"],
+            [style*="color: #999"], [style*="color:#999"],
+            [style*="color: #8899aa"], [style*="color:#8899aa"] {
+                color: #444 !important;
+            }
+
+            .cert-issuer,
+            .pcs-item span,
+            .cover-stat-label {
+                color: #444 !important;
+            }
+
+            /* ---- D. WARNA: Teks dalam LATAR GELAP → cerah & tebal ---- */
+            /* Override C untuk elemen dalam konteks latar gelap */
+            .highlight-box [style*="color: #94a3b8"],
+            .highlight-box [style*="color:#94a3b8"],
+            [style*="background:linear-gradient(135deg, #0a1628"] > [style*="color: #94a3b8"],
+            [style*="background: linear-gradient(135deg, #0a1628"] > [style*="color: #94a3b8"],
+            [style*="background:linear-gradient(135deg, #0a1628"] > [style*="color:#94a3b8"],
+            [style*="background: linear-gradient(135deg, #0a1628"] > [style*="color:#94a3b8"] {
+                color: #d0dae6 !important;
+                font-weight: 600 !important;
+            }
+
+            .highlight-box [style*="color: #aabbcc"],
+            .highlight-box [style*="color:#aabbcc"] {
+                color: #e8edf3 !important;
+                font-weight: 600 !important;
+            }
+
+            .kr-label,
+            .katalog-total span:last-child {
+                color: #d0dae6 !important;
+                font-weight: 600 !important;
+            }
+
+            .cover-stat-label {
+                color: #d0dae6 !important;
+                font-weight: 600 !important;
+            }
+
+            /* ---- E. KETEBALAN: Teks atas latar gelap lebih tebal ---- */
+            .highlight-box *,
+            [style*="background:linear-gradient(135deg, #0a1628"] * {
+                -webkit-text-stroke: 0.2px;
+            }
         }
 
         /* ============================================ */
@@ -1616,16 +1721,16 @@
         <li class="toc-item">
             <div class="toc-number">01</div>
             <div class="toc-content">
-                <div class="toc-title">Profil &amp; Biodata <span style="float:right; font-weight:400; color:#888;">3 &ndash; 4</span></div>
+                <div class="toc-title">Profil &amp; Biodata <span style="float:right; font-weight:600; color:#555;">3 &ndash; 4</span></div>
                 <div class="toc-desc">Maklumat peribadi, pensijilan digital, kemahiran teknikal &amp; peranan di sekolah</div>
             </div>
         </li>
         <li class="toc-item">
             <div class="toc-number">02</div>
             <div class="toc-content">
-                <div class="toc-title">Katalog Kandungan Digital <span style="float:right; font-weight:400; color:#888;">5 &ndash; 43</span></div>
+                <div class="toc-title">Katalog Kandungan Digital <span style="float:right; font-weight:600; color:#555;">5 &ndash; 43</span></div>
                 <div class="toc-desc">420+ kandungan: 17 projek digital, 307 video, 97 artikel, 7+ kuiz interaktif, AI chatbot, blog &amp; ekosistem digital</div>
-                <div class="toc-desc" style="font-size: 8.5pt; color: #999; margin-top: 1mm; line-height: 1.6;">
+                <div class="toc-desc" style="font-size: 9.5pt; color: #555; margin-top: 1mm; line-height: 1.6;">
                     AI Chatbot (9) · TikTok @ahmdaime (16 &ndash; 17) · IDME PBD Helper (19 &ndash; 20) · MOIES Kehadiran (21 &ndash; 22) · PBD OnePage &amp; Auto eRPH (23 &ndash; 26) · Aplikasi Web (27) · TVPSS FiveOne (28 &ndash; 38) · Blog cikguaime.com (39 &ndash; 41) · Ekosistem Digital (42 &ndash; 43)
                 </div>
             </div>
@@ -1633,16 +1738,16 @@
         <li class="toc-item">
             <div class="toc-number">03</div>
             <div class="toc-content">
-                <div class="toc-title">Demo &amp; Bukti Kualiti <span style="float:right; font-weight:400; color:#888;">44 &ndash; 51</span></div>
+                <div class="toc-title">Demo &amp; Bukti Kualiti <span style="float:right; font-weight:600; color:#555;">44 &ndash; 51</span></div>
                 <div class="toc-desc">Tangkap layar, rating 5/5, testimoni pengguna, QR codes demo &amp; senarai semak kualiti</div>
             </div>
         </li>
         <li class="toc-item">
             <div class="toc-number">04</div>
             <div class="toc-content">
-                <div class="toc-title">Sumbangan &amp; Impak <span style="float:right; font-weight:400; color:#888;">52 &ndash; 66</span></div>
+                <div class="toc-title">Sumbangan &amp; Impak <span style="float:right; font-weight:600; color:#555;">52 &ndash; 66</span></div>
                 <div class="toc-desc">14,900+ guru, 3.5M pelawat | C1: Sumbangan · C2: Impak · C3: Keberlanjutan</div>
-                <div class="toc-desc" style="font-size: 8.5pt; color: #999; margin-top: 1mm; line-height: 1.6;">
+                <div class="toc-desc" style="font-size: 9.5pt; color: #555; margin-top: 1mm; line-height: 1.6;">
                     C1: Sumbangan (52 &ndash; 60) · C2: Impak (61 &ndash; 63) · C3: Keberlanjutan (64 &ndash; 66)
                 </div>
             </div>
@@ -1650,21 +1755,21 @@
         <li class="toc-item">
             <div class="toc-number">05</div>
             <div class="toc-content">
-                <div class="toc-title">Sijil &amp; Pencapaian <span style="float:right; font-weight:400; color:#888;">67 &ndash; 85</span></div>
+                <div class="toc-title">Sijil &amp; Pencapaian <span style="float:right; font-weight:600; color:#555;">67 &ndash; 85</span></div>
                 <div class="toc-desc">76 pencapaian (19 Johan), 49 sijil dipamerkan, anugerah &amp; pengiktirafan di pelbagai peringkat</div>
             </div>
         </li>
         <li class="toc-item">
             <div class="toc-number">E</div>
             <div class="toc-content">
-                <div class="toc-title">Video Persembahan (E) <span style="float:right; font-weight:400; color:#888;">86</span></div>
+                <div class="toc-title">Video Persembahan (E) <span style="float:right; font-weight:600; color:#555;">86</span></div>
                 <div class="toc-desc">Preview video 15 minit, storyboard 5 segmen, pematuhan kriteria E1 &ndash; E3</div>
             </div>
         </li>
         <li class="toc-item">
             <div class="toc-number">06</div>
             <div class="toc-content">
-                <div class="toc-title">Etika &amp; Privasi Digital <span style="float:right; font-weight:400; color:#888;">87</span></div>
+                <div class="toc-title">Etika &amp; Privasi Digital <span style="float:right; font-weight:600; color:#555;">87</span></div>
                 <div class="toc-desc">Privasi data murid, pemprosesan tempatan, hak cipta &amp; keselamatan web</div>
             </div>
         </li>
@@ -1709,88 +1814,88 @@
         </div>
 
         <!-- Pemetaan Rubrik -->
-        <div class="subsection-title">Pemetaan Bukti Mengikut Kriteria Penilaian</div>
-        <table style="width:100%; border-collapse:collapse; font-size:8.5pt; margin-bottom:4mm;">
+        <div class="subsection-title" style="margin-bottom:1mm;">Pemetaan Bukti Mengikut Kriteria Penilaian</div>
+        <table style="width:100%; border-collapse:collapse; font-size:9pt; margin-bottom:2mm;">
             <thead>
                 <tr style="background:var(--primary); color:white;">
-                    <th style="padding:2mm 3mm; text-align:left; width:25%;">Kriteria</th>
-                    <th style="padding:2mm 3mm; text-align:center; width:10%;">Wajaran</th>
-                    <th style="padding:2mm 3mm; text-align:left;">Bukti Utama</th>
-                    <th style="padding:2mm 3mm; text-align:center; width:12%;">Halaman</th>
+                    <th style="padding:1.5mm 2.5mm; text-align:left; width:25%;">Kriteria</th>
+                    <th style="padding:1.5mm 2.5mm; text-align:center; width:10%;">Wajaran</th>
+                    <th style="padding:1.5mm 2.5mm; text-align:left;">Bukti Utama</th>
+                    <th style="padding:1.5mm 2.5mm; text-align:center; width:12%;">Halaman</th>
                 </tr>
             </thead>
             <tbody>
                 <tr style="background:#f8f6f0;">
-                    <td style="padding:1.5mm 3mm; border-bottom:1px solid #e0dcd3;"><strong>A: Pengetahuan Digital</strong></td>
-                    <td style="padding:1.5mm 3mm; border-bottom:1px solid #e0dcd3; text-align:center;">10%</td>
-                    <td style="padding:1.5mm 3mm; border-bottom:1px solid #e0dcd3;">GCE Level 1 &amp; 2, Gemini Certified, 17 projek digital</td>
-                    <td style="padding:1.5mm 3mm; border-bottom:1px solid #e0dcd3; text-align:center;">3 &ndash; 4</td>
+                    <td style="padding:1mm 2.5mm; border-bottom:1px solid #e0dcd3;"><strong>A: Pengetahuan Digital</strong></td>
+                    <td style="padding:1mm 2.5mm; border-bottom:1px solid #e0dcd3; text-align:center;">10%</td>
+                    <td style="padding:1mm 2.5mm; border-bottom:1px solid #e0dcd3;">GCE Level 1 &amp; 2, Gemini Certified, 17 projek digital</td>
+                    <td style="padding:1mm 2.5mm; border-bottom:1px solid #e0dcd3; text-align:center;">3 &ndash; 4</td>
                 </tr>
                 <tr>
-                    <td style="padding:1.5mm 3mm; border-bottom:1px solid #e0dcd3;"><strong>B: Kualiti Kandungan</strong></td>
-                    <td style="padding:1.5mm 3mm; border-bottom:1px solid #e0dcd3; text-align:center; color:var(--accent); font-weight:700;">50%</td>
-                    <td style="padding:1.5mm 3mm; border-bottom:1px solid #e0dcd3;">AI Gemini RPH, 307 video, rating 5/5, kuiz interaktif</td>
-                    <td style="padding:1.5mm 3mm; border-bottom:1px solid #e0dcd3; text-align:center;">5 &ndash; 51</td>
+                    <td style="padding:1mm 2.5mm; border-bottom:1px solid #e0dcd3;"><strong>B: Kualiti Kandungan</strong></td>
+                    <td style="padding:1mm 2.5mm; border-bottom:1px solid #e0dcd3; text-align:center; color:var(--accent); font-weight:700;">50%</td>
+                    <td style="padding:1mm 2.5mm; border-bottom:1px solid #e0dcd3;">AI Gemini RPH, 307 video, rating 5/5, kuiz interaktif</td>
+                    <td style="padding:1mm 2.5mm; border-bottom:1px solid #e0dcd3; text-align:center;">5 &ndash; 51</td>
                 </tr>
                 <tr style="background:#f8f6f0;">
-                    <td style="padding:1.5mm 3mm; border-bottom:1px solid #e0dcd3;"><strong>C: Sumbangan &amp; Impak</strong></td>
-                    <td style="padding:1.5mm 3mm; border-bottom:1px solid #e0dcd3; text-align:center; color:var(--accent); font-weight:700;">25%</td>
-                    <td style="padding:1.5mm 3mm; border-bottom:1px solid #e0dcd3;">14,900 guru, 3.5M pelawat, TVPSS kemenjadian murid</td>
-                    <td style="padding:1.5mm 3mm; border-bottom:1px solid #e0dcd3; text-align:center;">52 &ndash; 66</td>
+                    <td style="padding:1mm 2.5mm; border-bottom:1px solid #e0dcd3;"><strong>C: Sumbangan &amp; Impak</strong></td>
+                    <td style="padding:1mm 2.5mm; border-bottom:1px solid #e0dcd3; text-align:center; color:var(--accent); font-weight:700;">25%</td>
+                    <td style="padding:1mm 2.5mm; border-bottom:1px solid #e0dcd3;">14,900 guru, 3.5M pelawat, TVPSS kemenjadian murid</td>
+                    <td style="padding:1mm 2.5mm; border-bottom:1px solid #e0dcd3; text-align:center;">52 &ndash; 66</td>
                 </tr>
                 <tr>
-                    <td style="padding:1.5mm 3mm; border-bottom:1px solid #e0dcd3;"><strong>D: Hak Cipta &amp; Integriti</strong></td>
-                    <td style="padding:1.5mm 3mm; border-bottom:1px solid #e0dcd3; text-align:center;">5%</td>
-                    <td style="padding:1.5mm 3mm; border-bottom:1px solid #e0dcd3;">100% kandungan asli, kod sumber sendiri, privasi data</td>
-                    <td style="padding:1.5mm 3mm; border-bottom:1px solid #e0dcd3; text-align:center;">87</td>
+                    <td style="padding:1mm 2.5mm; border-bottom:1px solid #e0dcd3;"><strong>D: Hak Cipta &amp; Integriti</strong></td>
+                    <td style="padding:1mm 2.5mm; border-bottom:1px solid #e0dcd3; text-align:center;">5%</td>
+                    <td style="padding:1mm 2.5mm; border-bottom:1px solid #e0dcd3;">100% kandungan asli, kod sumber sendiri, privasi data</td>
+                    <td style="padding:1mm 2.5mm; border-bottom:1px solid #e0dcd3; text-align:center;">87</td>
                 </tr>
                 <tr style="background:#f8f6f0;">
-                    <td style="padding:1.5mm 3mm; border-bottom:1px solid #e0dcd3;"><strong>E: Video Persembahan</strong></td>
-                    <td style="padding:1.5mm 3mm; border-bottom:1px solid #e0dcd3; text-align:center;">10%</td>
-                    <td style="padding:1.5mm 3mm; border-bottom:1px solid #e0dcd3;">Video persembahan 15 minit, storyboard 5 segmen, kriteria E1 &ndash; E3</td>
-                    <td style="padding:1.5mm 3mm; border-bottom:1px solid #e0dcd3; text-align:center;">86</td>
+                    <td style="padding:1mm 2.5mm; border-bottom:1px solid #e0dcd3;"><strong>E: Video Persembahan</strong></td>
+                    <td style="padding:1mm 2.5mm; border-bottom:1px solid #e0dcd3; text-align:center;">10%</td>
+                    <td style="padding:1mm 2.5mm; border-bottom:1px solid #e0dcd3;">Video persembahan 15 minit, storyboard 5 segmen, kriteria E1 &ndash; E3</td>
+                    <td style="padding:1mm 2.5mm; border-bottom:1px solid #e0dcd3; text-align:center;">86</td>
                 </tr>
             </tbody>
         </table>
 
         <!-- 6 Kajian Kes Utama -->
-        <div class="subsection-title">6 Kajian Kes Utama (Signature Case Studies)</div>
-        <div style="display:grid; grid-template-columns:1fr 1fr; gap:2mm;">
-            <div style="background:linear-gradient(135deg, #0a1628 0%, #1a3a5c 100%); padding:2.5mm; border-radius:2mm; border-left:3px solid var(--accent);">
+        <div class="subsection-title" style="margin-bottom:1mm;">6 Kajian Kes Utama (Signature Case Studies)</div>
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:1.5mm;">
+            <div style="background:linear-gradient(135deg, #0a1628 0%, #1a3a5c 100%); padding:2mm 2.5mm; border-radius:2mm; border-left:3px solid var(--accent);">
                 <div style="font-size:9pt; font-weight:700; color:white;">1. IDME PBD Helper</div>
-                <div style="font-size:7.5pt; color:#94a3b8; margin-top:0.5mm;">4,592 guru · 93% penjimatan masa · Rating 5/5</div>
-                <div style="font-size:7pt; color:var(--accent); margin-top:0.5mm;">Halaman 19 &ndash; 20</div>
+                <div style="font-size:8.5pt; color:#cdd6e0; margin-top:0.3mm;">4,592 guru · 93% penjimatan masa · Rating 5/5</div>
+                <div style="font-size:8pt; font-weight:600; color:var(--accent); margin-top:0.3mm;">Halaman 19 &ndash; 20</div>
             </div>
-            <div style="background:linear-gradient(135deg, #0a1628 0%, #1a3a5c 100%); padding:2.5mm; border-radius:2mm; border-left:3px solid var(--accent);">
+            <div style="background:linear-gradient(135deg, #0a1628 0%, #1a3a5c 100%); padding:2mm 2.5mm; border-radius:2mm; border-left:3px solid var(--accent);">
                 <div style="font-size:9pt; font-weight:700; color:white;">2. TVPSS FiveOne Studio</div>
-                <div style="font-size:7.5pt; color:#94a3b8; margin-top:0.5mm;">89 episod · Murid peneraju · Ikon Guru Kebangsaan</div>
-                <div style="font-size:7pt; color:var(--accent); margin-top:0.5mm;">Halaman 28 &ndash; 38</div>
+                <div style="font-size:8.5pt; color:#cdd6e0; margin-top:0.3mm;">89 episod · Murid peneraju · Ikon Guru Kebangsaan</div>
+                <div style="font-size:8pt; font-weight:600; color:var(--accent); margin-top:0.3mm;">Halaman 28 &ndash; 38</div>
             </div>
-            <div style="background:linear-gradient(135deg, #0a1628 0%, #1a3a5c 100%); padding:2.5mm; border-radius:2mm; border-left:3px solid var(--accent);">
+            <div style="background:linear-gradient(135deg, #0a1628 0%, #1a3a5c 100%); padding:2mm 2.5mm; border-radius:2mm; border-left:3px solid var(--accent);">
                 <div style="font-size:9pt; font-weight:700; color:white;">3. Auto eRPH</div>
-                <div style="font-size:7.5pt; color:#94a3b8; margin-top:0.5mm;">AI Gemini · 75% penjimatan masa RPH</div>
-                <div style="font-size:7pt; color:var(--accent); margin-top:0.5mm;">Halaman 24 &ndash; 26</div>
+                <div style="font-size:8.5pt; color:#cdd6e0; margin-top:0.3mm;">AI Gemini · 75% penjimatan masa RPH</div>
+                <div style="font-size:8pt; font-weight:600; color:var(--accent); margin-top:0.3mm;">Halaman 24 &ndash; 26</div>
             </div>
-            <div style="background:linear-gradient(135deg, #0a1628 0%, #1a3a5c 100%); padding:2.5mm; border-radius:2mm; border-left:3px solid var(--accent);">
+            <div style="background:linear-gradient(135deg, #0a1628 0%, #1a3a5c 100%); padding:2mm 2.5mm; border-radius:2mm; border-left:3px solid var(--accent);">
                 <div style="font-size:9pt; font-weight:700; color:white;">4. Blog cikguaime.com</div>
-                <div style="font-size:7.5pt; color:#94a3b8; margin-top:0.5mm;">3.5 juta pelawat · 97 artikel · 7 tahun konsisten</div>
-                <div style="font-size:7pt; color:var(--accent); margin-top:0.5mm;">Halaman 39 &ndash; 41</div>
+                <div style="font-size:8.5pt; color:#cdd6e0; margin-top:0.3mm;">3.5 juta pelawat · 97 artikel · 7 tahun konsisten</div>
+                <div style="font-size:8pt; font-weight:600; color:var(--accent); margin-top:0.3mm;">Halaman 39 &ndash; 41</div>
             </div>
-            <div style="background:linear-gradient(135deg, #0a1628 0%, #1a3a5c 100%); padding:2.5mm; border-radius:2mm; border-left:3px solid var(--accent);">
+            <div style="background:linear-gradient(135deg, #0a1628 0%, #1a3a5c 100%); padding:2mm 2.5mm; border-radius:2mm; border-left:3px solid var(--accent);">
                 <div style="font-size:9pt; font-weight:700; color:white;">5. Kuiz Interaktif</div>
-                <div style="font-size:7.5pt; color:#94a3b8; margin-top:0.5mm;">2,000+ murid · Sejarah, PSV, BM · 7 format soalan</div>
-                <div style="font-size:7pt; color:var(--accent); margin-top:0.5mm;">Halaman 8</div>
+                <div style="font-size:8.5pt; color:#cdd6e0; margin-top:0.3mm;">2,000+ murid · Sejarah, PSV, BM · 7 format soalan</div>
+                <div style="font-size:8pt; font-weight:600; color:var(--accent); margin-top:0.3mm;">Halaman 8</div>
             </div>
-            <div style="background:linear-gradient(135deg, #0a1628 0%, #1a3a5c 100%); padding:2.5mm; border-radius:2mm; border-left:3px solid var(--accent);">
+            <div style="background:linear-gradient(135deg, #0a1628 0%, #1a3a5c 100%); padding:2mm 2.5mm; border-radius:2mm; border-left:3px solid var(--accent);">
                 <div style="font-size:9pt; font-weight:700; color:white;">6. Pembangunan Murid TVPSS</div>
-                <div style="font-size:7.5pt; color:#94a3b8; margin-top:0.5mm;">Kemahiran abad ke-21 · Kamera, suntingan, siaran</div>
-                <div style="font-size:7pt; color:var(--accent); margin-top:0.5mm;">Halaman 29, 62 &ndash; 63</div>
+                <div style="font-size:8.5pt; color:#cdd6e0; margin-top:0.3mm;">Kemahiran abad ke-21 · Kamera, suntingan, siaran</div>
+                <div style="font-size:8pt; font-weight:600; color:var(--accent); margin-top:0.3mm;">Halaman 29, 62 &ndash; 63</div>
             </div>
         </div>
 
         <!-- Pencapaian Tertinggi -->
-        <div class="subsection-title" style="margin-top:2mm;">Pencapaian Tertinggi</div>
-        <div class="badge-row">
+        <div class="subsection-title" style="margin-top:1.5mm; margin-bottom:1mm;">Pencapaian Tertinggi</div>
+        <div class="badge-row" style="margin:0 0 1mm 0;">
             <span class="badge gold">Ikon Guru TVPSS Kebangsaan 2024</span>
             <span class="badge gold">Anugerah Kualiti Guru: PCD 2025</span>
             <span class="badge">Edufluencer KPM (3&#215;)</span>
@@ -1798,9 +1903,9 @@
         </div>
 
         <!-- Nota untuk Juri -->
-        <div class="highlight-box" style="margin-top:2mm; padding:3mm 4mm;">
-            <h3 style="margin-bottom:1.5mm;">Mengapa Portfolio Ini Menonjol</h3>
-            <div class="quality-grid" style="margin-top:0; gap:1.5mm;">
+        <div class="highlight-box" style="margin-top:1mm; padding:2.5mm 4mm;">
+            <h3 style="margin-bottom:1mm;">Mengapa Portfolio Ini Menonjol</h3>
+            <div class="quality-grid" style="margin-top:0; gap:1mm;">
                 <div class="quality-item">
                     <div class="quality-check">✓</div>
                     <div class="quality-item-text"><strong>Bukan pengguna, tetapi pencipta</strong>: Mereka bentuk dan membangunkan 17 projek digital dengan bantuan AI</div>
@@ -2453,19 +2558,19 @@
         <div style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 2mm; margin-top: 2.5mm;">
             <div style="background: rgba(200,168,78,0.1); border: 1px solid rgba(200,168,78,0.3); border-radius: 2mm; padding: 2mm; text-align: center;">
                 <div style="font-size: 11pt; font-weight: 800; color: #c8a84e;">2022</div>
-                <div style="font-size: 7pt; color: #94a3b8; text-transform: uppercase;">Tahun Dibangunkan</div>
+                <div style="font-size: 8.5pt; color: #444; font-weight: 600; text-transform: uppercase;">Tahun Dibangunkan</div>
             </div>
             <div style="background: rgba(200,168,78,0.1); border: 1px solid rgba(200,168,78,0.3); border-radius: 2mm; padding: 2mm; text-align: center;">
                 <div style="font-size: 11pt; font-weight: 800; color: #c8a84e;">2,000+</div>
-                <div style="font-size: 7pt; color: #94a3b8; text-transform: uppercase;">Murid Pengguna</div>
+                <div style="font-size: 8.5pt; color: #444; font-weight: 600; text-transform: uppercase;">Murid Pengguna</div>
             </div>
             <div style="background: rgba(200,168,78,0.1); border: 1px solid rgba(200,168,78,0.3); border-radius: 2mm; padding: 2mm; text-align: center;">
                 <div style="font-size: 11pt; font-weight: 800; color: #c8a84e;">15,000+</div>
-                <div style="font-size: 7pt; color: #94a3b8; text-transform: uppercase;">Gameplay Sessions</div>
+                <div style="font-size: 8.5pt; color: #444; font-weight: 600; text-transform: uppercase;">Gameplay Sessions</div>
             </div>
             <div style="background: rgba(200,168,78,0.1); border: 1px solid rgba(200,168,78,0.3); border-radius: 2mm; padding: 2mm; text-align: center;">
                 <div style="font-size: 11pt; font-weight: 800; color: #c8a84e;">3</div>
-                <div style="font-size: 7pt; color: #94a3b8; text-transform: uppercase;">Pengiktirafan Antarabangsa</div>
+                <div style="font-size: 8.5pt; color: #444; font-weight: 600; text-transform: uppercase;">Pengiktirafan Antarabangsa</div>
             </div>
         </div>
 
@@ -2593,57 +2698,57 @@
         <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 3mm; margin: 0 -10mm;">
             <!-- Chatbot Sejarah -->
             <div style="text-align: center;">
-                <div style="background: var(--blue-gradient); padding: 2mm 3mm; border-radius: 2mm 2mm 0 0;">
-                    <div style="font-size: 9.5pt; font-weight: 700; color: white;">Custom GPT Sejarah Tahun 6</div>
-                    <div style="font-size: 7.5pt; color: var(--accent);">AI Chatbot untuk Murid</div>
+                <div style="background: var(--blue-gradient); padding: 2.5mm 3mm; border-radius: 2mm 2mm 0 0;">
+                    <div style="font-size: 10pt; font-weight: 700; color: white;">Custom GPT Sejarah Tahun 6</div>
+                    <div style="font-size: 8.5pt; font-weight: 600; color: var(--accent);">AI Chatbot untuk Murid</div>
                 </div>
                 <div style="border: 1.5px solid #c8a84e; border-top: none; border-radius: 0 0 2mm 2mm; overflow: hidden; background: #fff;">
-                    <img src="portfolio/img/chatbot-sejarah-tahun6.png" alt="Custom GPT Sejarah Tahun 6" style="width: 100%; height: 72mm; object-fit: cover; display: block;">
+                    <img src="portfolio/img/chatbot-sejarah-tahun6.png" alt="Custom GPT Sejarah Tahun 6" style="width: 100%; height: 82mm; object-fit: cover; display: block;">
                 </div>
             </div>
             <!-- Chatbot Caption -->
             <div style="text-align: center;">
-                <div style="background: var(--blue-gradient); padding: 2mm 3mm; border-radius: 2mm 2mm 0 0;">
-                    <div style="font-size: 9.5pt; font-weight: 700; color: white;">Chatbot Caption Media Sosial</div>
-                    <div style="font-size: 7.5pt; color: var(--accent);">AI Chatbot untuk Guru TVPSS</div>
+                <div style="background: var(--blue-gradient); padding: 2.5mm 3mm; border-radius: 2mm 2mm 0 0;">
+                    <div style="font-size: 10pt; font-weight: 700; color: white;">Chatbot Caption Media Sosial</div>
+                    <div style="font-size: 8.5pt; font-weight: 600; color: var(--accent);">AI Chatbot untuk Guru TVPSS</div>
                 </div>
                 <div style="border: 1.5px solid #c8a84e; border-top: none; border-radius: 0 0 2mm 2mm; overflow: hidden; background: #fff;">
-                    <img src="portfolio/img/chatbot-caption-mediasosial.png" alt="Chatbot Caption Media Sosial" style="width: 100%; height: 72mm; object-fit: cover; display: block;">
+                    <img src="portfolio/img/chatbot-caption-mediasosial.png" alt="Chatbot Caption Media Sosial" style="width: 100%; height: 82mm; object-fit: cover; display: block;">
                 </div>
             </div>
         </div>
 
         <!-- Penerangan 2 chatbot dalam grid -->
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3mm; margin-top: 2mm; margin-left: -10mm; margin-right: -10mm;">
-            <div style="background: rgba(200,168,78,0.08); border: 1px solid rgba(200,168,78,0.2); border-radius: 2mm; padding: 3mm 3.5mm;">
-                <div style="font-size: 9.5pt; font-weight: 700; color: var(--primary); margin-bottom: 1.5mm;">Untuk Murid: Belajar Sejarah Secara Interaktif</div>
-                <div style="font-size: 9pt; color: #555; line-height: 1.45;">Murid bertanya dalam Bahasa Melayu, AI menjawab mengikut sukatan <strong>KSSR Semakan</strong>. Menyokong soal jawab, kuiz spontan, penerangan konsep, dan ringkasan topik. Sesuai untuk ulang kaji kendiri.</div>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3mm; margin-top: 3mm; margin-left: -10mm; margin-right: -10mm;">
+            <div style="background: rgba(200,168,78,0.08); border: 1px solid rgba(200,168,78,0.2); border-radius: 2mm; padding: 3.5mm 4mm;">
+                <div style="font-size: 10pt; font-weight: 700; color: var(--primary); margin-bottom: 1.5mm;">Untuk Murid: Belajar Sejarah Secara Interaktif</div>
+                <div style="font-size: 9.5pt; color: #444; line-height: 1.5;">Murid bertanya dalam Bahasa Melayu, AI menjawab mengikut sukatan <strong>KSSR Semakan</strong>. Menyokong soal jawab, kuiz spontan, penerangan konsep, dan ringkasan topik. Sesuai untuk ulang kaji kendiri.</div>
             </div>
-            <div style="background: rgba(200,168,78,0.08); border: 1px solid rgba(200,168,78,0.2); border-radius: 2mm; padding: 3mm 3.5mm;">
-                <div style="font-size: 9.5pt; font-weight: 700; color: var(--primary); margin-bottom: 1.5mm;">Untuk Guru: Jana Caption Profesional</div>
-                <div style="font-size: 9pt; color: #555; line-height: 1.45;">Guru hanya masukkan maklumat acara, AI menjana caption gaya profesional <strong>tanpa emoji berlebihan</strong>. Menjimatkan masa guru TVPSS yang perlu menulis caption untuk setiap hantaran media sosial sekolah.</div>
+            <div style="background: rgba(200,168,78,0.08); border: 1px solid rgba(200,168,78,0.2); border-radius: 2mm; padding: 3.5mm 4mm;">
+                <div style="font-size: 10pt; font-weight: 700; color: var(--primary); margin-bottom: 1.5mm;">Untuk Guru: Jana Caption Profesional</div>
+                <div style="font-size: 9.5pt; color: #444; line-height: 1.5;">Guru hanya masukkan maklumat acara, AI menjana caption gaya profesional <strong>tanpa emoji berlebihan</strong>. Menjimatkan masa guru TVPSS yang perlu menulis caption untuk setiap hantaran media sosial sekolah.</div>
             </div>
         </div>
 
         <!-- Highlight Box: Apa yang membezakan -->
-        <div class="highlight-box" style="margin-top: 2.5mm; padding: 3mm 4mm;">
-            <h3 style="margin-bottom: 1.5mm;">Mengapa Ini Penting untuk Pendidikan?</h3>
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2mm; margin-top: 1.5mm;">
-                <div style="display: flex; align-items: flex-start; gap: 1.5mm;">
-                    <span style="color: #c8a84e; font-weight: 700; font-size: 9pt;">&#9733;</span>
-                    <div style="font-size: 8.5pt; color: #ccd6e0; line-height: 1.4;"><strong style="color: white;">Konteks Tempatan</strong>: Direka khusus untuk KSSR Semakan Malaysia, bukan chatbot umum dari luar negara</div>
+        <div class="highlight-box" style="margin-top: 3mm; padding: 4mm 5mm;">
+            <h3 style="margin-bottom: 2mm; font-size: 11pt;">Mengapa Ini Penting untuk Pendidikan?</h3>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3mm; margin-top: 2mm;">
+                <div style="display: flex; align-items: flex-start; gap: 2mm;">
+                    <span style="color: #c8a84e; font-weight: 700; font-size: 10pt;">&#9733;</span>
+                    <div style="font-size: 9.5pt; color: #ccd6e0; line-height: 1.5;"><strong style="color: white;">Konteks Tempatan</strong>: Direka khusus untuk KSSR Semakan Malaysia, bukan chatbot umum dari luar negara</div>
                 </div>
-                <div style="display: flex; align-items: flex-start; gap: 1.5mm;">
-                    <span style="color: #c8a84e; font-weight: 700; font-size: 9pt;">&#9733;</span>
-                    <div style="font-size: 8.5pt; color: #ccd6e0; line-height: 1.4;"><strong style="color: white;">Dwi Sasaran</strong>: Satu chatbot untuk murid (pembelajaran), satu untuk guru (produktiviti)</div>
+                <div style="display: flex; align-items: flex-start; gap: 2mm;">
+                    <span style="color: #c8a84e; font-weight: 700; font-size: 10pt;">&#9733;</span>
+                    <div style="font-size: 9.5pt; color: #ccd6e0; line-height: 1.5;"><strong style="color: white;">Dwi Sasaran</strong>: Satu chatbot untuk murid (pembelajaran), satu untuk guru (produktiviti)</div>
                 </div>
-                <div style="display: flex; align-items: flex-start; gap: 1.5mm;">
-                    <span style="color: #c8a84e; font-weight: 700; font-size: 9pt;">&#9733;</span>
-                    <div style="font-size: 8.5pt; color: #ccd6e0; line-height: 1.4;"><strong style="color: white;">AI Beretika</strong>: Kandungan ditapis mengikut kesesuaian murid sekolah rendah, tiada maklumat sensitif</div>
+                <div style="display: flex; align-items: flex-start; gap: 2mm;">
+                    <span style="color: #c8a84e; font-weight: 700; font-size: 10pt;">&#9733;</span>
+                    <div style="font-size: 9.5pt; color: #ccd6e0; line-height: 1.5;"><strong style="color: white;">AI Beretika</strong>: Kandungan ditapis mengikut kesesuaian murid sekolah rendah, tiada maklumat sensitif</div>
                 </div>
-                <div style="display: flex; align-items: flex-start; gap: 1.5mm;">
-                    <span style="color: #c8a84e; font-weight: 700; font-size: 9pt;">&#9733;</span>
-                    <div style="font-size: 8.5pt; color: #ccd6e0; line-height: 1.4;"><strong style="color: white;">Percuma &amp; Terbuka</strong>: Boleh diakses oleh mana-mana guru atau murid tanpa sebarang bayaran</div>
+                <div style="display: flex; align-items: flex-start; gap: 2mm;">
+                    <span style="color: #c8a84e; font-weight: 700; font-size: 10pt;">&#9733;</span>
+                    <div style="font-size: 9.5pt; color: #ccd6e0; line-height: 1.5;"><strong style="color: white;">Percuma &amp; Terbuka</strong>: Boleh diakses oleh mana-mana guru atau murid tanpa sebarang bayaran</div>
                 </div>
             </div>
         </div>
